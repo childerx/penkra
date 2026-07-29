@@ -22559,15 +22559,12 @@
                       "fontWeight": "normal"
                     },
                     {
-                      "id": "MY0Wi",
-                      "type": "ref",
-                      "ref": "H7QYVP",
-                      "name": "Theme Picker",
+                      "type": "frame",
+                      "id": "ysQhK",
+                      "name": "Theme Picker Space",
                       "width": 102,
                       "height": 28,
-                      "theme": {
-                        "state": "default"
-                      }
+                      "fill": "#00000000"
                     }
                   ]
                 }
@@ -22998,6 +22995,20 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "MY0Wi",
+              "type": "ref",
+              "ref": "H7QYVP",
+              "name": "Theme Picker",
+              "width": 102,
+              "height": 28,
+              "theme": {
+                "state": "default"
+              },
+              "layoutPosition": "absolute",
+              "x": 318,
+              "y": 20
             }
           ]
         },
@@ -23475,6 +23486,194 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "q9tPr",
+          "x": 64,
+          "y": 4900,
+          "name": "Menu / Theme Picker",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "width": 160,
+          "fill": "$card-fill",
+          "cornerRadius": 10,
+          "stroke": "$card-stroke",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 2,
+          "padding": 6,
+          "children": [
+            {
+              "type": "frame",
+              "id": "NW860",
+              "name": "GitHub Row",
+              "width": "fill_container",
+              "height": 29,
+              "fill": "$surface-selected",
+              "cornerRadius": 6,
+              "padding": [
+                0,
+                10
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qHOMZ",
+                  "name": "Label",
+                  "fill": "$text-primary",
+                  "content": "GitHub",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "hKbZK",
+                  "name": "Check",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "check",
+                  "library": "lucide",
+                  "fill": "$accent-blue"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "V3XsXQ",
+              "name": "Solarized Row",
+              "width": "fill_container",
+              "height": 29,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "padding": [
+                0,
+                10
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J5cTg",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Solarized",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "H1RZk",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Check",
+                  "enabled": false,
+                  "width": 14,
+                  "height": 14,
+                  "icon": "check",
+                  "library": "lucide",
+                  "fill": "$accent-blue"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b4Mf4",
+              "name": "Dracula Row",
+              "width": "fill_container",
+              "height": 29,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "padding": [
+                0,
+                10
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZkXFk",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Dracula",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "knjtC",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Check",
+                  "enabled": false,
+                  "width": 14,
+                  "height": 14,
+                  "icon": "check",
+                  "library": "lucide",
+                  "fill": "$accent-blue"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BIvYg",
+              "name": "Monokai Row",
+              "width": "fill_container",
+              "height": 29,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "padding": [
+                0,
+                10
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jQB0Q",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Monokai",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "L9phes",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Check",
+                  "enabled": false,
+                  "width": 14,
+                  "height": 14,
+                  "icon": "check",
+                  "library": "lucide",
+                  "fill": "$accent-blue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BoDRm",
+          "type": "ref",
+          "ref": "tyZ7c",
+          "name": "Settings Modal — Appearance",
+          "x": 320,
+          "y": 4900,
+          "width": 880,
+          "height": 640
         }
       ]
     },
@@ -24525,6 +24724,449 @@
               "theme": {
                 "state": "disabled"
               }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WDRTD",
+          "x": 64,
+          "y": 2000,
+          "name": "Modal / Apps Gallery",
+          "reusable": true,
+          "width": 760,
+          "height": 849,
+          "fill": "#15171C",
+          "stroke": "#26272E",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "q1bK9c",
+              "x": 32,
+              "y": 32,
+              "name": "Title",
+              "fill": "$text-primary",
+              "content": "Apps",
+              "fontFamily": "$font-body",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "vBma9",
+              "x": 700,
+              "y": 28,
+              "name": "Close",
+              "width": 28,
+              "height": 28,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "Nh42n",
+                  "x": 7,
+                  "y": 7,
+                  "name": "Icon",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "x",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "D3xCp",
+              "x": 32,
+              "y": 60,
+              "name": "Subtitle",
+              "fill": "$text-tertiary",
+              "content": "Discover and manage integrations your agent can use in threads.",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "fNMP1",
+              "type": "ref",
+              "ref": "Q9f3R9",
+              "name": "Search",
+              "x": 32,
+              "y": 92,
+              "width": 696
+            },
+            {
+              "type": "frame",
+              "id": "ObMlu",
+              "x": 32,
+              "y": 158.5,
+              "name": "Content / Vertical Scroll Region",
+              "clip": true,
+              "width": 696,
+              "height": 658,
+              "fill": "#00000000",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aznfz",
+                  "name": "Category Pills",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "id": "VHlWQ",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / All",
+                      "fill": "$accent-blue",
+                      "stroke": "transparent",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "All",
+                          "fill": "#FFFFFF"
+                        }
+                      }
+                    },
+                    {
+                      "id": "gNFMG",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / Featured",
+                      "fill": "$accent-blue",
+                      "stroke": "transparent",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "Featured",
+                          "fill": "#FFFFFF"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ReiS8",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / Productivity",
+                      "fill": "#00000000",
+                      "stroke": "$card-stroke",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "Productivity",
+                          "fill": "$text-secondary"
+                        }
+                      }
+                    },
+                    {
+                      "id": "soEah",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / Developer",
+                      "fill": "#00000000",
+                      "stroke": "$card-stroke",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "Developer",
+                          "fill": "$text-secondary"
+                        }
+                      }
+                    },
+                    {
+                      "id": "oCzqq",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / Design",
+                      "fill": "#00000000",
+                      "stroke": "$card-stroke",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "Design",
+                          "fill": "$text-secondary"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZkasG",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / Data",
+                      "fill": "#00000000",
+                      "stroke": "$card-stroke",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "Data",
+                          "fill": "$text-secondary"
+                        }
+                      }
+                    },
+                    {
+                      "id": "d65kU",
+                      "type": "ref",
+                      "ref": "tNSs3",
+                      "name": "Pill / Communication",
+                      "fill": "#00000000",
+                      "stroke": "$card-stroke",
+                      "descendants": {
+                        "h9NLJH": {
+                          "content": "Communication",
+                          "fill": "$text-secondary"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ggiku",
+                  "name": "Installed Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mPHhr",
+                      "name": "Section Label",
+                      "fill": "$text-secondary",
+                      "content": "Installed",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MgY2M",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "id": "XJpKj",
+                          "type": "ref",
+                          "ref": "aPvtw",
+                          "name": "Row / Browser",
+                          "descendants": {
+                            "mOn8t": {
+                              "fill": "#4A90E2"
+                            },
+                            "prMNM": {
+                              "content": "Browser"
+                            },
+                            "OyfT8": {
+                              "content": "Search the web and pull in pages without leaving your thread."
+                            }
+                          }
+                        },
+                        {
+                          "id": "Jaszq",
+                          "type": "ref",
+                          "ref": "aPvtw",
+                          "name": "Row / Microsoft Word",
+                          "descendants": {
+                            "mOn8t": {
+                              "fill": "#2B579A"
+                            },
+                            "prMNM": {
+                              "content": "Microsoft Word"
+                            },
+                            "OyfT8": {
+                              "content": "Draft and edit documents without leaving your thread."
+                            }
+                          }
+                        },
+                        {
+                          "id": "TXTrm",
+                          "type": "ref",
+                          "ref": "aPvtw",
+                          "name": "Row / Notion",
+                          "descendants": {
+                            "mOn8t": {
+                              "fill": "#3A3A3A"
+                            },
+                            "prMNM": {
+                              "content": "Notion"
+                            },
+                            "OyfT8": {
+                              "content": "Search and edit your docs from a thread."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S3GEcm",
+                  "name": "Discover Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DxgMG",
+                      "name": "Section Label",
+                      "fill": "$text-secondary",
+                      "content": "Discover",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hU1Ey",
+                      "name": "Discover Grid",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "a9zYx1",
+                          "name": "Row",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "id": "FAPkb",
+                              "type": "ref",
+                              "ref": "fgUwH",
+                              "name": "Card / Figma",
+                              "descendants": {
+                                "EQVyx": {
+                                  "fill": "#A259FF"
+                                },
+                                "TM1IX": {
+                                  "content": "Figma"
+                                },
+                                "nabQX/PAyFU": {
+                                  "content": "4.9"
+                                },
+                                "sUfTq": {
+                                  "content": "Bring design files into a thread for review."
+                                }
+                              }
+                            },
+                            {
+                              "id": "ybP7o",
+                              "type": "ref",
+                              "ref": "fgUwH",
+                              "name": "Card / Excel",
+                              "descendants": {
+                                "EQVyx": {
+                                  "fill": "#1D6F42"
+                                },
+                                "TM1IX": {
+                                  "content": "Excel"
+                                },
+                                "nabQX/PAyFU": {
+                                  "content": "4.6"
+                                },
+                                "sUfTq": {
+                                  "content": "Build and analyze spreadsheets."
+                                }
+                              }
+                            },
+                            {
+                              "id": "GBYoQ",
+                              "type": "ref",
+                              "ref": "fgUwH",
+                              "name": "Card / Terminal",
+                              "descendants": {
+                                "EQVyx": {
+                                  "fill": "#2A2E37"
+                                },
+                                "TM1IX": {
+                                  "content": "Terminal"
+                                },
+                                "nabQX/PAyFU": {
+                                  "content": "4.7"
+                                },
+                                "sUfTq": {
+                                  "content": "Run shell commands from a thread."
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Dimzs",
+                          "name": "Row",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "id": "dbKgA",
+                              "type": "ref",
+                              "ref": "fgUwH",
+                              "name": "Card / Blender",
+                              "descendants": {
+                                "EQVyx": {
+                                  "fill": "#EA7600"
+                                },
+                                "TM1IX": {
+                                  "content": "Blender"
+                                },
+                                "nabQX/PAyFU": {
+                                  "content": "4.5"
+                                },
+                                "sUfTq": {
+                                  "content": "Render and edit 3D scenes."
+                                }
+                              }
+                            },
+                            {
+                              "id": "Z7HlGO",
+                              "type": "ref",
+                              "ref": "fgUwH",
+                              "name": "Card / Slack",
+                              "descendants": {
+                                "EQVyx": {
+                                  "fill": "#611F69"
+                                },
+                                "TM1IX": {
+                                  "content": "Slack"
+                                },
+                                "nabQX/PAyFU": {
+                                  "content": "4.7"
+                                },
+                                "sUfTq": {
+                                  "content": "Post updates to channels from a thread."
+                                }
+                              }
+                            },
+                            {
+                              "id": "ni8Uz",
+                              "type": "ref",
+                              "ref": "fgUwH",
+                              "name": "Card / GitHub",
+                              "descendants": {
+                                "EQVyx": {
+                                  "fill": "#1F2328"
+                                },
+                                "TM1IX": {
+                                  "content": "GitHub"
+                                },
+                                "nabQX/PAyFU": {
+                                  "content": "4.9"
+                                },
+                                "sUfTq": {
+                                  "content": "Open issues and PRs inline in a thread."
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -26015,9 +26657,9 @@
               "ref": "WDRTD",
               "name": "Apps Gallery Modal",
               "x": 340,
-              "y": 50,
+              "y": 25.5,
               "width": 760,
-              "height": 800
+              "height": 849
             },
             {
               "id": "XdZ3I",
@@ -26265,489 +26907,383 @@
     },
     {
       "type": "frame",
-      "id": "q9tPr",
+      "id": "hqS2K",
       "x": 0,
       "y": 0,
-      "name": "Menu / Theme Picker",
-      "theme": {
-        "state": "default"
-      },
+      "name": "Icon Tile / App",
       "reusable": true,
-      "width": 160,
-      "fill": "$card-fill",
-      "cornerRadius": 10,
-      "stroke": "$card-stroke",
-      "strokeWidth": 1,
-      "layout": "vertical",
-      "gap": 2,
-      "padding": 6,
+      "width": 44,
+      "height": 44,
+      "fill": "#4A90E2",
+      "cornerRadius": 12,
+      "justifyContent": "center",
+      "alignItems": "center",
       "children": [
         {
-          "type": "frame",
-          "id": "NW860",
-          "name": "GitHub Row",
-          "width": "fill_container",
-          "height": 29,
-          "fill": "$surface-selected",
-          "cornerRadius": 6,
-          "padding": [
-            0,
-            10
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "qHOMZ",
-              "name": "Label",
-              "fill": "$text-primary",
-              "content": "GitHub",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "500"
-            },
-            {
-              "type": "icon",
-              "id": "hKbZK",
-              "name": "Check",
-              "width": 14,
-              "height": 14,
-              "icon": "check",
-              "library": "lucide",
-              "fill": "$accent-blue"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "V3XsXQ",
-          "name": "Solarized Row",
-          "width": "fill_container",
-          "height": 29,
-          "fill": "#00000000",
-          "cornerRadius": 6,
-          "padding": [
-            0,
-            10
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "J5cTg",
-              "name": "Label",
-              "fill": "$text-secondary",
-              "content": "Solarized",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "H1RZk",
-              "x": 0,
-              "y": 0,
-              "name": "Check",
-              "enabled": false,
-              "width": 14,
-              "height": 14,
-              "icon": "check",
-              "library": "lucide",
-              "fill": "$accent-blue"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "b4Mf4",
-          "name": "Dracula Row",
-          "width": "fill_container",
-          "height": 29,
-          "fill": "#00000000",
-          "cornerRadius": 6,
-          "padding": [
-            0,
-            10
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "ZkXFk",
-              "name": "Label",
-              "fill": "$text-secondary",
-              "content": "Dracula",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "knjtC",
-              "x": 0,
-              "y": 0,
-              "name": "Check",
-              "enabled": false,
-              "width": 14,
-              "height": 14,
-              "icon": "check",
-              "library": "lucide",
-              "fill": "$accent-blue"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "BIvYg",
-          "name": "Monokai Row",
-          "width": "fill_container",
-          "height": 29,
-          "fill": "#00000000",
-          "cornerRadius": 6,
-          "padding": [
-            0,
-            10
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "jQB0Q",
-              "name": "Label",
-              "fill": "$text-secondary",
-              "content": "Monokai",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "L9phes",
-              "x": 0,
-              "y": 0,
-              "name": "Check",
-              "enabled": false,
-              "width": 14,
-              "height": 14,
-              "icon": "check",
-              "library": "lucide",
-              "fill": "$accent-blue"
-            }
-          ]
+          "type": "icon",
+          "id": "va2Qv",
+          "name": "TileIcon",
+          "width": 20,
+          "height": 20,
+          "icon": "package",
+          "library": "lucide",
+          "fill": "#FFFFFF"
         }
       ]
     },
     {
-      "id": "BoDRm",
-      "type": "ref",
-      "ref": "tyZ7c",
-      "name": "Settings Modal — Appearance",
-      "x": 280,
-      "y": 130,
-      "width": 880,
-      "height": 640
+      "type": "frame",
+      "id": "gqhMw",
+      "x": 0,
+      "y": 0,
+      "name": "Badge / Rating",
+      "reusable": true,
+      "gap": 4,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon",
+          "id": "iTOOI",
+          "name": "Star",
+          "width": 11,
+          "height": 11,
+          "icon": "star",
+          "library": "lucide",
+          "fill": "#F5B942"
+        },
+        {
+          "type": "text",
+          "id": "PAyFU",
+          "name": "Value",
+          "fill": "$text-tertiary",
+          "content": "4.8",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        }
+      ]
     },
     {
       "type": "frame",
-      "id": "WDRTD",
+      "id": "GYrNw",
       "x": 0,
       "y": 0,
-      "name": "Modal / Apps Gallery",
+      "name": "Button / Install",
       "reusable": true,
-      "width": 760,
-      "height": 800,
-      "fill": "#15171C",
-      "stroke": "#26272E",
-      "strokeWidth": 1,
-      "strokeAlignment": "inner",
-      "layout": "none",
+      "height": 28,
+      "fill": "$accent-blue",
+      "cornerRadius": 999,
+      "padding": [
+        0,
+        14
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
       "children": [
         {
           "type": "text",
-          "id": "q1bK9c",
-          "x": 32,
-          "y": 32,
-          "name": "Title",
-          "fill": "$text-primary",
-          "content": "Apps",
+          "id": "pEb2d",
+          "name": "Label",
+          "fill": "#FFFFFF",
+          "content": "Install",
           "fontFamily": "$font-body",
-          "fontSize": 20,
+          "fontSize": 12,
           "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tNSs3",
+      "x": 0,
+      "y": 0,
+      "name": "Pill / Category",
+      "reusable": true,
+      "height": 28,
+      "fill": "#00000000",
+      "cornerRadius": 8,
+      "stroke": "$card-stroke",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "padding": [
+        0,
+        12
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "h9NLJH",
+          "name": "Label",
+          "fill": "$text-secondary",
+          "content": "Category",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aPvtw",
+      "x": 0,
+      "y": 0,
+      "name": "Row / Installed App",
+      "reusable": true,
+      "width": "fill_container(0)",
+      "fill": "$card-fill",
+      "cornerRadius": 10,
+      "stroke": "$card-stroke",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "gap": 12,
+      "padding": [
+        12,
+        16
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "mOn8t",
+          "type": "ref",
+          "ref": "hqS2K",
+          "name": "Icon",
+          "width": 40,
+          "height": 40,
+          "cornerRadius": 10,
+          "fill": "#4A90E2",
+          "descendants": {
+            "va2Qv": {
+              "icon": "globe",
+              "width": 18,
+              "height": 18
+            }
+          }
         },
         {
           "type": "frame",
-          "id": "vBma9",
-          "x": 700,
-          "y": 28,
-          "name": "Close",
-          "width": 28,
-          "height": 28,
-          "fill": "#00000000",
-          "cornerRadius": 6,
-          "layout": "none",
+          "id": "cvHY9",
+          "name": "Texts",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
           "children": [
             {
-              "type": "icon",
-              "id": "Nh42n",
-              "x": 7,
-              "y": 7,
-              "name": "Icon",
-              "width": 14,
-              "height": 14,
-              "icon": "x",
-              "library": "lucide",
-              "fill": "$text-secondary"
+              "type": "text",
+              "id": "prMNM",
+              "name": "Name",
+              "fill": "$text-primary",
+              "content": "Browser",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "OyfT8",
+              "name": "Description",
+              "fill": "$text-tertiary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Search the web and pull in pages without leaving your thread.",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         },
         {
-          "type": "text",
-          "id": "D3xCp",
-          "x": 32,
-          "y": 60,
-          "name": "Subtitle",
-          "fill": "$text-tertiary",
-          "content": "Discover and manage integrations your agent can use in threads.",
-          "fontFamily": "$font-body",
-          "fontSize": 13,
-          "fontWeight": "normal"
-        },
-        {
-          "id": "fNMP1",
+          "id": "wp6ox",
           "type": "ref",
-          "ref": "Q9f3R9",
-          "name": "Search",
-          "x": 32,
-          "y": 92,
-          "width": 696
+          "ref": "GYrNw",
+          "name": "Button",
+          "fill": "#00000000",
+          "stroke": "$card-stroke",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "descendants": {
+            "pEb2d": {
+              "content": "Open",
+              "fill": "$text-secondary"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fgUwH",
+      "x": 0,
+      "y": 0,
+      "name": "Card / App Store",
+      "reusable": true,
+      "width": 220,
+      "fill": "$card-fill",
+      "cornerRadius": 12,
+      "stroke": "$card-stroke",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "layout": "vertical",
+      "gap": 10,
+      "padding": 16,
+      "children": [
+        {
+          "id": "EQVyx",
+          "type": "ref",
+          "ref": "hqS2K",
+          "name": "Icon",
+          "descendants": {
+            "va2Qv": {
+              "icon": "package"
+            }
+          }
         },
         {
           "type": "frame",
-          "id": "ObMlu",
-          "x": 32,
-          "y": 158.5,
-          "name": "Content / Vertical Scroll Region",
-          "clip": true,
-          "width": 696,
-          "height": 606,
-          "fill": "#00000000",
+          "id": "UA1r0",
+          "name": "Titles",
+          "width": "fill_container",
           "layout": "vertical",
-          "gap": 24,
+          "gap": 4,
           "children": [
             {
               "type": "frame",
-              "id": "KHaMI",
-              "name": "Installed Section",
+              "id": "dHWtS",
+              "name": "Name Row",
               "width": "fill_container",
-              "layout": "vertical",
-              "gap": 12,
+              "gap": 6,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "text",
-                  "id": "F2TkL",
-                  "name": "Section Label",
-                  "fill": "$text-secondary",
-                  "content": "Installed",
+                  "id": "TM1IX",
+                  "name": "Name",
+                  "fill": "$text-primary",
+                  "content": "App",
                   "fontFamily": "$font-body",
-                  "fontSize": 13,
+                  "fontSize": 14,
                   "fontWeight": "600"
                 },
                 {
-                  "id": "EeOCI",
+                  "id": "nabQX",
                   "type": "ref",
-                  "ref": "lHJt3",
-                  "name": "Installed App Grid"
+                  "ref": "gqhMw",
+                  "name": "Rating"
                 }
               ]
             },
             {
-              "type": "frame",
-              "id": "sRQkW",
-              "name": "Discover Section",
+              "type": "text",
+              "id": "sUfTq",
+              "name": "Description",
+              "fill": "$text-tertiary",
+              "textGrowth": "fixed-width",
               "width": "fill_container",
+              "content": "Description of what this app does for you.",
+              "lineHeight": 1.4,
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "id": "uknPj",
+          "type": "ref",
+          "ref": "GYrNw",
+          "name": "Button"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "NCeS7",
+      "x": 0,
+      "y": 0,
+      "name": "Banner / Featured App",
+      "reusable": true,
+      "width": "fill_container(0)",
+      "fill": "$card-fill",
+      "cornerRadius": 14,
+      "stroke": "$card-stroke",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "padding": 20,
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "WGlXQ",
+          "name": "Left",
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "gHPxI",
+              "type": "ref",
+              "ref": "hqS2K",
+              "name": "Icon",
+              "width": 64,
+              "height": 64,
+              "cornerRadius": 16,
+              "fill": "#5E6AD2",
+              "descendants": {
+                "va2Qv": {
+                  "icon": "list-checks",
+                  "width": 28,
+                  "height": 28
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "ecRB9",
+              "name": "Texts",
               "layout": "vertical",
-              "gap": 12,
+              "gap": 4,
               "children": [
                 {
                   "type": "text",
-                  "id": "mJOX0",
-                  "name": "Section Label",
-                  "fill": "$text-secondary",
-                  "content": "Discover",
+                  "id": "B8x7Lv",
+                  "name": "Eyebrow",
+                  "fill": "$accent-blue",
+                  "content": "FEATURED",
                   "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "600"
+                  "fontSize": 10,
+                  "fontWeight": "700",
+                  "letterSpacing": 0.6
                 },
                 {
-                  "type": "frame",
-                  "id": "m9jFqN",
-                  "name": "Discover Grid",
-                  "layout": "vertical",
-                  "gap": 16,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "bHDw7",
-                      "name": "Row",
-                      "gap": 16,
-                      "children": [
-                        {
-                          "id": "xp7av",
-                          "type": "ref",
-                          "ref": "Q0YrUi",
-                          "name": "App Card / Figma",
-                          "width": 220,
-                          "descendants": {
-                            "Y1KixN": {
-                              "icon": "layout-panel-left"
-                            },
-                            "nB72v": {
-                              "content": "Figma"
-                            },
-                            "fm4pF": {
-                              "content": "Bring design files into a thread for review."
-                            },
-                            "f9x1Ft": {
-                              "theme": {
-                                "state": "default"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "iBq5R",
-                          "type": "ref",
-                          "ref": "Q0YrUi",
-                          "name": "App Card / Linear",
-                          "width": 220,
-                          "descendants": {
-                            "Y1KixN": {
-                              "icon": "list-checks"
-                            },
-                            "nB72v": {
-                              "content": "Linear"
-                            },
-                            "fm4pF": {
-                              "content": "Track and plan engineering work."
-                            },
-                            "f9x1Ft": {
-                              "theme": {
-                                "state": "default"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "o1Zhpc",
-                          "type": "ref",
-                          "ref": "Q0YrUi",
-                          "name": "App Card / Excel",
-                          "width": 220,
-                          "descendants": {
-                            "Y1KixN": {
-                              "icon": "sheet"
-                            },
-                            "nB72v": {
-                              "content": "Excel"
-                            },
-                            "fm4pF": {
-                              "content": "Build and analyze spreadsheets."
-                            },
-                            "f9x1Ft": {
-                              "theme": {
-                                "state": "default"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "v3wtLy",
-                      "name": "Row",
-                      "gap": 16,
-                      "children": [
-                        {
-                          "id": "EZCN3",
-                          "type": "ref",
-                          "ref": "Q0YrUi",
-                          "name": "App Card / Terminal",
-                          "width": 220,
-                          "descendants": {
-                            "Y1KixN": {
-                              "icon": "terminal"
-                            },
-                            "nB72v": {
-                              "content": "Terminal"
-                            },
-                            "fm4pF": {
-                              "content": "Run shell commands from a thread."
-                            },
-                            "f9x1Ft": {
-                              "theme": {
-                                "state": "default"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "EEpEy",
-                          "type": "ref",
-                          "ref": "Q0YrUi",
-                          "name": "App Card / Notion",
-                          "width": 220,
-                          "descendants": {
-                            "Y1KixN": {
-                              "icon": "notebook-pen"
-                            },
-                            "nB72v": {
-                              "content": "Notion"
-                            },
-                            "fm4pF": {
-                              "content": "Search and edit your docs."
-                            },
-                            "f9x1Ft": {
-                              "theme": {
-                                "state": "default"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "SlZib",
-                          "type": "ref",
-                          "ref": "Q0YrUi",
-                          "name": "App Card / Blender",
-                          "width": 220,
-                          "descendants": {
-                            "Y1KixN": {
-                              "icon": "box"
-                            },
-                            "nB72v": {
-                              "content": "Blender"
-                            },
-                            "fm4pF": {
-                              "content": "Render and edit 3D scenes."
-                            },
-                            "f9x1Ft": {
-                              "theme": {
-                                "state": "default"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "text",
+                  "id": "J0p7F",
+                  "name": "Name",
+                  "fill": "$text-primary",
+                  "content": "Linear",
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "IC6G7",
+                  "name": "Tagline",
+                  "fill": "$text-secondary",
+                  "content": "Track and plan engineering work without leaving a thread.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
           ]
+        },
+        {
+          "id": "pbKAp",
+          "type": "ref",
+          "ref": "GYrNw",
+          "name": "Button"
         }
       ]
     }
