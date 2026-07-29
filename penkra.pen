@@ -8,7 +8,7 @@
       "name": "Components Banner",
       "x": 0,
       "y": 0,
-      "width": 17200,
+      "width": 19700,
       "descendants": {
         "V6ETK": {
           "content": "Components"
@@ -7433,7 +7433,7 @@
       "id": "e46ib4",
       "x": 5000,
       "y": 400,
-      "name": "Middle Panel",
+      "name": "Middle Panel — Thread",
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -7455,7 +7455,7 @@
           "id": "RVgV2",
           "x": 40,
           "y": 72,
-          "name": "Component Group — Middle Panel Marker",
+          "name": "Component Group — Middle Panel Thread Marker",
           "width": 8,
           "height": 44,
           "fill": "#F97316",
@@ -7466,9 +7466,9 @@
           "id": "l2anv",
           "x": 64,
           "y": 64,
-          "name": "Component Group — Middle Panel Label",
+          "name": "Component Group — Middle Panel Thread Label",
           "fill": "$text-primary",
-          "content": "Middle Panel",
+          "content": "Middle Panel — Thread",
           "fontFamily": "$font-body",
           "fontSize": 56,
           "fontWeight": "600"
@@ -9476,1918 +9476,13 @@
               }
             }
           ]
-        },
-        {
-          "type": "frame",
-          "id": "kVpYl",
-          "x": 0,
-          "y": 4200,
-          "name": "Middle Panel — Composer Section",
-          "metadata": {
-            "type": "recovery-organization",
-            "confidence": "exact-taxonomy",
-            "source": "bf5058:244892,244896,245406",
-            "kind": "component-group"
-          },
-          "width": 2200,
-          "height": 2300,
-          "fill": "#0B0C10",
-          "layout": "none",
-          "children": [
-            {
-              "type": "frame",
-              "id": "a1XaT",
-              "x": 40,
-              "y": 72,
-              "name": "Component Section — Composer Marker",
-              "width": 8,
-              "height": 44,
-              "fill": "#F97316",
-              "cornerRadius": 4
-            },
-            {
-              "type": "text",
-              "id": "Ztz2Z",
-              "x": 64,
-              "y": 64,
-              "name": "Component Section — Composer Label",
-              "fill": "$text-primary",
-              "content": "Composer",
-              "fontFamily": "$font-body",
-              "fontSize": 56,
-              "fontWeight": "600"
-            },
-            {
-              "type": "frame",
-              "id": "TKKOp",
-              "x": 64,
-              "y": 240,
-              "name": "Composer / Default",
-              "theme": {
-                "state": "default"
-              },
-              "reusable": true,
-              "width": 560,
-              "height": 88.5,
-              "fill": "$card-fill",
-              "cornerRadius": 18,
-              "stroke": "$card-stroke",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "CnM59",
-                  "x": 11,
-                  "y": 15,
-                  "name": "Placeholder",
-                  "fill": "$text-tertiary",
-                  "content": "Do anything",
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "id": "DxWas",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions",
-                  "x": 11,
-                  "y": 51.5,
-                  "width": 538,
-                  "height": 26,
-                  "descendants": {
-                    "RPqic/nCmc5/k1S80": {
-                      "y": 0
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Rx8zX",
-              "x": 700,
-              "y": 240,
-              "name": "Harness Selector / Legacy Export Snapshot",
-              "enabled": false,
-              "width": 193.77,
-              "height": 28.5,
-              "fill": "#00000000",
-              "cornerRadius": 8,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "ss30N",
-                  "x": 8,
-                  "y": 7.75,
-                  "name": "Icon",
-                  "width": 13,
-                  "height": 13,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "HJaC7",
-                      "x": -1.5,
-                      "y": -1.5,
-                      "name": "Glyph",
-                      "width": 16,
-                      "height": 16,
-                      "fill": "#00000000",
-                      "layout": "none",
-                      "children": [
-                        {
-                          "type": "path",
-                          "id": "F5kuKO",
-                          "x": 0,
-                          "y": 0,
-                          "name": "path",
-                          "geometry": "M50.23 170.32l50.36-28.26 0.843-2.46-0.843-1.36h-2.46l-8.43-0.518-28.77-0.778-24.95-1.04-24.18-1.3-6.09-1.3-5.71-7.504 0.583-3.76 5.12-3.43 7.32 0.648 16.2 1.1 24.3 1.69 17.63 1.04 26.12 2.72h4.15l0.583-1.69-1.43-1.04-1.1-1.04-25.15-17.05-27.22-18.02-14.26-10.37-7.71-5.25-3.89-4.92-1.69-10.76 7-7.71 9.4 0.649 2.4 0.648 9.53 7.32 20.35 15.75 26.584 19.575 3.89 3.24 1.55-1.1 0.195-0.777-1.75-2.92-14.45-26.12-15.43-26.57-6.87-11.02-1.81-6.61c-0.648-2.72-1.1-4.99-1.1-7.78l7.97-10.82 4.405-1.423 10.63 1.43 4.47 3.89 6.61 15.1 10.69 23.79 16.59 32.34 4.86 9.59 2.59 8.88 0.973 2.72h1.69v-1.56l1.36-18.21 2.53-22.36 2.46-28.78 0.843-8.1 4.02-9.72 7.97-5.25 6.22 2.98 5.12 7.32-0.713 4.73-3.05 19.77-5.96 30.98-3.89 20.74h2.27l2.59-2.59 10.5-13.93 17.63-22.04 7.78-8.75 9.07-9.66 5.83-4.6h11.02l8.1 12.05-3.63 12.44-11.34 14.39-9.4 12.18-13.48 18.15-8.43 14.52 0.778 1.17 2.01-0.194 30.46-6.48 16.46-2.98 19.64-3.37 8.88 4.15 0.971 4.21-3.5 8.62-21 5.18-24.63 4.93-36.68 8.69-0.454 0.32 0.519 0.65 16.53 1.55 7.07 0.389h17.3l32.21 2.4 8.43 5.57 5.05 6.8-0.843 5.18-12.96 6.61-17.5-4.15-40.83-9.72-14-3.5h-1.94v1.17l11.67 11.41 21.39 19.31 26.77 24.89 1.36 6.16-3.43 4.86-3.63-0.518-23.53-17.69-9.07-7.97-20.55-17.3h-1.36v1.81l4.73 6.93 25.02 37.59 1.3 11.54-1.81 3.76-6.48 2.27-7.13-1.3-14.65-20.54-15.1-23.14-12.19-20.74-1.49 0.84-7.19 77.45-3.37 3.95-7.78 2.98-6.48-4.92-3.44-7.97 3.44-15.75 4.15-20.54 3.37-16.33 3.05-20.29 1.81-6.74-0.13-0.454-1.49 0.19-15.29 21-23.27 31.43-18.41 19.7-4.41 1.75-7.65-3.95 0.713-7.06 4.28-6.29 25.47-32.41 15.36-20.09 9.92-11.6-0.065-1.69h-0.583l-67.669 43.947-12.05 1.55-5.18-4.86 0.65-7.97 2.46-2.59 20.35-14-0.64 0.06z",
-                          "viewBox": [
-                            0,
-                            0,
-                            256,
-                            257
-                          ],
-                          "fill": "#D97757",
-                          "width": 16,
-                          "height": 16
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "wh2O3",
-                  "x": 26,
-                  "y": 5,
-                  "name": "Label",
-                  "fill": "#9AA0B4",
-                  "textGrowth": "fixed-width",
-                  "width": 107.77,
-                  "content": "Claude Sonnet 5",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "xjbm6",
-                  "x": 136.77,
-                  "y": 5,
-                  "name": "Variant",
-                  "fill": "#6B7088",
-                  "textGrowth": "fixed-width",
-                  "width": 34,
-                  "content": "High",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "f5aez",
-                  "x": 173.77,
-                  "y": 8.25,
-                  "name": "Chevron",
-                  "width": 12,
-                  "height": 12,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "OeOXa",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M3.34619 4.68945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04785 0.25977 0.05127 0.08887 1.8628 1.9038 1.81494 1.81152 1.9038 1.8628 0.09229 0.04785 0.25977 0.04785 0.16748 0 0.25635-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04102-0.25293-0.09912-0.16748-0.28027-0.2666-0.05811-0.02734-0.09912-0.04102-0.04102-0.01367-0.15381-0.01367-0.11279 0-0.15381 0.01367-0.04101 0.01367-0.11279 0.04102-0.09912 0.05811-1.66455 1.62695l-1.56885 1.56543-2.82666-2.81299q-0.31104-0.29395-0.42041-0.37939-0.08545-0.05469-0.19824-0.05469l-0.02735 0q-0.14014 0-0.18115 0.01367z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#9AA0B4",
-                      "width": 12,
-                      "height": 12
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "g1dQ5",
-              "x": 700,
-              "y": 340,
-              "name": "Harness Selector / Shared",
-              "theme": {
-                "state": "default"
-              },
-              "reusable": true,
-              "fill": "$row-bg",
-              "cornerRadius": 8,
-              "gap": 5,
-              "padding": [
-                5,
-                8
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "id": "y6Ej2",
-                  "type": "ref",
-                  "ref": "UHPei",
-                  "name": "Icon",
-                  "width": 13,
-                  "height": 13
-                },
-                {
-                  "type": "text",
-                  "id": "lszYy",
-                  "name": "Label",
-                  "fill": "$row-text",
-                  "content": "Claude Sonnet 5",
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "f3XgC",
-                  "x": 138.76999999999998,
-                  "y": 5,
-                  "name": "Variant",
-                  "enabled": false,
-                  "fill": "$text-tertiary",
-                  "content": "Medium",
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "I6QQv",
-                  "name": "Chevron",
-                  "width": 12,
-                  "height": 12,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "Z8msP",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M3.34619 4.68945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04785 0.25977 0.05127 0.08887 1.8628 1.9038 1.81494 1.81152 1.9038 1.8628 0.09229 0.04785 0.25977 0.04785 0.16748 0 0.25635-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04102-0.25293-0.09912-0.16748-0.28027-0.2666-0.05811-0.02734-0.09912-0.04102-0.04102-0.01367-0.15381-0.01367-0.11279 0-0.15381 0.01367-0.04101 0.01367-0.11279 0.04102-0.09912 0.05811-1.66455 1.62695l-1.56885 1.56543-2.82666-2.81299q-0.31104-0.29395-0.42041-0.37939-0.08545-0.05469-0.19824-0.05469l-0.02735 0q-0.14014 0-0.18115 0.01367z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "$row-text",
-                      "width": 12,
-                      "height": 12
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "HTpJ5",
-                  "layoutPosition": "absolute",
-                  "x": 0,
-                  "y": -35,
-                  "name": "Tooltip Overlay",
-                  "enabled": "$tooltip-visible",
-                  "width": 175.85,
-                  "height": 35,
-                  "layout": "vertical",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "ADJx7",
-                      "type": "ref",
-                      "ref": "Q5AL4",
-                      "name": "Select Model Tooltip",
-                      "enabled": true,
-                      "width": 142.01,
-                      "height": 35,
-                      "descendants": {
-                        "T0JYmK": {
-                          "width": 142.01,
-                          "height": 31,
-                          "padding": 0,
-                          "layout": "none",
-                          "gap": 0
-                        },
-                        "PAD8i": {
-                          "content": "Select model",
-                          "x": 11,
-                          "y": 8.5
-                        },
-                        "qrW5C": {
-                          "enabled": true,
-                          "x": 92.76,
-                          "y": 7,
-                          "width": 38.25,
-                          "height": 17,
-                          "padding": 0,
-                          "layout": "none"
-                        },
-                        "NwDjX": {
-                          "content": "⌃⇧M",
-                          "x": 4,
-                          "y": 2
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "FLLg5",
-              "x": 64,
-              "y": 420,
-              "name": "Menu / Harness",
-              "reusable": true,
-              "width": 220,
-              "height": 283,
-              "fill": "#16171C",
-              "cornerRadius": 10,
-              "stroke": "#2A2C36",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "layout": "none",
-              "children": [
-                {
-                  "id": "zYjSC",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Codex",
-                  "x": 7,
-                  "y": 7,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "hyYYB",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "",
-                      "viewBox": [
-                        0,
-                        0,
-                        24,
-                        24
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Codex"
-                    }
-                  }
-                },
-                {
-                  "id": "s3hN8v",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Claude",
-                  "x": 7,
-                  "y": 37,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "selected"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "HmVWT",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "",
-                      "viewBox": [
-                        0,
-                        0,
-                        256,
-                        257
-                      ],
-                      "fill": "#D97757",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Claude"
-                    }
-                  }
-                },
-                {
-                  "id": "sJVny",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Cursor",
-                  "x": 7,
-                  "y": 67,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "disabled"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "OUTY9",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "",
-                      "viewBox": [
-                        0,
-                        0,
-                        466.73,
-                        532.09
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Cursor"
-                    }
-                  }
-                },
-                {
-                  "id": "lhF2w",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Antigravity",
-                  "x": 7,
-                  "y": 97,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "b0PxR",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#9AA0B4",
-                      "width": 14,
-                      "height": 14
-                    },
-                    "KYnoO": {
-                      "content": "Antigravity"
-                    }
-                  }
-                },
-                {
-                  "id": "QYW5F",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Grok",
-                  "x": 7,
-                  "y": 127,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "TDg3x",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M395.48 633.83l340.43-252.72c16.69-12.39 40.54-7.56 48.5 11.69 41.85 101.49 23.16 223.46-60.12 307.2-83.27 83.74-199.14 102.11-305.04 60.28l-115.69 53.87c165.93 114.05 367.43 85.85 493.34-40.87 99.88-100.44 130.81-237.34 101.88-360.81l0.262 0.26c-41.932-181.36 10.318-253.86 117.358-402.1 2.53-3.51 5.07-7.03 7.6-10.63l-140.86 141.65v-0.439l-487.75 492.709m-70.16 61.33c-119.1-114.41-98.57-291.47 3.06-393.58 75.15-75.57 198.26-106.41 305.74-61.07l115.43-53.6c-20.8-15.11-47.45-31.37-78.03-42.79-138.23-57.21-303.73-28.73-416.1 84.18-108.1 108.69-142.09 275.82-83.72 418.44 43.6 106.59-27.87 181.99-99.87 258.08-25.52 26.98-51.12 53.96-71.74 82.52l325.14-292.09",
-                      "viewBox": [
-                        0,
-                        0,
-                        1024,
-                        1024
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Grok"
-                    }
-                  }
-                },
-                {
-                  "id": "wXrx3",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Droid",
-                  "x": 7,
-                  "y": 157,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "disabled"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "KL8HE",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M47.75 11.15a0.867 0.87 0 0 1-0.671-0.806 0.84 0.84 0 0 1 0.067-0.362c1.69-4.01 2.43-7.21 1.23-8.55-3.18-3.56-15.95 3.52-20.02 5.92a0.9 0.9 0 0 1-1.27-0.41c-1.71-4-3.51-6.78-5.33-6.9-4.83-0.323-8.73 13.49-9.87 17.99a0.85 0.85 0 0 1-0.459 0.56 0.9 0.9 0 0 1-0.737 0.03c-4.11-1.65-7.4-2.37-8.77-1.2-3.65 3.1 3.61 15.56 6.07 19.53a0.85 0.85 0 0 1-0.11 1.03 0.9 0.9 0 0 1-0.31 0.21c-4.11 1.668-6.966 3.418-7.09 5.198-0.329 4.71 13.83 8.51 18.45 9.62q0.186 0.05 0.337 0.16a0.87 0.87 0 0 1 0.332 0.64 0.84 0.84 0 0 1-0.67 0.36c-1.69 4.01-2.43 7.21-1.23 8.55 3.18 3.56 15.95-3.52 20.02-5.92a0.9 0.9 0 0 1 1.06 0.107 0.9 0.9 0 0 1 0.215 0.3c1.71 4 3.51 6.78 5.33 6.9 4.83 0.322 8.73-13.49 9.87-17.99a0.85 0.85 0 0 1 0.168-0.33 0.88 0.88 0 0 1 0.659-0.324 0.9 0.9 0 0 1 0.371 0.07c4.11 1.65 7.4 2.37 8.77 1.2 3.65-3.1-3.61-15.56-6.07-19.53a0.85 0.85 0 0 1 0.111-1.03 0.9 0.9 0 0 1 0.31-0.21c4.1-1.67 6.95-3.42 7.08-5.2 0.331-4.71-13.83-8.51-18.45-9.62m-5.55-4.52c0.93 1.62-3.86 12.45-7.42 20.02a0.7 0.7 0 0 1-0.28 0.3 0.71 0.71 0 0 1-0.796-0.059 0.7 0.7 0 0 1-0.23-0.341c-1.44-4.92-3.08-10.7-4.84-15.61a0.84 0.84 0 0 1 0.01-0.594 0.87 0.87 0 0 1 0.401-0.446c4.39-2.34 11.91-5.45 13.16-3.27m-21.05 1.34c1.83 0.507 6.29 11.46 9.26 19.27a0.67 0.67 0 0 1-0.2 0.75 0.71 0.71 0 0 1-0.794 0.08c-4.59-2.48-9.94-5.44-14.74-7.7a0.87 0.87 0 0 1-0.422-0.427 0.84 0.84 0 0 1-0.04-0.591c1.41-4.68 4.47-12.06 6.93-11.38m-13.302 15.465c1.66-0.906 12.76 3.76 20.52 7.24 0.13 0.06 0.239 0.15 0.311 0.27a0.67 0.67 0 0 1-0.6 0.78 0.7 0.7 0 0 1-0.35 0.23c-5.04 1.4-10.98 3.01-16.01 4.72a0.9 0.9 0 0 1-0.607-0.01 0.88 0.88 0 0 1-0.456-0.391c-2.4-4.28-5.59-11.61-3.35-12.83m1.922 20.521c0.519-1.79 11.75-6.14 19.76-9.04a0.72 0.72 0 0 1 0.773 0.2 0.67 0.67 0 0 1 0.81 0.77c-2.55 4.47-5.58 9.69-7.9 14.38a0.87 0.87 0 0 1-0.437 0.41 0.9 0.9 0 0 1-0.607 0.04c-4.8-1.37-12.37-4.36-11.67-6.76m15.86 13.57c-0.93-1.62 3.86-12.45 7.42-20.01a0.7 0.7 0 0 1 0.28-0.303 0.71 0.715 0 0 1 0.796 0.06 0.7 0.7 0 0 1 0.23 0.34c1.44 4.92 3.08 10.71 4.84 15.61a0.84 0.84 0 0 1-0.1 0.59 0.87 0.87 0 0 1-0.402 0.44c-4.39 2.33-11.91 5.45-13.15 3.27z m21.05-1.34c-1.84-0.506-6.3-11.46-9.27-19.27a0.67 0.67 0 0 1 0.2-0.755 0.71 0.71 0 0 1 0.795-0.078c4.59 2.48 9.94 5.45 14.74 7.7 0.189 0.09 0.339 0.24 0.42 0.426a0.84 0.84 0 0 1 0.39 0.59c-1.41 4.69-4.47 12.06-6.93 11.38m13.91-15.46c-1.67 0.907-12.76-3.76-20.52-7.24a0.7 0.7 0 0 1-0.311-0.273 0.67 0.67 0 0 1 0.06-0.777 0.7 0.7 0 0 1 0.35-0.225c5.05-1.4 10.97-3 16.01-4.72a0.9 0.9 0 0 1 0.609 0.01 0.88 0.88 0 0 1 0.457 0.39c2.39 4.28 5.58 11.61 3.35 12.83m-2.459-20.518c-0.521 1.79-11.75 6.14-19.76 9.04a0.72 0.72 0 0 1-0.774-0.195 0.67 0.67 0 0 1-0.08-0.776c2.55-4.47 5.58-9.69 7.9-14.38a0.87 0.87 0 0 1 0.437-0.412 0.9 0.9 0 0 1 0.607-0.038c4.8 1.38 12.37 4.36 11.67 6.76",
-                      "viewBox": [
-                        0,
-                        0,
-                        67,
-                        65
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Droid"
-                    }
-                  }
-                },
-                {
-                  "id": "ZgeyQ",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Kilo",
-                  "x": 7,
-                  "y": 187,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "disabled"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "q70a5b",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M0 0v100h100v-100h-100z m92.59 92.59h-85.18v-85.18h85.19v85.19z m-31.48-20.68h9.26v7.41h-11.64l-5.03-5.03v-11.64h7.41v9.26z m16.67 0h-7.41v-9.26h-9.26v-7.41h11.64l5.03 5.03v11.64z m-31.48-10.8h-7.41v-7.41h7.41v7.41z m-24.08-7.41h7.41v16.67h16.67v7.41h-19.05l-5.03-5.03v-19.05z m55.56-14.81v7.41h-24.08v-7.41h8.28v-9.26h-8.28v-7.41h10.66l5.03 5.03v11.64h8.39z m-48.15-8.33h9.26l7.41 7.41v8.33h-7.41v-8.34h-9.26v8.33h-7.41v-24.07h7.41v8.33z m16.67 0h-7.41v-8.33h7.41v8.33z",
-                      "viewBox": [
-                        0,
-                        0,
-                        100,
-                        100
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Kilo"
-                    }
-                  }
-                },
-                {
-                  "id": "AsYsy",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "OpenCode",
-                  "x": 7,
-                  "y": 217,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "ZtW5E",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M24 8h-16v24h16v-24z m8 32h-32v-40h32v40z",
-                      "viewBox": [
-                        0,
-                        0,
-                        32,
-                        40
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "OpenCode"
-                    }
-                  }
-                },
-                {
-                  "id": "j5jcV",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Pi",
-                  "x": 7,
-                  "y": 247,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "Lu2LA": {
-                      "type": "path",
-                      "id": "DLfr6",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M165.29 165.29h352.07v234.71h-117.36v117.36h-117.35v117.36h-117.36v-469.43z m117.36 117.36v117.35h117.35v-117.35h-117.35z",
-                      "viewBox": [
-                        0,
-                        0,
-                        800,
-                        800
-                      ],
-                      "fill": "#FFFFFF",
-                      "width": 16,
-                      "height": 16
-                    },
-                    "KYnoO": {
-                      "content": "Pi"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "x8Fk3j",
-              "x": 340,
-              "y": 420,
-              "name": "Menu / Model",
-              "reusable": true,
-              "width": 200,
-              "height": 133,
-              "fill": "#16171C",
-              "cornerRadius": 10,
-              "stroke": "#2A2C36",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "layout": "none",
-              "children": [
-                {
-                  "id": "e2FYbi",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Claude Haiku 4.5",
-                  "x": 7,
-                  "y": 7,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Claude Haiku 4.5"
-                    }
-                  }
-                },
-                {
-                  "id": "V5YIRO",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Claude Opus 5",
-                  "x": 7,
-                  "y": 37,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Claude Opus 5"
-                    }
-                  }
-                },
-                {
-                  "id": "SVDXt",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Claude Fable 5",
-                  "x": 7,
-                  "y": 67,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Claude Fable 5"
-                    }
-                  }
-                },
-                {
-                  "id": "gupf7",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Claude Sonnet 5",
-                  "x": 7,
-                  "y": 97,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Claude Sonnet 5"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "e5zUfJ",
-              "x": 580,
-              "y": 420,
-              "name": "Popover / Quick Settings",
-              "reusable": true,
-              "width": 200,
-              "height": 133,
-              "fill": "#16171C",
-              "cornerRadius": 10,
-              "stroke": "#2A2C36",
-              "strokeWidth": 1,
-              "strokeAlignment": "inner",
-              "layout": "none",
-              "children": [
-                {
-                  "id": "y8N7S6",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Model",
-                  "x": 7,
-                  "y": 7,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Model"
-                    }
-                  }
-                },
-                {
-                  "id": "j9c4u",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Effort",
-                  "x": 7,
-                  "y": 37,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Effort"
-                    }
-                  }
-                },
-                {
-                  "id": "RQDpn",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Speed",
-                  "x": 7,
-                  "y": 67,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Speed"
-                    }
-                  }
-                },
-                {
-                  "id": "JvGL9",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Advanced",
-                  "x": 7,
-                  "y": 97,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Advanced"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "JwTiI",
-              "x": 64,
-              "y": 760,
-              "name": "Composer Actions",
-              "theme": {
-                "state": "default"
-              },
-              "reusable": true,
-              "width": 538,
-              "height": 26,
-              "fill": "#00000000",
-              "layout": "none",
-              "children": [
-                {
-                  "id": "C2Yo8k",
-                  "type": "ref",
-                  "ref": "zwljJ",
-                  "name": "Attach Files",
-                  "x": 0,
-                  "y": 0,
-                  "width": 26,
-                  "height": 26,
-                  "justifyContent": "start",
-                  "alignItems": "center",
-                  "descendants": {
-                    "xzXP5/PAD8i": {
-                      "content": "Attach files"
-                    },
-                    "xzXP5/qrW5C": {
-                      "enabled": false
-                    },
-                    "IHe8Q": {
-                      "icon": "plus",
-                      "x": 0,
-                      "y": 5,
-                      "width": 16,
-                      "height": 16
-                    }
-                  }
-                },
-                {
-                  "id": "RPqic",
-                  "type": "ref",
-                  "ref": "iP6oE",
-                  "name": "Full Access",
-                  "x": 20,
-                  "y": 0,
-                  "width": 108,
-                  "height": 26
-                },
-                {
-                  "type": "frame",
-                  "id": "V20VEE",
-                  "x": 132,
-                  "y": 12.5,
-                  "name": "Flexible Spacer",
-                  "width": 321,
-                  "height": 1,
-                  "fill": "#00000000",
-                  "layout": "none"
-                },
-                {
-                  "id": "nnunM",
-                  "type": "ref",
-                  "ref": "zwljJ",
-                  "name": "Change Mode",
-                  "x": 456.5,
-                  "y": 0,
-                  "width": 26,
-                  "height": 26,
-                  "descendants": {
-                    "xzXP5/PAD8i": {
-                      "content": "Change mode"
-                    },
-                    "xzXP5/qrW5C": {
-                      "enabled": false
-                    },
-                    "IHe8Q": {
-                      "icon": "circle",
-                      "x": 6.5,
-                      "y": 6.5,
-                      "width": 13,
-                      "height": 13,
-                      "fill": "$text-tertiary"
-                    }
-                  }
-                },
-                {
-                  "id": "eQt4v",
-                  "type": "ref",
-                  "ref": "g1dQ5",
-                  "name": "Harness Pill",
-                  "theme": {
-                    "state": "default"
-                  },
-                  "enabled": false,
-                  "descendants": {
-                    "f3XgC": {
-                      "enabled": true,
-                      "content": "High"
-                    }
-                  }
-                },
-                {
-                  "id": "E7z8ym",
-                  "type": "ref",
-                  "ref": "zwljJ",
-                  "name": "Voice Input",
-                  "x": 481,
-                  "y": 0,
-                  "width": 26,
-                  "height": 26,
-                  "descendants": {
-                    "xzXP5/PAD8i": {
-                      "content": "Voice input"
-                    },
-                    "xzXP5/qrW5C": {
-                      "enabled": false
-                    },
-                    "IHe8Q": {
-                      "icon": "mic",
-                      "x": 5,
-                      "y": 5,
-                      "width": 16,
-                      "height": 16
-                    }
-                  }
-                },
-                {
-                  "id": "PxCMd",
-                  "type": "ref",
-                  "ref": "zwljJ",
-                  "name": "Send",
-                  "x": 512,
-                  "y": 0,
-                  "width": 26,
-                  "height": 26,
-                  "fill": "$text-primary",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "descendants": {
-                    "xzXP5/PAD8i": {
-                      "content": "Send"
-                    },
-                    "xzXP5/qrW5C": {
-                      "enabled": false
-                    },
-                    "IHe8Q": {
-                      "icon": "arrow-up",
-                      "x": 6,
-                      "y": 6,
-                      "width": 14,
-                      "height": 14,
-                      "fill": "$surface-sidebar"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "k4x6m",
-              "x": 650,
-              "y": 766,
-              "name": "Access Pill / Content",
-              "reusable": true,
-              "width": 96,
-              "height": 15,
-              "fill": "#00000000",
-              "cornerRadius": 999,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "Bo845",
-                  "x": 0.66,
-                  "y": 1,
-                  "name": "Icon",
-                  "width": 13,
-                  "height": 13,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "z9iYLc",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M6.84619 0.60156q-0.34863 0.02734-0.68701 0.30762-0.51611 0.42041-1.00147 0.70068-0.48193 0.28027-1.01513 0.4751-0.30762 0.11279-0.58789 0.1709-0.28027 0.05469-0.66992 0.08203-0.23926 0.01367-0.36573 0.07178-0.19482 0.06836-0.37939 0.22217-0.18115 0.15381-0.26319 0.34863l-0.01367 0.03076q-0.07178 0.12646-0.08545 0.22217-0.01367 0.15381-0.02734 0.60156l0 1.78076q0 2.25244 0.01367 2.46094 0.14014 1.6543 1.10742 2.88477 0.14014 0.16748 0.43409 0.46142 0.29395 0.29394 0.48877 0.44775 0.92285 0.7417 2.2832 1.27491 0.46143 0.18115 0.65625 0.23926 0.23926 0.05469 0.43408 0.01367 0.16748-0.02734 0.5332-0.15381 1.35693-0.51953 2.27979-1.20313 0.37939-0.2666 0.71435-0.60498 1.37402-1.3706 1.54151-3.37353 0.01367-0.23584 0.01367-2.46094 0-2.22852-0.02734-2.35498-0.07178-0.32129-0.31787-0.56396-0.24268-0.24609-0.5503-0.31788-0.09912-0.02734-0.37939-0.04101-0.48877-0.02734-0.96387-0.18115-0.81348-0.2666-1.55518-0.77246-0.2666-0.18115-0.64257-0.48877-0.42041-0.33496-0.96729-0.28028z m0.43408 1.34326q0.64258 0.51953 1.32959 0.86817 1.2168 0.61865 2.25244 0.68701l0.21192 0-0.01367 4.31348q0 0.33496-0.02735 0.50244-0.22559 1.34326-1.1416 2.27637-0.91602 0.92969-2.66601 1.57226l-0.21192 0.08545-0.18115-0.05469q-2.32422-0.85449-3.2334-2.22851-0.47852-0.71436-0.63232-1.63721-0.02734-0.18115-0.02735-0.50244l-0.01367-4.32715 0.19483 0q0.86816-0.05469 1.84912-0.48193 0.98096-0.42725 1.83545-1.12793 0.16748-0.14014 0.19482-0.14014 0.02734 0 0.28027 0.19482z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#F97316",
-                      "width": 13,
-                      "height": 13
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "k1S80",
-                  "x": 17.66,
-                  "y": 0.5,
-                  "name": "Text",
-                  "fill": "#F97316",
-                  "content": "Full access",
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "IGbl8",
-                  "x": 84.34,
-                  "y": 2,
-                  "name": "Chevron",
-                  "width": 11,
-                  "height": 11,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "n43gi",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M3.34619 4.68945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04785 0.25977 0.05127 0.08887 1.8628 1.9038 1.81494 1.81152 1.9038 1.8628 0.09229 0.04785 0.25977 0.04785 0.16748 0 0.25635-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04102-0.25293-0.09912-0.16748-0.28027-0.2666-0.05811-0.02734-0.09912-0.04102-0.04102-0.01367-0.15381-0.01367-0.11279 0-0.15381 0.01367-0.04101 0.01367-0.11279 0.04102-0.09912 0.05811-1.66455 1.62695l-1.56885 1.56543-2.82666-2.81299q-0.31104-0.29395-0.42041-0.37939-0.08545-0.05469-0.19824-0.05469l-0.02735 0q-0.14014 0-0.18115 0.01367z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#F97316",
-                      "width": 11,
-                      "height": 11
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "iP6oE",
-              "x": 800,
-              "y": 760,
-              "name": "Access Pill / Trigger",
-              "theme": {
-                "state": "default"
-              },
-              "reusable": true,
-              "metadata": {
-                "type": "recovery-confidence",
-                "confidence": "exact",
-                "source": "Synara main successful payloads 248689, 248697, 249494",
-                "note": "Wrapper/state/tooltip relationship exact; nested visual content export-derived partial."
-              },
-              "width": 108,
-              "height": 26,
-              "fill": "$row-bg",
-              "cornerRadius": 999,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "SeRYu",
-                  "layoutPosition": "absolute",
-                  "x": 0,
-                  "y": -35,
-                  "name": "Tooltip Overlay",
-                  "width": 108,
-                  "height": 35,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "id": "CnjHY",
-                      "type": "ref",
-                      "ref": "Q5AL4",
-                      "name": "Permissions Tooltip",
-                      "enabled": "$tooltip-visible",
-                      "width": 142.01,
-                      "height": 35,
-                      "x": -17.005,
-                      "y": 0,
-                      "descendants": {
-                        "PAD8i": {
-                          "content": "Permissions"
-                        },
-                        "qrW5C": {
-                          "enabled": false
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "nCmc5",
-                  "type": "ref",
-                  "ref": "k4x6m",
-                  "name": "Full Access Content",
-                  "x": 6,
-                  "y": 5.5,
-                  "width": 96,
-                  "height": 15
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "eFqUm",
-              "x": 960,
-              "y": 760,
-              "name": "Button / Send",
-              "reusable": true,
-              "width": 26,
-              "height": 26,
-              "fill": "#E8EAF2",
-              "cornerRadius": 13,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "Q7mxTO",
-                  "x": 6,
-                  "y": 6,
-                  "name": "Arrow",
-                  "width": 14,
-                  "height": 14,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "Yl3wI",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M6.84619 2.35156q-0.08545 0.01367-0.15723 0.06494-0.06836 0.04785-2.16699 2.14649l-1.66455 1.69531q-0.36572 0.3623-0.46484 0.50244-0.05469 0.08545-0.05469 0.19824l0 0.04102q0 0.23926 0.18115 0.42041 0.11279 0.11279 0.28028 0.14697 0.16748 0.03418 0.32129-0.02051 0.08545-0.02734 0.32128-0.25976 0.23926-0.23242 1.37403-1.36377 1.58252-1.58252 1.59619-1.58252 0.01367 0 0.01367 3.42822l0 3.01123q0 0.44775 0.03418 0.53321 0.0376 0.08203 0.11963 0.16748 0.08545 0.08203 0.18799 0.1333 0.10596 0.04785 0.23242 0.04785 0.12646 0 0.229-0.04785 0.10596-0.05127 0.18799-0.1333 0.08545-0.08545 0.11963-0.16748 0.0376-0.08545 0.0376-0.53321l0-3.01123q0-3.42822 0.01367-3.42822 0.01367 0 1.59619 1.58252 1.13477 1.13135 1.37061 1.36377 0.23926 0.23242 0.32471 0.25976 0.15381 0.05469 0.32128 0.02051 0.16748-0.03418 0.28028-0.14697 0.18115-0.18115 0.18115-0.42041l0-0.04102q0-0.11279-0.05469-0.19824-0.09912-0.14014-0.46484-0.51611l-1.67822-1.68164q-2.10205-2.1123-2.17041-2.14649-0.06836-0.0376-0.16065-0.06494-0.09229-0.02734-0.14014-0.02734-0.04785 0-0.14697 0.02734z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#0B0C10",
-                      "width": 14,
-                      "height": 14
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "z80pA",
-              "x": 64,
-              "y": 1000,
-              "name": "Composer Stories",
-              "width": 2000,
-              "height": 420,
-              "fill": "#0F1115",
-              "stroke": "#26272E",
-              "strokeWidth": 1,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "j1vAS",
-                  "x": 16,
-                  "y": 16,
-                  "name": "Composer Stories Label",
-                  "fill": "$text-soft",
-                  "content": "Composer, selector, and access states",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "500"
-                },
-                {
-                  "id": "a0vnDW",
-                  "type": "ref",
-                  "ref": "TKKOp",
-                  "name": "Composer — default",
-                  "theme": {
-                    "state": "default"
-                  },
-                  "x": 16,
-                  "y": 64
-                },
-                {
-                  "id": "w3ppg4",
-                  "type": "ref",
-                  "ref": "TKKOp",
-                  "name": "Composer — Full Access hover",
-                  "theme": {
-                    "state": "default"
-                  },
-                  "x": 620,
-                  "y": 64,
-                  "descendants": {
-                    "DxWas": {
-                      "theme": {
-                        "state": "default"
-                      }
-                    },
-                    "DxWas/C2Yo8k": {
-                      "theme": {
-                        "state": "default"
-                      }
-                    },
-                    "DxWas/RPqic": {
-                      "theme": {
-                        "state": "hover"
-                      }
-                    },
-                    "DxWas/nnunM": {
-                      "theme": {
-                        "state": "default"
-                      }
-                    },
-                    "DxWas/E7z8ym": {
-                      "theme": {
-                        "state": "default"
-                      }
-                    },
-                    "DxWas/PxCMd": {
-                      "theme": {
-                        "state": "default"
-                      }
-                    }
-                  }
-                },
-                {
-                  "id": "JMY4k",
-                  "type": "ref",
-                  "ref": "g1dQ5",
-                  "name": "Harness selector — default",
-                  "theme": {
-                    "state": "default"
-                  },
-                  "x": 16,
-                  "y": 200,
-                  "width": 193.77,
-                  "height": 28.5,
-                  "descendants": {
-                    "f3XgC": {
-                      "enabled": true,
-                      "content": "High"
-                    }
-                  }
-                },
-                {
-                  "id": "uOZS0",
-                  "type": "ref",
-                  "ref": "g1dQ5",
-                  "name": "Harness selector — hover",
-                  "theme": {
-                    "state": "hover"
-                  },
-                  "x": 240,
-                  "y": 200,
-                  "width": 175.85,
-                  "height": 24,
-                  "descendants": {
-                    "f3XgC": {
-                      "enabled": true,
-                      "content": "High"
-                    }
-                  }
-                },
-                {
-                  "id": "zzGfD",
-                  "type": "ref",
-                  "ref": "iP6oE",
-                  "name": "Access Pill — default",
-                  "theme": {
-                    "state": "default"
-                  },
-                  "x": 16,
-                  "y": 270,
-                  "width": 108,
-                  "height": 26
-                },
-                {
-                  "id": "g0avVS",
-                  "type": "ref",
-                  "ref": "iP6oE",
-                  "name": "Access Pill — hover",
-                  "theme": {
-                    "state": "hover"
-                  },
-                  "x": 200,
-                  "y": 270,
-                  "width": 108,
-                  "height": 26
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "xikBq",
-              "x": 64,
-              "y": 1500,
-              "name": "Composer Action Stories",
-              "width": 2000,
-              "height": 320,
-              "fill": "#0F1115",
-              "stroke": "#26272E",
-              "strokeWidth": 1,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "P5cVC",
-                  "x": 16,
-                  "y": 16,
-                  "name": "Composer Action Stories Label",
-                  "fill": "$text-soft",
-                  "content": "Composer action states — default and individual hover",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "500"
-                },
-                {
-                  "id": "KVsHc",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions — default",
-                  "x": 16,
-                  "y": 80,
-                  "width": 538,
-                  "height": 26,
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                {
-                  "id": "c1K3BF",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions — attach hover",
-                  "x": 620,
-                  "y": 80,
-                  "width": 538,
-                  "height": 26,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "C2Yo8k": {
-                      "theme": {
-                        "state": "hover"
-                      }
-                    }
-                  }
-                },
-                {
-                  "id": "s8ym5",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions — access hover",
-                  "x": 1224,
-                  "y": 80,
-                  "width": 538,
-                  "height": 26,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "RPqic": {
-                      "theme": {
-                        "state": "hover"
-                      }
-                    }
-                  }
-                },
-                {
-                  "id": "p53Qu",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions — mode hover",
-                  "x": 16,
-                  "y": 210,
-                  "width": 538,
-                  "height": 26,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "nnunM": {
-                      "theme": {
-                        "state": "hover"
-                      }
-                    }
-                  }
-                },
-                {
-                  "id": "IsxuV",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions — voice hover",
-                  "x": 620,
-                  "y": 210,
-                  "width": 538,
-                  "height": 26,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "E7z8ym": {
-                      "theme": {
-                        "state": "hover"
-                      }
-                    }
-                  }
-                },
-                {
-                  "id": "bU8nR",
-                  "type": "ref",
-                  "ref": "JwTiI",
-                  "name": "Composer Actions — send hover",
-                  "x": 1224,
-                  "y": 210,
-                  "width": 538,
-                  "height": 26,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "PxCMd": {
-                      "theme": {
-                        "state": "hover"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "pbUT3",
-              "x": 1100,
-              "y": 420,
-              "name": "Composer Menu Row / With Icon",
-              "theme": {
-                "state": "default"
-              },
-              "reusable": true,
-              "width": 206,
-              "height": 29,
-              "fill": "$row-bg",
-              "cornerRadius": 6,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "Lu2LA",
-                  "x": 10,
-                  "y": 7.5,
-                  "name": "Leading Icon",
-                  "width": 14,
-                  "height": 14,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "i1Pbc",
-                      "x": -1,
-                      "y": -1,
-                      "name": "Glyph",
-                      "width": 16,
-                      "height": 16,
-                      "fill": "#00000000",
-                      "layout": "none",
-                      "children": [
-                        {
-                          "type": "path",
-                          "id": "Z5Xkv",
-                          "x": 0,
-                          "y": 0,
-                          "name": "path",
-                          "geometry": "M22.2819 9.8211a5.9847 5.9847 0 0 0-0.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9 6.0651 6.0651 0 0 0-10.2757 2.1715 5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 0.7427 7.0966 5.98 5.98 0 0 0 0.511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001 5.9847 5.9847 0 0 0 4.5086 2.0108 6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-0.7475-7.0729z m-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l0.1419-0.0804 4.7783-2.7582a0.7948 0.7948 0 0 0 0.3927-0.6813v-6.7369l2.02 1.1686a0.071 0.071 0 0 1 0.038 0.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944z m-9.6607-4.1254a4.4708 4.4708 0 0 1-0.5346-3.0137l0.142 0.0852 4.783 2.7582a0.7712 0.7712 0 0 0 0.7806 0l5.8428-3.3685v2.3324a0.0804 0.0804 0 0 1-0.0332 0.0615l-4.8398 2.7913a4.4992 4.4992 0 0 1-6.1408-1.6464z m-1.2584-10.4082a4.485 4.485 0 0 1 2.3655-1.9728v5.6772a0.7664 0.7664 0 0 0 0.3879 0.6765l5.8144 3.3543-2.0201 1.1685a0.0757 0.0757 0 0 1-0.071 0l-4.8303-2.7865a4.504 4.504 0 0 1-1.6464-6.1408z m16.5963 3.8558l-5.8333-3.3874 2.0154-1.164a0.0757 0.0757 0 0 1 0.071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-0.6765 8.1042v-5.6772a0.79 0.79 0 0 0-0.407-0.667z m2.0107-3.0231l-0.142-0.0852-4.7735-2.7818a0.7759 0.7759 0 0 0-0.7854 0l-5.8379 3.3684v-2.3323a0.0662 0.0662 0 0 1 0.0284-0.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66z m-12.6413 4.1347l-2.02-1.1638a0.0804 0.0804 0 0 1-0.038-0.0567v-5.5683a4.4992 4.4992 0 0 1 7.3757-3.4537l-0.142 0.0805-4.7782 2.758a0.7948 0.7948 0 0 0-0.3927 0.6813z m1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997z",
-                          "viewBox": [
-                            0,
-                            0,
-                            24,
-                            24
-                          ],
-                          "fill": "#FFFFFF",
-                          "width": 16,
-                          "height": 16
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "KYnoO",
-                  "x": 32,
-                  "y": 7,
-                  "name": "Label",
-                  "fill": "$row-text",
-                  "textGrowth": "fixed-width",
-                  "width": 144,
-                  "content": "Codex",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "wmlJJ",
-                  "x": 182,
-                  "y": 7.5,
-                  "name": "Chevron",
-                  "width": 14,
-                  "height": 14,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "ocstf",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M5.09619 2.93945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04102 0.25293 0.04443 0.08203 1.62353 1.66455l1.58252 1.58252-1.58252 1.58252q-1.5791 1.58252-1.62353 1.66797-0.04102 0.08203-0.04102 0.23584 0 0.15381 0.03418 0.23926 0.0376 0.08203 0.1333 0.18115 0.09912 0.0957 0.18115 0.1333 0.08545 0.03418 0.23926 0.03418 0.15381 0 0.24268-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04443-0.24951-0.04102-0.08545-1.85938-1.90723l-1.44238-1.42871q-0.33496-0.33496-0.46143-0.41699-0.09912-0.07178-0.19824-0.07178l-0.04102 0q-0.14014 0-0.18115 0.01367z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#6B7088",
-                      "width": 14,
-                      "height": 14
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "nBV5e",
-              "x": 1400,
-              "y": 420,
-              "name": "Composer Menu Row / Text",
-              "theme": {
-                "state": "default"
-              },
-              "reusable": true,
-              "width": 186,
-              "height": 29,
-              "fill": "$row-bg",
-              "cornerRadius": 6,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "JywZr",
-                  "x": 10,
-                  "y": 7,
-                  "name": "Label",
-                  "fill": "$row-text",
-                  "textGrowth": "fixed-width",
-                  "width": 146,
-                  "content": "Claude Haiku 4.5",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "a3PtT8",
-                  "x": 162,
-                  "y": 7.5,
-                  "name": "Chevron",
-                  "width": 14,
-                  "height": 14,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "R5q2U",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M5.09619 2.93945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04102 0.25293 0.04443 0.08203 1.62353 1.66455l1.58252 1.58252-1.58252 1.58252q-1.5791 1.58252-1.62353 1.66797-0.04102 0.08203-0.04102 0.23584 0 0.15381 0.03418 0.23926 0.0376 0.08203 0.1333 0.18115 0.09912 0.0957 0.18115 0.1333 0.08545 0.03418 0.23926 0.03418 0.15381 0 0.24268-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04443-0.24951-0.04102-0.08545-1.85938-1.90723l-1.44238-1.42871q-0.33496-0.33496-0.46143-0.41699-0.09912-0.07178-0.19824-0.07178l-0.04102 0q-0.14014 0-0.18115 0.01367z",
-                      "viewBox": [
-                        0,
-                        0,
-                        13.99993896484375,
-                        14
-                      ],
-                      "fill": "#6B7088",
-                      "width": 14,
-                      "height": 14
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "LJlnW",
-              "x": 64,
-              "y": 1900,
-              "name": "Composer Menu Row Stories",
-              "width": 2000,
-              "height": 360,
-              "fill": "#0F1115",
-              "stroke": "#26272E",
-              "strokeWidth": 1,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "Q46Cu",
-                  "x": 16,
-                  "y": 16,
-                  "name": "Composer Menu Row Stories Label",
-                  "fill": "$text-soft",
-                  "content": "Composer menu row states — shared across harness, model, and quick settings",
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "500"
-                },
-                {
-                  "id": "Sn7rS",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Menu Row With Icon — default",
-                  "x": 16,
-                  "y": 90,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "KYnoO": {
-                      "content": "Default"
-                    }
-                  }
-                },
-                {
-                  "id": "ytqsn",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Menu Row With Icon — hover",
-                  "x": 266,
-                  "y": 90,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "hover"
-                  },
-                  "descendants": {
-                    "KYnoO": {
-                      "content": "Hover"
-                    }
-                  }
-                },
-                {
-                  "id": "mt9bN",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Menu Row With Icon — selected",
-                  "x": 516,
-                  "y": 90,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "selected"
-                  },
-                  "descendants": {
-                    "KYnoO": {
-                      "content": "Selected"
-                    }
-                  }
-                },
-                {
-                  "id": "e5eWMY",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Menu Row With Icon — disabled",
-                  "x": 766,
-                  "y": 90,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "disabled"
-                  },
-                  "descendants": {
-                    "KYnoO": {
-                      "content": "Disabled"
-                    }
-                  }
-                },
-                {
-                  "id": "dK6IR",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Menu Row Text — default",
-                  "x": 16,
-                  "y": 220,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "default"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Default"
-                    }
-                  }
-                },
-                {
-                  "id": "YGtVh",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Menu Row Text — hover",
-                  "x": 246,
-                  "y": 220,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "hover"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Hover"
-                    }
-                  }
-                },
-                {
-                  "id": "WprSY",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Menu Row Text — selected",
-                  "x": 476,
-                  "y": 220,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "selected"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Selected"
-                    }
-                  }
-                },
-                {
-                  "id": "loPTw",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Menu Row Text — disabled",
-                  "x": 706,
-                  "y": 220,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "disabled"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Disabled"
-                    }
-                  }
-                },
-                {
-                  "id": "w5agNy",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Menu Row With Icon — active",
-                  "x": 1016,
-                  "y": 90,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "active"
-                  },
-                  "descendants": {
-                    "KYnoO": {
-                      "content": "Active"
-                    }
-                  }
-                },
-                {
-                  "id": "zKkpL",
-                  "type": "ref",
-                  "ref": "pbUT3",
-                  "name": "Menu Row With Icon — open",
-                  "x": 1266,
-                  "y": 90,
-                  "width": 206,
-                  "height": 29,
-                  "theme": {
-                    "state": "open"
-                  },
-                  "descendants": {
-                    "KYnoO": {
-                      "content": "Open"
-                    }
-                  }
-                },
-                {
-                  "id": "O41p3u",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Menu Row Text — active",
-                  "x": 936,
-                  "y": 220,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "active"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Active"
-                    }
-                  }
-                },
-                {
-                  "id": "wkBvc",
-                  "type": "ref",
-                  "ref": "nBV5e",
-                  "name": "Menu Row Text — open",
-                  "x": 1166,
-                  "y": 220,
-                  "width": 186,
-                  "height": 29,
-                  "theme": {
-                    "state": "open"
-                  },
-                  "descendants": {
-                    "JywZr": {
-                      "content": "Open"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
     {
       "type": "frame",
       "id": "DH1W8",
-      "x": 7500,
+      "x": 10000,
       "y": 400,
       "name": "Right Panel",
       "metadata": {
@@ -13450,7 +11545,7 @@
     {
       "type": "frame",
       "id": "q9bzl",
-      "x": 10000,
+      "x": 12500,
       "y": 400,
       "name": "Onboarding",
       "metadata": {
@@ -17399,7 +15494,7 @@
     {
       "type": "frame",
       "id": "L8Pc7b",
-      "x": 12500,
+      "x": 15000,
       "y": 400,
       "name": "Settings",
       "metadata": {
@@ -23680,7 +21775,7 @@
     {
       "type": "frame",
       "id": "o1aLe",
-      "x": 15000,
+      "x": 17500,
       "y": 400,
       "name": "Apps",
       "metadata": {
@@ -25169,6 +23264,589 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "hqS2K",
+          "x": 64,
+          "y": 3040,
+          "name": "Icon Tile / App",
+          "reusable": true,
+          "width": 44,
+          "height": 44,
+          "fill": "#4A90E2",
+          "cornerRadius": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "va2Qv",
+              "name": "TileIcon",
+              "width": 20,
+              "height": 20,
+              "icon": "package",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gqhMw",
+          "x": 160,
+          "y": 3056,
+          "name": "Badge / Rating",
+          "reusable": true,
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "iTOOI",
+              "name": "Star",
+              "width": 11,
+              "height": 11,
+              "icon": "star",
+              "library": "lucide",
+              "fill": "#F5B942"
+            },
+            {
+              "type": "text",
+              "id": "PAyFU",
+              "name": "Value",
+              "fill": "$text-tertiary",
+              "content": "4.8",
+              "fontFamily": "$font-body",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GYrNw",
+          "x": 260,
+          "y": 3048,
+          "name": "Button / Install",
+          "reusable": true,
+          "height": 28,
+          "fill": "$accent-blue",
+          "cornerRadius": 999,
+          "padding": [
+            0,
+            14
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pEb2d",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Install",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tNSs3",
+          "x": 380,
+          "y": 3048,
+          "name": "Pill / Category",
+          "reusable": true,
+          "height": 28,
+          "fill": "#00000000",
+          "cornerRadius": 8,
+          "stroke": "$card-stroke",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "h9NLJH",
+              "name": "Label",
+              "fill": "$text-secondary",
+              "content": "Category",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fgUwH",
+          "x": 820,
+          "y": 3200,
+          "name": "Card / App Store",
+          "reusable": true,
+          "width": 220,
+          "fill": "$card-fill",
+          "cornerRadius": 10,
+          "stroke": "$card-stroke",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 16,
+          "children": [
+            {
+              "id": "EQVyx",
+              "type": "ref",
+              "ref": "hqS2K",
+              "name": "Icon",
+              "descendants": {
+                "va2Qv": {
+                  "icon": "package"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "UA1r0",
+              "name": "Titles",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dHWtS",
+                  "name": "Name Row",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TM1IX",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "App",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "id": "nabQX",
+                      "type": "ref",
+                      "ref": "gqhMw",
+                      "name": "Rating"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "sUfTq",
+                  "name": "Description",
+                  "fill": "$text-tertiary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Description of what this app does for you.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "id": "uknPj",
+              "type": "ref",
+              "ref": "GYrNw",
+              "name": "Button"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tmIN8",
+          "x": 820,
+          "y": 3600,
+          "name": "Modal / App Detail",
+          "reusable": true,
+          "width": 560,
+          "fill": "#15171C",
+          "stroke": "#26272E",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 28,
+          "children": [
+            {
+              "id": "K2ejY9",
+              "type": "ref",
+              "ref": "HfU75",
+              "name": "Back"
+            },
+            {
+              "type": "frame",
+              "id": "zF51b",
+              "name": "Head",
+              "width": "fill_container",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "IbyqL",
+                  "type": "ref",
+                  "ref": "hqS2K",
+                  "name": "Icon",
+                  "width": 72,
+                  "height": 72,
+                  "cornerRadius": 18,
+                  "fill": "#A259FF",
+                  "descendants": {
+                    "va2Qv": {
+                      "icon": "layout-panel-left",
+                      "width": 32,
+                      "height": 32
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Fs3q3",
+                  "name": "Texts",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tzSH4",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Figma",
+                      "fontFamily": "$font-body",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EeFjW",
+                      "name": "Publisher",
+                      "fill": "$text-tertiary",
+                      "content": "by Penkra",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oyaaz",
+                      "name": "Meta",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "FWGQT",
+                          "type": "ref",
+                          "ref": "gqhMw",
+                          "name": "Rating",
+                          "descendants": {
+                            "PAyFU": {
+                              "content": "4.9"
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "cCGWt",
+                          "name": "Dot",
+                          "fill": "$text-tertiary",
+                          "content": "·",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KpjXM",
+                          "name": "Category",
+                          "fill": "$text-tertiary",
+                          "content": "Design",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "flIAy",
+                  "type": "ref",
+                  "ref": "GYrNw",
+                  "name": "Install Button"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Eqrct",
+              "name": "Description",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Bring your team's Figma files into a thread. Search projects, preview frames, and attach designs for review without switching context.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "FMj5G",
+              "name": "Permissions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J0z4O",
+                  "name": "Heading",
+                  "fill": "$text-secondary",
+                  "content": "Permissions",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "id": "lp3lB",
+                  "type": "ref",
+                  "ref": "t8z9QM",
+                  "name": "Required",
+                  "width": "fill_container",
+                  "descendants": {
+                    "GYlX9": {
+                      "content": "Access your Figma account"
+                    },
+                    "dWFSQ": {
+                      "enabled": false
+                    },
+                    "rhD2p": {
+                      "content": "\"Read your files and comments to show them in threads.\""
+                    }
+                  }
+                },
+                {
+                  "id": "R64CT",
+                  "type": "ref",
+                  "ref": "t8z9QM",
+                  "name": "Optional",
+                  "width": "fill_container",
+                  "descendants": {
+                    "GYlX9": {
+                      "content": "Read the conversation you're in"
+                    },
+                    "rhD2p": {
+                      "content": "\"Attach the current thread when you share a file.\""
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hMIEA",
+          "x": 64,
+          "y": 3200,
+          "name": "App Store Wide Components",
+          "width": 696,
+          "layout": "vertical",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "aPvtw",
+              "name": "Row / Installed App",
+              "reusable": true,
+              "width": "fill_container",
+              "fill": "$card-fill",
+              "cornerRadius": 10,
+              "stroke": "$card-stroke",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                12,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "mOn8t",
+                  "type": "ref",
+                  "ref": "hqS2K",
+                  "name": "Icon",
+                  "width": 40,
+                  "height": 40,
+                  "cornerRadius": 10,
+                  "fill": "#4A90E2",
+                  "descendants": {
+                    "va2Qv": {
+                      "icon": "globe",
+                      "width": 18,
+                      "height": 18
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "cvHY9",
+                  "name": "Texts",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "prMNM",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Browser",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OyfT8",
+                      "name": "Description",
+                      "fill": "$text-tertiary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Search the web and pull in pages without leaving your thread.",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "id": "wp6ox",
+                  "type": "ref",
+                  "ref": "GYrNw",
+                  "name": "Button",
+                  "fill": "#00000000",
+                  "stroke": "$card-stroke",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "descendants": {
+                    "pEb2d": {
+                      "content": "Open",
+                      "fill": "$text-secondary"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NCeS7",
+              "name": "Banner / Featured App",
+              "reusable": true,
+              "width": "fill_container",
+              "fill": "$card-fill",
+              "cornerRadius": 14,
+              "stroke": "$card-stroke",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "padding": 20,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WGlXQ",
+                  "name": "Left",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "gHPxI",
+                      "type": "ref",
+                      "ref": "hqS2K",
+                      "name": "Icon",
+                      "width": 64,
+                      "height": 64,
+                      "cornerRadius": 16,
+                      "fill": "#5E6AD2",
+                      "descendants": {
+                        "va2Qv": {
+                          "icon": "list-checks",
+                          "width": 28,
+                          "height": 28
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ecRB9",
+                      "name": "Texts",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B8x7Lv",
+                          "name": "Eyebrow",
+                          "fill": "$accent-blue",
+                          "content": "FEATURED",
+                          "fontFamily": "$font-body",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.6
+                        },
+                        {
+                          "type": "text",
+                          "id": "J0p7F",
+                          "name": "Name",
+                          "fill": "$text-primary",
+                          "content": "Linear",
+                          "fontFamily": "$font-body",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IC6G7",
+                          "name": "Tagline",
+                          "fill": "$text-secondary",
+                          "content": "Track and plan engineering work without leaving a thread.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "pbKAp",
+                  "type": "ref",
+                  "ref": "GYrNw",
+                  "name": "Button"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -25192,7 +23870,7 @@
     {
       "type": "frame",
       "id": "T3J29",
-      "x": 18000,
+      "x": 20500,
       "y": 0,
       "name": "Recovered Source Library — Organized",
       "enabled": false,
@@ -26580,7 +25258,7 @@
           "name": "Feature Row — Apps — Gallery",
           "x": 0,
           "y": 7960,
-          "width": 1440,
+          "width": 4416,
           "descendants": {
             "O2Mve": {
               "content": "Apps — Gallery"
@@ -26663,6 +25341,210 @@
             },
             {
               "id": "XdZ3I",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Xz6Cl",
+          "x": 1488,
+          "y": 8080,
+          "name": "Screen — Apps Gallery — App Detail",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "TAZ4i",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "JPazs",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "jadaJ",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "dthFQ",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "YDTmJ",
+              "type": "ref",
+              "ref": "tmIN8",
+              "name": "App Detail Modal",
+              "x": 440,
+              "y": 262,
+              "width": 560,
+              "height": 376
+            },
+            {
+              "id": "i7Rsh2",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "irJ7w",
+          "x": 2976,
+          "y": 8080,
+          "name": "Screen — Apps Gallery — Install Permission",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "G34t45",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "BHHQS",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "UzphN",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "qISeI",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "qbksv",
+              "type": "ref",
+              "ref": "r5wcGn",
+              "name": "Permission Sheet / Install",
+              "x": 500,
+              "y": 296,
+              "width": 440,
+              "height": 308,
+              "descendants": {
+                "BLweQ": {
+                  "fill": "#A259FF"
+                },
+                "YUyoQ": {
+                  "content": "Figma wants to:"
+                },
+                "Pqckv": {
+                  "content": "Required — Figma can't work without these"
+                },
+                "PDuhQ/GYlX9": {
+                  "content": "Access your Figma account"
+                },
+                "PDuhQ/rhD2p": {
+                  "content": "\"Read your files and comments to show them in threads.\""
+                },
+                "u7Wzv": {
+                  "content": "Optional — you can turn these off"
+                },
+                "m7mSyz/GYlX9": {
+                  "content": "Read the conversation you're in"
+                },
+                "m7mSyz/rhD2p": {
+                  "content": "\"Attach the current thread when you share a file.\""
+                }
+              }
+            },
+            {
+              "id": "TbmTm",
               "type": "ref",
               "ref": "o4UviR",
               "name": "Tooltip Overlay Layer",
@@ -26785,7 +25667,7 @@
     {
       "type": "frame",
       "id": "NTSQr",
-      "x": 27200,
+      "x": 29700,
       "y": 400,
       "name": "Canvas Organization",
       "width": 2200,
@@ -26907,383 +25789,1906 @@
     },
     {
       "type": "frame",
-      "id": "hqS2K",
-      "x": 0,
-      "y": 0,
-      "name": "Icon Tile / App",
-      "reusable": true,
-      "width": 44,
-      "height": 44,
-      "fill": "#4A90E2",
-      "cornerRadius": 12,
-      "justifyContent": "center",
-      "alignItems": "center",
+      "id": "kVpYl",
+      "x": 7500,
+      "y": 400,
+      "name": "Middle Panel — Composer",
+      "metadata": {
+        "type": "recovery-organization",
+        "confidence": "exact-taxonomy",
+        "source": "bf5058:244892,244896,245406",
+        "kind": "component-group"
+      },
+      "width": 2200,
+      "height": 6500,
+      "fill": "#0B0C10",
+      "layout": "none",
       "children": [
         {
-          "type": "icon",
-          "id": "va2Qv",
-          "name": "TileIcon",
-          "width": 20,
-          "height": 20,
-          "icon": "package",
-          "library": "lucide",
-          "fill": "#FFFFFF"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "gqhMw",
-      "x": 0,
-      "y": 0,
-      "name": "Badge / Rating",
-      "reusable": true,
-      "gap": 4,
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "icon",
-          "id": "iTOOI",
-          "name": "Star",
-          "width": 11,
-          "height": 11,
-          "icon": "star",
-          "library": "lucide",
-          "fill": "#F5B942"
+          "type": "frame",
+          "id": "a1XaT",
+          "x": 40,
+          "y": 72,
+          "name": "Component Group — Middle Panel Composer Marker",
+          "width": 8,
+          "height": 44,
+          "fill": "#F97316",
+          "cornerRadius": 4
         },
         {
           "type": "text",
-          "id": "PAyFU",
-          "name": "Value",
-          "fill": "$text-tertiary",
-          "content": "4.8",
+          "id": "Ztz2Z",
+          "x": 64,
+          "y": 64,
+          "name": "Component Group — Middle Panel Composer Label",
+          "fill": "$text-primary",
+          "content": "Middle Panel — Composer",
           "fontFamily": "$font-body",
-          "fontSize": 11,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "GYrNw",
-      "x": 0,
-      "y": 0,
-      "name": "Button / Install",
-      "reusable": true,
-      "height": 28,
-      "fill": "$accent-blue",
-      "cornerRadius": 999,
-      "padding": [
-        0,
-        14
-      ],
-      "justifyContent": "center",
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "text",
-          "id": "pEb2d",
-          "name": "Label",
-          "fill": "#FFFFFF",
-          "content": "Install",
-          "fontFamily": "$font-body",
-          "fontSize": 12,
+          "fontSize": 56,
           "fontWeight": "600"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "tNSs3",
-      "x": 0,
-      "y": 0,
-      "name": "Pill / Category",
-      "reusable": true,
-      "height": 28,
-      "fill": "#00000000",
-      "cornerRadius": 8,
-      "stroke": "$card-stroke",
-      "strokeWidth": 1,
-      "strokeAlignment": "inner",
-      "padding": [
-        0,
-        12
-      ],
-      "justifyContent": "center",
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "text",
-          "id": "h9NLJH",
-          "name": "Label",
-          "fill": "$text-secondary",
-          "content": "Category",
-          "fontFamily": "$font-body",
-          "fontSize": 12,
-          "fontWeight": "500"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "aPvtw",
-      "x": 0,
-      "y": 0,
-      "name": "Row / Installed App",
-      "reusable": true,
-      "width": "fill_container(0)",
-      "fill": "$card-fill",
-      "cornerRadius": 10,
-      "stroke": "$card-stroke",
-      "strokeWidth": 1,
-      "strokeAlignment": "inner",
-      "gap": 12,
-      "padding": [
-        12,
-        16
-      ],
-      "alignItems": "center",
-      "children": [
-        {
-          "id": "mOn8t",
-          "type": "ref",
-          "ref": "hqS2K",
-          "name": "Icon",
-          "width": 40,
-          "height": 40,
-          "cornerRadius": 10,
-          "fill": "#4A90E2",
-          "descendants": {
-            "va2Qv": {
-              "icon": "globe",
-              "width": 18,
-              "height": 18
-            }
-          }
         },
         {
           "type": "frame",
-          "id": "cvHY9",
-          "name": "Texts",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": 2,
+          "id": "TKKOp",
+          "x": 64,
+          "y": 240,
+          "name": "Composer / Default",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "width": 560,
+          "height": 88.5,
+          "fill": "$card-fill",
+          "cornerRadius": 18,
+          "stroke": "$card-stroke",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "none",
           "children": [
             {
               "type": "text",
-              "id": "prMNM",
-              "name": "Name",
-              "fill": "$text-primary",
-              "content": "Browser",
-              "fontFamily": "$font-body",
+              "id": "CnM59",
+              "x": 11,
+              "y": 15,
+              "name": "Placeholder",
+              "fill": "$text-tertiary",
+              "content": "Do anything",
+              "fontFamily": "Inter",
               "fontSize": 14,
-              "fontWeight": "600"
+              "fontWeight": "normal"
             },
             {
-              "type": "text",
-              "id": "OyfT8",
-              "name": "Description",
-              "fill": "$text-tertiary",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Search the web and pull in pages without leaving your thread.",
-              "fontFamily": "$font-body",
-              "fontSize": 12,
-              "fontWeight": "normal"
+              "id": "DxWas",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions",
+              "x": 11,
+              "y": 51.5,
+              "width": 538,
+              "height": 26,
+              "descendants": {
+                "RPqic/nCmc5/k1S80": {
+                  "y": 0
+                }
+              }
             }
           ]
         },
         {
-          "id": "wp6ox",
-          "type": "ref",
-          "ref": "GYrNw",
-          "name": "Button",
-          "fill": "#00000000",
-          "stroke": "$card-stroke",
-          "strokeWidth": 1,
-          "strokeAlignment": "inner",
-          "descendants": {
-            "pEb2d": {
-              "content": "Open",
-              "fill": "$text-secondary"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "fgUwH",
-      "x": 0,
-      "y": 0,
-      "name": "Card / App Store",
-      "reusable": true,
-      "width": 220,
-      "fill": "$card-fill",
-      "cornerRadius": 12,
-      "stroke": "$card-stroke",
-      "strokeWidth": 1,
-      "strokeAlignment": "inner",
-      "layout": "vertical",
-      "gap": 10,
-      "padding": 16,
-      "children": [
-        {
-          "id": "EQVyx",
-          "type": "ref",
-          "ref": "hqS2K",
-          "name": "Icon",
-          "descendants": {
-            "va2Qv": {
-              "icon": "package"
-            }
-          }
-        },
-        {
           "type": "frame",
-          "id": "UA1r0",
-          "name": "Titles",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": 4,
+          "id": "Rx8zX",
+          "x": 700,
+          "y": 240,
+          "name": "Harness Selector / Legacy Export Snapshot",
+          "enabled": false,
+          "width": 193.77,
+          "height": 28.5,
+          "fill": "#00000000",
+          "cornerRadius": 8,
+          "layout": "none",
           "children": [
             {
               "type": "frame",
-              "id": "dHWtS",
-              "name": "Name Row",
-              "width": "fill_container",
-              "gap": 6,
-              "alignItems": "center",
+              "id": "ss30N",
+              "x": 8,
+              "y": 7.75,
+              "name": "Icon",
+              "width": 13,
+              "height": 13,
+              "fill": "#00000000",
+              "layout": "none",
               "children": [
                 {
-                  "type": "text",
-                  "id": "TM1IX",
-                  "name": "Name",
-                  "fill": "$text-primary",
-                  "content": "App",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "600"
-                },
-                {
-                  "id": "nabQX",
-                  "type": "ref",
-                  "ref": "gqhMw",
-                  "name": "Rating"
+                  "type": "frame",
+                  "id": "HJaC7",
+                  "x": -1.5,
+                  "y": -1.5,
+                  "name": "Glyph",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "F5kuKO",
+                      "x": 0,
+                      "y": 0,
+                      "name": "path",
+                      "geometry": "M50.23 170.32l50.36-28.26 0.843-2.46-0.843-1.36h-2.46l-8.43-0.518-28.77-0.778-24.95-1.04-24.18-1.3-6.09-1.3-5.71-7.504 0.583-3.76 5.12-3.43 7.32 0.648 16.2 1.1 24.3 1.69 17.63 1.04 26.12 2.72h4.15l0.583-1.69-1.43-1.04-1.1-1.04-25.15-17.05-27.22-18.02-14.26-10.37-7.71-5.25-3.89-4.92-1.69-10.76 7-7.71 9.4 0.649 2.4 0.648 9.53 7.32 20.35 15.75 26.584 19.575 3.89 3.24 1.55-1.1 0.195-0.777-1.75-2.92-14.45-26.12-15.43-26.57-6.87-11.02-1.81-6.61c-0.648-2.72-1.1-4.99-1.1-7.78l7.97-10.82 4.405-1.423 10.63 1.43 4.47 3.89 6.61 15.1 10.69 23.79 16.59 32.34 4.86 9.59 2.59 8.88 0.973 2.72h1.69v-1.56l1.36-18.21 2.53-22.36 2.46-28.78 0.843-8.1 4.02-9.72 7.97-5.25 6.22 2.98 5.12 7.32-0.713 4.73-3.05 19.77-5.96 30.98-3.89 20.74h2.27l2.59-2.59 10.5-13.93 17.63-22.04 7.78-8.75 9.07-9.66 5.83-4.6h11.02l8.1 12.05-3.63 12.44-11.34 14.39-9.4 12.18-13.48 18.15-8.43 14.52 0.778 1.17 2.01-0.194 30.46-6.48 16.46-2.98 19.64-3.37 8.88 4.15 0.971 4.21-3.5 8.62-21 5.18-24.63 4.93-36.68 8.69-0.454 0.32 0.519 0.65 16.53 1.55 7.07 0.389h17.3l32.21 2.4 8.43 5.57 5.05 6.8-0.843 5.18-12.96 6.61-17.5-4.15-40.83-9.72-14-3.5h-1.94v1.17l11.67 11.41 21.39 19.31 26.77 24.89 1.36 6.16-3.43 4.86-3.63-0.518-23.53-17.69-9.07-7.97-20.55-17.3h-1.36v1.81l4.73 6.93 25.02 37.59 1.3 11.54-1.81 3.76-6.48 2.27-7.13-1.3-14.65-20.54-15.1-23.14-12.19-20.74-1.49 0.84-7.19 77.45-3.37 3.95-7.78 2.98-6.48-4.92-3.44-7.97 3.44-15.75 4.15-20.54 3.37-16.33 3.05-20.29 1.81-6.74-0.13-0.454-1.49 0.19-15.29 21-23.27 31.43-18.41 19.7-4.41 1.75-7.65-3.95 0.713-7.06 4.28-6.29 25.47-32.41 15.36-20.09 9.92-11.6-0.065-1.69h-0.583l-67.669 43.947-12.05 1.55-5.18-4.86 0.65-7.97 2.46-2.59 20.35-14-0.64 0.06z",
+                      "viewBox": [
+                        0,
+                        0,
+                        256,
+                        257
+                      ],
+                      "fill": "#D97757",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
                 }
               ]
             },
             {
               "type": "text",
-              "id": "sUfTq",
-              "name": "Description",
-              "fill": "$text-tertiary",
+              "id": "wh2O3",
+              "x": 26,
+              "y": 5,
+              "name": "Label",
+              "fill": "#9AA0B4",
               "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Description of what this app does for you.",
-              "lineHeight": 1.4,
-              "fontFamily": "$font-body",
-              "fontSize": 12,
+              "width": 107.77,
+              "content": "Claude Sonnet 5",
+              "fontFamily": "Inter",
+              "fontSize": 16,
               "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "xjbm6",
+              "x": 136.77,
+              "y": 5,
+              "name": "Variant",
+              "fill": "#6B7088",
+              "textGrowth": "fixed-width",
+              "width": 34,
+              "content": "High",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "f5aez",
+              "x": 173.77,
+              "y": 8.25,
+              "name": "Chevron",
+              "width": 12,
+              "height": 12,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "OeOXa",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M3.34619 4.68945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04785 0.25977 0.05127 0.08887 1.8628 1.9038 1.81494 1.81152 1.9038 1.8628 0.09229 0.04785 0.25977 0.04785 0.16748 0 0.25635-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04102-0.25293-0.09912-0.16748-0.28027-0.2666-0.05811-0.02734-0.09912-0.04102-0.04102-0.01367-0.15381-0.01367-0.11279 0-0.15381 0.01367-0.04101 0.01367-0.11279 0.04102-0.09912 0.05811-1.66455 1.62695l-1.56885 1.56543-2.82666-2.81299q-0.31104-0.29395-0.42041-0.37939-0.08545-0.05469-0.19824-0.05469l-0.02735 0q-0.14014 0-0.18115 0.01367z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#9AA0B4",
+                  "width": 12,
+                  "height": 12
+                }
+              ]
             }
           ]
         },
         {
-          "id": "uknPj",
-          "type": "ref",
-          "ref": "GYrNw",
-          "name": "Button"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "NCeS7",
-      "x": 0,
-      "y": 0,
-      "name": "Banner / Featured App",
-      "reusable": true,
-      "width": "fill_container(0)",
-      "fill": "$card-fill",
-      "cornerRadius": 14,
-      "stroke": "$card-stroke",
-      "strokeWidth": 1,
-      "strokeAlignment": "inner",
-      "padding": 20,
-      "justifyContent": "space_between",
-      "alignItems": "center",
-      "children": [
-        {
           "type": "frame",
-          "id": "WGlXQ",
-          "name": "Left",
-          "gap": 16,
+          "id": "g1dQ5",
+          "x": 700,
+          "y": 340,
+          "name": "Harness Selector / Shared",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "fill": "$row-bg",
+          "cornerRadius": 8,
+          "gap": 5,
+          "padding": [
+            5,
+            8
+          ],
           "alignItems": "center",
           "children": [
             {
-              "id": "gHPxI",
+              "id": "y6Ej2",
               "type": "ref",
-              "ref": "hqS2K",
+              "ref": "UHPei",
               "name": "Icon",
-              "width": 64,
-              "height": 64,
-              "cornerRadius": 16,
-              "fill": "#5E6AD2",
+              "width": 13,
+              "height": 13
+            },
+            {
+              "type": "text",
+              "id": "lszYy",
+              "name": "Label",
+              "fill": "$row-text",
+              "content": "Claude Sonnet 5",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "f3XgC",
+              "x": 138.76999999999998,
+              "y": 5,
+              "name": "Variant",
+              "enabled": false,
+              "fill": "$text-tertiary",
+              "content": "Medium",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "I6QQv",
+              "name": "Chevron",
+              "width": 12,
+              "height": 12,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "Z8msP",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M3.34619 4.68945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04785 0.25977 0.05127 0.08887 1.8628 1.9038 1.81494 1.81152 1.9038 1.8628 0.09229 0.04785 0.25977 0.04785 0.16748 0 0.25635-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04102-0.25293-0.09912-0.16748-0.28027-0.2666-0.05811-0.02734-0.09912-0.04102-0.04102-0.01367-0.15381-0.01367-0.11279 0-0.15381 0.01367-0.04101 0.01367-0.11279 0.04102-0.09912 0.05811-1.66455 1.62695l-1.56885 1.56543-2.82666-2.81299q-0.31104-0.29395-0.42041-0.37939-0.08545-0.05469-0.19824-0.05469l-0.02735 0q-0.14014 0-0.18115 0.01367z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "$row-text",
+                  "width": 12,
+                  "height": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HTpJ5",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": -35,
+              "name": "Tooltip Overlay",
+              "enabled": "$tooltip-visible",
+              "width": 175.85,
+              "height": 35,
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "ADJx7",
+                  "type": "ref",
+                  "ref": "Q5AL4",
+                  "name": "Select Model Tooltip",
+                  "enabled": true,
+                  "width": 142.01,
+                  "height": 35,
+                  "descendants": {
+                    "T0JYmK": {
+                      "width": 142.01,
+                      "height": 31,
+                      "padding": 0,
+                      "layout": "none",
+                      "gap": 0
+                    },
+                    "PAD8i": {
+                      "content": "Select model",
+                      "x": 11,
+                      "y": 8.5
+                    },
+                    "qrW5C": {
+                      "enabled": true,
+                      "x": 92.76,
+                      "y": 7,
+                      "width": 38.25,
+                      "height": 17,
+                      "padding": 0,
+                      "layout": "none"
+                    },
+                    "NwDjX": {
+                      "content": "⌃⇧M",
+                      "x": 4,
+                      "y": 2
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FLLg5",
+          "x": 64,
+          "y": 420,
+          "name": "Menu / Harness",
+          "reusable": true,
+          "width": 220,
+          "height": 283,
+          "fill": "#16171C",
+          "cornerRadius": 10,
+          "stroke": "#2A2C36",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "none",
+          "children": [
+            {
+              "id": "zYjSC",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Codex",
+              "x": 7,
+              "y": 7,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
               "descendants": {
-                "va2Qv": {
-                  "icon": "list-checks",
-                  "width": 28,
-                  "height": 28
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "hyYYB",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "",
+                  "viewBox": [
+                    0,
+                    0,
+                    24,
+                    24
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Codex"
                 }
               }
             },
             {
+              "id": "s3hN8v",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Claude",
+              "x": 7,
+              "y": 37,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "selected"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "HmVWT",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "",
+                  "viewBox": [
+                    0,
+                    0,
+                    256,
+                    257
+                  ],
+                  "fill": "#D97757",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Claude"
+                }
+              }
+            },
+            {
+              "id": "sJVny",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Cursor",
+              "x": 7,
+              "y": 67,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "disabled"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "OUTY9",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "",
+                  "viewBox": [
+                    0,
+                    0,
+                    466.73,
+                    532.09
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Cursor"
+                }
+              }
+            },
+            {
+              "id": "lhF2w",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Antigravity",
+              "x": 7,
+              "y": 97,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "b0PxR",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#9AA0B4",
+                  "width": 14,
+                  "height": 14
+                },
+                "KYnoO": {
+                  "content": "Antigravity"
+                }
+              }
+            },
+            {
+              "id": "QYW5F",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Grok",
+              "x": 7,
+              "y": 127,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "TDg3x",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M395.48 633.83l340.43-252.72c16.69-12.39 40.54-7.56 48.5 11.69 41.85 101.49 23.16 223.46-60.12 307.2-83.27 83.74-199.14 102.11-305.04 60.28l-115.69 53.87c165.93 114.05 367.43 85.85 493.34-40.87 99.88-100.44 130.81-237.34 101.88-360.81l0.262 0.26c-41.932-181.36 10.318-253.86 117.358-402.1 2.53-3.51 5.07-7.03 7.6-10.63l-140.86 141.65v-0.439l-487.75 492.709m-70.16 61.33c-119.1-114.41-98.57-291.47 3.06-393.58 75.15-75.57 198.26-106.41 305.74-61.07l115.43-53.6c-20.8-15.11-47.45-31.37-78.03-42.79-138.23-57.21-303.73-28.73-416.1 84.18-108.1 108.69-142.09 275.82-83.72 418.44 43.6 106.59-27.87 181.99-99.87 258.08-25.52 26.98-51.12 53.96-71.74 82.52l325.14-292.09",
+                  "viewBox": [
+                    0,
+                    0,
+                    1024,
+                    1024
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Grok"
+                }
+              }
+            },
+            {
+              "id": "wXrx3",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Droid",
+              "x": 7,
+              "y": 157,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "disabled"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "KL8HE",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M47.75 11.15a0.867 0.87 0 0 1-0.671-0.806 0.84 0.84 0 0 1 0.067-0.362c1.69-4.01 2.43-7.21 1.23-8.55-3.18-3.56-15.95 3.52-20.02 5.92a0.9 0.9 0 0 1-1.27-0.41c-1.71-4-3.51-6.78-5.33-6.9-4.83-0.323-8.73 13.49-9.87 17.99a0.85 0.85 0 0 1-0.459 0.56 0.9 0.9 0 0 1-0.737 0.03c-4.11-1.65-7.4-2.37-8.77-1.2-3.65 3.1 3.61 15.56 6.07 19.53a0.85 0.85 0 0 1-0.11 1.03 0.9 0.9 0 0 1-0.31 0.21c-4.11 1.668-6.966 3.418-7.09 5.198-0.329 4.71 13.83 8.51 18.45 9.62q0.186 0.05 0.337 0.16a0.87 0.87 0 0 1 0.332 0.64 0.84 0.84 0 0 1-0.67 0.36c-1.69 4.01-2.43 7.21-1.23 8.55 3.18 3.56 15.95-3.52 20.02-5.92a0.9 0.9 0 0 1 1.06 0.107 0.9 0.9 0 0 1 0.215 0.3c1.71 4 3.51 6.78 5.33 6.9 4.83 0.322 8.73-13.49 9.87-17.99a0.85 0.85 0 0 1 0.168-0.33 0.88 0.88 0 0 1 0.659-0.324 0.9 0.9 0 0 1 0.371 0.07c4.11 1.65 7.4 2.37 8.77 1.2 3.65-3.1-3.61-15.56-6.07-19.53a0.85 0.85 0 0 1 0.111-1.03 0.9 0.9 0 0 1 0.31-0.21c4.1-1.67 6.95-3.42 7.08-5.2 0.331-4.71-13.83-8.51-18.45-9.62m-5.55-4.52c0.93 1.62-3.86 12.45-7.42 20.02a0.7 0.7 0 0 1-0.28 0.3 0.71 0.71 0 0 1-0.796-0.059 0.7 0.7 0 0 1-0.23-0.341c-1.44-4.92-3.08-10.7-4.84-15.61a0.84 0.84 0 0 1 0.01-0.594 0.87 0.87 0 0 1 0.401-0.446c4.39-2.34 11.91-5.45 13.16-3.27m-21.05 1.34c1.83 0.507 6.29 11.46 9.26 19.27a0.67 0.67 0 0 1-0.2 0.75 0.71 0.71 0 0 1-0.794 0.08c-4.59-2.48-9.94-5.44-14.74-7.7a0.87 0.87 0 0 1-0.422-0.427 0.84 0.84 0 0 1-0.04-0.591c1.41-4.68 4.47-12.06 6.93-11.38m-13.302 15.465c1.66-0.906 12.76 3.76 20.52 7.24 0.13 0.06 0.239 0.15 0.311 0.27a0.67 0.67 0 0 1-0.6 0.78 0.7 0.7 0 0 1-0.35 0.23c-5.04 1.4-10.98 3.01-16.01 4.72a0.9 0.9 0 0 1-0.607-0.01 0.88 0.88 0 0 1-0.456-0.391c-2.4-4.28-5.59-11.61-3.35-12.83m1.922 20.521c0.519-1.79 11.75-6.14 19.76-9.04a0.72 0.72 0 0 1 0.773 0.2 0.67 0.67 0 0 1 0.81 0.77c-2.55 4.47-5.58 9.69-7.9 14.38a0.87 0.87 0 0 1-0.437 0.41 0.9 0.9 0 0 1-0.607 0.04c-4.8-1.37-12.37-4.36-11.67-6.76m15.86 13.57c-0.93-1.62 3.86-12.45 7.42-20.01a0.7 0.7 0 0 1 0.28-0.303 0.71 0.715 0 0 1 0.796 0.06 0.7 0.7 0 0 1 0.23 0.34c1.44 4.92 3.08 10.71 4.84 15.61a0.84 0.84 0 0 1-0.1 0.59 0.87 0.87 0 0 1-0.402 0.44c-4.39 2.33-11.91 5.45-13.15 3.27z m21.05-1.34c-1.84-0.506-6.3-11.46-9.27-19.27a0.67 0.67 0 0 1 0.2-0.755 0.71 0.71 0 0 1 0.795-0.078c4.59 2.48 9.94 5.45 14.74 7.7 0.189 0.09 0.339 0.24 0.42 0.426a0.84 0.84 0 0 1 0.39 0.59c-1.41 4.69-4.47 12.06-6.93 11.38m13.91-15.46c-1.67 0.907-12.76-3.76-20.52-7.24a0.7 0.7 0 0 1-0.311-0.273 0.67 0.67 0 0 1 0.06-0.777 0.7 0.7 0 0 1 0.35-0.225c5.05-1.4 10.97-3 16.01-4.72a0.9 0.9 0 0 1 0.609 0.01 0.88 0.88 0 0 1 0.457 0.39c2.39 4.28 5.58 11.61 3.35 12.83m-2.459-20.518c-0.521 1.79-11.75 6.14-19.76 9.04a0.72 0.72 0 0 1-0.774-0.195 0.67 0.67 0 0 1-0.08-0.776c2.55-4.47 5.58-9.69 7.9-14.38a0.87 0.87 0 0 1 0.437-0.412 0.9 0.9 0 0 1 0.607-0.038c4.8 1.38 12.37 4.36 11.67 6.76",
+                  "viewBox": [
+                    0,
+                    0,
+                    67,
+                    65
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Droid"
+                }
+              }
+            },
+            {
+              "id": "ZgeyQ",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Kilo",
+              "x": 7,
+              "y": 187,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "disabled"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "q70a5b",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M0 0v100h100v-100h-100z m92.59 92.59h-85.18v-85.18h85.19v85.19z m-31.48-20.68h9.26v7.41h-11.64l-5.03-5.03v-11.64h7.41v9.26z m16.67 0h-7.41v-9.26h-9.26v-7.41h11.64l5.03 5.03v11.64z m-31.48-10.8h-7.41v-7.41h7.41v7.41z m-24.08-7.41h7.41v16.67h16.67v7.41h-19.05l-5.03-5.03v-19.05z m55.56-14.81v7.41h-24.08v-7.41h8.28v-9.26h-8.28v-7.41h10.66l5.03 5.03v11.64h8.39z m-48.15-8.33h9.26l7.41 7.41v8.33h-7.41v-8.34h-9.26v8.33h-7.41v-24.07h7.41v8.33z m16.67 0h-7.41v-8.33h7.41v8.33z",
+                  "viewBox": [
+                    0,
+                    0,
+                    100,
+                    100
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Kilo"
+                }
+              }
+            },
+            {
+              "id": "AsYsy",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "OpenCode",
+              "x": 7,
+              "y": 217,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "ZtW5E",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M24 8h-16v24h16v-24z m8 32h-32v-40h32v40z",
+                  "viewBox": [
+                    0,
+                    0,
+                    32,
+                    40
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "OpenCode"
+                }
+              }
+            },
+            {
+              "id": "j5jcV",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Pi",
+              "x": 7,
+              "y": 247,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "Lu2LA": {
+                  "type": "path",
+                  "id": "DLfr6",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M165.29 165.29h352.07v234.71h-117.36v117.36h-117.35v117.36h-117.36v-469.43z m117.36 117.36v117.35h117.35v-117.35h-117.35z",
+                  "viewBox": [
+                    0,
+                    0,
+                    800,
+                    800
+                  ],
+                  "fill": "#FFFFFF",
+                  "width": 16,
+                  "height": 16
+                },
+                "KYnoO": {
+                  "content": "Pi"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x8Fk3j",
+          "x": 340,
+          "y": 420,
+          "name": "Menu / Model",
+          "reusable": true,
+          "width": 200,
+          "height": 133,
+          "fill": "#16171C",
+          "cornerRadius": 10,
+          "stroke": "#2A2C36",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "none",
+          "children": [
+            {
+              "id": "e2FYbi",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Claude Haiku 4.5",
+              "x": 7,
+              "y": 7,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Claude Haiku 4.5"
+                }
+              }
+            },
+            {
+              "id": "V5YIRO",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Claude Opus 5",
+              "x": 7,
+              "y": 37,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Claude Opus 5"
+                }
+              }
+            },
+            {
+              "id": "SVDXt",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Claude Fable 5",
+              "x": 7,
+              "y": 67,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Claude Fable 5"
+                }
+              }
+            },
+            {
+              "id": "gupf7",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Claude Sonnet 5",
+              "x": 7,
+              "y": 97,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Claude Sonnet 5"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e5zUfJ",
+          "x": 580,
+          "y": 420,
+          "name": "Popover / Quick Settings",
+          "reusable": true,
+          "width": 200,
+          "height": 133,
+          "fill": "#16171C",
+          "cornerRadius": 10,
+          "stroke": "#2A2C36",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "none",
+          "children": [
+            {
+              "id": "y8N7S6",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Model",
+              "x": 7,
+              "y": 7,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Model"
+                }
+              }
+            },
+            {
+              "id": "j9c4u",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Effort",
+              "x": 7,
+              "y": 37,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Effort"
+                }
+              }
+            },
+            {
+              "id": "RQDpn",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Speed",
+              "x": 7,
+              "y": 67,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Speed"
+                }
+              }
+            },
+            {
+              "id": "JvGL9",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Advanced",
+              "x": 7,
+              "y": 97,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Advanced"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JwTiI",
+          "x": 64,
+          "y": 760,
+          "name": "Composer Actions",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "width": 538,
+          "height": 26,
+          "fill": "#00000000",
+          "layout": "none",
+          "children": [
+            {
+              "id": "C2Yo8k",
+              "type": "ref",
+              "ref": "zwljJ",
+              "name": "Attach Files",
+              "x": 0,
+              "y": 0,
+              "width": 26,
+              "height": 26,
+              "justifyContent": "start",
+              "alignItems": "center",
+              "descendants": {
+                "xzXP5/PAD8i": {
+                  "content": "Attach files"
+                },
+                "xzXP5/qrW5C": {
+                  "enabled": false
+                },
+                "IHe8Q": {
+                  "icon": "plus",
+                  "x": 0,
+                  "y": 5,
+                  "width": 16,
+                  "height": 16
+                }
+              }
+            },
+            {
+              "id": "RPqic",
+              "type": "ref",
+              "ref": "iP6oE",
+              "name": "Full Access",
+              "x": 20,
+              "y": 0,
+              "width": 108,
+              "height": 26
+            },
+            {
               "type": "frame",
-              "id": "ecRB9",
-              "name": "Texts",
-              "layout": "vertical",
-              "gap": 4,
+              "id": "V20VEE",
+              "x": 132,
+              "y": 12.5,
+              "name": "Flexible Spacer",
+              "width": 321,
+              "height": 1,
+              "fill": "#00000000",
+              "layout": "none"
+            },
+            {
+              "id": "nnunM",
+              "type": "ref",
+              "ref": "zwljJ",
+              "name": "Change Mode",
+              "x": 456.5,
+              "y": 0,
+              "width": 26,
+              "height": 26,
+              "descendants": {
+                "xzXP5/PAD8i": {
+                  "content": "Change mode"
+                },
+                "xzXP5/qrW5C": {
+                  "enabled": false
+                },
+                "IHe8Q": {
+                  "icon": "circle",
+                  "x": 6.5,
+                  "y": 6.5,
+                  "width": 13,
+                  "height": 13,
+                  "fill": "$text-tertiary"
+                }
+              }
+            },
+            {
+              "id": "eQt4v",
+              "type": "ref",
+              "ref": "g1dQ5",
+              "name": "Harness Pill",
+              "theme": {
+                "state": "default"
+              },
+              "enabled": false,
+              "descendants": {
+                "f3XgC": {
+                  "enabled": true,
+                  "content": "High"
+                }
+              }
+            },
+            {
+              "id": "E7z8ym",
+              "type": "ref",
+              "ref": "zwljJ",
+              "name": "Voice Input",
+              "x": 481,
+              "y": 0,
+              "width": 26,
+              "height": 26,
+              "descendants": {
+                "xzXP5/PAD8i": {
+                  "content": "Voice input"
+                },
+                "xzXP5/qrW5C": {
+                  "enabled": false
+                },
+                "IHe8Q": {
+                  "icon": "mic",
+                  "x": 5,
+                  "y": 5,
+                  "width": 16,
+                  "height": 16
+                }
+              }
+            },
+            {
+              "id": "PxCMd",
+              "type": "ref",
+              "ref": "zwljJ",
+              "name": "Send",
+              "x": 512,
+              "y": 0,
+              "width": 26,
+              "height": 26,
+              "fill": "$text-primary",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "descendants": {
+                "xzXP5/PAD8i": {
+                  "content": "Send"
+                },
+                "xzXP5/qrW5C": {
+                  "enabled": false
+                },
+                "IHe8Q": {
+                  "icon": "arrow-up",
+                  "x": 6,
+                  "y": 6,
+                  "width": 14,
+                  "height": 14,
+                  "fill": "$surface-sidebar"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "k4x6m",
+          "x": 650,
+          "y": 766,
+          "name": "Access Pill / Content",
+          "reusable": true,
+          "width": 96,
+          "height": 15,
+          "fill": "#00000000",
+          "cornerRadius": 999,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Bo845",
+              "x": 0.66,
+              "y": 1,
+              "name": "Icon",
+              "width": 13,
+              "height": 13,
+              "fill": "#00000000",
+              "layout": "none",
               "children": [
                 {
-                  "type": "text",
-                  "id": "B8x7Lv",
-                  "name": "Eyebrow",
-                  "fill": "$accent-blue",
-                  "content": "FEATURED",
-                  "fontFamily": "$font-body",
-                  "fontSize": 10,
-                  "fontWeight": "700",
-                  "letterSpacing": 0.6
-                },
+                  "type": "path",
+                  "id": "z9iYLc",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M6.84619 0.60156q-0.34863 0.02734-0.68701 0.30762-0.51611 0.42041-1.00147 0.70068-0.48193 0.28027-1.01513 0.4751-0.30762 0.11279-0.58789 0.1709-0.28027 0.05469-0.66992 0.08203-0.23926 0.01367-0.36573 0.07178-0.19482 0.06836-0.37939 0.22217-0.18115 0.15381-0.26319 0.34863l-0.01367 0.03076q-0.07178 0.12646-0.08545 0.22217-0.01367 0.15381-0.02734 0.60156l0 1.78076q0 2.25244 0.01367 2.46094 0.14014 1.6543 1.10742 2.88477 0.14014 0.16748 0.43409 0.46142 0.29395 0.29394 0.48877 0.44775 0.92285 0.7417 2.2832 1.27491 0.46143 0.18115 0.65625 0.23926 0.23926 0.05469 0.43408 0.01367 0.16748-0.02734 0.5332-0.15381 1.35693-0.51953 2.27979-1.20313 0.37939-0.2666 0.71435-0.60498 1.37402-1.3706 1.54151-3.37353 0.01367-0.23584 0.01367-2.46094 0-2.22852-0.02734-2.35498-0.07178-0.32129-0.31787-0.56396-0.24268-0.24609-0.5503-0.31788-0.09912-0.02734-0.37939-0.04101-0.48877-0.02734-0.96387-0.18115-0.81348-0.2666-1.55518-0.77246-0.2666-0.18115-0.64257-0.48877-0.42041-0.33496-0.96729-0.28028z m0.43408 1.34326q0.64258 0.51953 1.32959 0.86817 1.2168 0.61865 2.25244 0.68701l0.21192 0-0.01367 4.31348q0 0.33496-0.02735 0.50244-0.22559 1.34326-1.1416 2.27637-0.91602 0.92969-2.66601 1.57226l-0.21192 0.08545-0.18115-0.05469q-2.32422-0.85449-3.2334-2.22851-0.47852-0.71436-0.63232-1.63721-0.02734-0.18115-0.02735-0.50244l-0.01367-4.32715 0.19483 0q0.86816-0.05469 1.84912-0.48193 0.98096-0.42725 1.83545-1.12793 0.16748-0.14014 0.19482-0.14014 0.02734 0 0.28027 0.19482z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#F97316",
+                  "width": 13,
+                  "height": 13
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "k1S80",
+              "x": 17.66,
+              "y": 0.5,
+              "name": "Text",
+              "fill": "#F97316",
+              "content": "Full access",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "IGbl8",
+              "x": 84.34,
+              "y": 2,
+              "name": "Chevron",
+              "width": 11,
+              "height": 11,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
                 {
-                  "type": "text",
-                  "id": "J0p7F",
-                  "name": "Name",
-                  "fill": "$text-primary",
-                  "content": "Linear",
-                  "fontFamily": "$font-body",
-                  "fontSize": 20,
-                  "fontWeight": "700"
-                },
-                {
-                  "type": "text",
-                  "id": "IC6G7",
-                  "name": "Tagline",
-                  "fill": "$text-secondary",
-                  "content": "Track and plan engineering work without leaving a thread.",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
+                  "type": "path",
+                  "id": "n43gi",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M3.34619 4.68945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04785 0.25977 0.05127 0.08887 1.8628 1.9038 1.81494 1.81152 1.9038 1.8628 0.09229 0.04785 0.25977 0.04785 0.16748 0 0.25635-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04102-0.25293-0.09912-0.16748-0.28027-0.2666-0.05811-0.02734-0.09912-0.04102-0.04102-0.01367-0.15381-0.01367-0.11279 0-0.15381 0.01367-0.04101 0.01367-0.11279 0.04102-0.09912 0.05811-1.66455 1.62695l-1.56885 1.56543-2.82666-2.81299q-0.31104-0.29395-0.42041-0.37939-0.08545-0.05469-0.19824-0.05469l-0.02735 0q-0.14014 0-0.18115 0.01367z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#F97316",
+                  "width": 11,
+                  "height": 11
                 }
               ]
             }
           ]
         },
         {
-          "id": "pbKAp",
-          "type": "ref",
-          "ref": "GYrNw",
-          "name": "Button"
+          "type": "frame",
+          "id": "iP6oE",
+          "x": 800,
+          "y": 760,
+          "name": "Access Pill / Trigger",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "metadata": {
+            "type": "recovery-confidence",
+            "confidence": "exact",
+            "source": "Synara main successful payloads 248689, 248697, 249494",
+            "note": "Wrapper/state/tooltip relationship exact; nested visual content export-derived partial."
+          },
+          "width": 108,
+          "height": 26,
+          "fill": "$row-bg",
+          "cornerRadius": 999,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "SeRYu",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": -35,
+              "name": "Tooltip Overlay",
+              "width": 108,
+              "height": 35,
+              "layout": "none",
+              "children": [
+                {
+                  "id": "CnjHY",
+                  "type": "ref",
+                  "ref": "Q5AL4",
+                  "name": "Permissions Tooltip",
+                  "enabled": "$tooltip-visible",
+                  "width": 142.01,
+                  "height": 35,
+                  "x": -17.005,
+                  "y": 0,
+                  "descendants": {
+                    "PAD8i": {
+                      "content": "Permissions"
+                    },
+                    "qrW5C": {
+                      "enabled": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "nCmc5",
+              "type": "ref",
+              "ref": "k4x6m",
+              "name": "Full Access Content",
+              "x": 6,
+              "y": 5.5,
+              "width": 96,
+              "height": 15
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eFqUm",
+          "x": 960,
+          "y": 760,
+          "name": "Button / Send",
+          "reusable": true,
+          "width": 26,
+          "height": 26,
+          "fill": "#E8EAF2",
+          "cornerRadius": 13,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Q7mxTO",
+              "x": 6,
+              "y": 6,
+              "name": "Arrow",
+              "width": 14,
+              "height": 14,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "Yl3wI",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M6.84619 2.35156q-0.08545 0.01367-0.15723 0.06494-0.06836 0.04785-2.16699 2.14649l-1.66455 1.69531q-0.36572 0.3623-0.46484 0.50244-0.05469 0.08545-0.05469 0.19824l0 0.04102q0 0.23926 0.18115 0.42041 0.11279 0.11279 0.28028 0.14697 0.16748 0.03418 0.32129-0.02051 0.08545-0.02734 0.32128-0.25976 0.23926-0.23242 1.37403-1.36377 1.58252-1.58252 1.59619-1.58252 0.01367 0 0.01367 3.42822l0 3.01123q0 0.44775 0.03418 0.53321 0.0376 0.08203 0.11963 0.16748 0.08545 0.08203 0.18799 0.1333 0.10596 0.04785 0.23242 0.04785 0.12646 0 0.229-0.04785 0.10596-0.05127 0.18799-0.1333 0.08545-0.08545 0.11963-0.16748 0.0376-0.08545 0.0376-0.53321l0-3.01123q0-3.42822 0.01367-3.42822 0.01367 0 1.59619 1.58252 1.13477 1.13135 1.37061 1.36377 0.23926 0.23242 0.32471 0.25976 0.15381 0.05469 0.32128 0.02051 0.16748-0.03418 0.28028-0.14697 0.18115-0.18115 0.18115-0.42041l0-0.04102q0-0.11279-0.05469-0.19824-0.09912-0.14014-0.46484-0.51611l-1.67822-1.68164q-2.10205-2.1123-2.17041-2.14649-0.06836-0.0376-0.16065-0.06494-0.09229-0.02734-0.14014-0.02734-0.04785 0-0.14697 0.02734z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#0B0C10",
+                  "width": 14,
+                  "height": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "z80pA",
+          "x": 64,
+          "y": 1000,
+          "name": "Composer Stories",
+          "width": 2000,
+          "height": 420,
+          "fill": "#0F1115",
+          "stroke": "#26272E",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "j1vAS",
+              "x": 16,
+              "y": 16,
+              "name": "Composer Stories Label",
+              "fill": "$text-soft",
+              "content": "Composer, selector, and access states",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "id": "a0vnDW",
+              "type": "ref",
+              "ref": "TKKOp",
+              "name": "Composer — default",
+              "theme": {
+                "state": "default"
+              },
+              "x": 16,
+              "y": 64
+            },
+            {
+              "id": "w3ppg4",
+              "type": "ref",
+              "ref": "TKKOp",
+              "name": "Composer — Full Access hover",
+              "theme": {
+                "state": "default"
+              },
+              "x": 620,
+              "y": 64,
+              "descendants": {
+                "DxWas": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "DxWas/C2Yo8k": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "DxWas/RPqic": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                },
+                "DxWas/nnunM": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "DxWas/E7z8ym": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "DxWas/PxCMd": {
+                  "theme": {
+                    "state": "default"
+                  }
+                }
+              }
+            },
+            {
+              "id": "JMY4k",
+              "type": "ref",
+              "ref": "g1dQ5",
+              "name": "Harness selector — default",
+              "theme": {
+                "state": "default"
+              },
+              "x": 16,
+              "y": 200,
+              "width": 193.77,
+              "height": 28.5,
+              "descendants": {
+                "f3XgC": {
+                  "enabled": true,
+                  "content": "High"
+                }
+              }
+            },
+            {
+              "id": "uOZS0",
+              "type": "ref",
+              "ref": "g1dQ5",
+              "name": "Harness selector — hover",
+              "theme": {
+                "state": "hover"
+              },
+              "x": 240,
+              "y": 200,
+              "width": 175.85,
+              "height": 24,
+              "descendants": {
+                "f3XgC": {
+                  "enabled": true,
+                  "content": "High"
+                }
+              }
+            },
+            {
+              "id": "zzGfD",
+              "type": "ref",
+              "ref": "iP6oE",
+              "name": "Access Pill — default",
+              "theme": {
+                "state": "default"
+              },
+              "x": 16,
+              "y": 270,
+              "width": 108,
+              "height": 26
+            },
+            {
+              "id": "g0avVS",
+              "type": "ref",
+              "ref": "iP6oE",
+              "name": "Access Pill — hover",
+              "theme": {
+                "state": "hover"
+              },
+              "x": 200,
+              "y": 270,
+              "width": 108,
+              "height": 26
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xikBq",
+          "x": 64,
+          "y": 1500,
+          "name": "Composer Action Stories",
+          "width": 2000,
+          "height": 320,
+          "fill": "#0F1115",
+          "stroke": "#26272E",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "P5cVC",
+              "x": 16,
+              "y": 16,
+              "name": "Composer Action Stories Label",
+              "fill": "$text-soft",
+              "content": "Composer action states — default and individual hover",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "id": "KVsHc",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions — default",
+              "x": 16,
+              "y": 80,
+              "width": 538,
+              "height": 26,
+              "theme": {
+                "state": "default"
+              }
+            },
+            {
+              "id": "c1K3BF",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions — attach hover",
+              "x": 620,
+              "y": 80,
+              "width": 538,
+              "height": 26,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "C2Yo8k": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                }
+              }
+            },
+            {
+              "id": "s8ym5",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions — access hover",
+              "x": 1224,
+              "y": 80,
+              "width": 538,
+              "height": 26,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "RPqic": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                }
+              }
+            },
+            {
+              "id": "p53Qu",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions — mode hover",
+              "x": 16,
+              "y": 210,
+              "width": 538,
+              "height": 26,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "nnunM": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                }
+              }
+            },
+            {
+              "id": "IsxuV",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions — voice hover",
+              "x": 620,
+              "y": 210,
+              "width": 538,
+              "height": 26,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "E7z8ym": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                }
+              }
+            },
+            {
+              "id": "bU8nR",
+              "type": "ref",
+              "ref": "JwTiI",
+              "name": "Composer Actions — send hover",
+              "x": 1224,
+              "y": 210,
+              "width": 538,
+              "height": 26,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "PxCMd": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pbUT3",
+          "x": 1100,
+          "y": 420,
+          "name": "Composer Menu Row / With Icon",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "width": 206,
+          "height": 29,
+          "fill": "$row-bg",
+          "cornerRadius": 6,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Lu2LA",
+              "x": 10,
+              "y": 7.5,
+              "name": "Leading Icon",
+              "width": 14,
+              "height": 14,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "i1Pbc",
+                  "x": -1,
+                  "y": -1,
+                  "name": "Glyph",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "Z5Xkv",
+                      "x": 0,
+                      "y": 0,
+                      "name": "path",
+                      "geometry": "M22.2819 9.8211a5.9847 5.9847 0 0 0-0.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9 6.0651 6.0651 0 0 0-10.2757 2.1715 5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 0.7427 7.0966 5.98 5.98 0 0 0 0.511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001 5.9847 5.9847 0 0 0 4.5086 2.0108 6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-0.7475-7.0729z m-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l0.1419-0.0804 4.7783-2.7582a0.7948 0.7948 0 0 0 0.3927-0.6813v-6.7369l2.02 1.1686a0.071 0.071 0 0 1 0.038 0.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944z m-9.6607-4.1254a4.4708 4.4708 0 0 1-0.5346-3.0137l0.142 0.0852 4.783 2.7582a0.7712 0.7712 0 0 0 0.7806 0l5.8428-3.3685v2.3324a0.0804 0.0804 0 0 1-0.0332 0.0615l-4.8398 2.7913a4.4992 4.4992 0 0 1-6.1408-1.6464z m-1.2584-10.4082a4.485 4.485 0 0 1 2.3655-1.9728v5.6772a0.7664 0.7664 0 0 0 0.3879 0.6765l5.8144 3.3543-2.0201 1.1685a0.0757 0.0757 0 0 1-0.071 0l-4.8303-2.7865a4.504 4.504 0 0 1-1.6464-6.1408z m16.5963 3.8558l-5.8333-3.3874 2.0154-1.164a0.0757 0.0757 0 0 1 0.071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-0.6765 8.1042v-5.6772a0.79 0.79 0 0 0-0.407-0.667z m2.0107-3.0231l-0.142-0.0852-4.7735-2.7818a0.7759 0.7759 0 0 0-0.7854 0l-5.8379 3.3684v-2.3323a0.0662 0.0662 0 0 1 0.0284-0.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66z m-12.6413 4.1347l-2.02-1.1638a0.0804 0.0804 0 0 1-0.038-0.0567v-5.5683a4.4992 4.4992 0 0 1 7.3757-3.4537l-0.142 0.0805-4.7782 2.758a0.7948 0.7948 0 0 0-0.3927 0.6813z m1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997z",
+                      "viewBox": [
+                        0,
+                        0,
+                        24,
+                        24
+                      ],
+                      "fill": "#FFFFFF",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "KYnoO",
+              "x": 32,
+              "y": 7,
+              "name": "Label",
+              "fill": "$row-text",
+              "textGrowth": "fixed-width",
+              "width": 144,
+              "content": "Codex",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "wmlJJ",
+              "x": 182,
+              "y": 7.5,
+              "name": "Chevron",
+              "width": 14,
+              "height": 14,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "ocstf",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M5.09619 2.93945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04102 0.25293 0.04443 0.08203 1.62353 1.66455l1.58252 1.58252-1.58252 1.58252q-1.5791 1.58252-1.62353 1.66797-0.04102 0.08203-0.04102 0.23584 0 0.15381 0.03418 0.23926 0.0376 0.08203 0.1333 0.18115 0.09912 0.0957 0.18115 0.1333 0.08545 0.03418 0.23926 0.03418 0.15381 0 0.24268-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04443-0.24951-0.04102-0.08545-1.85938-1.90723l-1.44238-1.42871q-0.33496-0.33496-0.46143-0.41699-0.09912-0.07178-0.19824-0.07178l-0.04102 0q-0.14014 0-0.18115 0.01367z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#6B7088",
+                  "width": 14,
+                  "height": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nBV5e",
+          "x": 1400,
+          "y": 420,
+          "name": "Composer Menu Row / Text",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "width": 186,
+          "height": 29,
+          "fill": "$row-bg",
+          "cornerRadius": 6,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "JywZr",
+              "x": 10,
+              "y": 7,
+              "name": "Label",
+              "fill": "$row-text",
+              "textGrowth": "fixed-width",
+              "width": 146,
+              "content": "Claude Haiku 4.5",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "a3PtT8",
+              "x": 162,
+              "y": 7.5,
+              "name": "Chevron",
+              "width": 14,
+              "height": 14,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "R5q2U",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M5.09619 2.93945q-0.25293 0.08545-0.37939 0.30762-0.04102 0.08545-0.04102 0.25293 0 0.16748 0.04102 0.25293 0.04443 0.08203 1.62353 1.66455l1.58252 1.58252-1.58252 1.58252q-1.5791 1.58252-1.62353 1.66797-0.04102 0.08203-0.04102 0.23584 0 0.15381 0.03418 0.23926 0.0376 0.08203 0.1333 0.18115 0.09912 0.0957 0.18115 0.1333 0.08545 0.03418 0.23926 0.03418 0.15381 0 0.24268-0.04785 0.09229-0.05127 1.90381-1.8628 1.81494-1.81494 1.86279-1.9038 0.05127-0.09229 0.05127-0.25977 0-0.16748-0.04443-0.24951-0.04102-0.08545-1.85938-1.90723l-1.44238-1.42871q-0.33496-0.33496-0.46143-0.41699-0.09912-0.07178-0.19824-0.07178l-0.04102 0q-0.14014 0-0.18115 0.01367z",
+                  "viewBox": [
+                    0,
+                    0,
+                    13.99993896484375,
+                    14
+                  ],
+                  "fill": "#6B7088",
+                  "width": 14,
+                  "height": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LJlnW",
+          "x": 64,
+          "y": 1900,
+          "name": "Composer Menu Row Stories",
+          "width": 2000,
+          "height": 360,
+          "fill": "#0F1115",
+          "stroke": "#26272E",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "Q46Cu",
+              "x": 16,
+              "y": 16,
+              "name": "Composer Menu Row Stories Label",
+              "fill": "$text-soft",
+              "content": "Composer menu row states — shared across harness, model, and quick settings",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "id": "Sn7rS",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Menu Row With Icon — default",
+              "x": 16,
+              "y": 90,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "KYnoO": {
+                  "content": "Default"
+                }
+              }
+            },
+            {
+              "id": "ytqsn",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Menu Row With Icon — hover",
+              "x": 266,
+              "y": 90,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "hover"
+              },
+              "descendants": {
+                "KYnoO": {
+                  "content": "Hover"
+                }
+              }
+            },
+            {
+              "id": "mt9bN",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Menu Row With Icon — selected",
+              "x": 516,
+              "y": 90,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "selected"
+              },
+              "descendants": {
+                "KYnoO": {
+                  "content": "Selected"
+                }
+              }
+            },
+            {
+              "id": "e5eWMY",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Menu Row With Icon — disabled",
+              "x": 766,
+              "y": 90,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "disabled"
+              },
+              "descendants": {
+                "KYnoO": {
+                  "content": "Disabled"
+                }
+              }
+            },
+            {
+              "id": "dK6IR",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Menu Row Text — default",
+              "x": 16,
+              "y": 220,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Default"
+                }
+              }
+            },
+            {
+              "id": "YGtVh",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Menu Row Text — hover",
+              "x": 246,
+              "y": 220,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "hover"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Hover"
+                }
+              }
+            },
+            {
+              "id": "WprSY",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Menu Row Text — selected",
+              "x": 476,
+              "y": 220,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "selected"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Selected"
+                }
+              }
+            },
+            {
+              "id": "loPTw",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Menu Row Text — disabled",
+              "x": 706,
+              "y": 220,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "disabled"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Disabled"
+                }
+              }
+            },
+            {
+              "id": "w5agNy",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Menu Row With Icon — active",
+              "x": 1016,
+              "y": 90,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "active"
+              },
+              "descendants": {
+                "KYnoO": {
+                  "content": "Active"
+                }
+              }
+            },
+            {
+              "id": "zKkpL",
+              "type": "ref",
+              "ref": "pbUT3",
+              "name": "Menu Row With Icon — open",
+              "x": 1266,
+              "y": 90,
+              "width": 206,
+              "height": 29,
+              "theme": {
+                "state": "open"
+              },
+              "descendants": {
+                "KYnoO": {
+                  "content": "Open"
+                }
+              }
+            },
+            {
+              "id": "O41p3u",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Menu Row Text — active",
+              "x": 936,
+              "y": 220,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "active"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Active"
+                }
+              }
+            },
+            {
+              "id": "wkBvc",
+              "type": "ref",
+              "ref": "nBV5e",
+              "name": "Menu Row Text — open",
+              "x": 1166,
+              "y": 220,
+              "width": 186,
+              "height": 29,
+              "theme": {
+                "state": "open"
+              },
+              "descendants": {
+                "JywZr": {
+                  "content": "Open"
+                }
+              }
+            }
+          ]
         }
       ]
     }
@@ -29936,6 +30341,363 @@
           "value": "chevron-down",
           "theme": {
             "state": "disabled"
+          }
+        }
+      ]
+    },
+    "color-background-surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#181818",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-surface-under": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#161616",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-panel": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1A1A1A",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-control-opaque": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1E1E1E",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-elevated-primary-opaque": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1E1E1E",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-user-message": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF07",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F0A",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-button-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-button-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF07",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F0A",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-button-secondary-hover": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF0A",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F0A",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-button-secondary-active": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF0E",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F05",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-background-accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#071625",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#EDF6FF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF12",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F12",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-border-heavy": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF1E",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F0F",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-border-focus": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5BAFFFA1",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#339CFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-text-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-text-foreground-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF94",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F98",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-text-foreground-tertiary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF54",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F65",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-text-button-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#181818",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-text-button-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6D6D6D",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#1A1C1F",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-text-accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5BAFFF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#339CFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "color-icon-accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5BAFFF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#339CFF",
+          "theme": {
+            "mode": "light"
           }
         }
       ]
