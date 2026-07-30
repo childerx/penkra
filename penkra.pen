@@ -9,6 +9,9 @@
       "x": 0,
       "y": 0,
       "width": 19700,
+      "theme": {
+        "mode": "dark"
+      },
       "descendants": {
         "V6ETK": {
           "content": "Components"
@@ -24,6 +27,9 @@
       "x": 0,
       "y": 400,
       "name": "Foundations",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -32,8 +38,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -77,9 +83,26 @@
           "height": 40.5,
           "fill": "$btn-primary-bg",
           "cornerRadius": 10,
+          "stroke": "$btn-primary-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 8,
           "justifyContent": "center",
           "alignItems": "center",
           "children": [
+            {
+              "type": "icon",
+              "id": "gSyee",
+              "x": 0,
+              "y": 0,
+              "name": "Loading Spinner — rotates in code",
+              "enabled": "$button-loading-visible",
+              "width": 16,
+              "height": 16,
+              "icon": "loader-circle",
+              "library": "lucide",
+              "fill": "$btn-primary-text"
+            },
             {
               "type": "text",
               "id": "cCt1S",
@@ -106,16 +129,29 @@
           "height": 41,
           "fill": "$btn-outline-bg",
           "cornerRadius": 10,
-          "stroke": "#26272E",
+          "stroke": "$btn-outline-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
-          "layout": "none",
+          "gap": 8,
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
+            {
+              "type": "icon",
+              "id": "jKaIh",
+              "x": 0,
+              "y": 0,
+              "name": "Loading Spinner — rotates in code",
+              "enabled": "$button-loading-visible",
+              "width": 16,
+              "height": 16,
+              "icon": "loader-circle",
+              "library": "lucide",
+              "fill": "$btn-outline-text"
+            },
             {
               "type": "text",
               "id": "EccQ0",
-              "x": 223.06,
-              "y": 13,
               "name": "Label",
               "fill": "$btn-outline-text",
               "content": "Sign in",
@@ -257,7 +293,7 @@
               "type": "text",
               "id": "EkqM1",
               "name": "Field Label",
-              "fill": "#9AA0B4",
+              "fill": "$color-text-foreground-secondary",
               "content": "Key name (Optional)",
               "fontFamily": "Inter",
               "fontSize": 13,
@@ -354,7 +390,7 @@
           "enabled": false,
           "width": 36,
           "height": 20,
-          "fill": "#3B82F6",
+          "fill": "$color-text-accent",
           "cornerRadius": 999,
           "layout": "none",
           "children": [
@@ -381,7 +417,7 @@
           "reusable": true,
           "width": 488,
           "height": 1,
-          "fill": "#26272E",
+          "fill": "$color-border",
           "layout": "none"
         },
         {
@@ -421,7 +457,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#0B0C10",
+                  "fill": "$color-background-surface",
                   "width": 11,
                   "height": 11
                 }
@@ -454,7 +490,7 @@
                 13.99993896484375,
                 14
               ],
-              "fill": "#9AA0B4",
+              "fill": "$color-text-foreground-secondary",
               "width": 16,
               "height": 16
             }
@@ -468,9 +504,9 @@
           "name": "Tooltip Interaction — component + stories",
           "width": 620,
           "height": 170,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "vertical",
           "gap": 12,
@@ -636,7 +672,7 @@
               "type": "frame",
               "id": "T0JYmK",
               "name": "Tooltip Body",
-              "fill": "#000000",
+              "fill": "$color-background-elevated-primary-opaque",
               "cornerRadius": 8,
               "stroke": "#1A1A1A",
               "strokeWidth": 1,
@@ -652,7 +688,7 @@
                   "type": "text",
                   "id": "PAD8i",
                   "name": "Label",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Select model",
                   "fontFamily": "Inter",
                   "fontSize": 12,
@@ -662,7 +698,7 @@
                   "type": "frame",
                   "id": "qrW5C",
                   "name": "Shortcut Pill",
-                  "fill": "#FFFFFF0D",
+                  "fill": "$color-background-button-secondary-hover",
                   "cornerRadius": 999,
                   "padding": [
                     2,
@@ -675,7 +711,7 @@
                       "type": "text",
                       "id": "NwDjX",
                       "name": "Shortcut",
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "content": "⌃⇧M",
                       "fontFamily": "Inter",
                       "fontSize": 11,
@@ -748,7 +784,7 @@
               "name": "Tooltip Body",
               "width": 106.75,
               "height": 28,
-              "fill": "#000000",
+              "fill": "$color-background-elevated-primary-opaque",
               "cornerRadius": 8,
               "stroke": "#1A1A1A",
               "strokeWidth": 1,
@@ -761,7 +797,7 @@
                   "x": 11,
                   "y": 7,
                   "name": "Label",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Copy response",
                   "fontFamily": "Inter",
                   "fontSize": 12,
@@ -827,9 +863,9 @@
           },
           "width": 2000,
           "height": 360,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "vertical",
           "gap": 14,
@@ -911,6 +947,22 @@
                   },
                   "x": 700,
                   "y": 60
+                },
+                {
+                  "id": "zERT0",
+                  "type": "ref",
+                  "ref": "TecAX",
+                  "name": "Primary Button — loading",
+                  "theme": {
+                    "state": "loading"
+                  },
+                  "x": 1204,
+                  "y": 60,
+                  "descendants": {
+                    "cCt1S": {
+                      "content": "Creating account…"
+                    }
+                  }
                 }
               ]
             },
@@ -990,6 +1042,22 @@
                   },
                   "x": 700,
                   "y": 60
+                },
+                {
+                  "id": "uFObk",
+                  "type": "ref",
+                  "ref": "LsMFv",
+                  "name": "Outline Button — loading",
+                  "theme": {
+                    "state": "loading"
+                  },
+                  "x": 1204,
+                  "y": 60,
+                  "descendants": {
+                    "EccQ0": {
+                      "content": "Signing in…"
+                    }
+                  }
                 }
               ]
             },
@@ -1067,9 +1135,9 @@
           },
           "width": 2000,
           "height": 100,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "gap": 16,
           "padding": 16,
@@ -1204,8 +1272,8 @@
           "name": "macOS Traffic Light Affordance — responsive states",
           "width": 2000,
           "height": 300,
-          "fill": "#101216",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface-under",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "gap": 40,
           "padding": 20,
@@ -1223,7 +1291,7 @@
                   "type": "text",
                   "id": "YQqrR",
                   "name": "State Label",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Windowed",
                   "fontFamily": "Inter",
                   "fontSize": 14,
@@ -1233,7 +1301,7 @@
                   "type": "text",
                   "id": "sfD1J",
                   "name": "Behavior",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "content": "Minimum 90px; expands to live native safe area + 10px",
                   "fontFamily": "Inter",
                   "fontSize": 12,
@@ -1248,7 +1316,7 @@
                   "height": "fill_container",
                   "fill": "#000000",
                   "cornerRadius": 10,
-                  "stroke": "#26272E",
+                  "stroke": "$color-border",
                   "strokeWidth": 1,
                   "layout": "none",
                   "children": [
@@ -1267,7 +1335,7 @@
                           "name": "Sidebar",
                           "width": 220,
                           "height": 208,
-                          "fill": "#0B0C10",
+                          "fill": "$color-background-surface",
                           "layout": "vertical",
                           "gap": 10,
                           "padding": [
@@ -1296,7 +1364,7 @@
                                   "type": "text",
                                   "id": "Xj5xE",
                                   "name": "Brand",
-                                  "fill": "#E8EAF2",
+                                  "fill": "$color-text-foreground",
                                   "content": "Penkra",
                                   "fontFamily": "Inter",
                                   "fontSize": 13,
@@ -1310,7 +1378,7 @@
                                   "height": 15,
                                   "icon": "search",
                                   "library": "lucide",
-                                  "fill": "#9AA0B4"
+                                  "fill": "$color-text-foreground-secondary"
                                 }
                               ]
                             },
@@ -1318,7 +1386,7 @@
                               "type": "text",
                               "id": "DEGYI",
                               "name": "Navigation Preview",
-                              "fill": "#9AA0B4",
+                              "fill": "$color-text-foreground-secondary",
                               "textGrowth": "fixed-width",
                               "width": "fill_container",
                               "content": "Search\nNew chat\nApps\nScheduled\nPlugins",
@@ -1335,7 +1403,7 @@
                           "name": "Main Content",
                           "width": "fill_container",
                           "height": "fill_container",
-                          "fill": "#000000"
+                          "fill": "$color-background-surface-under"
                         }
                       ]
                     },
@@ -1367,7 +1435,7 @@
                   "type": "text",
                   "id": "t9Ux4",
                   "name": "State Label",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Fullscreen",
                   "fontFamily": "Inter",
                   "fontSize": 14,
@@ -1377,7 +1445,7 @@
                   "type": "text",
                   "id": "jF3hs",
                   "name": "Behavior",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "content": "Content returns to the top edge",
                   "fontFamily": "Inter",
                   "fontSize": 12,
@@ -1392,7 +1460,7 @@
                   "height": "fill_container",
                   "fill": "#000000",
                   "cornerRadius": 10,
-                  "stroke": "#26272E",
+                  "stroke": "$color-border",
                   "strokeWidth": 1,
                   "layout": "vertical",
                   "children": [
@@ -1409,7 +1477,7 @@
                           "name": "Sidebar",
                           "width": 220,
                           "height": "fill_container",
-                          "fill": "#0B0C10",
+                          "fill": "$color-background-surface",
                           "layout": "vertical",
                           "gap": 10,
                           "padding": [
@@ -1432,7 +1500,7 @@
                                   "type": "text",
                                   "id": "Pm6TQ",
                                   "name": "Brand",
-                                  "fill": "#E8EAF2",
+                                  "fill": "$color-text-foreground",
                                   "content": "Penkra",
                                   "fontFamily": "Inter",
                                   "fontSize": 13,
@@ -1446,7 +1514,7 @@
                                   "height": 15,
                                   "icon": "search",
                                   "library": "lucide",
-                                  "fill": "#9AA0B4"
+                                  "fill": "$color-text-foreground-secondary"
                                 }
                               ]
                             },
@@ -1454,7 +1522,7 @@
                               "type": "text",
                               "id": "eIIRk",
                               "name": "Navigation Preview",
-                              "fill": "#9AA0B4",
+                              "fill": "$color-text-foreground-secondary",
                               "textGrowth": "fixed-width",
                               "width": "fill_container",
                               "content": "Search\nNew chat\nApps\nScheduled\nPlugins",
@@ -1471,7 +1539,7 @@
                           "name": "Main Content",
                           "width": "fill_container",
                           "height": "fill_container",
-                          "fill": "#000000"
+                          "fill": "$color-background-surface-under"
                         }
                       ]
                     }
@@ -1492,7 +1560,7 @@
                   "type": "text",
                   "id": "VhegT",
                   "name": "State Label",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Windowed · Screen sharing",
                   "fontFamily": "Inter",
                   "fontSize": 14,
@@ -1502,7 +1570,7 @@
                   "type": "text",
                   "id": "qIBNk",
                   "name": "Behavior",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "content": "Live native safe area + 10px; content never overlaps",
                   "fontFamily": "Inter",
                   "fontSize": 12,
@@ -1517,7 +1585,7 @@
                   "height": "fill_container",
                   "fill": "#000000",
                   "cornerRadius": 10,
-                  "stroke": "#26272E",
+                  "stroke": "$color-border",
                   "strokeWidth": 1,
                   "layout": "none",
                   "children": [
@@ -1536,7 +1604,7 @@
                           "name": "Sidebar",
                           "width": 300,
                           "height": 208,
-                          "fill": "#0B0C10",
+                          "fill": "$color-background-surface",
                           "layout": "vertical",
                           "gap": 10,
                           "padding": [
@@ -1565,7 +1633,7 @@
                                   "type": "text",
                                   "id": "BYOD5",
                                   "name": "Brand",
-                                  "fill": "#E8EAF2",
+                                  "fill": "$color-text-foreground",
                                   "content": "Penkra",
                                   "fontFamily": "Inter",
                                   "fontSize": 13,
@@ -1579,7 +1647,7 @@
                                   "height": 15,
                                   "icon": "search",
                                   "library": "lucide",
-                                  "fill": "#9AA0B4"
+                                  "fill": "$color-text-foreground-secondary"
                                 }
                               ]
                             },
@@ -1587,7 +1655,7 @@
                               "type": "text",
                               "id": "jCrCz",
                               "name": "Navigation Preview",
-                              "fill": "#9AA0B4",
+                              "fill": "$color-text-foreground-secondary",
                               "textGrowth": "fixed-width",
                               "width": "fill_container",
                               "content": "Search\nNew chat\nApps\nScheduled\nPlugins",
@@ -1604,7 +1672,7 @@
                           "name": "Main Content",
                           "width": "fill_container",
                           "height": "fill_container",
-                          "fill": "#000000"
+                          "fill": "$color-background-surface-under"
                         }
                       ]
                     },
@@ -1639,6 +1707,81 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "XUUPq",
+          "x": 1050,
+          "y": 494,
+          "name": "Penkra Mark / Shared",
+          "reusable": true,
+          "clip": true,
+          "width": 32,
+          "height": 32,
+          "fill": "#00000000",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Wy13I",
+              "x": 0,
+              "y": 0,
+              "name": "P Glyph",
+              "width": 32,
+              "height": 32,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "p9PPd",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M89 278v-67c0-91.7 74.3-166 166-166 92.2 0 167 74.3 167 166 0 88.5-70.3 160.8-158.2 163h-3.8v-71c50.8 0 92-41.2 92-92 0-52.5-42.5-95-95-95-54.7 0-99 43.1-99 95v67h-69z m0 25h69v164h-69z",
+                  "viewBox": [
+                    0,
+                    0,
+                    512,
+                    512
+                  ],
+                  "fill": "#F5F5F7",
+                  "width": 32,
+                  "height": 32
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Lc7PA",
+              "x": 0,
+              "y": 0,
+              "name": "Bridge",
+              "width": 32,
+              "height": 32,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "eEFGA",
+                  "x": 0,
+                  "y": 0,
+                  "name": "path",
+                  "geometry": "M182 303h78v71h-78z",
+                  "viewBox": [
+                    0,
+                    0,
+                    512,
+                    512
+                  ],
+                  "fill": "#8CB8E1",
+                  "width": 32,
+                  "height": 32
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1648,6 +1791,9 @@
       "x": 2500,
       "y": 400,
       "name": "Left Rail",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -1656,8 +1802,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -1740,7 +1886,7 @@
           "clip": true,
           "width": 224,
           "height": 27,
-          "fill": "#1F212B",
+          "fill": "$color-background-button-secondary-active",
           "cornerRadius": 6,
           "layout": "none",
           "children": [
@@ -1793,7 +1939,7 @@
               "x": 46,
               "y": 6,
               "name": "Label",
-              "fill": "#E8EAF2",
+              "fill": "$color-text-foreground",
               "textGrowth": "fixed-width-height",
               "width": 149,
               "height": 16,
@@ -1826,7 +1972,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "width": 13,
                   "height": 13
                 }
@@ -1889,7 +2035,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#0B0C10",
+                      "fill": "$color-background-surface",
                       "width": 11,
                       "height": 11
                     }
@@ -1931,7 +2077,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "width": 14,
                   "height": 14
                 }
@@ -1959,7 +2105,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "width": 14,
                   "height": 14
                 }
@@ -2404,7 +2550,7 @@
           "clip": true,
           "width": 240,
           "height": 900,
-          "fill": "#0B0C10",
+          "fill": "$color-background-surface",
           "layout": "none",
           "children": [
             {
@@ -2892,9 +3038,9 @@
           "reusable": true,
           "width": 220,
           "height": 139,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "cornerRadius": 10,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -2935,7 +3081,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "width": 14,
                       "height": 14
                     }
@@ -2947,7 +3093,7 @@
                   "x": 32,
                   "y": 7,
                   "name": "Label",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": 144,
                   "content": "Settings",
@@ -2979,7 +3125,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "width": 14,
                       "height": 14
                     }
@@ -3023,7 +3169,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "width": 14,
                       "height": 14
                     }
@@ -3035,7 +3181,7 @@
                   "x": 32,
                   "y": 7,
                   "name": "Label",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": 144,
                   "content": "Give Feedback",
@@ -3067,7 +3213,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "width": 14,
                       "height": 14
                     }
@@ -3111,7 +3257,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "width": 14,
                       "height": 14
                     }
@@ -3123,7 +3269,7 @@
                   "x": 32,
                   "y": 7,
                   "name": "Label",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": 144,
                   "content": "Support Us",
@@ -3155,7 +3301,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "width": 14,
                       "height": 14
                     }
@@ -3182,7 +3328,7 @@
                   "name": "Divider",
                   "width": 198,
                   "height": 1,
-                  "fill": "#26272E",
+                  "fill": "$color-border",
                   "layout": "none"
                 }
               ]
@@ -3223,7 +3369,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "width": 14,
                       "height": 14
                     }
@@ -3235,7 +3381,7 @@
                   "x": 32,
                   "y": 7,
                   "name": "Label",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": 144,
                   "content": "Log Out",
@@ -3267,7 +3413,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "width": 14,
                       "height": 14
                     }
@@ -3285,9 +3431,9 @@
           "name": "Left Rail Row States — component + stories",
           "width": 2000,
           "height": 1620,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -4410,9 +4556,9 @@
               "name": "Authoritative Original Stories",
               "width": 1968,
               "height": 370,
-              "fill": "#0B0C10",
+              "fill": "$color-background-surface",
               "cornerRadius": 10,
-              "stroke": "#26272E",
+              "stroke": "$color-border",
               "strokeWidth": 1,
               "layout": "none",
               "children": [
@@ -4746,9 +4892,9 @@
               "name": "Harness Thread Row State Matrix",
               "width": 1968,
               "height": 330,
-              "fill": "#0B0C10",
+              "fill": "$color-background-surface",
               "cornerRadius": 10,
-              "stroke": "#26272E",
+              "stroke": "$color-border",
               "strokeWidth": 1,
               "layout": "none",
               "children": [
@@ -6652,7 +6798,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 16,
                   "height": 16
                 }
@@ -7434,6 +7580,9 @@
       "x": 5000,
       "y": 400,
       "name": "Middle Panel — Thread",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -7442,8 +7591,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -7496,7 +7645,7 @@
               "name": "User",
               "width": 448,
               "height": 83,
-              "fill": "#1F212B",
+              "fill": "$color-background-button-secondary-active",
               "cornerRadius": 14,
               "layout": "none",
               "children": [
@@ -7506,7 +7655,7 @@
                   "x": 14,
                   "y": 10,
                   "name": "Text",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "textGrowth": "fixed-width",
                   "width": 422,
                   "content": "Who gets the Patient onboarding completed mail on prod? Is it a list or just one person? I need to know who to contact if there's an issue with the onboarding flow.",
@@ -7580,7 +7729,7 @@
                   "x": 0,
                   "y": 0,
                   "name": "Text",
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "content": "Worked for 1m 14s",
                   "fontFamily": "Inter",
                   "fontSize": 13,
@@ -7610,7 +7759,7 @@
                         13.99993896484375,
                         14
                       ],
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "width": 12,
                       "height": 12
                     }
@@ -7635,7 +7784,7 @@
                   "x": 0,
                   "y": 0,
                   "name": "Text",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "textGrowth": "fixed-width",
                   "width": 422,
                   "content": "Once approved, I'll read only the production ADMIN_EMAILS value and confirm the exact recipients.",
@@ -7713,7 +7862,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 14,
                   "height": 14
                 }
@@ -7725,7 +7874,7 @@
               "x": 36,
               "y": 8.5,
               "name": "Title",
-              "fill": "#E8EAF2",
+              "fill": "$color-text-foreground",
               "content": "Audit HIPAA compliance",
               "fontFamily": "Inter",
               "fontSize": 13,
@@ -7755,7 +7904,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "width": 14,
                   "height": 14
                 }
@@ -7796,7 +7945,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 16,
                   "height": 16
                 }
@@ -7814,7 +7963,7 @@
           "clip": true,
           "width": 1272,
           "height": 900,
-          "fill": "#000000",
+          "fill": "$color-background-surface-under",
           "layout": "none",
           "children": [
             {
@@ -8606,9 +8755,9 @@
           "name": "Shared Interaction Stories",
           "width": 2000,
           "height": 460,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -8777,9 +8926,9 @@
           "name": "Message Row Stories",
           "width": 2000,
           "height": 350,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -8851,7 +9000,7 @@
           "clip": true,
           "width": 780,
           "height": 900,
-          "fill": "#000000",
+          "fill": "$color-background-surface-under",
           "layout": "vertical",
           "alignItems": "center",
           "children": [
@@ -9485,6 +9634,9 @@
       "x": 10000,
       "y": 400,
       "name": "Right Panel",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -9493,8 +9645,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -9533,7 +9685,7 @@
           "reusable": true,
           "width": 420,
           "height": 900,
-          "fill": "#0B0C10",
+          "fill": "$color-background-surface",
           "layout": "none",
           "children": [
             {
@@ -10017,9 +10169,9 @@
           "reusable": true,
           "width": 440,
           "height": 200,
-          "fill": "#0B0C10",
+          "fill": "$color-background-surface",
           "cornerRadius": 14,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -10043,7 +10195,7 @@
                   "name": "Icon",
                   "width": 32,
                   "height": 32,
-                  "fill": "#5B9CF6",
+                  "fill": "$color-text-accent",
                   "cornerRadius": 7,
                   "layout": "none"
                 },
@@ -10053,7 +10205,7 @@
                   "x": 42,
                   "y": 7.25,
                   "name": "Title",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Ledger wants to:",
                   "fontFamily": "Inter",
                   "fontSize": 15,
@@ -10140,6 +10292,23 @@
                   "height": 14
                 }
               }
+            },
+            {
+              "id": "SwD87",
+              "type": "ref",
+              "ref": "nyAGp",
+              "name": "Apps",
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "L0dSu": {
+                  "icon": "grid-2x2"
+                },
+                "mPxnw": {
+                  "content": "Apps"
+                }
+              }
             }
           ]
         },
@@ -10209,7 +10378,7 @@
               "x": 209.73,
               "y": 7,
               "name": "div",
-              "fill": "#6B7088",
+              "fill": "$color-text-foreground-tertiary",
               "textGrowth": "fixed-width",
               "width": 42.27,
               "content": "⌃⇧G",
@@ -10237,7 +10406,7 @@
               "x": 0,
               "y": 0,
               "name": "Heading",
-              "fill": "#6B7088",
+              "fill": "$color-text-foreground-tertiary",
               "content": "Required — Ledger can't work without these",
               "fontFamily": "Inter",
               "fontSize": 11,
@@ -10271,7 +10440,7 @@
                       "x": 0,
                       "y": 2.5,
                       "name": "Title",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "textGrowth": "fixed-width",
                       "width": 348,
                       "content": "Connect to the internet",
@@ -10300,7 +10469,7 @@
                   "x": 0,
                   "y": 34,
                   "name": "Reason",
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "textGrowth": "fixed-width",
                   "width": 392,
                   "content": "\"Sync your invoices with your Ledger account.\"",
@@ -10330,7 +10499,7 @@
               "x": 0,
               "y": 0,
               "name": "Heading",
-              "fill": "#6B7088",
+              "fill": "$color-text-foreground-tertiary",
               "content": "Optional — you can turn these off",
               "fontFamily": "Inter",
               "fontSize": 11,
@@ -10410,17 +10579,12 @@
             "state": "default"
           },
           "reusable": true,
-          "fill": "$row-bg",
-          "cornerRadius": [
-            6,
-            6,
-            0,
-            0
-          ],
+          "fill": "$tab-bg",
+          "cornerRadius": 8,
           "gap": 6,
           "padding": [
-            8,
-            12
+            6,
+            10
           ],
           "alignItems": "center",
           "children": [
@@ -10458,7 +10622,7 @@
                 13.99993896484375,
                 14
               ],
-              "fill": "#E8EAF2",
+              "fill": "$color-text-foreground",
               "width": 14,
               "height": 14
             },
@@ -10468,7 +10632,7 @@
               "x": 0,
               "y": 0,
               "name": "Close",
-              "enabled": false,
+              "enabled": "$tab-close-visible",
               "width": 12,
               "height": 12,
               "icon": "x",
@@ -10490,9 +10654,9 @@
           },
           "width": 900,
           "height": 63,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "gap": 16,
           "padding": 16,
@@ -10658,7 +10822,7 @@
           },
           "width": 420,
           "height": 900,
-          "fill": "#0B0C10",
+          "fill": "$color-background-surface",
           "layout": "vertical",
           "children": [
             {
@@ -10666,13 +10830,13 @@
               "id": "mar6F",
               "name": "Panel Tabs",
               "width": "fill_container",
+              "height": 32,
               "gap": 4,
               "padding": [
-                8,
-                8,
                 0,
                 8
               ],
+              "alignItems": "center",
               "children": [
                 {
                   "id": "YzLlT",
@@ -10707,8 +10871,33 @@
                       "content": "Review"
                     }
                   }
+                },
+                {
+                  "id": "rnyF3",
+                  "type": "ref",
+                  "ref": "nyAGp",
+                  "name": "Apps",
+                  "theme": {
+                    "state": "default"
+                  },
+                  "descendants": {
+                    "L0dSu": {
+                      "icon": "grid-2x2"
+                    },
+                    "mPxnw": {
+                      "content": "Apps"
+                    }
+                  }
                 }
               ]
+            },
+            {
+              "id": "yrRyL",
+              "type": "ref",
+              "ref": "HQgpR",
+              "name": "App Bar",
+              "enabled": false,
+              "width": "fill_container(0)"
             },
             {
               "type": "frame",
@@ -10717,10 +10906,8 @@
               "width": "fill_container",
               "height": "fill_container",
               "layout": "vertical",
-              "gap": 2,
-              "padding": 20,
-              "justifyContent": "center",
-              "alignItems": "center",
+              "gap": 20,
+              "padding": 24,
               "children": [
                 {
                   "type": "frame",
@@ -11176,6 +11363,502 @@
                       }
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pjm3r",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Apps Header",
+                  "enabled": false,
+                  "width": "fill_container(0)",
+                  "children": [
+                    {
+                      "id": "u8Cni",
+                      "type": "ref",
+                      "ref": "Q9f3R9",
+                      "name": "Search",
+                      "width": "fill_container"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C4zLGW",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Apps Launcher",
+                  "enabled": false,
+                  "width": "fill_container(0)",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H0z3iR",
+                      "name": "Row",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "id": "q17Gbt",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Browser",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#4A90E2"
+                            },
+                            "PanXA": {
+                              "content": "Browser"
+                            }
+                          }
+                        },
+                        {
+                          "id": "dxKlW",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Word",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#2B579A"
+                            },
+                            "PanXA": {
+                              "content": "Word"
+                            }
+                          }
+                        },
+                        {
+                          "id": "W6Zls2",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Notion",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#3A3A3A"
+                            },
+                            "PanXA": {
+                              "content": "Notion"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vr3T9",
+                      "name": "Row",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "id": "BEbrz",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Figma",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#A259FF"
+                            },
+                            "PanXA": {
+                              "content": "Figma"
+                            }
+                          }
+                        },
+                        {
+                          "id": "T9Sz26",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Excel",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#1D6F42"
+                            },
+                            "PanXA": {
+                              "content": "Excel"
+                            }
+                          }
+                        },
+                        {
+                          "id": "h6iyZC",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Terminal",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#2A2E37"
+                            },
+                            "PanXA": {
+                              "content": "Terminal"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wCPdC",
+                      "name": "Row",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "id": "xLavh",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Blender",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#EA7600"
+                            },
+                            "PanXA": {
+                              "content": "Blender"
+                            }
+                          }
+                        },
+                        {
+                          "id": "M8l2vR",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "Slack",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#611F69"
+                            },
+                            "PanXA": {
+                              "content": "Slack"
+                            }
+                          }
+                        },
+                        {
+                          "id": "stotz",
+                          "type": "ref",
+                          "ref": "Cllpy",
+                          "name": "GitHub",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ZiUvD": {
+                              "fill": "#1F2328"
+                            },
+                            "PanXA": {
+                              "content": "GitHub"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V8POy2",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Apps Search Results",
+                  "enabled": false,
+                  "width": "fill_container(0)",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "id": "XvBs8",
+                      "type": "ref",
+                      "ref": "aPvtw",
+                      "name": "Row / Figma",
+                      "descendants": {
+                        "mOn8t": {
+                          "fill": "#A259FF"
+                        },
+                        "prMNM": {
+                          "content": "Figma"
+                        },
+                        "OyfT8": {
+                          "content": "Bring design files into a thread for review."
+                        }
+                      }
+                    },
+                    {
+                      "id": "pPXnO",
+                      "type": "ref",
+                      "ref": "aPvtw",
+                      "name": "Row / Excel",
+                      "descendants": {
+                        "mOn8t": {
+                          "fill": "#1D6F42"
+                        },
+                        "prMNM": {
+                          "content": "Excel"
+                        },
+                        "OyfT8": {
+                          "content": "Build and analyze spreadsheets."
+                        }
+                      }
+                    },
+                    {
+                      "id": "oH7cl",
+                      "type": "ref",
+                      "ref": "aPvtw",
+                      "name": "Row / Terminal",
+                      "descendants": {
+                        "mOn8t": {
+                          "fill": "#2A2E37"
+                        },
+                        "prMNM": {
+                          "content": "Terminal"
+                        },
+                        "OyfT8": {
+                          "content": "Run shell commands from a thread."
+                        }
+                      }
+                    },
+                    {
+                      "id": "TWMne",
+                      "type": "ref",
+                      "ref": "aPvtw",
+                      "name": "Row / Blender",
+                      "descendants": {
+                        "mOn8t": {
+                          "fill": "#EA7600"
+                        },
+                        "prMNM": {
+                          "content": "Blender"
+                        },
+                        "OyfT8": {
+                          "content": "Render and edit 3D scenes."
+                        }
+                      }
+                    },
+                    {
+                      "id": "bG9TN",
+                      "type": "ref",
+                      "ref": "aPvtw",
+                      "name": "Row / Slack",
+                      "descendants": {
+                        "mOn8t": {
+                          "fill": "#611F69"
+                        },
+                        "prMNM": {
+                          "content": "Slack"
+                        },
+                        "OyfT8": {
+                          "content": "Post updates to channels from a thread."
+                        }
+                      }
+                    },
+                    {
+                      "id": "l69r51",
+                      "type": "ref",
+                      "ref": "aPvtw",
+                      "name": "Row / GitHub",
+                      "descendants": {
+                        "mOn8t": {
+                          "fill": "#1F2328"
+                        },
+                        "prMNM": {
+                          "content": "GitHub"
+                        },
+                        "OyfT8": {
+                          "content": "Open issues and PRs inline in a thread."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "J6Y9C",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Apps Detail",
+                  "enabled": false,
+                  "width": "fill_container(0)",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "id": "wige3",
+                      "type": "ref",
+                      "ref": "HfU75",
+                      "name": "Back"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sDjT0",
+                      "name": "Head",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "id": "g43fd",
+                          "type": "ref",
+                          "ref": "hqS2K",
+                          "name": "Icon",
+                          "width": 64,
+                          "height": 64,
+                          "cornerRadius": 16,
+                          "fill": "#A259FF",
+                          "descendants": {
+                            "va2Qv": {
+                              "icon": "layout-panel-left",
+                              "width": 28,
+                              "height": 28
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "h3eujh",
+                          "name": "Texts",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lMq50",
+                              "name": "Name",
+                              "fill": "$text-primary",
+                              "content": "Figma",
+                              "fontFamily": "$font-body",
+                              "fontSize": 22,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "D8CxUb",
+                              "name": "Publisher",
+                              "fill": "$text-tertiary",
+                              "content": "by Penkra",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xbdnq",
+                              "name": "Meta",
+                              "gap": 8,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "id": "GTAVz",
+                                  "type": "ref",
+                                  "ref": "gqhMw",
+                                  "name": "Rating",
+                                  "descendants": {
+                                    "PAyFU": {
+                                      "content": "4.9"
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "IvNSP",
+                                  "name": "Dot",
+                                  "fill": "$text-tertiary",
+                                  "content": "·",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Znm8y",
+                                  "name": "Category",
+                                  "fill": "$text-tertiary",
+                                  "content": "Design",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "yvQa1",
+                          "type": "ref",
+                          "ref": "GYrNw",
+                          "name": "Install Button"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MzZHP",
+                      "name": "Description",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bring your team's Figma files into a thread. Search projects, preview frames, and attach designs for review without switching context.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Sb8m6",
+                      "name": "Permissions",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f2Dtk",
+                          "name": "Heading",
+                          "fill": "$text-secondary",
+                          "content": "Permissions",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "id": "t23zCH",
+                          "type": "ref",
+                          "ref": "t8z9QM",
+                          "name": "Required",
+                          "width": "fill_container",
+                          "descendants": {
+                            "GYlX9": {
+                              "content": "Access your Figma account"
+                            },
+                            "dWFSQ": {
+                              "enabled": false
+                            },
+                            "rhD2p": {
+                              "content": "\"Read your files and comments to show them in threads.\""
+                            }
+                          }
+                        },
+                        {
+                          "id": "k1yPov",
+                          "type": "ref",
+                          "ref": "t8z9QM",
+                          "name": "Optional",
+                          "width": "fill_container",
+                          "descendants": {
+                            "GYlX9": {
+                              "content": "Read the conversation you're in"
+                            },
+                            "rhD2p": {
+                              "content": "\"Attach the current thread when you share a file.\""
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -11194,9 +11877,9 @@
           },
           "width": 840,
           "height": 130,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -11388,9 +12071,9 @@
           },
           "width": 1320,
           "height": 130,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -11548,6 +12231,9 @@
       "x": 12500,
       "y": 400,
       "name": "Onboarding",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -11556,8 +12242,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -11679,7 +12365,7 @@
                   "x": 38.24,
                   "y": 0,
                   "name": "Name",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Claude",
                   "textAlign": "center",
                   "fontFamily": "Inter",
@@ -11692,7 +12378,7 @@
                   "x": 23.2,
                   "y": 17,
                   "name": "Status",
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "content": "3 connections",
                   "textAlign": "center",
                   "fontFamily": "Inter",
@@ -11795,7 +12481,7 @@
                   "x": 40.28,
                   "y": 0,
                   "name": "Name",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Codex",
                   "textAlign": "center",
                   "fontFamily": "Inter",
@@ -11808,7 +12494,7 @@
                   "x": 21.54,
                   "y": 17,
                   "name": "Status",
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "content": "Not connected",
                   "textAlign": "center",
                   "fontFamily": "Inter",
@@ -11901,9 +12587,9 @@
           "enabled": false,
           "width": 488,
           "height": 58.5,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "cornerRadius": 8,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -11932,7 +12618,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 16,
                   "height": 16
                 }
@@ -11955,7 +12641,7 @@
                   "x": 0,
                   "y": 0,
                   "name": "Label",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "sarah@company.com",
                   "fontFamily": "Inter",
                   "fontSize": 14,
@@ -11967,7 +12653,7 @@
                   "x": 0,
                   "y": 18.5,
                   "name": "Meta",
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "content": "Signed in · Claude Pro",
                   "fontFamily": "Inter",
                   "fontSize": 12,
@@ -11999,7 +12685,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "width": 14,
                   "height": 14
                 }
@@ -12017,13 +12703,13 @@
           "clip": true,
           "width": 1040,
           "height": 640,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "layout": "none",
           "children": [
             {
               "type": "frame",
               "id": "mf3ql",
-              "x": -7,
+              "x": 0,
               "y": 0,
               "name": "Main",
               "width": 600,
@@ -12038,7 +12724,7 @@
                   "y": 165.25,
                   "name": "Heading Group",
                   "width": 488,
-                  "height": 99,
+                  "height": 100,
                   "fill": "#00000000",
                   "layout": "none",
                   "children": [
@@ -12048,7 +12734,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Welcome Eyebrow",
-                      "fill": "#6B7088",
+                      "fill": "$color-text-foreground-tertiary",
                       "content": "Welcome to Penkra",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -12060,9 +12746,9 @@
                       "x": 0,
                       "y": 23,
                       "name": "Welcome Heading",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "textGrowth": "fixed-width",
-                      "width": 490,
+                      "width": 488,
                       "content": "Best app to work with AI",
                       "fontFamily": "Inter",
                       "fontSize": 28,
@@ -12074,9 +12760,9 @@
                       "x": 0,
                       "y": 64,
                       "name": "Subhead",
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "textGrowth": "fixed-width",
-                      "width": 490,
+                      "width": 488,
                       "content": "Install apps, connect your subscriptions and work seamlessly with any AI model",
                       "fontFamily": "Inter",
                       "fontSize": 15,
@@ -12163,70 +12849,20 @@
               "y": 20,
               "name": "Brand Logo",
               "clip": true,
-              "width": 28,
-              "height": 28,
+              "width": 32,
+              "height": 32,
               "fill": "#00000000",
               "layout": "none",
               "children": [
                 {
-                  "type": "frame",
-                  "id": "QOIPO",
+                  "id": "nHAs9",
+                  "type": "ref",
+                  "ref": "XUUPq",
+                  "name": "Penkra Mark Instance",
                   "x": 0,
                   "y": 0,
-                  "name": "P Glyph",
                   "width": 32,
-                  "height": 32,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "N1BjRi",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M89 278v-67c0-91.7 74.3-166 166-166 92.2 0 167 74.3 167 166 0 88.5-70.3 160.8-158.2 163h-3.8v-71c50.8 0 92-41.2 92-92 0-52.5-42.5-95-95-95-54.7 0-99 43.1-99 95v67h-69z m0 25h69v164h-69z",
-                      "viewBox": [
-                        0,
-                        0,
-                        512,
-                        512
-                      ],
-                      "fill": "#F5F5F7",
-                      "width": 32,
-                      "height": 32
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "mklCU",
-                  "x": 0,
-                  "y": 0,
-                  "name": "Bridge",
-                  "width": 32,
-                  "height": 32,
-                  "fill": "#00000000",
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "path",
-                      "id": "XAoiQ",
-                      "x": 0,
-                      "y": 0,
-                      "name": "path",
-                      "geometry": "M182 303h78v71h-78z",
-                      "viewBox": [
-                        0,
-                        0,
-                        512,
-                        512
-                      ],
-                      "fill": "#8CB8E1",
-                      "width": 32,
-                      "height": 32
-                    }
-                  ]
+                  "height": 32
                 }
               ]
             }
@@ -12242,7 +12878,7 @@
           "clip": true,
           "width": 1040,
           "height": 640,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "layout": "none",
           "children": [
             {
@@ -12273,7 +12909,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Heading",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Connect an agent to get started",
@@ -12287,7 +12923,7 @@
                       "x": 0,
                       "y": 36,
                       "name": "Subhead",
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Pick at least one — you can add more anytime.",
@@ -12787,7 +13423,7 @@
           "clip": true,
           "width": 1040,
           "height": 640,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "layout": "none",
           "children": [
             {
@@ -12818,7 +13454,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Title",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Manage your connections",
@@ -12832,7 +13468,7 @@
                       "x": 0,
                       "y": 36,
                       "name": "Subhead",
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Add or remove providers and API keys.",
@@ -12956,7 +13592,7 @@
           "clip": true,
           "width": 1040,
           "height": 640,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "layout": "none",
           "children": [
             {
@@ -12987,7 +13623,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Title",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Enter your API key",
@@ -13001,7 +13637,7 @@
                       "x": 0,
                       "y": 36,
                       "name": "Subhead",
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Paste your key to connect directly.",
@@ -13154,7 +13790,7 @@
           "clip": true,
           "width": 1040,
           "height": 640,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "layout": "none",
           "children": [
             {
@@ -13185,7 +13821,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Heading",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Add your first apps",
@@ -13199,7 +13835,7 @@
                       "x": 0,
                       "y": 36,
                       "name": "Subhead",
-                      "fill": "#9AA0B4",
+                      "fill": "$color-text-foreground-secondary",
                       "textGrowth": "fixed-width",
                       "width": 490,
                       "content": "Choose a few essentials — you can always add more later.",
@@ -13250,7 +13886,7 @@
               "clip": true,
               "width": 440,
               "height": 640,
-              "fill": "#141519",
+              "fill": "$color-background-panel",
               "layout": "none"
             },
             {
@@ -13836,7 +14472,7 @@
               "descendants": {
                 "EccQ0": {
                   "content": "Add an API Key",
-                  "x": 197.13
+                  "x": 196
                 }
               }
             }
@@ -13870,7 +14506,7 @@
                   "type": "text",
                   "id": "TjPaN",
                   "name": "Field Label",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "content": "API key",
                   "fontFamily": "Inter",
                   "fontSize": 13,
@@ -13907,7 +14543,7 @@
                   "type": "text",
                   "id": "ofznk",
                   "name": "Field Label",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "content": "Key name (Optional)",
                   "fontFamily": "Inter",
                   "fontSize": 13,
@@ -14866,7 +15502,7 @@
               "x": 0,
               "y": 0,
               "name": "Security Note Content",
-              "fill": "#6B7088",
+              "fill": "$color-text-foreground-tertiary",
               "textGrowth": "fixed-width",
               "width": 490,
               "content": "Your key is stored securely and never leaves this device unencrypted.",
@@ -14968,7 +15604,7 @@
                   "x": 38.91,
                   "y": 0,
                   "name": "Name",
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "content": "Cursor",
                   "textAlign": "center",
                   "fontFamily": "Inter",
@@ -14981,7 +15617,7 @@
                   "x": 21.54,
                   "y": 17,
                   "name": "Status",
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "content": "Not connected",
                   "textAlign": "center",
                   "fontFamily": "Inter",
@@ -15004,9 +15640,9 @@
             "source": "export geometry + fbfd:236917,236925,236937,237000,237015 exact state payloads"
           },
           "width": 2000,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "vertical",
           "gap": 16,
@@ -15387,9 +16023,9 @@
           },
           "width": 2000,
           "height": 162,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "gap": 12,
           "padding": 16,
@@ -15497,6 +16133,9 @@
       "x": 15000,
       "y": 400,
       "name": "Settings",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -15505,8 +16144,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -15633,7 +16272,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 16,
                   "height": 16
                 }
@@ -15645,7 +16284,7 @@
               "x": 38,
               "y": 10.5,
               "name": "Label",
-              "fill": "#9AA0B4",
+              "fill": "$color-text-foreground-secondary",
               "content": "General",
               "fontFamily": "Inter",
               "fontSize": 13,
@@ -15662,7 +16301,7 @@
           "enabled": false,
           "width": 196,
           "height": 36,
-          "fill": "#1F212B",
+          "fill": "$color-background-button-secondary-active",
           "cornerRadius": 8,
           "layout": "none",
           "children": [
@@ -15690,7 +16329,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#E8EAF2",
+                  "fill": "$color-text-foreground",
                   "width": 16,
                   "height": 16
                 }
@@ -15702,7 +16341,7 @@
               "x": 38,
               "y": 10.5,
               "name": "Label",
-              "fill": "#E8EAF2",
+              "fill": "$color-text-foreground",
               "content": "General",
               "fontFamily": "Inter",
               "fontSize": 13,
@@ -15747,7 +16386,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 16,
                   "height": 16
                 }
@@ -15759,7 +16398,7 @@
               "x": 38,
               "y": 10.5,
               "name": "Label",
-              "fill": "#9AA0B4",
+              "fill": "$color-text-foreground-secondary",
               "content": "Account",
               "fontFamily": "Inter",
               "fontSize": 13,
@@ -15777,8 +16416,8 @@
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -15791,7 +16430,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -16231,7 +16870,7 @@
                                       "type": "text",
                                       "id": "c36cr5",
                                       "name": "Title",
-                                      "fill": "#E8EAF2",
+                                      "fill": "$color-text-foreground",
                                       "content": "Launch at startup",
                                       "fontFamily": "Inter",
                                       "fontSize": 13,
@@ -16241,7 +16880,7 @@
                                       "type": "text",
                                       "id": "Sq30B",
                                       "name": "Description",
-                                      "fill": "#6B7088",
+                                      "fill": "$color-text-foreground-tertiary",
                                       "textGrowth": "fixed-width",
                                       "width": 354,
                                       "content": "Automatically open Penkra when your computer starts up.",
@@ -16257,7 +16896,7 @@
                                   "name": "Toggle",
                                   "width": 36,
                                   "height": 20,
-                                  "fill": "#3B82F6",
+                                  "fill": "$color-text-accent",
                                   "cornerRadius": 999,
                                   "layout": "none",
                                   "children": [
@@ -16326,7 +16965,7 @@
                                       "type": "text",
                                       "id": "aLUYG",
                                       "name": "Title",
-                                      "fill": "#E8EAF2",
+                                      "fill": "$color-text-foreground",
                                       "content": "Version",
                                       "fontFamily": "Inter",
                                       "fontSize": 13,
@@ -16336,7 +16975,7 @@
                                       "type": "text",
                                       "id": "n9UCSO",
                                       "name": "Description",
-                                      "fill": "#6B7088",
+                                      "fill": "$color-text-foreground-tertiary",
                                       "textGrowth": "fixed-width",
                                       "width": 330.59,
                                       "content": "Penkra console 1.4.2",
@@ -16422,7 +17061,7 @@
                                                 13.99993896484375,
                                                 14
                                               ],
-                                              "fill": "#9AA0B4",
+                                              "fill": "$color-text-foreground-secondary",
                                               "width": 16,
                                               "height": 16
                                             }
@@ -16464,7 +17103,7 @@
                                                 13.99993896484375,
                                                 14
                                               ],
-                                              "fill": "#9AA0B4",
+                                              "fill": "$color-text-foreground-secondary",
                                               "width": 16,
                                               "height": 16
                                             }
@@ -16506,7 +17145,7 @@
                                                 13.99993896484375,
                                                 14
                                               ],
-                                              "fill": "#9AA0B4",
+                                              "fill": "$color-text-foreground-secondary",
                                               "width": 16,
                                               "height": 16
                                             }
@@ -16538,8 +17177,8 @@
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -16552,7 +17191,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -16817,8 +17456,8 @@
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -16831,7 +17470,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -17190,8 +17829,8 @@
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -17204,7 +17843,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -17566,8 +18205,8 @@
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -17580,7 +18219,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -17975,12 +18614,15 @@
           "x": 1010,
           "y": 1720,
           "name": "Modal / Settings / Appearance",
+          "theme": {
+            "mode": "dark"
+          },
           "reusable": true,
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -17993,7 +18635,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -18500,8 +19142,8 @@
           "clip": true,
           "width": 880,
           "height": 640,
-          "fill": "#15171C",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -18514,7 +19156,7 @@
               "name": "Nav",
               "width": 220,
               "height": 638,
-              "fill": "#101216",
+              "fill": "$color-background-surface-under",
               "layout": "none",
               "children": [
                 {
@@ -19527,9 +20169,9 @@
           "name": "Settings Shared State Matrix",
           "width": 2000,
           "height": 820,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -20598,6 +21240,9 @@
           "x": 1010,
           "y": 2543,
           "name": "Theme Panel / Shared",
+          "theme": {
+            "mode": "dark"
+          },
           "reusable": true,
           "width": 440,
           "fill": "$card-fill",
@@ -20706,9 +21351,9 @@
                       "type": "frame",
                       "id": "vpwIQ",
                       "name": "Control",
-                      "fill": "#3B82F614",
+                      "fill": "$color-background-accent",
                       "cornerRadius": 8,
-                      "stroke": "#1F6FEB",
+                      "stroke": "$color-border-focus",
                       "strokeWidth": 1,
                       "gap": 8,
                       "padding": [
@@ -21253,7 +21898,8 @@
           "y": 2543,
           "name": "Theme Picker / Shared",
           "theme": {
-            "state": "default"
+            "state": "default",
+            "mode": "dark"
           },
           "reusable": true,
           "metadata": {
@@ -21339,11 +21985,11 @@
             {
               "type": "frame",
               "id": "trQNp",
-              "x": -46,
+              "x": -78,
               "y": 34,
               "name": "Theme Picker Menu",
               "enabled": "$theme-picker-menu-visible",
-              "width": 148,
+              "width": 180,
               "fill": "$surface-raised",
               "cornerRadius": 8,
               "stroke": "$border",
@@ -21435,7 +22081,7 @@
                 {
                   "type": "frame",
                   "id": "iy14p",
-                  "name": "Theme Option — Penkra",
+                  "name": "Theme Option — Codex",
                   "width": "fill_container",
                   "height": 28,
                   "fill": "#00000000",
@@ -21453,7 +22099,7 @@
                       "name": "Badge",
                       "width": 18,
                       "height": 18,
-                      "fill": "#3B82F61F",
+                      "fill": "$color-background-accent",
                       "cornerRadius": 4,
                       "layout": "vertical",
                       "justifyContent": "center",
@@ -21476,7 +22122,7 @@
                       "id": "IvDvb",
                       "name": "Label",
                       "fill": "$text-secondary",
-                      "content": "Penkra",
+                      "content": "Codex",
                       "fontFamily": "$font-body",
                       "fontSize": 12,
                       "fontWeight": "normal"
@@ -21508,7 +22154,7 @@
                 {
                   "type": "frame",
                   "id": "UPzbf",
-                  "name": "Theme Option — System",
+                  "name": "Theme Option — Catppuccin",
                   "width": "fill_container",
                   "height": 28,
                   "fill": "#00000000",
@@ -21526,7 +22172,7 @@
                       "name": "Badge",
                       "width": 18,
                       "height": 18,
-                      "fill": "#3B82F61F",
+                      "fill": "$color-background-accent",
                       "cornerRadius": 4,
                       "layout": "vertical",
                       "justifyContent": "center",
@@ -21549,7 +22195,7 @@
                       "id": "QFasm",
                       "name": "Label",
                       "fill": "$text-secondary",
-                      "content": "System",
+                      "content": "Catppuccin",
                       "fontFamily": "$font-body",
                       "fontSize": 12,
                       "fontWeight": "normal"
@@ -21577,6 +22223,183 @@
                       "fill": "$accent-blue"
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j6sDt7",
+                  "name": "Theme Option — Everforest",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "gap": 8,
+                  "padding": [
+                    5,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "B0PlD3",
+                      "name": "Badge",
+                      "width": 18,
+                      "height": 18,
+                      "fill": "$color-background-accent",
+                      "cornerRadius": 4,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n0GaZL",
+                          "name": "Aa",
+                          "fill": "$color-text-accent",
+                          "content": "Aa",
+                          "fontFamily": "$font-body",
+                          "fontSize": 9,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QM8Lz",
+                      "name": "Label",
+                      "fill": "$color-text-foreground-secondary",
+                      "content": "Everforest",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "R5E19",
+                      "name": "Spacer",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#00000000"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ya15B",
+                  "name": "Theme Option — Solarized",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "gap": 8,
+                  "padding": [
+                    5,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jhKVE",
+                      "name": "Badge",
+                      "width": 18,
+                      "height": 18,
+                      "fill": "$color-background-accent",
+                      "cornerRadius": 4,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w22JC4",
+                          "name": "Aa",
+                          "fill": "$color-text-accent",
+                          "content": "Aa",
+                          "fontFamily": "$font-body",
+                          "fontSize": 9,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ypw9m",
+                      "name": "Label",
+                      "fill": "$color-text-foreground-secondary",
+                      "content": "Solarized",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MkHCr",
+                      "name": "Spacer",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#00000000"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TnGLX",
+                  "name": "Theme Option — Vercel",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "gap": 8,
+                  "padding": [
+                    5,
+                    8
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ruH1U",
+                      "name": "Badge",
+                      "width": 18,
+                      "height": 18,
+                      "fill": "$color-background-accent",
+                      "cornerRadius": 4,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "apTlQ",
+                          "name": "Aa",
+                          "fill": "$color-text-accent",
+                          "content": "Aa",
+                          "fontFamily": "$font-body",
+                          "fontSize": 9,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "R6FZO",
+                      "name": "Label",
+                      "fill": "$color-text-foreground-secondary",
+                      "content": "Vercel",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YdW8j",
+                      "name": "Spacer",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#00000000"
+                    }
+                  ]
                 }
               ]
             }
@@ -21589,7 +22412,8 @@
           "y": 4900,
           "name": "Menu / Theme Picker",
           "theme": {
-            "state": "default"
+            "state": "default",
+            "mode": "dark"
           },
           "reusable": true,
           "width": 160,
@@ -21778,6 +22602,9 @@
       "x": 17500,
       "y": 400,
       "name": "Apps",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "partial",
@@ -21786,8 +22613,8 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -21954,7 +22781,7 @@
                       "height": 14,
                       "icon": "circle-check",
                       "library": "lucide",
-                      "fill": "#3B82F6"
+                      "fill": "$color-text-accent"
                     }
                   ]
                 },
@@ -21994,9 +22821,9 @@
           "enabled": false,
           "width": 488,
           "height": 86,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "cornerRadius": 10,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -22072,7 +22899,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Name",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "content": "Microsoft Word",
                       "fontFamily": "Inter",
                       "fontSize": 15,
@@ -22102,7 +22929,7 @@
                             13.99993896484375,
                             14
                           ],
-                          "fill": "#3B82F6",
+                          "fill": "$color-text-accent",
                           "width": 14,
                           "height": 14
                         }
@@ -22116,7 +22943,7 @@
                   "x": 0,
                   "y": 19.5,
                   "name": "Description",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": 344,
                   "content": "Draft and edit documents without leaving your thread.",
@@ -22201,9 +23028,9 @@
           "reusable": true,
           "width": 488,
           "height": 87.5,
-          "fill": "#141519",
+          "fill": "$color-background-panel",
           "cornerRadius": 10,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
           "layout": "none",
@@ -22279,7 +23106,7 @@
                       "x": 0,
                       "y": 0,
                       "name": "Name",
-                      "fill": "#E8EAF2",
+                      "fill": "$color-text-foreground",
                       "content": "Browser",
                       "fontFamily": "Inter",
                       "fontSize": 15,
@@ -22309,7 +23136,7 @@
                             13.99993896484375,
                             14
                           ],
-                          "fill": "#3B82F6",
+                          "fill": "$color-text-accent",
                           "width": 14,
                           "height": 14
                         }
@@ -22323,7 +23150,7 @@
                   "x": 0,
                   "y": 19.5,
                   "name": "Description",
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": 344,
                   "content": "Search the web and pull in pages without leaving your thread.",
@@ -22576,7 +23403,7 @@
             "source": "original d4OBR Permission Sheet batch_design payload"
           },
           "width": 440,
-          "fill": "#0B0C10",
+          "fill": "$color-background-surface",
           "cornerRadius": 14,
           "stroke": "$card-stroke",
           "strokeWidth": 1,
@@ -22700,7 +23527,7 @@
                   "type": "text",
                   "id": "Zvrs4",
                   "name": "Label",
-                  "fill": "#0B0C10",
+                  "fill": "$color-background-surface",
                   "content": "Install",
                   "fontFamily": "Inter",
                   "fontSize": 13,
@@ -22745,9 +23572,9 @@
           },
           "width": 2000,
           "height": 100,
-          "fill": "#0F1115",
+          "fill": "$color-background-surface",
           "cornerRadius": 12,
-          "stroke": "#26272E",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "gap": 16,
           "padding": 16,
@@ -22819,449 +23646,6 @@
               "theme": {
                 "state": "disabled"
               }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "WDRTD",
-          "x": 64,
-          "y": 2000,
-          "name": "Modal / Apps Gallery",
-          "reusable": true,
-          "width": 760,
-          "height": 849,
-          "fill": "#15171C",
-          "stroke": "#26272E",
-          "strokeWidth": 1,
-          "strokeAlignment": "inner",
-          "layout": "none",
-          "children": [
-            {
-              "type": "text",
-              "id": "q1bK9c",
-              "x": 32,
-              "y": 32,
-              "name": "Title",
-              "fill": "$text-primary",
-              "content": "Apps",
-              "fontFamily": "$font-body",
-              "fontSize": 20,
-              "fontWeight": "600"
-            },
-            {
-              "type": "frame",
-              "id": "vBma9",
-              "x": 700,
-              "y": 28,
-              "name": "Close",
-              "width": 28,
-              "height": 28,
-              "fill": "#00000000",
-              "cornerRadius": 6,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "Nh42n",
-                  "x": 7,
-                  "y": 7,
-                  "name": "Icon",
-                  "width": 14,
-                  "height": 14,
-                  "icon": "x",
-                  "library": "lucide",
-                  "fill": "$text-secondary"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "D3xCp",
-              "x": 32,
-              "y": 60,
-              "name": "Subtitle",
-              "fill": "$text-tertiary",
-              "content": "Discover and manage integrations your agent can use in threads.",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "id": "fNMP1",
-              "type": "ref",
-              "ref": "Q9f3R9",
-              "name": "Search",
-              "x": 32,
-              "y": 92,
-              "width": 696
-            },
-            {
-              "type": "frame",
-              "id": "ObMlu",
-              "x": 32,
-              "y": 158.5,
-              "name": "Content / Vertical Scroll Region",
-              "clip": true,
-              "width": 696,
-              "height": 658,
-              "fill": "#00000000",
-              "layout": "vertical",
-              "gap": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "aznfz",
-                  "name": "Category Pills",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "id": "VHlWQ",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / All",
-                      "fill": "$accent-blue",
-                      "stroke": "transparent",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "All",
-                          "fill": "#FFFFFF"
-                        }
-                      }
-                    },
-                    {
-                      "id": "gNFMG",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / Featured",
-                      "fill": "$accent-blue",
-                      "stroke": "transparent",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "Featured",
-                          "fill": "#FFFFFF"
-                        }
-                      }
-                    },
-                    {
-                      "id": "ReiS8",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / Productivity",
-                      "fill": "#00000000",
-                      "stroke": "$card-stroke",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "Productivity",
-                          "fill": "$text-secondary"
-                        }
-                      }
-                    },
-                    {
-                      "id": "soEah",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / Developer",
-                      "fill": "#00000000",
-                      "stroke": "$card-stroke",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "Developer",
-                          "fill": "$text-secondary"
-                        }
-                      }
-                    },
-                    {
-                      "id": "oCzqq",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / Design",
-                      "fill": "#00000000",
-                      "stroke": "$card-stroke",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "Design",
-                          "fill": "$text-secondary"
-                        }
-                      }
-                    },
-                    {
-                      "id": "ZkasG",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / Data",
-                      "fill": "#00000000",
-                      "stroke": "$card-stroke",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "Data",
-                          "fill": "$text-secondary"
-                        }
-                      }
-                    },
-                    {
-                      "id": "d65kU",
-                      "type": "ref",
-                      "ref": "tNSs3",
-                      "name": "Pill / Communication",
-                      "fill": "#00000000",
-                      "stroke": "$card-stroke",
-                      "descendants": {
-                        "h9NLJH": {
-                          "content": "Communication",
-                          "fill": "$text-secondary"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "Ggiku",
-                  "name": "Installed Section",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "mPHhr",
-                      "name": "Section Label",
-                      "fill": "$text-secondary",
-                      "content": "Installed",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "MgY2M",
-                      "name": "List",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 8,
-                      "children": [
-                        {
-                          "id": "XJpKj",
-                          "type": "ref",
-                          "ref": "aPvtw",
-                          "name": "Row / Browser",
-                          "descendants": {
-                            "mOn8t": {
-                              "fill": "#4A90E2"
-                            },
-                            "prMNM": {
-                              "content": "Browser"
-                            },
-                            "OyfT8": {
-                              "content": "Search the web and pull in pages without leaving your thread."
-                            }
-                          }
-                        },
-                        {
-                          "id": "Jaszq",
-                          "type": "ref",
-                          "ref": "aPvtw",
-                          "name": "Row / Microsoft Word",
-                          "descendants": {
-                            "mOn8t": {
-                              "fill": "#2B579A"
-                            },
-                            "prMNM": {
-                              "content": "Microsoft Word"
-                            },
-                            "OyfT8": {
-                              "content": "Draft and edit documents without leaving your thread."
-                            }
-                          }
-                        },
-                        {
-                          "id": "TXTrm",
-                          "type": "ref",
-                          "ref": "aPvtw",
-                          "name": "Row / Notion",
-                          "descendants": {
-                            "mOn8t": {
-                              "fill": "#3A3A3A"
-                            },
-                            "prMNM": {
-                              "content": "Notion"
-                            },
-                            "OyfT8": {
-                              "content": "Search and edit your docs from a thread."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "S3GEcm",
-                  "name": "Discover Section",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "DxgMG",
-                      "name": "Section Label",
-                      "fill": "$text-secondary",
-                      "content": "Discover",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "hU1Ey",
-                      "name": "Discover Grid",
-                      "layout": "vertical",
-                      "gap": 16,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "a9zYx1",
-                          "name": "Row",
-                          "gap": 16,
-                          "children": [
-                            {
-                              "id": "FAPkb",
-                              "type": "ref",
-                              "ref": "fgUwH",
-                              "name": "Card / Figma",
-                              "descendants": {
-                                "EQVyx": {
-                                  "fill": "#A259FF"
-                                },
-                                "TM1IX": {
-                                  "content": "Figma"
-                                },
-                                "nabQX/PAyFU": {
-                                  "content": "4.9"
-                                },
-                                "sUfTq": {
-                                  "content": "Bring design files into a thread for review."
-                                }
-                              }
-                            },
-                            {
-                              "id": "ybP7o",
-                              "type": "ref",
-                              "ref": "fgUwH",
-                              "name": "Card / Excel",
-                              "descendants": {
-                                "EQVyx": {
-                                  "fill": "#1D6F42"
-                                },
-                                "TM1IX": {
-                                  "content": "Excel"
-                                },
-                                "nabQX/PAyFU": {
-                                  "content": "4.6"
-                                },
-                                "sUfTq": {
-                                  "content": "Build and analyze spreadsheets."
-                                }
-                              }
-                            },
-                            {
-                              "id": "GBYoQ",
-                              "type": "ref",
-                              "ref": "fgUwH",
-                              "name": "Card / Terminal",
-                              "descendants": {
-                                "EQVyx": {
-                                  "fill": "#2A2E37"
-                                },
-                                "TM1IX": {
-                                  "content": "Terminal"
-                                },
-                                "nabQX/PAyFU": {
-                                  "content": "4.7"
-                                },
-                                "sUfTq": {
-                                  "content": "Run shell commands from a thread."
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "Dimzs",
-                          "name": "Row",
-                          "gap": 16,
-                          "children": [
-                            {
-                              "id": "dbKgA",
-                              "type": "ref",
-                              "ref": "fgUwH",
-                              "name": "Card / Blender",
-                              "descendants": {
-                                "EQVyx": {
-                                  "fill": "#EA7600"
-                                },
-                                "TM1IX": {
-                                  "content": "Blender"
-                                },
-                                "nabQX/PAyFU": {
-                                  "content": "4.5"
-                                },
-                                "sUfTq": {
-                                  "content": "Render and edit 3D scenes."
-                                }
-                              }
-                            },
-                            {
-                              "id": "Z7HlGO",
-                              "type": "ref",
-                              "ref": "fgUwH",
-                              "name": "Card / Slack",
-                              "descendants": {
-                                "EQVyx": {
-                                  "fill": "#611F69"
-                                },
-                                "TM1IX": {
-                                  "content": "Slack"
-                                },
-                                "nabQX/PAyFU": {
-                                  "content": "4.7"
-                                },
-                                "sUfTq": {
-                                  "content": "Post updates to channels from a thread."
-                                }
-                              }
-                            },
-                            {
-                              "id": "ni8Uz",
-                              "type": "ref",
-                              "ref": "fgUwH",
-                              "name": "Card / GitHub",
-                              "descendants": {
-                                "EQVyx": {
-                                  "fill": "#1F2328"
-                                },
-                                "TM1IX": {
-                                  "content": "GitHub"
-                                },
-                                "nabQX/PAyFU": {
-                                  "content": "4.9"
-                                },
-                                "sUfTq": {
-                                  "content": "Open issues and PRs inline in a thread."
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
@@ -23471,199 +23855,6 @@
         },
         {
           "type": "frame",
-          "id": "tmIN8",
-          "x": 820,
-          "y": 3600,
-          "name": "Modal / App Detail",
-          "reusable": true,
-          "width": 560,
-          "fill": "#15171C",
-          "stroke": "#26272E",
-          "strokeWidth": 1,
-          "strokeAlignment": "inner",
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 28,
-          "children": [
-            {
-              "id": "K2ejY9",
-              "type": "ref",
-              "ref": "HfU75",
-              "name": "Back"
-            },
-            {
-              "type": "frame",
-              "id": "zF51b",
-              "name": "Head",
-              "width": "fill_container",
-              "gap": 16,
-              "alignItems": "center",
-              "children": [
-                {
-                  "id": "IbyqL",
-                  "type": "ref",
-                  "ref": "hqS2K",
-                  "name": "Icon",
-                  "width": 72,
-                  "height": 72,
-                  "cornerRadius": 18,
-                  "fill": "#A259FF",
-                  "descendants": {
-                    "va2Qv": {
-                      "icon": "layout-panel-left",
-                      "width": 32,
-                      "height": 32
-                    }
-                  }
-                },
-                {
-                  "type": "frame",
-                  "id": "Fs3q3",
-                  "name": "Texts",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "tzSH4",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Figma",
-                      "fontFamily": "$font-body",
-                      "fontSize": 22,
-                      "fontWeight": "700"
-                    },
-                    {
-                      "type": "text",
-                      "id": "EeFjW",
-                      "name": "Publisher",
-                      "fill": "$text-tertiary",
-                      "content": "by Penkra",
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "oyaaz",
-                      "name": "Meta",
-                      "gap": 8,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "id": "FWGQT",
-                          "type": "ref",
-                          "ref": "gqhMw",
-                          "name": "Rating",
-                          "descendants": {
-                            "PAyFU": {
-                              "content": "4.9"
-                            }
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "id": "cCGWt",
-                          "name": "Dot",
-                          "fill": "$text-tertiary",
-                          "content": "·",
-                          "fontFamily": "$font-body",
-                          "fontSize": 11,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "KpjXM",
-                          "name": "Category",
-                          "fill": "$text-tertiary",
-                          "content": "Design",
-                          "fontFamily": "$font-body",
-                          "fontSize": 11,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "flIAy",
-                  "type": "ref",
-                  "ref": "GYrNw",
-                  "name": "Install Button"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "Eqrct",
-              "name": "Description",
-              "fill": "$text-secondary",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Bring your team's Figma files into a thread. Search projects, preview frames, and attach designs for review without switching context.",
-              "lineHeight": 1.5,
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "FMj5G",
-              "name": "Permissions",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 2,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "J0z4O",
-                  "name": "Heading",
-                  "fill": "$text-secondary",
-                  "content": "Permissions",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "600"
-                },
-                {
-                  "id": "lp3lB",
-                  "type": "ref",
-                  "ref": "t8z9QM",
-                  "name": "Required",
-                  "width": "fill_container",
-                  "descendants": {
-                    "GYlX9": {
-                      "content": "Access your Figma account"
-                    },
-                    "dWFSQ": {
-                      "enabled": false
-                    },
-                    "rhD2p": {
-                      "content": "\"Read your files and comments to show them in threads.\""
-                    }
-                  }
-                },
-                {
-                  "id": "R64CT",
-                  "type": "ref",
-                  "ref": "t8z9QM",
-                  "name": "Optional",
-                  "width": "fill_container",
-                  "descendants": {
-                    "GYlX9": {
-                      "content": "Read the conversation you're in"
-                    },
-                    "rhD2p": {
-                      "content": "\"Attach the current thread when you share a file.\""
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
           "id": "hMIEA",
           "x": 64,
           "y": 3200,
@@ -23716,14 +23907,30 @@
                   "gap": 2,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "prMNM",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Browser",
-                      "fontFamily": "$font-body",
-                      "fontSize": 14,
-                      "fontWeight": "600"
+                      "type": "frame",
+                      "id": "MyZhq",
+                      "name": "Name Row",
+                      "width": "fill_container",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "prMNM",
+                          "name": "Name",
+                          "fill": "$text-primary",
+                          "content": "Browser",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "id": "vJ1yP",
+                          "type": "ref",
+                          "ref": "gqhMw",
+                          "name": "Rating"
+                        }
+                      ]
                     },
                     {
                       "type": "text",
@@ -23858,6 +24065,9 @@
       "x": 0,
       "y": 7200,
       "width": 17200,
+      "theme": {
+        "mode": "dark"
+      },
       "descendants": {
         "V6ETK": {
           "content": "Desktop - Features"
@@ -23873,6 +24083,9 @@
       "x": 20500,
       "y": 0,
       "name": "Recovered Source Library — Organized",
+      "theme": {
+        "mode": "dark"
+      },
       "enabled": false,
       "width": 9000,
       "height": 7500,
@@ -23971,6 +24184,9 @@
       "x": 0,
       "y": 7600,
       "name": "Features / Main",
+      "theme": {
+        "mode": "dark"
+      },
       "width": 19700,
       "height": 8980,
       "layout": "none",
@@ -24974,7 +25190,10 @@
               "x": 280,
               "y": 130,
               "width": 880,
-              "height": 640
+              "height": 640,
+              "theme": {
+                "mode": "dark"
+              }
             }
           ]
         },
@@ -25258,197 +25477,19 @@
           "name": "Feature Row — Apps — Gallery",
           "x": 0,
           "y": 7960,
-          "width": 4416,
+          "width": 5904,
           "descendants": {
             "O2Mve": {
-              "content": "Apps — Gallery"
+              "content": "Apps — Panel"
             }
           }
         },
         {
           "type": "frame",
-          "id": "XVrZm",
-          "x": 0,
-          "y": 8080,
-          "name": "Screen — Apps Gallery",
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "bLkPI",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "J7GWa",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "zwvTe",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "yoY6n",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "UUWhL",
-              "type": "ref",
-              "ref": "WDRTD",
-              "name": "Apps Gallery Modal",
-              "x": 340,
-              "y": 25.5,
-              "width": 760,
-              "height": 849
-            },
-            {
-              "id": "XdZ3I",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "Xz6Cl",
-          "x": 1488,
-          "y": 8080,
-          "name": "Screen — Apps Gallery — App Detail",
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "TAZ4i",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "JPazs",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "jadaJ",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "dthFQ",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "YDTmJ",
-              "type": "ref",
-              "ref": "tmIN8",
-              "name": "App Detail Modal",
-              "x": 440,
-              "y": 262,
-              "width": 560,
-              "height": 376
-            },
-            {
-              "id": "i7Rsh2",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
           "id": "irJ7w",
-          "x": 2976,
+          "x": 4464,
           "y": 8080,
-          "name": "Screen — Apps Gallery — Install Permission",
+          "name": "Screen — Apps Panel — Install Permission",
           "clip": true,
           "width": 1440,
           "height": 900,
@@ -25495,7 +25536,29 @@
               "x": 1020,
               "y": 0,
               "width": 420,
-              "height": 900
+              "height": 900,
+              "descendants": {
+                "YzLlT": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "rnyF3": {
+                  "theme": {
+                    "state": "selected"
+                  }
+                },
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
+                },
+                "CSyPC": {
+                  "enabled": false
+                },
+                "J6Y9C": {
+                  "enabled": true
+                }
+              }
             },
             {
               "id": "qISeI",
@@ -25557,6 +25620,332 @@
               }
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "fcm2a",
+          "x": 0,
+          "y": 8080,
+          "name": "Screen — Apps Panel — Launcher",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "Q8Nm63",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "T6TPc",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "JyNaO",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Apps Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900,
+              "descendants": {
+                "YzLlT": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "rnyF3": {
+                  "theme": {
+                    "state": "selected"
+                  }
+                },
+                "yrRyL": {
+                  "enabled": true
+                },
+                "yrRyL/pBqq6": {
+                  "enabled": true
+                },
+                "yrRyL/xnhch": {
+                  "enabled": true,
+                  "justifyContent": "start"
+                },
+                "yrRyL/aZCrl": {
+                  "content": "Search apps"
+                },
+                "yrRyL/FMKUh": {
+                  "enabled": false
+                },
+                "yrRyL/l9cXw": {
+                  "enabled": true
+                },
+                "yrRyL/kxEsN": {
+                  "enabled": true
+                },
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
+                },
+                "CSyPC": {
+                  "enabled": false
+                },
+                "pjm3r": {
+                  "enabled": false
+                },
+                "C4zLGW": {
+                  "enabled": true
+                }
+              }
+            },
+            {
+              "id": "sLtoc",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "loYIZ",
+          "x": 1488,
+          "y": 8080,
+          "name": "Screen — Apps Panel — Search",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "jISy7",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "Pr5Fu",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "EyiWK",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Apps Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900,
+              "descendants": {
+                "YzLlT": {
+                  "theme": {
+                    "state": "default"
+                  },
+                  "x": 8,
+                  "y": 2.009092763365144,
+                  "rotation": 0.015099974329934077
+                },
+                "rnyF3": {
+                  "theme": {
+                    "state": "selected"
+                  }
+                },
+                "yrRyL": {
+                  "enabled": true
+                },
+                "yrRyL/pBqq6": {
+                  "enabled": true
+                },
+                "yrRyL/xnhch": {
+                  "enabled": true,
+                  "justifyContent": "start"
+                },
+                "yrRyL/aZCrl": {
+                  "content": "Search apps"
+                },
+                "yrRyL/FMKUh": {
+                  "enabled": false
+                },
+                "yrRyL/l9cXw": {
+                  "enabled": true
+                },
+                "yrRyL/kxEsN": {
+                  "enabled": true
+                },
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
+                },
+                "CSyPC": {
+                  "enabled": false
+                },
+                "pjm3r": {
+                  "enabled": false
+                },
+                "V8POy2": {
+                  "enabled": true
+                }
+              }
+            },
+            {
+              "id": "j6fe9y",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LbQmm",
+          "x": 2976,
+          "y": 8080,
+          "name": "Screen — Apps Panel — App Detail",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "FeFsq",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "C52Tt",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "jLq4v",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Apps Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900,
+              "descendants": {
+                "YzLlT": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "rnyF3": {
+                  "theme": {
+                    "state": "selected"
+                  }
+                },
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
+                },
+                "CSyPC": {
+                  "enabled": false
+                },
+                "J6Y9C": {
+                  "enabled": true
+                }
+              }
+            },
+            {
+              "id": "yk2CO",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
         }
       ]
     },
@@ -25566,6 +25955,9 @@
       "x": 1934,
       "y": 6980,
       "name": "Folder Group States — component + stories",
+      "theme": {
+        "mode": "dark"
+      },
       "width": 560,
       "height": 220,
       "fill": "#00000000",
@@ -25670,10 +26062,13 @@
       "x": 29700,
       "y": 400,
       "name": "Canvas Organization",
+      "theme": {
+        "mode": "dark"
+      },
       "width": 2200,
       "height": 700,
-      "fill": "#141519",
-      "stroke": "#26272E",
+      "fill": "$color-background-panel",
+      "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
@@ -25688,7 +26083,7 @@
           "name": "Component Group — Canvas Organization Marker",
           "width": 8,
           "height": 44,
-          "fill": "#3B82F6",
+          "fill": "$color-text-accent",
           "cornerRadius": 4
         },
         {
@@ -25793,6 +26188,9 @@
       "x": 7500,
       "y": 400,
       "name": "Middle Panel — Composer",
+      "theme": {
+        "mode": "dark"
+      },
       "metadata": {
         "type": "recovery-organization",
         "confidence": "exact-taxonomy",
@@ -25801,7 +26199,7 @@
       },
       "width": 2200,
       "height": 6500,
-      "fill": "#0B0C10",
+      "fill": "$color-background-surface",
       "layout": "none",
       "children": [
         {
@@ -25937,7 +26335,7 @@
               "x": 26,
               "y": 5,
               "name": "Label",
-              "fill": "#9AA0B4",
+              "fill": "$color-text-foreground-secondary",
               "textGrowth": "fixed-width",
               "width": 107.77,
               "content": "Claude Sonnet 5",
@@ -25951,7 +26349,7 @@
               "x": 136.77,
               "y": 5,
               "name": "Variant",
-              "fill": "#6B7088",
+              "fill": "$color-text-foreground-tertiary",
               "textGrowth": "fixed-width",
               "width": 34,
               "content": "High",
@@ -25983,7 +26381,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#9AA0B4",
+                  "fill": "$color-text-foreground-secondary",
                   "width": 12,
                   "height": 12
                 }
@@ -26132,7 +26530,7 @@
           "reusable": true,
           "width": 220,
           "height": 283,
-          "fill": "#16171C",
+          "fill": "$color-background-elevated-primary-opaque",
           "cornerRadius": 10,
           "stroke": "#2A2C36",
           "strokeWidth": 1,
@@ -26465,7 +26863,7 @@
           "reusable": true,
           "width": 200,
           "height": 133,
-          "fill": "#16171C",
+          "fill": "$color-background-elevated-primary-opaque",
           "cornerRadius": 10,
           "stroke": "#2A2C36",
           "strokeWidth": 1,
@@ -26555,7 +26953,7 @@
           "reusable": true,
           "width": 200,
           "height": 133,
-          "fill": "#16171C",
+          "fill": "$color-background-elevated-primary-opaque",
           "cornerRadius": 10,
           "stroke": "#2A2C36",
           "strokeWidth": 1,
@@ -26959,7 +27357,7 @@
           "reusable": true,
           "width": 26,
           "height": 26,
-          "fill": "#E8EAF2",
+          "fill": "$color-text-foreground",
           "cornerRadius": 13,
           "layout": "none",
           "children": [
@@ -26987,7 +27385,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#0B0C10",
+                  "fill": "$color-background-surface",
                   "width": 14,
                   "height": 14
                 }
@@ -27003,8 +27401,8 @@
           "name": "Composer Stories",
           "width": 2000,
           "height": 420,
-          "fill": "#0F1115",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -27148,8 +27546,8 @@
           "name": "Composer Action Stories",
           "width": 2000,
           "height": 320,
-          "fill": "#0F1115",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -27377,7 +27775,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "width": 14,
                   "height": 14
                 }
@@ -27439,7 +27837,7 @@
                     13.99993896484375,
                     14
                   ],
-                  "fill": "#6B7088",
+                  "fill": "$color-text-foreground-tertiary",
                   "width": 14,
                   "height": 14
                 }
@@ -27455,8 +27853,8 @@
           "name": "Composer Menu Row Stories",
           "width": 2000,
           "height": 360,
-          "fill": "#0F1115",
-          "stroke": "#26272E",
+          "fill": "$color-background-surface",
+          "stroke": "$color-border",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
@@ -27691,6 +28089,305 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "Cllpy",
+      "x": 64,
+      "y": 3120,
+      "name": "Launcher Item / Shared",
+      "reusable": true,
+      "width": 116,
+      "layout": "vertical",
+      "gap": 8,
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "ZiUvD",
+          "type": "ref",
+          "ref": "hqS2K",
+          "name": "Icon",
+          "width": 56,
+          "height": 56,
+          "cornerRadius": 14,
+          "descendants": {
+            "va2Qv": {
+              "width": 24,
+              "height": 24
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "PanXA",
+          "name": "Label",
+          "fill": "$text-secondary",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "App",
+          "textAlign": "center",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HQgpR",
+      "x": 31900,
+      "y": 0,
+      "name": "App Bar / Shared",
+      "reusable": true,
+      "width": 420,
+      "height": 32,
+      "fill": "#00000000",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KRLL1",
+          "name": "Bar Row",
+          "width": "fill_container",
+          "height": 31,
+          "gap": 8,
+          "padding": [
+            0,
+            8
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pBqq6",
+              "name": "Leading",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "udc3L",
+                  "name": "Back",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "a9950",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "chevron-left",
+                      "library": "lucide",
+                      "fill": "$back-btn-icon"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "e8rYF",
+                  "name": "Forward",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "gTUHQ",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "chevron-right",
+                      "library": "lucide",
+                      "fill": "$back-btn-icon"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Tkr6J",
+                  "name": "Refresh",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "b41Jb",
+                      "name": "Icon",
+                      "width": 13,
+                      "height": 13,
+                      "icon": "refresh-cw",
+                      "library": "lucide",
+                      "fill": "$back-btn-icon"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "exXKC",
+              "name": "Center",
+              "width": "fill_container",
+              "height": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xnhch",
+                  "name": "Address Pill",
+                  "width": "fill_container",
+                  "height": 22,
+                  "fill": "$address-pill-bg",
+                  "cornerRadius": 8,
+                  "stroke": "$address-pill-stroke",
+                  "strokeAlignment": "inner",
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aZCrl",
+                      "name": "URL",
+                      "fill": "$address-pill-text",
+                      "content": "app.penkra.com",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "FMKUh",
+                      "name": "Link Icon",
+                      "width": 11,
+                      "height": 11,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "fill": "$address-pill-icon"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "l9cXw",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Leading Icon",
+                      "enabled": false,
+                      "width": 12,
+                      "height": 12,
+                      "icon": "search",
+                      "library": "lucide",
+                      "fill": "$address-pill-icon"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kxEsN",
+              "name": "Trailing",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LPvlZ",
+                  "name": "Share",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "vL1X0",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "upload",
+                      "library": "lucide",
+                      "fill": "$back-btn-icon"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DZAEm",
+                  "name": "Download",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "b8SUV",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "download",
+                      "library": "lucide",
+                      "fill": "$back-btn-icon"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MP5BM",
+                  "name": "More",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "jEpsd",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "more-horizontal",
+                      "library": "lucide",
+                      "fill": "$back-btn-icon"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r1U99L",
+          "name": "Divider",
+          "width": "fill_container",
+          "height": 1,
+          "fill": "$color-border"
+        }
+      ]
     }
   ],
   "themes": {
@@ -27702,7 +28399,8 @@
       "disabled",
       "open",
       "focus",
-      "error"
+      "error",
+      "loading"
     ],
     "toggle": [
       "on",
@@ -27739,47 +28437,47 @@
     },
     "surface-sidebar": {
       "type": "color",
-      "value": "#0B0C10"
+      "value": "$color-background-surface"
     },
     "surface": {
       "type": "color",
-      "value": "#0F1115"
+      "value": "$color-background-surface"
     },
     "surface-raised": {
       "type": "color",
-      "value": "#141519"
+      "value": "$color-background-panel"
     },
     "surface-selected": {
       "type": "color",
-      "value": "#1F212B"
+      "value": "$color-background-button-secondary-active"
     },
     "surface-hover": {
       "type": "color",
-      "value": "#FFFFFF0D"
+      "value": "$color-background-button-secondary-hover"
     },
     "border": {
       "type": "color",
-      "value": "#26272E"
+      "value": "$color-border"
     },
     "text-primary": {
       "type": "color",
-      "value": "#E8EAF2"
+      "value": "$color-text-foreground"
     },
     "text-secondary": {
       "type": "color",
-      "value": "#9AA0B4"
+      "value": "$color-text-foreground-secondary"
     },
     "text-tertiary": {
       "type": "color",
-      "value": "#6B7088"
+      "value": "$color-text-foreground-tertiary"
     },
     "text-soft": {
       "type": "color",
-      "value": "#C4C8D9"
+      "value": "$color-text-foreground-secondary"
     },
     "accent-blue": {
       "type": "color",
-      "value": "#3B82F6"
+      "value": "$color-text-accent"
     },
     "accent-orange": {
       "type": "color",
@@ -27941,19 +28639,19 @@
           }
         },
         {
-          "value": "#FFFFFF0D",
+          "value": "$color-background-button-secondary-hover",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "selected"
           }
@@ -27976,37 +28674,37 @@
       "type": "color",
       "value": [
         {
-          "value": "#9AA0B4",
+          "value": "$color-text-foreground-secondary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#E8EAF2",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#E8EAF2",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#E8EAF2",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#C4C8D9",
+          "value": "$color-text-foreground-secondary",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "disabled"
           }
@@ -28140,13 +28838,13 @@
       "type": "color",
       "value": [
         {
-          "value": "#26272E",
+          "value": "$color-background-control-opaque",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#3B82F6",
+          "value": "$color-text-accent",
           "theme": {
             "state": "selected"
           }
@@ -28189,11 +28887,11 @@
     },
     "card-fill": {
       "type": "color",
-      "value": "#141519"
+      "value": "$color-background-panel"
     },
     "card-stroke": {
       "type": "color",
-      "value": "#26272E"
+      "value": "$color-border"
     },
     "row-trailing-opacity": {
       "type": "number",
@@ -28334,37 +29032,37 @@
       "type": "color",
       "value": [
         {
-          "value": "$card-fill",
+          "value": "$color-background-panel",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "$card-fill",
+          "value": "$color-background-panel",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$card-fill",
+          "value": "$color-background-panel",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#3B82F614",
+          "value": "$color-background-accent",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "$card-fill",
+          "value": "$color-background-panel",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "$card-fill",
+          "value": "$color-background-panel",
           "theme": {
             "state": "disabled"
           }
@@ -28375,37 +29073,37 @@
       "type": "color",
       "value": [
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#1F6FEB",
+          "value": "$color-border-focus",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "disabled"
           }
@@ -28422,31 +29120,31 @@
           }
         },
         {
-          "value": "#5B5F73",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "#3B82F6",
+          "value": "$color-border-focus",
           "theme": {
             "state": "focus"
           }
@@ -28458,7 +29156,7 @@
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-border",
           "theme": {
             "state": "disabled"
           }
@@ -28469,33 +29167,39 @@
       "type": "color",
       "value": [
         {
-          "value": "#3B82F6",
+          "value": "$color-background-button-primary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#5B9CF6",
+          "value": "$color-background-button-primary",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#2563EB",
+          "value": "$color-background-button-primary",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#2563EB",
+          "value": "$color-background-button-primary",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "disabled"
+          }
+        },
+        {
+          "value": "$color-background-button-secondary-active",
+          "theme": {
+            "state": "loading"
           }
         }
       ]
@@ -28504,33 +29208,39 @@
       "type": "color",
       "value": [
         {
-          "value": "#FFFFFF",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#FFFFFF",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#FFFFFF",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#FFFFFF",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "disabled"
+          }
+        },
+        {
+          "value": "$color-text-foreground-secondary",
+          "theme": {
+            "state": "loading"
           }
         }
       ]
@@ -28545,19 +29255,19 @@
           }
         },
         {
-          "value": "#FFFFFF0D",
+          "value": "$color-background-button-secondary-hover",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "selected"
           }
@@ -28567,6 +29277,12 @@
           "theme": {
             "state": "disabled"
           }
+        },
+        {
+          "value": "$color-background-button-secondary-active",
+          "theme": {
+            "state": "loading"
+          }
         }
       ]
     },
@@ -28574,33 +29290,39 @@
       "type": "color",
       "value": [
         {
-          "value": "#9AA0B4",
+          "value": "$color-text-button-secondary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#E8EAF2",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#E8EAF2",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#E8EAF2",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "disabled"
+          }
+        },
+        {
+          "value": "$color-text-foreground-tertiary",
+          "theme": {
+            "state": "loading"
           }
         }
       ]
@@ -28609,25 +29331,25 @@
       "type": "color",
       "value": [
         {
-          "value": "$text-secondary",
+          "value": "$color-text-foreground-secondary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "$text-primary",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$text-primary",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "disabled"
           }
@@ -28638,31 +29360,31 @@
       "type": "color",
       "value": [
         {
-          "value": "#1C2030",
+          "value": "$color-background-control-opaque",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#1C2030",
+          "value": "$color-background-control-opaque",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#1C2030",
+          "value": "$color-background-control-opaque",
           "theme": {
             "state": "focus"
           }
         },
         {
-          "value": "#1C2030",
+          "value": "$color-background-control-opaque",
           "theme": {
             "state": "error"
           }
         },
         {
-          "value": "#141519",
+          "value": "$color-background-panel",
           "theme": {
             "state": "disabled"
           }
@@ -28673,19 +29395,19 @@
       "type": "color",
       "value": [
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#3B82F6",
+          "value": "$color-border-focus",
           "theme": {
             "state": "focus"
           }
@@ -28697,7 +29419,7 @@
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-border",
           "theme": {
             "state": "disabled"
           }
@@ -28708,31 +29430,31 @@
       "type": "color",
       "value": [
         {
-          "value": "$text-tertiary",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "$text-secondary",
+          "value": "$color-text-foreground-secondary",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$text-primary",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "focus"
           }
         },
         {
-          "value": "$text-primary",
+          "value": "$color-text-foreground",
           "theme": {
             "state": "error"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "disabled"
           }
@@ -28743,31 +29465,31 @@
       "type": "color",
       "value": [
         {
-          "value": "#141519",
+          "value": "$color-background-panel",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#141519",
+          "value": "$color-background-panel",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#0F1115",
+          "value": "$color-background-surface",
           "theme": {
             "state": "disabled"
           }
@@ -28778,31 +29500,31 @@
       "type": "color",
       "value": [
         {
-          "value": "#26272E",
+          "value": "$color-border",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#5B5F73",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-border",
           "theme": {
             "state": "disabled"
           }
@@ -30103,37 +30825,37 @@
       "type": "color",
       "value": [
         {
-          "value": "#3B82F61F",
+          "value": "$color-background-accent",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#3B82F633",
+          "value": "$color-background-accent",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-text-accent",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-text-accent",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-text-accent",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-background-button-secondary",
           "theme": {
             "state": "disabled"
           }
@@ -30144,37 +30866,37 @@
       "type": "color",
       "value": [
         {
-          "value": "$accent-blue",
+          "value": "$color-text-accent",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-text-accent",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$white",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "$white",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "$white",
+          "value": "$color-text-button-primary",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "#4A4E5E",
+          "value": "$color-text-foreground-tertiary",
           "theme": {
             "state": "disabled"
           }
@@ -30226,37 +30948,37 @@
       "type": "color",
       "value": [
         {
-          "value": "$surface-selected",
+          "value": "$color-background-button-secondary",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "$surface-hover",
+          "value": "$color-background-button-secondary-hover",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$surface-selected",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "$surface-selected",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "$surface-selected",
+          "value": "$color-background-button-secondary-active",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "$surface-selected",
+          "value": "$color-background-button-secondary",
           "theme": {
             "state": "disabled"
           }
@@ -30267,37 +30989,37 @@
       "type": "color",
       "value": [
         {
-          "value": "$card-stroke",
+          "value": "$color-border",
           "theme": {
             "state": "default"
           }
         },
         {
-          "value": "#5B5F73",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "hover"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-border-heavy",
           "theme": {
             "state": "selected"
           }
         },
         {
-          "value": "$accent-blue",
+          "value": "$color-border-focus",
           "theme": {
             "state": "open"
           }
         },
         {
-          "value": "#1F212B",
+          "value": "$color-border",
           "theme": {
             "state": "disabled"
           }
@@ -30698,6 +31420,314 @@
           "value": "#339CFF",
           "theme": {
             "mode": "light"
+          }
+        }
+      ]
+    },
+    "tab-bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "$color-background-button-secondary-active",
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": "$color-background-button-secondary-active",
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": "$color-background-button-secondary-active",
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "disabled"
+          }
+        }
+      ]
+    },
+    "tab-close-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": false,
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "disabled"
+          }
+        }
+      ]
+    },
+    "address-pill-bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "#1C2030",
+          "theme": {
+            "state": "focus"
+          }
+        }
+      ]
+    },
+    "address-pill-text": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "state": "focus"
+          }
+        }
+      ]
+    },
+    "address-pill-icon": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF99",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "state": "focus"
+          }
+        }
+      ]
+    },
+    "address-pill-stroke": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "$input-border",
+          "theme": {
+            "state": "focus"
+          }
+        }
+      ]
+    },
+    "color-text-destructive": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F87171",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#DC2626",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "button-loading-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": false,
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "disabled"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "focus"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "error"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "loading"
+          }
+        }
+      ]
+    },
+    "btn-primary-border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": "#00000000",
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": "$color-border",
+          "theme": {
+            "state": "disabled"
+          }
+        },
+        {
+          "value": "$color-border-heavy",
+          "theme": {
+            "state": "loading"
+          }
+        }
+      ]
+    },
+    "btn-outline-border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "$color-border",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "$color-border-heavy",
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": "$color-border-heavy",
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": "$color-border-heavy",
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": "$color-border",
+          "theme": {
+            "state": "disabled"
+          }
+        },
+        {
+          "value": "$color-border-heavy",
+          "theme": {
+            "state": "loading"
           }
         }
       ]
