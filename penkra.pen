@@ -1986,14 +1986,19 @@
           "x": 656,
           "y": 236,
           "name": "Account Row / Shared",
-          "theme": {},
+          "theme": {
+            "state": "default"
+          },
           "reusable": true,
           "width": 240,
-          "height": 40,
+          "height": 44,
           "fill": "$row-bg",
           "cornerRadius": 6,
           "gap": 8,
-          "padding": 10,
+          "padding": [
+            12,
+            10
+          ],
           "alignItems": "center",
           "children": [
             {
@@ -2556,7 +2561,7 @@
               "x": 0,
               "y": 0,
               "width": "fill_container",
-              "height": 32.5,
+              "height": 46,
               "descendants": {
                 "p2SdN": {
                   "content": "Penkra"
@@ -2569,7 +2574,7 @@
               "ref": "dxWQT",
               "name": "Top Nav",
               "x": 0,
-              "y": 32.5,
+              "y": 46,
               "width": "fill_container",
               "height": 97.5
             },
@@ -2579,7 +2584,7 @@
               "ref": "mKbbW",
               "name": "Projects",
               "x": 0,
-              "y": 130,
+              "y": 143.5,
               "width": "fill_container",
               "height": "fill_container"
             },
@@ -2589,9 +2594,9 @@
               "ref": "ptpcV",
               "name": "Account Control",
               "x": 0,
-              "y": 860,
+              "y": 856,
               "width": "fill_container",
-              "height": 40,
+              "height": 44,
               "theme": {
                 "state": "default"
               }
@@ -4186,7 +4191,7 @@
               "theme": {
                 "state": "default"
               },
-              "height": 40
+              "height": 44
             },
             {
               "id": "XxFL7",
@@ -4199,7 +4204,7 @@
               "theme": {
                 "state": "hover"
               },
-              "height": 40
+              "height": 44
             },
             {
               "id": "j7qtam",
@@ -4212,7 +4217,7 @@
               "theme": {
                 "state": "active"
               },
-              "height": 40
+              "height": 44
             },
             {
               "id": "rQeKf",
@@ -4225,7 +4230,7 @@
               "theme": {
                 "state": "selected"
               },
-              "height": 40
+              "height": 44
             },
             {
               "id": "m78aw",
@@ -4238,7 +4243,7 @@
               "theme": {
                 "state": "open"
               },
-              "height": 40
+              "height": 44
             },
             {
               "id": "AKvjw",
@@ -4251,7 +4256,7 @@
               "theme": {
                 "state": "disabled"
               },
-              "height": 40
+              "height": 44
             },
             {
               "type": "text",
@@ -4797,9 +4802,14 @@
                       "x": 0,
                       "y": 28,
                       "width": 240,
-                      "height": 40,
+                      "height": 44,
                       "theme": {
                         "state": "default"
+                      },
+                      "descendants": {
+                        "aIHr8": {
+                          "theme": {}
+                        }
                       }
                     },
                     {
@@ -4810,9 +4820,14 @@
                       "x": 260,
                       "y": 28,
                       "width": 240,
-                      "height": 40,
+                      "height": 44,
                       "theme": {
                         "state": "hover"
+                      },
+                      "descendants": {
+                        "aIHr8": {
+                          "theme": {}
+                        }
                       }
                     },
                     {
@@ -4823,9 +4838,14 @@
                       "x": 0,
                       "y": 227,
                       "width": 240,
-                      "height": 40,
+                      "height": 44,
                       "theme": {
                         "state": "active"
+                      },
+                      "descendants": {
+                        "aIHr8": {
+                          "theme": {}
+                        }
                       }
                     }
                   ]
@@ -6677,17 +6697,124 @@
         },
         {
           "type": "frame",
+          "id": "NHESN",
+          "x": 64,
+          "y": 3480,
+          "name": "Folder Group States — component + stories",
+          "theme": {
+            "mode": "dark"
+          },
+          "width": 560,
+          "height": 220,
+          "fill": "#00000000",
+          "gap": 24,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "P4bNj",
+              "name": "Default — content hidden",
+              "width": 244,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g2RbB",
+                  "name": "State Label",
+                  "fill": "$text-secondary",
+                  "content": "Default — content hidden",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "id": "XEkq1",
+                  "type": "ref",
+                  "ref": "Shahm",
+                  "name": "Folder Group — default",
+                  "theme": {
+                    "state": "default"
+                  },
+                  "width": 224,
+                  "descendants": {
+                    "ratNe": {
+                      "content": "Atferd"
+                    },
+                    "OJgoQ": {
+                      "clip": true,
+                      "height": 56
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PGwEo",
+              "name": "Open — content visible",
+              "width": 244,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D1WBF",
+                  "name": "State Label",
+                  "fill": "$text-secondary",
+                  "content": "Open — content visible",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "id": "WZL6M",
+                  "type": "ref",
+                  "ref": "Shahm",
+                  "name": "Folder Group — open",
+                  "theme": {
+                    "state": "open"
+                  },
+                  "width": 224,
+                  "descendants": {
+                    "ratNe": {
+                      "content": "Atferd"
+                    },
+                    "OJgoQ": {
+                      "clip": true,
+                      "height": 56
+                    },
+                    "V3XtEy": {
+                      "enabled": false
+                    },
+                    "Yl7Ml": {
+                      "enabled": false
+                    },
+                    "rlYpC": {
+                      "enabled": false
+                    },
+                    "fPKBe": {
+                      "height": 27
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "xpOxQ",
           "x": 700,
           "y": 360,
           "name": "Sidebar Header / Shared",
           "reusable": true,
           "width": 240,
-          "height": 32.5,
+          "height": 46,
           "fill": "#00000000",
           "gap": 6,
           "padding": [
-            8,
+            0,
             10
           ],
           "alignItems": "center",
@@ -7782,7 +7909,7 @@
           "name": "Top Bar / Thread",
           "reusable": true,
           "width": 1272,
-          "height": 32,
+          "height": 46,
           "fill": "#00000000",
           "layout": "none",
           "children": [
@@ -7790,7 +7917,7 @@
               "type": "frame",
               "id": "R8m6eH",
               "x": 14,
-              "y": 9,
+              "y": 16,
               "name": "Folder Icon",
               "width": 14,
               "height": 14,
@@ -7820,7 +7947,7 @@
               "type": "text",
               "id": "q7dTkt",
               "x": 36,
-              "y": 8.5,
+              "y": 15,
               "name": "Title",
               "fill": "$color-text-foreground",
               "content": "Audit HIPAA compliance",
@@ -7832,7 +7959,7 @@
               "type": "frame",
               "id": "qp9ZM",
               "x": 190.09,
-              "y": 9,
+              "y": 16,
               "name": "Dots",
               "width": 14,
               "height": 14,
@@ -7862,7 +7989,7 @@
               "type": "frame",
               "id": "WicxU",
               "x": 212.09,
-              "y": 15.5,
+              "y": 22.5,
               "name": "Spacer",
               "width": 1021.91,
               "height": 1,
@@ -7873,7 +8000,7 @@
               "type": "frame",
               "id": "SDQ0c",
               "x": 1242,
-              "y": 8,
+              "y": 15,
               "name": "Panel Icon",
               "width": 16,
               "height": 16,
@@ -7922,17 +8049,17 @@
               "x": 0,
               "y": 0,
               "width": 1272,
-              "height": 32
+              "height": 46
             },
             {
               "type": "frame",
               "id": "bX1vF",
               "x": 256,
-              "y": 32,
+              "y": 46,
               "name": "Stream",
               "clip": true,
               "width": 760,
-              "height": 720,
+              "height": 706,
               "fill": "#00000000",
               "layout": "none",
               "children": [
@@ -8960,7 +9087,7 @@
               "x": 0,
               "y": 0,
               "width": "fill_container",
-              "height": 32,
+              "height": 46,
               "descendants": {
                 "WicxU": {
                   "x": 212.09,
@@ -8978,7 +9105,7 @@
               "context": "Implementation intent: vertically scrollable message viewport. Keep the top bar and bottom composer outside this region; new messages append to the scroll content.",
               "clip": true,
               "width": 760,
-              "height": 757,
+              "height": 743,
               "fill": "#00000000",
               "layout": "none",
               "children": [
@@ -23203,16 +23330,54 @@
           }
         },
         {
+          "id": "qFsEa",
+          "type": "ref",
+          "ref": "jBenk",
+          "name": "Feature Row — Main - Left Panel",
+          "x": 0,
+          "y": 160,
+          "width": 1440,
+          "descendants": {
+            "O2Mve": {
+              "content": "Main - Left Panel"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "YFS0q",
+          "x": 0,
+          "y": 280,
+          "name": "Screen — Main - Left Panel",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "b54t2",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Panel — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900
+            }
+          ]
+        },
+        {
           "id": "U7xEcA",
           "type": "ref",
           "ref": "jBenk",
-          "name": "Feature Row — Center Main Panel — Main Workspace",
+          "name": "Feature Row — Main - Middle Panel",
           "x": 0,
-          "y": 160,
-          "width": 1512,
+          "y": 1460,
+          "width": 1440,
           "descendants": {
             "O2Mve": {
-              "content": "Center Main Panel — Main Workspace"
+              "content": "Main - Middle Panel"
             }
           }
         },
@@ -23220,8 +23385,8 @@
           "type": "frame",
           "id": "UG43r",
           "x": 0,
-          "y": 280,
-          "name": "Main — 3 rails",
+          "y": 1580,
+          "name": "Screen — Main - Middle Panel",
           "metadata": {
             "type": "recovered-reference",
             "source": "workspace.png",
@@ -23267,7 +23432,7 @@
                   "width": 148,
                   "height": 16,
                   "x": 38,
-                  "y": 12
+                  "y": 14
                 }
               }
             },
@@ -23405,30 +23570,25 @@
           ]
         },
         {
-          "id": "DEItA",
+          "id": "TPoJC",
           "type": "ref",
           "ref": "jBenk",
-          "name": "Feature Row — Right Main Panel — Permissions",
+          "name": "Feature Row — Main - Right Panel",
           "x": 0,
-          "y": 1460,
-          "width": 2928,
+          "y": 2760,
+          "width": 5904,
           "descendants": {
             "O2Mve": {
-              "content": "Right Main Panel — Permissions"
+              "content": "Main - Right Panel"
             }
           }
         },
         {
           "type": "frame",
-          "id": "nouS1",
+          "id": "fcm2a",
           "x": 0,
-          "y": 1580,
-          "name": "Screen — Apps Panel",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "apps-panel.png",
-            "editable": false
-          },
+          "y": 2880,
+          "name": "Screen — Main - Right Panel — Apps Launcher",
           "clip": true,
           "width": 1440,
           "height": 900,
@@ -23436,63 +23596,47 @@
           "layout": "none",
           "children": [
             {
-              "id": "Ji412",
+              "id": "Q8Nm63",
               "type": "ref",
               "ref": "UPCCE",
-              "name": "Left Panel",
+              "name": "Left Rail — composed",
               "x": 0,
               "y": 0,
               "width": 240,
               "height": 900,
-              "theme": {
-                "state": "default"
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                },
+                "GVIVx": {
+                  "theme": {
+                    "state": "active"
+                  }
+                },
+                "GVIVx/aIHr8": {
+                  "theme": {}
+                }
               }
             },
             {
-              "id": "A92ox",
+              "id": "T6TPc",
               "type": "ref",
               "ref": "y0DmC",
               "name": "Middle Panel — Thread",
               "x": 240,
               "y": 0,
               "width": 780,
-              "height": 900,
-              "descendants": {
-                "v4gowy": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "kqawW": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "suiRU": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "cLs2Y": {
-                  "theme": {
-                    "state": "hover"
-                  }
-                },
-                "cLs2Y/qbQ0d/FVVGC": {
-                  "theme": {
-                    "state": "hover"
-                  }
-                },
-                "cLs2Y/qbQ0d/FVVGC/PRxFx": {
-                  "enabled": false
-                },
-                "cLs2Y/qbQ0d/FVVGC/xzXP5": {
-                  "enabled": false
-                }
-              }
+              "height": 900
             },
             {
-              "id": "GhMVH",
+              "id": "JyNaO",
               "type": "ref",
               "ref": "ayA7J",
               "name": "Apps Panel",
@@ -23501,229 +23645,46 @@
               "width": 420,
               "height": 900,
               "descendants": {
-                "mar6F": {
-                  "enabled": false
-                }
-              }
-            },
-            {
-              "id": "V5bUV1",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "hover"
-              },
-              "enabled": true,
-              "descendants": {
-                "nSpvB": {
-                  "x": 310,
-                  "y": 448,
+                "YzLlT": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "rnyF3": {
+                  "theme": {
+                    "state": "selected"
+                  }
+                },
+                "yrRyL": {
                   "enabled": true
                 },
-                "nSpvB/PAD8i": {
-                  "content": "Copy response"
+                "yrRyL/pBqq6": {
+                  "enabled": true
                 },
-                "nSpvB/qrW5C": {
+                "yrRyL/xnhch": {
+                  "enabled": true,
+                  "justifyContent": "start"
+                },
+                "yrRyL/aZCrl": {
+                  "content": "Search apps"
+                },
+                "yrRyL/FMKUh": {
                   "enabled": false
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "ap0Pm",
-          "x": 1488,
-          "y": 1580,
-          "name": "Screen — Permission Request",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "permission.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "W79GGr",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
                 },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "JfhFa",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "IjHpD",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "ksygF",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "hf5wZ",
-              "type": "ref",
-              "ref": "r5wcGn",
-              "name": "Permission Sheet / Install",
-              "x": 500,
-              "y": 296,
-              "width": 440,
-              "height": 308
-            },
-            {
-              "id": "BETSr",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "id": "cff7D",
-          "type": "ref",
-          "ref": "jBenk",
-          "name": "Feature Row — Settings — Main Modal",
-          "x": 0,
-          "y": 2760,
-          "width": 10368,
-          "descendants": {
-            "O2Mve": {
-              "content": "Settings — Main Modal"
-            }
-          }
-        },
-        {
-          "type": "frame",
-          "id": "P3rhe3",
-          "x": 0,
-          "y": 2880,
-          "name": "Screen — Settings",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "v8d6A",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
+                "yrRyL/l9cXw": {
+                  "enabled": true
                 },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
+                "yrRyL/kxEsN": {
+                  "enabled": true
+                },
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
                 }
               }
             },
             {
-              "id": "msL8p",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "S8Tdo",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "iTfUM",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "N18Xsn",
-              "type": "ref",
-              "ref": "BvoZF",
-              "name": "Settings Modal",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640
-            },
-            {
-              "id": "ORadB",
+              "id": "sLtoc",
               "type": "ref",
               "ref": "o4UviR",
               "name": "Tooltip Overlay Layer",
@@ -23739,15 +23700,10 @@
         },
         {
           "type": "frame",
-          "id": "aS32i",
+          "id": "loYIZ",
           "x": 1488,
           "y": 2880,
-          "name": "Screen — Settings — Permissions",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings-permissions.png",
-            "editable": false
-          },
+          "name": "Screen — Main - Right Panel — Apps Search",
           "clip": true,
           "width": 1440,
           "height": 900,
@@ -23755,7 +23711,7 @@
           "layout": "none",
           "children": [
             {
-              "id": "FhCfP",
+              "id": "jISy7",
               "type": "ref",
               "ref": "UPCCE",
               "name": "Left Rail — composed",
@@ -23777,7 +23733,7 @@
               }
             },
             {
-              "id": "y5QKFy",
+              "id": "Pr5Fu",
               "type": "ref",
               "ref": "y0DmC",
               "name": "Middle Panel — Thread",
@@ -23787,37 +23743,58 @@
               "height": 900
             },
             {
-              "id": "sqhj7",
+              "id": "EyiWK",
               "type": "ref",
               "ref": "ayA7J",
-              "name": "Files Panel",
+              "name": "Apps Panel",
               "x": 1020,
               "y": 0,
               "width": 420,
-              "height": 900
+              "height": 900,
+              "descendants": {
+                "YzLlT": {
+                  "theme": {
+                    "state": "default"
+                  },
+                  "x": 8,
+                  "y": 2.009092763365144,
+                  "rotation": 0.015099974329934077
+                },
+                "rnyF3": {
+                  "theme": {
+                    "state": "selected"
+                  }
+                },
+                "yrRyL": {
+                  "enabled": true
+                },
+                "yrRyL/pBqq6": {
+                  "enabled": true
+                },
+                "yrRyL/xnhch": {
+                  "enabled": true,
+                  "justifyContent": "start"
+                },
+                "yrRyL/aZCrl": {
+                  "content": "Search apps"
+                },
+                "yrRyL/FMKUh": {
+                  "enabled": false
+                },
+                "yrRyL/l9cXw": {
+                  "enabled": true
+                },
+                "yrRyL/kxEsN": {
+                  "enabled": true
+                },
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
+                }
+              }
             },
             {
-              "id": "neOBv",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "UQsOR",
-              "type": "ref",
-              "ref": "EigOY",
-              "name": "Settings Modal — Permissions",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640
-            },
-            {
-              "id": "n9Mzd",
+              "id": "j6fe9y",
               "type": "ref",
               "ref": "o4UviR",
               "name": "Tooltip Overlay Layer",
@@ -23833,15 +23810,10 @@
         },
         {
           "type": "frame",
-          "id": "YsUYh",
+          "id": "LbQmm",
           "x": 2976,
           "y": 2880,
-          "name": "Screen — Settings — Agents",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings-agents.png",
-            "editable": false
-          },
+          "name": "Screen — Main - Right Panel — App Detail",
           "clip": true,
           "width": 1440,
           "height": 900,
@@ -23849,7 +23821,7 @@
           "layout": "none",
           "children": [
             {
-              "id": "MvxLe",
+              "id": "FeFsq",
               "type": "ref",
               "ref": "UPCCE",
               "name": "Left Rail — composed",
@@ -23871,7 +23843,7 @@
               }
             },
             {
-              "id": "u9WPY7",
+              "id": "C52Tt",
               "type": "ref",
               "ref": "y0DmC",
               "name": "Middle Panel — Thread",
@@ -23881,225 +23853,33 @@
               "height": 900
             },
             {
-              "id": "BqDqm",
+              "id": "jLq4v",
               "type": "ref",
               "ref": "ayA7J",
-              "name": "Files Panel",
+              "name": "Apps Panel",
               "x": 1020,
               "y": 0,
               "width": 420,
-              "height": 900
-            },
-            {
-              "id": "KCghJ",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "xaf9t",
-              "type": "ref",
-              "ref": "DaeGT",
-              "name": "Settings Modal — Agents",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640
-            },
-            {
-              "id": "EtFfm",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "lZFaB",
-          "x": 4464,
-          "y": 2880,
-          "name": "Screen — Settings — Apps",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings-apps.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "eCYRX",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
               "height": 900,
               "descendants": {
-                "q9B7x/Wkyk2": {
+                "YzLlT": {
                   "theme": {
                     "state": "default"
                   }
                 },
-                "q9B7x/hZcQe": {
+                "rnyF3": {
                   "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "BIijr",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "i4LgT",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "S6Pjef",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "txqR5",
-              "type": "ref",
-              "ref": "H5g0Bs",
-              "name": "Settings Modal — Apps",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640
-            },
-            {
-              "id": "OKGmY",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "Q6Nzkr",
-          "x": 5952,
-          "y": 2880,
-          "name": "Screen — Settings — Connectors",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings-connectors.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "o5jgH",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
+                    "state": "selected"
                   }
                 },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
+                "f8mp2": {
+                  "justifyContent": "start",
+                  "alignItems": "start"
                 }
               }
             },
             {
-              "id": "QjUFO",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "YccY0",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "LNYjT",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "yHXSR",
-              "type": "ref",
-              "ref": "d1gb7H",
-              "name": "Settings Modal — Connectors",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640
-            },
-            {
-              "id": "M122Tp",
+              "id": "yk2CO",
               "type": "ref",
               "ref": "o4UviR",
               "name": "Tooltip Overlay Layer",
@@ -24112,397 +23892,13 @@
               }
             }
           ]
-        },
-        {
-          "type": "frame",
-          "id": "bQq5u",
-          "x": 7440,
-          "y": 2880,
-          "name": "Screen — Settings — Appearance",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings-appearance.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "xMWS3",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "LZ5vF",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "hgMWz",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "YMZfx",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "ZVALA",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            },
-            {
-              "id": "Od8Zw",
-              "type": "ref",
-              "ref": "tyZ7c",
-              "name": "Settings Modal — Appearance",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640,
-              "theme": {
-                "mode": "dark"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "pwz9i",
-          "x": 8928,
-          "y": 2880,
-          "name": "Screen — Settings — Account",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "settings-account.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "v8SNUr",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "WT0nc",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "VboiC",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Files Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900
-            },
-            {
-              "id": "Qxk5a",
-              "type": "ref",
-              "ref": "P8HGk",
-              "name": "Dim Backdrop",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900
-            },
-            {
-              "id": "n9lcp",
-              "type": "ref",
-              "ref": "jWlC3",
-              "name": "Settings Modal — Account",
-              "x": 280,
-              "y": 130,
-              "width": 880,
-              "height": 640
-            },
-            {
-              "id": "b8j1nH",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "id": "bKZW6",
-          "type": "ref",
-          "ref": "jBenk",
-          "name": "Feature Row — Onboarding — Getting Started",
-          "x": 0,
-          "y": 4060,
-          "width": 2928,
-          "descendants": {
-            "O2Mve": {
-              "content": "Onboarding — Getting Started"
-            }
-          }
-        },
-        {
-          "type": "frame",
-          "id": "Vzpx0",
-          "x": 0,
-          "y": 4180,
-          "name": "Screen — Welcome",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "welcome.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$surface",
-          "layout": "none",
-          "children": [
-            {
-              "id": "fcwwM",
-              "type": "ref",
-              "ref": "X3BOc",
-              "name": "Welcome — composed",
-              "x": 200,
-              "y": 130
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "HKAkV",
-          "x": 1488,
-          "y": 4180,
-          "name": "Screen — Connect an Agent",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "agents.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$surface",
-          "layout": "none",
-          "children": [
-            {
-              "id": "zCNBw",
-              "type": "ref",
-              "ref": "X4Yqda",
-              "name": "Connect an Agent — composed",
-              "x": 200,
-              "y": 130
-            }
-          ]
-        },
-        {
-          "id": "qBBre",
-          "type": "ref",
-          "ref": "jBenk",
-          "name": "Feature Row — Onboarding — Agent Connections",
-          "x": 0,
-          "y": 5360,
-          "width": 2928,
-          "descendants": {
-            "O2Mve": {
-              "content": "Onboarding — Agent Connections"
-            }
-          }
-        },
-        {
-          "type": "frame",
-          "id": "BiK9J",
-          "x": 0,
-          "y": 5480,
-          "name": "Screen — Manage Claude Connections",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "connections.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$surface",
-          "layout": "none",
-          "children": [
-            {
-              "id": "MNoLr",
-              "type": "ref",
-              "ref": "J3rDs",
-              "name": "Manage Claude Connections — composed",
-              "x": 200,
-              "y": 130
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "pQHTj",
-          "x": 1488,
-          "y": 5480,
-          "name": "Screen — Enter API Key",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "api-key.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$surface",
-          "layout": "none",
-          "children": [
-            {
-              "id": "GVqUv",
-              "type": "ref",
-              "ref": "kCRIp",
-              "name": "Enter API Key — composed",
-              "x": 200,
-              "y": 130
-            }
-          ]
-        },
-        {
-          "id": "pFBF4",
-          "type": "ref",
-          "ref": "jBenk",
-          "name": "Feature Row — Onboarding — Initial Apps",
-          "x": 0,
-          "y": 6660,
-          "width": 1440,
-          "descendants": {
-            "O2Mve": {
-              "content": "Onboarding — Initial Apps"
-            }
-          }
-        },
-        {
-          "type": "frame",
-          "id": "nsUrf",
-          "x": 0,
-          "y": 6780,
-          "name": "Screen — Install Apps",
-          "metadata": {
-            "type": "recovered-reference",
-            "source": "apps.png",
-            "editable": false
-          },
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$surface",
-          "layout": "none",
-          "children": [
-            {
-              "id": "Lkx9q",
-              "type": "ref",
-              "ref": "YmEq2",
-              "name": "Install Apps — composed",
-              "x": 200,
-              "y": 130,
-              "width": 1040,
-              "height": 640
-            }
-          ]
-        },
-        {
-          "id": "TPoJC",
-          "type": "ref",
-          "ref": "jBenk",
-          "name": "Feature Row — Apps — Gallery",
-          "x": 0,
-          "y": 7960,
-          "width": 5904,
-          "descendants": {
-            "O2Mve": {
-              "content": "Apps — Panel"
-            }
-          }
         },
         {
           "type": "frame",
           "id": "irJ7w",
           "x": 4464,
-          "y": 8080,
-          "name": "Screen — Apps Panel — Install Permission",
+          "y": 2880,
+          "name": "Screen — Main - Right Panel — Install Permission",
           "clip": true,
           "width": 1440,
           "height": 900,
@@ -24629,416 +24025,856 @@
           ]
         },
         {
+          "id": "cff7D",
+          "type": "ref",
+          "ref": "jBenk",
+          "name": "Feature Row — Settings — Main Modal",
+          "x": 0,
+          "y": 4060,
+          "width": 10368,
+          "descendants": {
+            "O2Mve": {
+              "content": "Settings — Main Modal"
+            }
+          }
+        },
+        {
           "type": "frame",
-          "id": "fcm2a",
+          "id": "P3rhe3",
+          "x": 0,
+          "y": 4180,
+          "name": "Screen — Settings",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "v8d6A",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "msL8p",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "S8Tdo",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "iTfUM",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "N18Xsn",
+              "type": "ref",
+              "ref": "BvoZF",
+              "name": "Settings Modal",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640
+            },
+            {
+              "id": "ORadB",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aS32i",
+          "x": 1488,
+          "y": 4180,
+          "name": "Screen — Settings — Permissions",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings-permissions.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "FhCfP",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "y5QKFy",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "sqhj7",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "neOBv",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "UQsOR",
+              "type": "ref",
+              "ref": "EigOY",
+              "name": "Settings Modal — Permissions",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640
+            },
+            {
+              "id": "n9Mzd",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YsUYh",
+          "x": 2976,
+          "y": 4180,
+          "name": "Screen — Settings — Agents",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings-agents.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "MvxLe",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "u9WPY7",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "BqDqm",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "KCghJ",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "xaf9t",
+              "type": "ref",
+              "ref": "DaeGT",
+              "name": "Settings Modal — Agents",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640
+            },
+            {
+              "id": "EtFfm",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lZFaB",
+          "x": 4464,
+          "y": 4180,
+          "name": "Screen — Settings — Apps",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings-apps.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "eCYRX",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "BIijr",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "i4LgT",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "S6Pjef",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "txqR5",
+              "type": "ref",
+              "ref": "H5g0Bs",
+              "name": "Settings Modal — Apps",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640
+            },
+            {
+              "id": "OKGmY",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Q6Nzkr",
+          "x": 5952,
+          "y": 4180,
+          "name": "Screen — Settings — Connectors",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings-connectors.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "o5jgH",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "QjUFO",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "YccY0",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "LNYjT",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "yHXSR",
+              "type": "ref",
+              "ref": "d1gb7H",
+              "name": "Settings Modal — Connectors",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640
+            },
+            {
+              "id": "M122Tp",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bQq5u",
+          "x": 7440,
+          "y": 4180,
+          "name": "Screen — Settings — Appearance",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings-appearance.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "xMWS3",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "LZ5vF",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "hgMWz",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "YMZfx",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "ZVALA",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            },
+            {
+              "id": "Od8Zw",
+              "type": "ref",
+              "ref": "tyZ7c",
+              "name": "Settings Modal — Appearance",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640,
+              "theme": {
+                "mode": "dark"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pwz9i",
+          "x": 8928,
+          "y": 4180,
+          "name": "Screen — Settings — Account",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "settings-account.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "id": "v8SNUr",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — composed",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900,
+              "descendants": {
+                "q9B7x/Wkyk2": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "q9B7x/hZcQe": {
+                  "theme": {
+                    "state": "open"
+                  }
+                }
+              }
+            },
+            {
+              "id": "WT0nc",
+              "type": "ref",
+              "ref": "y0DmC",
+              "name": "Middle Panel — Thread",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900
+            },
+            {
+              "id": "VboiC",
+              "type": "ref",
+              "ref": "ayA7J",
+              "name": "Files Panel",
+              "x": 1020,
+              "y": 0,
+              "width": 420,
+              "height": 900
+            },
+            {
+              "id": "Qxk5a",
+              "type": "ref",
+              "ref": "P8HGk",
+              "name": "Dim Backdrop",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "id": "n9lcp",
+              "type": "ref",
+              "ref": "jWlC3",
+              "name": "Settings Modal — Account",
+              "x": 280,
+              "y": 130,
+              "width": 880,
+              "height": 640
+            },
+            {
+              "id": "b8j1nH",
+              "type": "ref",
+              "ref": "o4UviR",
+              "name": "Tooltip Overlay Layer",
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "theme": {
+                "state": "default"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bKZW6",
+          "type": "ref",
+          "ref": "jBenk",
+          "name": "Feature Row — Onboarding — Getting Started",
+          "x": 0,
+          "y": 5360,
+          "width": 2928,
+          "descendants": {
+            "O2Mve": {
+              "content": "Onboarding — Getting Started"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "Vzpx0",
+          "x": 0,
+          "y": 5480,
+          "name": "Screen — Welcome",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "welcome.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$surface",
+          "layout": "none",
+          "children": [
+            {
+              "id": "fcwwM",
+              "type": "ref",
+              "ref": "X3BOc",
+              "name": "Welcome — composed",
+              "x": 200,
+              "y": 130
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HKAkV",
+          "x": 1488,
+          "y": 5480,
+          "name": "Screen — Connect an Agent",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "agents.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$surface",
+          "layout": "none",
+          "children": [
+            {
+              "id": "zCNBw",
+              "type": "ref",
+              "ref": "X4Yqda",
+              "name": "Connect an Agent — composed",
+              "x": 200,
+              "y": 130
+            }
+          ]
+        },
+        {
+          "id": "qBBre",
+          "type": "ref",
+          "ref": "jBenk",
+          "name": "Feature Row — Onboarding — Agent Connections",
+          "x": 0,
+          "y": 6660,
+          "width": 2928,
+          "descendants": {
+            "O2Mve": {
+              "content": "Onboarding — Agent Connections"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "BiK9J",
+          "x": 0,
+          "y": 6780,
+          "name": "Screen — Manage Claude Connections",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "connections.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$surface",
+          "layout": "none",
+          "children": [
+            {
+              "id": "MNoLr",
+              "type": "ref",
+              "ref": "J3rDs",
+              "name": "Manage Claude Connections — composed",
+              "x": 200,
+              "y": 130
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pQHTj",
+          "x": 1488,
+          "y": 6780,
+          "name": "Screen — Enter API Key",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "api-key.png",
+            "editable": false
+          },
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$surface",
+          "layout": "none",
+          "children": [
+            {
+              "id": "GVqUv",
+              "type": "ref",
+              "ref": "kCRIp",
+              "name": "Enter API Key — composed",
+              "x": 200,
+              "y": 130
+            }
+          ]
+        },
+        {
+          "id": "pFBF4",
+          "type": "ref",
+          "ref": "jBenk",
+          "name": "Feature Row — Onboarding — Initial Apps",
+          "x": 0,
+          "y": 7960,
+          "width": 1440,
+          "descendants": {
+            "O2Mve": {
+              "content": "Onboarding — Initial Apps"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "nsUrf",
           "x": 0,
           "y": 8080,
-          "name": "Screen — Apps Panel — Launcher",
+          "name": "Screen — Install Apps",
+          "metadata": {
+            "type": "recovered-reference",
+            "source": "apps.png",
+            "editable": false
+          },
           "clip": true,
           "width": 1440,
           "height": 900,
-          "fill": "$canvas",
+          "fill": "$surface",
           "layout": "none",
           "children": [
             {
-              "id": "Q8Nm63",
+              "id": "Lkx9q",
               "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                },
-                "GVIVx": {
-                  "theme": {
-                    "state": "hover"
-                  }
-                }
-              }
-            },
-            {
-              "id": "T6TPc",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "JyNaO",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Apps Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900,
-              "descendants": {
-                "YzLlT": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "rnyF3": {
-                  "theme": {
-                    "state": "selected"
-                  }
-                },
-                "yrRyL": {
-                  "enabled": true
-                },
-                "yrRyL/pBqq6": {
-                  "enabled": true
-                },
-                "yrRyL/xnhch": {
-                  "enabled": true,
-                  "justifyContent": "start"
-                },
-                "yrRyL/aZCrl": {
-                  "content": "Search apps"
-                },
-                "yrRyL/FMKUh": {
-                  "enabled": false
-                },
-                "yrRyL/l9cXw": {
-                  "enabled": true
-                },
-                "yrRyL/kxEsN": {
-                  "enabled": true
-                },
-                "f8mp2": {
-                  "justifyContent": "start",
-                  "alignItems": "start"
-                }
-              }
-            },
-            {
-              "id": "sLtoc",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "loYIZ",
-          "x": 1488,
-          "y": 8080,
-          "name": "Screen — Apps Panel — Search",
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "jISy7",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "Pr5Fu",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "EyiWK",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Apps Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900,
-              "descendants": {
-                "YzLlT": {
-                  "theme": {
-                    "state": "default"
-                  },
-                  "x": 8,
-                  "y": 2.009092763365144,
-                  "rotation": 0.015099974329934077
-                },
-                "rnyF3": {
-                  "theme": {
-                    "state": "selected"
-                  }
-                },
-                "yrRyL": {
-                  "enabled": true
-                },
-                "yrRyL/pBqq6": {
-                  "enabled": true
-                },
-                "yrRyL/xnhch": {
-                  "enabled": true,
-                  "justifyContent": "start"
-                },
-                "yrRyL/aZCrl": {
-                  "content": "Search apps"
-                },
-                "yrRyL/FMKUh": {
-                  "enabled": false
-                },
-                "yrRyL/l9cXw": {
-                  "enabled": true
-                },
-                "yrRyL/kxEsN": {
-                  "enabled": true
-                },
-                "f8mp2": {
-                  "justifyContent": "start",
-                  "alignItems": "start"
-                }
-              }
-            },
-            {
-              "id": "j6fe9y",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "LbQmm",
-          "x": 2976,
-          "y": 8080,
-          "name": "Screen — Apps Panel — App Detail",
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
-          "children": [
-            {
-              "id": "FeFsq",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — composed",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900,
-              "descendants": {
-                "q9B7x/Wkyk2": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "q9B7x/hZcQe": {
-                  "theme": {
-                    "state": "open"
-                  }
-                }
-              }
-            },
-            {
-              "id": "C52Tt",
-              "type": "ref",
-              "ref": "y0DmC",
-              "name": "Middle Panel — Thread",
-              "x": 240,
-              "y": 0,
-              "width": 780,
-              "height": 900
-            },
-            {
-              "id": "jLq4v",
-              "type": "ref",
-              "ref": "ayA7J",
-              "name": "Apps Panel",
-              "x": 1020,
-              "y": 0,
-              "width": 420,
-              "height": 900,
-              "descendants": {
-                "YzLlT": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "rnyF3": {
-                  "theme": {
-                    "state": "selected"
-                  }
-                },
-                "f8mp2": {
-                  "justifyContent": "start",
-                  "alignItems": "start"
-                }
-              }
-            },
-            {
-              "id": "yk2CO",
-              "type": "ref",
-              "ref": "o4UviR",
-              "name": "Tooltip Overlay Layer",
-              "x": 0,
-              "y": 0,
-              "width": 1440,
-              "height": 900,
-              "theme": {
-                "state": "default"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "NHESN",
-      "x": 1934,
-      "y": 6980,
-      "name": "Folder Group States — component + stories",
-      "theme": {
-        "mode": "dark"
-      },
-      "width": 560,
-      "height": 220,
-      "fill": "#00000000",
-      "gap": 24,
-      "padding": 16,
-      "children": [
-        {
-          "type": "frame",
-          "id": "P4bNj",
-          "name": "Default — content hidden",
-          "width": 244,
-          "layout": "vertical",
-          "gap": 12,
-          "children": [
-            {
-              "type": "text",
-              "id": "g2RbB",
-              "name": "State Label",
-              "fill": "$text-secondary",
-              "content": "Default — content hidden",
-              "fontFamily": "$font-body",
-              "fontSize": 12,
-              "fontWeight": "600"
-            },
-            {
-              "id": "XEkq1",
-              "type": "ref",
-              "ref": "Shahm",
-              "name": "Folder Group — default",
-              "theme": {
-                "state": "default"
-              },
-              "width": 224,
-              "descendants": {
-                "ratNe": {
-                  "content": "Atferd"
-                },
-                "OJgoQ": {
-                  "clip": true,
-                  "height": 56
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "PGwEo",
-          "name": "Open — content visible",
-          "width": 244,
-          "layout": "vertical",
-          "gap": 12,
-          "children": [
-            {
-              "type": "text",
-              "id": "D1WBF",
-              "name": "State Label",
-              "fill": "$text-secondary",
-              "content": "Open — content visible",
-              "fontFamily": "$font-body",
-              "fontSize": 12,
-              "fontWeight": "600"
-            },
-            {
-              "id": "WZL6M",
-              "type": "ref",
-              "ref": "Shahm",
-              "name": "Folder Group — open",
-              "theme": {
-                "state": "open"
-              },
-              "width": 224,
-              "descendants": {
-                "ratNe": {
-                  "content": "Atferd"
-                },
-                "OJgoQ": {
-                  "clip": true,
-                  "height": 56
-                },
-                "V3XtEy": {
-                  "enabled": false
-                },
-                "Yl7Ml": {
-                  "enabled": false
-                },
-                "rlYpC": {
-                  "enabled": false
-                },
-                "fPKBe": {
-                  "height": 27
-                }
-              }
+              "ref": "YmEq2",
+              "name": "Install Apps — composed",
+              "x": 200,
+              "y": 130,
+              "width": 1040,
+              "height": 640
             }
           ]
         }
@@ -27388,7 +27224,7 @@
       },
       "reusable": true,
       "width": 240,
-      "height": 40,
+      "height": 44,
       "fill": "#00000000",
       "layout": "none",
       "children": [
@@ -27398,7 +27234,7 @@
           "ref": "KjCFX",
           "name": "Account Popup / Overlay",
           "x": 10,
-          "y": -147,
+          "y": -139,
           "width": 220,
           "height": 139,
           "enabled": "$account-popover-visible"
@@ -27411,7 +27247,8 @@
           "x": 0,
           "y": 0,
           "width": 240,
-          "height": 40
+          "height": 44,
+          "theme": {}
         }
       ]
     }
