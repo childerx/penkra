@@ -1,5 +1,9 @@
 # Penkra / Synara v0.6.0 Integration Ledger
 
+> Historical integration record: this ledger describes the v0.6.0 integration at the time it was
+> completed. The separate Canary flavor recorded below was subsequently retired for the v0.8.0
+> release line; Stable and Penkra Dev are now the only desktop identities.
+
 ## Fixed boundary
 
 - Client scope: `Penkra Internal` (`00000000-0000-4000-8000-000000000000`), verified with
