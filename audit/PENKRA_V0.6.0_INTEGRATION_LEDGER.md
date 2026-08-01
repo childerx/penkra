@@ -1,4 +1,4 @@
-# Penkra / Synara v0.6.0 Integration Ledger
+# Penkra / Penkra v0.6.0 Integration Ledger
 
 > Historical integration record: this ledger describes the v0.6.0 integration at the time it was
 > completed. The separate Canary flavor recorded below was subsequently retired for the v0.8.0
@@ -9,15 +9,15 @@
 - Client scope: `Penkra Internal` (`00000000-0000-4000-8000-000000000000`), verified with
   `penkra whoami`.
 - Penkra starting commit: `fb692c3781743011c3c5c8432ef9619c6fee7e29`.
-- Integrated Synara baseline before this work: `v0.5.5`.
-- Synara release: annotated tag `v0.6.0`; tag object
+- Integrated Penkra baseline before this work: `v0.5.5`.
+- Penkra release: annotated tag `v0.6.0`; tag object
   `a4050a72679b703346dedddf6aa2af0d18ba7fe0`; peeled commit
   `ea136916bf558936cc1f10ed5665df563efbbebb`.
 - Upstream delta: 153 commits; 1,190 changed files; 178,894 insertions; 78,220 deletions.
 - Method: merge the tagged implementation first, including its tests and migrations, then adapt or
   prune against verified Penkra behavior.
-- Integration branch/worktree: `integrate/synara-v0.6.0` in
-  `penkra-console-synara-v0.6.0`.
+- Integration branch/worktree: `integrate/penkra-v0.6.0` in
+  `penkra-console-penkra-v0.6.0`.
 - The operator approved the detailed integration proposal and then directed implementation through
   production deployment. Publication remains gated on the final quality suite and artifact checks.
   `PENKRA.md` was not changed.
@@ -34,11 +34,11 @@
 | Performance                        | Import                          | Imported SQLite WAL mode with `synchronous=NORMAL`, projection/index work, bounded streams, and the upstream refactors. Increased the bounded macOS process-snapshot buffer after the full suite proved 256 KB could not establish provider-process exit on a busy machine.                                                                                                           |
 | Complete UI/UX                     | Import, then adapt              | Kept the upstream web/desktop interaction, accessibility, layout, style, route, browser, composer, terminal, pull-request, settings, and Space changes. Reapplied Penkra branding, client project names, `$` skills, todo/profile/top-right surfaces, root picker, and HQ behavior.                                                                                                   |
 | Security and recovery              | Import                          | Kept origin/auth hardening, bounded request handling, attachment ownership, process-tree exit proof, updater hardening, migration backup/recovery, and bundle-swap protection. Updated trusted desktop origins to `penkra://app` and `penkra-canary://app`.                                                                                                                           |
-| macOS desktop/AppSnap/updater      | Import, then adapt              | Kept upstream macOS implementation as the base. Restored `com.penkra.app`, Penkra/Canary storage, private token-authenticated S3 updates, resumable and differential downloads, final ZIP blockmap regeneration, bundled Penkra backend CLI, and legacy `synara://` storage import. Production is macOS arm64; Windows/Linux release lanes and package commands are absent.           |
+| macOS desktop/AppSnap/updater      | Import, then adapt              | Kept upstream macOS implementation as the base. Restored `com.penkra.app`, Penkra/Canary storage, private token-authenticated S3 updates, resumable and differential downloads, final ZIP blockmap regeneration, bundled Penkra backend CLI, and legacy `penkra://` storage import. Production is macOS arm64; Windows/Linux release lanes and package commands are absent.           |
 | External MCP                       | Import for analysis, then prune | Removed contracts, runtime, HTTP/WS routes, settings/UI, pairing, tools, migrations 74–78/80, tests, and docs. Cleanup migration 80 drops all legacy External MCP tables. Only cleanup evidence remains.                                                                                                                                                                              |
-| Synara Automations                 | Import for analysis, then prune | Removed repositories, scheduler/runtime/reactors, contracts, routes, commands, settings/UI, work-log markers, Agent Gateway tools, plans, and release-note feature cards. Historical Penkra migration ids 44–48 remain only so existing databases keep valid lineage; migration 80 removes their tables and view. The legacy dispatch-origin literal remains only to decode old rows. |
+| Penkra Automations                 | Import for analysis, then prune | Removed repositories, scheduler/runtime/reactors, contracts, routes, commands, settings/UI, work-log markers, Agent Gateway tools, plans, and release-note feature cards. Historical Penkra migration ids 44–48 remain only so existing databases keep valid lineage; migration 80 removes their tables and view. The legacy dispatch-origin literal remains only to decode old rows. |
 | Windows/Linux-only work            | Import for analysis, then prune | Removed live distribution commands, release workflow lanes, build configuration, platform UI, and platform documentation. Shared utilities still required by macOS are retained; the production release smoke explicitly denies Windows/Linux lanes.                                                                                                                                  |
-| Synara identity/public publishing  | Replace or prune                | User-facing identity is Penkra, production bundle identity is `com.penkra.app`, Canary is isolated, and publishing is the existing private S3 flow. Internal `@synara/*`, `synara_*` gateway protocol names, database lineage, and the legacy scheme remain where renaming would break compatibility rather than change product identity.                                             |
+| Penkra identity/public publishing  | Replace or prune                | User-facing identity is Penkra, production bundle identity is `com.penkra.app`, Canary is isolated, and publishing is the existing private S3 flow. Internal `@penkra/*`, `penkra_*` gateway protocol names, database lineage, and the legacy scheme remain where renaming would break compatibility rather than change product identity.                                             |
 
 ## Penkra behavior preserved
 
@@ -55,9 +55,9 @@
 ## Migration and compatibility result
 
 - The imported v0.6.0 migration lineage is retained through migration 79 (`Spaces`).
-- Migration 80 (`PruneRejectedSynaraSurfaces`) removes every Automation and External MCP table and
+- Migration 80 (`PruneRejectedPenkraSurfaces`) removes every Automation and External MCP table and
   the legacy Automation completion-evaluation view while retaining `projection_spaces`.
-- Existing renderer data is migrated once from the legacy `synara://` origin to `penkra://`; the
+- Existing renderer data is migrated once from the legacy `penkra://` origin to `penkra://`; the
   completion marker is written only after the renderer acknowledges the validated snapshot.
 - SQLite requests WAL mode and `synchronous=NORMAL`; in-memory test databases truthfully report
   that WAL is unavailable rather than pretending it was enabled.
