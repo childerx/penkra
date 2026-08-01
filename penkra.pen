@@ -30867,7 +30867,7 @@
           "metadata": {
             "type": "recovery-confidence",
             "confidence": "exact",
-            "source": "Synara main successful payloads 248689, 248697, 249494",
+            "source": "Penkra reference payloads 248689, 248697, 249494",
             "note": "Wrapper/state/tooltip relationship exact; nested visual content export-derived partial."
           },
           "width": 108,
