@@ -1,5 +1,5 @@
 {
-  "version": "2.14",
+  "version": "2.15",
   "children": [
     {
       "id": "Po7jy",
@@ -44,6 +44,7 @@
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -1801,13 +1802,14 @@
         "kind": "component-group"
       },
       "width": 2200,
-      "height": 7800,
+      "height": 6500,
       "fill": "$color-background-panel",
       "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -2147,7 +2149,7 @@
           "x": 952,
           "y": 240,
           "name": "Space Header / Shared",
-          "context": "Disclosure header for a Space. Default is text-only; hover and interaction states reveal the disclosure chevron on the left and create-thread action on the right.",
+          "context": "Disclosure header for a Space. Hover temporarily reveals the disclosure and create-thread affordances. Clicking only changes disclosure/content state; it must not create persistent active styling.",
           "theme": {
             "header-state": "default"
           },
@@ -2253,7 +2255,7 @@
           "x": 1248,
           "y": 240,
           "name": "Folder Row / Shared",
-          "context": "Reusable folder row. Pinned folders keep their parent and sort before unpinned sibling folders.",
+          "context": "Reusable folder row. Hover temporarily reveals row affordances. Clicking or opening a folder must not create persistent active styling; pinned folders retain their parent and sort before unpinned siblings.",
           "theme": {
             "state": "default",
             "pin-state": "unpinned"
@@ -3620,20 +3622,6 @@
               "height": 27
             },
             {
-              "id": "CazOr",
-              "type": "ref",
-              "ref": "mI4rI",
-              "name": "Space Header — active",
-              "x": 800,
-              "y": 240,
-              "width": 224,
-              "theme": {
-                "state": "default",
-                "header-state": "active"
-              },
-              "height": 27
-            },
-            {
               "id": "Zirx6",
               "type": "ref",
               "ref": "mI4rI",
@@ -3714,23 +3702,6 @@
               "width": 224,
               "theme": {
                 "state": "hover"
-              },
-              "descendants": {
-                "H04st": {
-                  "content": "Borge"
-                }
-              }
-            },
-            {
-              "id": "UykVH",
-              "type": "ref",
-              "ref": "D2SV3",
-              "name": "Folder Row — active",
-              "x": 800,
-              "y": 310,
-              "width": 224,
-              "theme": {
-                "state": "active"
               },
               "descendants": {
                 "H04st": {
@@ -4046,7 +4017,7 @@
                   "id": "gSHhx",
                   "x": 340,
                   "y": 48,
-                  "name": "Project Group Header Stories",
+                  "name": "Folder Group Header Stories",
                   "width": 300,
                   "layout": "vertical",
                   "gap": 6,
@@ -4056,7 +4027,7 @@
                       "id": "J2w0d",
                       "name": "Label",
                       "fill": "$text-secondary",
-                      "content": "Project Group Header",
+                      "content": "Folder Group Header",
                       "fontFamily": "$font-body",
                       "fontSize": 12,
                       "fontWeight": "500"
@@ -4065,7 +4036,7 @@
                       "id": "stjua",
                       "type": "ref",
                       "ref": "KYAyf",
-                      "name": "Project Group — penkra / collapsed",
+                      "name": "Folder Group — penkra / collapsed",
                       "width": "fill_container",
                       "theme": {
                         "state": "default"
@@ -4083,10 +4054,10 @@
                       "id": "rv2O6",
                       "type": "ref",
                       "ref": "KYAyf",
-                      "name": "Project Group — penut / expanded",
+                      "name": "Folder Group — penut / expanded",
                       "width": "fill_container",
                       "theme": {
-                        "state": "active"
+                        "state": "default"
                       },
                       "descendants": {
                         "UAvIb": {
@@ -4949,9 +4920,9 @@
               "id": "MfM4a",
               "x": 16,
               "y": 1497,
-              "name": "Project Group Header Label",
+              "name": "Folder Group Header Label",
               "fill": "$text-secondary",
-              "content": "Project Group Header",
+              "content": "Folder Group Header",
               "fontFamily": "$font-body",
               "fontSize": 12,
               "fontWeight": "500"
@@ -4960,7 +4931,7 @@
               "id": "Y1ak6",
               "type": "ref",
               "ref": "KYAyf",
-              "name": "Project Group Header — default",
+              "name": "Folder Group Header — default",
               "x": 300,
               "y": 1490,
               "width": 224,
@@ -4972,7 +4943,7 @@
               "id": "VdRpV",
               "type": "ref",
               "ref": "KYAyf",
-              "name": "Project Group Header — hover",
+              "name": "Folder Group Header — hover",
               "x": 550,
               "y": 1490,
               "width": 224,
@@ -4981,22 +4952,10 @@
               }
             },
             {
-              "id": "RXVk3",
-              "type": "ref",
-              "ref": "KYAyf",
-              "name": "Project Group Header — active",
-              "x": 800,
-              "y": 1490,
-              "width": 224,
-              "theme": {
-                "state": "active"
-              }
-            },
-            {
               "id": "KyI5x",
               "type": "ref",
               "ref": "KYAyf",
-              "name": "Project Group Header — selected",
+              "name": "Folder Group Header — selected",
               "x": 1050,
               "y": 1490,
               "width": 224,
@@ -5008,7 +4967,7 @@
               "id": "jgcRX",
               "type": "ref",
               "ref": "KYAyf",
-              "name": "Project Group Header — open",
+              "name": "Folder Group Header — open",
               "x": 1300,
               "y": 1490,
               "width": 224,
@@ -5020,7 +4979,7 @@
               "id": "xWs9z",
               "type": "ref",
               "ref": "KYAyf",
-              "name": "Project Group Header — disabled",
+              "name": "Folder Group Header — disabled",
               "x": 1550,
               "y": 1490,
               "width": 224,
@@ -5176,6 +5135,42 @@
               "theme": {
                 "state": "disabled"
               }
+            },
+            {
+              "type": "text",
+              "id": "khkIh",
+              "x": 800,
+              "y": 246,
+              "name": "Space Header — no active style",
+              "fill": "$text-tertiary",
+              "content": "No active style",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "qAVv4",
+              "x": 800,
+              "y": 316,
+              "name": "Folder Row — no active style",
+              "fill": "$text-tertiary",
+              "content": "No active style",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "fW0KJ",
+              "x": 800,
+              "y": 1496,
+              "name": "Folder Group Header — no active style",
+              "fill": "$text-tertiary",
+              "content": "No active style",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
             }
           ]
         },
@@ -5352,7 +5347,8 @@
           "id": "KYAyf",
           "x": 64,
           "y": 300,
-          "name": "Project Group Header",
+          "name": "Folder Group Header",
+          "context": "Folder disclosure header. Hover is transient; clicking only expands or collapses content and must not create persistent active styling.",
           "theme": {
             "state": "default"
           },
@@ -6349,7 +6345,7 @@
           "type": "frame",
           "id": "tssws",
           "x": 64,
-          "y": 5400,
+          "y": 4040,
           "name": "Left Rail Content / Shared",
           "reusable": true,
           "width": 240,
@@ -6381,7 +6377,7 @@
               "id": "cNwQB",
               "type": "ref",
               "ref": "mKbbW",
-              "name": "Projects",
+              "name": "Folders",
               "width": "fill_container",
               "height": "fill_container"
             }
@@ -6391,7 +6387,7 @@
           "type": "frame",
           "id": "U9o7S",
           "x": 360,
-          "y": 5400,
+          "y": 4040,
           "name": "Space Group / Shared",
           "theme": {
             "state": "open"
@@ -6456,7 +6452,7 @@
           "type": "frame",
           "id": "y9eiN",
           "x": 656,
-          "y": 5400,
+          "y": 4040,
           "name": "Space Group States — component + stories",
           "width": 920,
           "height": 500,
@@ -6558,7 +6554,7 @@
           "type": "frame",
           "id": "c9CIe",
           "x": 1704,
-          "y": 6400,
+          "y": 4040,
           "name": "Space Header / Inline Edit",
           "context": "Shared inline editor for both Space creation and rename. Enter commits, Escape cancels, and validation is displayed in context without opening a modal.",
           "reusable": true,
@@ -6613,7 +6609,7 @@
           "type": "frame",
           "id": "Yps1n",
           "x": 1704,
-          "y": 6480,
+          "y": 4100,
           "name": "Space Empty State / Shared",
           "reusable": true,
           "width": 224,
@@ -6652,7 +6648,7 @@
           "type": "frame",
           "id": "v6IKU",
           "x": 64,
-          "y": 6360,
+          "y": 4980,
           "name": "Space Lifecycle States — component stories",
           "theme": {
             "mode": "dark"
@@ -6874,469 +6870,6 @@
                       "fontWeight": "normal"
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "T1cE0t",
-          "x": 64,
-          "y": 6810,
-          "name": "Desktop Interaction Standards",
-          "theme": {
-            "mode": "dark"
-          },
-          "width": 2000,
-          "height": 720,
-          "fill": "$color-background-surface",
-          "cornerRadius": 12,
-          "stroke": "$color-border",
-          "strokeWidth": 1,
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 24,
-          "children": [
-            {
-              "type": "text",
-              "id": "Gks4h",
-              "name": "Title",
-              "fill": "$text-primary",
-              "content": "Desktop interaction surfaces",
-              "fontFamily": "$font-body",
-              "fontSize": 24,
-              "fontWeight": "600"
-            },
-            {
-              "type": "text",
-              "id": "ZywUe",
-              "name": "Description",
-              "fill": "$text-secondary",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Pencil specifies the trigger, content, and outcome. Operating-system surfaces are documented behaviorally and are not recreated as Penkra components.",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "geXf7",
-              "name": "Surface Standards",
-              "width": "fill_container",
-              "height": 420,
-              "gap": 16,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "IGE3A",
-                  "name": "Native alert",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$color-background-panel",
-                  "cornerRadius": 10,
-                  "stroke": "$color-border",
-                  "strokeWidth": 1,
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": 18,
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "N3r4Q",
-                      "name": "Icon",
-                      "width": 20,
-                      "height": 20,
-                      "icon": "message-square-warning",
-                      "library": "lucide",
-                      "fill": "$text-primary"
-                    },
-                    {
-                      "type": "text",
-                      "id": "hyW2U",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Native alert",
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "sDsXq",
-                      "name": "Purpose",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "One short decision or notice",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "XfKLU",
-                      "name": "Examples",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Logout, archive empty Space, discard, retry",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "J9WpaA",
-                      "name": "Pencil Rule",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Do not draw in Pencil",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "T4liZ",
-                  "name": "Native context menu",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$color-background-panel",
-                  "cornerRadius": 10,
-                  "stroke": "$color-border",
-                  "strokeWidth": 1,
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": 18,
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "TuVgt",
-                      "name": "Icon",
-                      "width": 20,
-                      "height": 20,
-                      "icon": "mouse-pointer-click",
-                      "library": "lucide",
-                      "fill": "$text-primary"
-                    },
-                    {
-                      "type": "text",
-                      "id": "qg0KI",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Native context menu",
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "KWAxT",
-                      "name": "Purpose",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Commands scoped to the clicked item",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "b2YLMN",
-                      "name": "Examples",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "New Thread, Rename, Expand/Collapse, Archive",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "xCgfS",
-                      "name": "Pencil Rule",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Annotate the target row",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "h5APkG",
-                  "name": "Inline state",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$color-background-panel",
-                  "cornerRadius": 10,
-                  "stroke": "$color-border",
-                  "strokeWidth": 1,
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": 18,
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "vGWDj",
-                      "name": "Icon",
-                      "width": 20,
-                      "height": 20,
-                      "icon": "square-pen",
-                      "library": "lucide",
-                      "fill": "$text-primary"
-                    },
-                    {
-                      "type": "text",
-                      "id": "BqZpk",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Inline state",
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "qf8R9",
-                      "name": "Purpose",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Fast contextual creation or editing",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "T4P7RC",
-                      "name": "Examples",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Create Space and rename Space",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "I8UG6I",
-                      "name": "Pencil Rule",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Design all validation states",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "KcpJ3",
-                  "name": "Penkra page / panel",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$color-background-panel",
-                  "cornerRadius": 10,
-                  "stroke": "$color-border",
-                  "strokeWidth": 1,
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": 18,
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "aQvUG",
-                      "name": "Icon",
-                      "width": 20,
-                      "height": 20,
-                      "icon": "panel-right",
-                      "library": "lucide",
-                      "fill": "$text-primary"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Z1lEV",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Penkra page / panel",
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "l85e1O",
-                      "name": "Purpose",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Fields, choices, validation, or multi-step work",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "KDPJK",
-                      "name": "Examples",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Settings, permissions, management",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "E3vox",
-                      "name": "Pencil Rule",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Compose shared components",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "QjXMm",
-                  "name": "Native picker",
-                  "width": "fill_container",
-                  "height": "fill_container",
-                  "fill": "$color-background-panel",
-                  "cornerRadius": 10,
-                  "stroke": "$color-border",
-                  "strokeWidth": 1,
-                  "layout": "vertical",
-                  "gap": 12,
-                  "padding": 18,
-                  "children": [
-                    {
-                      "type": "icon",
-                      "id": "fmOES",
-                      "name": "Icon",
-                      "width": 20,
-                      "height": 20,
-                      "icon": "folder-open",
-                      "library": "lucide",
-                      "fill": "$text-primary"
-                    },
-                    {
-                      "type": "text",
-                      "id": "EkXKL",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Native picker",
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "pC5S9",
-                      "name": "Purpose",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Operating-system resources",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Q5u8q",
-                      "name": "Examples",
-                      "fill": "$text-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Choose file or folder",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "B6e5R",
-                      "name": "Pencil Rule",
-                      "fill": "$text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Do not draw in Pencil",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "sMtTp",
-              "name": "Spaces Menu Contract",
-              "width": "fill_container",
-              "height": "fill_container",
-              "fill": "#00000000",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "OqbZk",
-                  "name": "Heading",
-                  "fill": "$text-primary",
-                  "content": "Native Spaces application menu",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "pe19L",
-                  "name": "Contract",
-                  "fill": "$text-secondary",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "New Space…  •  Spaces › Personal, Work, …  •  Manage Spaces…    Selecting a Space scrolls to, expands, and focuses its rail section. Rename and Archive exist only in that Space’s native right-click menu; there is no global “current Space.”",
-                  "lineHeight": 1.45,
-                  "fontFamily": "$font-body",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
                 }
               ]
             }
@@ -7754,6 +7287,67 @@
               ]
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "Y0oum",
+          "x": 64,
+          "y": 3980,
+          "name": "Composed Sidebar Structures Label",
+          "fill": "$text-secondary",
+          "content": "Composed Sidebar Structures",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "b9Uif",
+          "x": 64,
+          "y": 4930,
+          "name": "Space Lifecycle Label",
+          "fill": "$text-secondary",
+          "content": "Space Lifecycle and Validation",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "Ix00g",
+          "x": 64,
+          "y": 5440,
+          "name": "Spaces Menu Contract",
+          "width": 2000,
+          "height": 147,
+          "fill": "#00000000",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "cJ669",
+              "name": "Heading",
+              "fill": "$text-primary",
+              "content": "Native Spaces application menu",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "kuLa9",
+              "name": "Contract",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "New Space…  •  Spaces › Personal, Work, …  •  Manage Spaces…    Selecting a Space scrolls to, expands, and focuses its rail section. Rename and Archive exist only in that Space’s native right-click menu; there is no global “current Space.”",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
         }
       ]
     },
@@ -7780,6 +7374,7 @@
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -8136,6 +7731,7 @@
               "x": 1242,
               "y": 15,
               "name": "Panel Icon",
+              "enabled": false,
               "width": 16,
               "height": 16,
               "fill": "#00000000",
@@ -10580,7 +10176,7 @@
                       "id": "zSwFv",
                       "type": "ref",
                       "ref": "dZsWR",
-                      "name": "Project Prompt",
+                      "name": "Folder Prompt",
                       "theme": {},
                       "descendants": {
                         "PlpHA": {
@@ -10591,6 +10187,14 @@
                       }
                     },
                     {
+                      "type": "frame",
+                      "id": "yO3Fg",
+                      "name": "Thread Setup Clearance",
+                      "width": 560,
+                      "height": 22,
+                      "fill": "#00000000"
+                    },
+                    {
                       "id": "ISa9R",
                       "type": "ref",
                       "ref": "TKKOp",
@@ -10598,11 +10202,14 @@
                       "width": 560,
                       "height": 88.5,
                       "theme": {
-                        "state": "default"
+                        "state": "default",
+                        "thread-stage": "draft",
+                        "folder-picker": "closed",
+                        "runtime-picker": "closed"
                       },
                       "descendants": {
                         "CnM59": {
-                          "content": "Do anything"
+                          "content": "Plan, Build, / for skills, @ for context"
                         },
                         "DxWas": {
                           "theme": {}
@@ -10689,7 +10296,7 @@
           "id": "dZsWR",
           "x": 64,
           "y": 4200,
-          "name": "Project Prompt / Shared",
+          "name": "Folder Prompt / Shared",
           "reusable": true,
           "fill": "#00000000",
           "padding": [
@@ -10713,7 +10320,7 @@
             {
               "type": "frame",
               "id": "PlpHA",
-              "name": "Project Link",
+              "name": "Folder Link",
               "theme": {
                 "state": "default"
               },
@@ -10724,7 +10331,7 @@
                 {
                   "type": "text",
                   "id": "Y5F4Vu",
-                  "name": "Project Name",
+                  "name": "Folder Name",
                   "fill": "$project-prompt-link",
                   "content": "penkra",
                   "fontFamily": "$font-body",
@@ -10734,7 +10341,7 @@
                 {
                   "type": "rectangle",
                   "id": "jujKY",
-                  "name": "Project Underline",
+                  "name": "Folder Underline",
                   "fill": "$project-prompt-link",
                   "width": "fill_container",
                   "height": 1
@@ -10758,7 +10365,7 @@
           "id": "H0VQo9",
           "x": 64,
           "y": 4300,
-          "name": "Project Prompt States",
+          "name": "Folder Prompt States",
           "width": 1600,
           "height": 190,
           "fill": "$color-background-surface",
@@ -10773,9 +10380,9 @@
               "id": "k7tfX",
               "x": 16,
               "y": 16,
-              "name": "Project Prompt States Label",
+              "name": "Folder Prompt States Label",
               "fill": "$text-primary",
-              "content": "Project prompt — default and hover",
+              "content": "Folder prompt — default and hover",
               "fontFamily": "$font-body",
               "fontSize": 14,
               "fontWeight": "600"
@@ -10796,7 +10403,7 @@
               "id": "I16Ro",
               "type": "ref",
               "ref": "dZsWR",
-              "name": "Project Prompt — Default",
+              "name": "Folder Prompt — Default",
               "x": 16,
               "y": 88,
               "theme": {},
@@ -10815,7 +10422,7 @@
               "y": 58,
               "name": "Hover State Label",
               "fill": "$text-secondary",
-              "content": "Project name hover",
+              "content": "Folder name hover",
               "fontFamily": "$font-body",
               "fontSize": 12,
               "fontWeight": "500"
@@ -10824,7 +10431,7 @@
               "id": "WCvL4",
               "type": "ref",
               "ref": "dZsWR",
-              "name": "Project Prompt — Hover",
+              "name": "Folder Prompt — Hover",
               "x": 800,
               "y": 88,
               "theme": {},
@@ -10863,6 +10470,7 @@
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -13026,6 +12634,7 @@
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -17165,6 +16774,7 @@
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -19167,7 +18777,7 @@
                           "content": "Apps"
                         },
                         "QkN38": {
-                          "content": "Installed apps from the Penkra registry."
+                          "content": "Control which installed apps can run on this device. Space access is managed in Apps."
                         }
                       }
                     },
@@ -19191,35 +18801,6 @@
                               "id": "ptbv6",
                               "type": "ref",
                               "ref": "Q0YrUi",
-                              "name": "Ledger",
-                              "width": "fill_container",
-                              "theme": {
-                                "state": "default"
-                              },
-                              "descendants": {
-                                "Y1KixN": {
-                                  "icon": "package"
-                                },
-                                "nB72v": {
-                                  "content": "Ledger"
-                                },
-                                "FXtOq": {
-                                  "enabled": true
-                                },
-                                "fm4pF": {
-                                  "content": "Sync invoices and reconcile expenses automatically."
-                                },
-                                "f9x1Ft": {
-                                  "theme": {
-                                    "state": "selected"
-                                  }
-                                }
-                              }
-                            },
-                            {
-                              "id": "e1VHTY",
-                              "type": "ref",
-                              "ref": "Q0YrUi",
                               "name": "Browser",
                               "width": "fill_container",
                               "theme": {
@@ -19236,7 +18817,7 @@
                                   "enabled": true
                                 },
                                 "fm4pF": {
-                                  "content": "Lets agents browse and read the web."
+                                  "content": "Installed · Enabled in Personal and Work"
                                 },
                                 "f9x1Ft": {
                                   "theme": {
@@ -19246,33 +18827,87 @@
                               }
                             },
                             {
-                              "id": "Ofs4g",
+                              "id": "e1VHTY",
                               "type": "ref",
                               "ref": "Q0YrUi",
-                              "name": "Linear",
+                              "name": "Figma",
                               "width": "fill_container",
                               "theme": {
                                 "state": "default"
                               },
                               "descendants": {
                                 "Y1KixN": {
-                                  "icon": "square-check"
+                                  "icon": "blocks"
                                 },
                                 "nB72v": {
-                                  "content": "Linear"
+                                  "content": "Figma"
                                 },
                                 "FXtOq": {
-                                  "enabled": false
+                                  "enabled": true
                                 },
                                 "fm4pF": {
-                                  "content": "Create and update Linear issues from threads."
+                                  "content": "Installed · Enabled in Personal"
                                 },
                                 "f9x1Ft": {
                                   "theme": {
-                                    "state": "default"
+                                    "state": "selected"
                                   }
                                 }
                               }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HM2ct",
+                          "name": "Apps Management Note",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EoiI2",
+                              "name": "Body",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Open Apps to install, update, uninstall, review permissions, or change Space access.",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xCYel",
+                              "name": "Open Apps",
+                              "width": "fill_container",
+                              "height": 34,
+                              "fill": "$card-fill",
+                              "cornerRadius": 8,
+                              "stroke": "$card-stroke",
+                              "strokeWidth": 1,
+                              "strokeAlignment": "inner",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Ol1PL",
+                                  "name": "Label",
+                                  "fill": "$text-primary",
+                                  "content": "Open Apps",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -23818,6 +23453,7 @@
               "strokeWidth": {
                 "right": 1
               },
+              "strokeLinejoin": "round",
               "layout": "vertical",
               "gap": 3,
               "padding": [
@@ -24449,7 +24085,7 @@
                     {
                       "type": "frame",
                       "id": "qiEHo",
-                      "name": "Side projects Space Row",
+                      "name": "Side folders Space Row",
                       "width": "fill_container",
                       "height": 54,
                       "fill": "#FFFFFF06",
@@ -24496,7 +24132,7 @@
                               "id": "BCVGx",
                               "name": "Name",
                               "fill": "#FFFFFF",
-                              "content": "Side projects",
+                              "content": "Side folders",
                               "fontFamily": "Inter",
                               "fontSize": 13,
                               "fontWeight": "600"
@@ -24747,6 +24383,7 @@
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -27436,6 +27073,15 @@
                   }
                 }
               }
+            },
+            {
+              "id": "KcsiQ",
+              "type": "ref",
+              "ref": "TFUWH",
+              "name": "Apps Launcher (Fixed)",
+              "x": 1401,
+              "y": 7,
+              "theme": {}
             }
           ]
         },
@@ -27807,6 +27453,15 @@
               "y": 0,
               "width": 240,
               "height": 900
+            },
+            {
+              "id": "O74uJ",
+              "type": "ref",
+              "ref": "TFUWH",
+              "name": "Apps Launcher (Fixed)",
+              "x": 1401,
+              "y": 7,
+              "theme": {}
             }
           ]
         },
@@ -28152,7 +27807,23 @@
               "x": 0,
               "y": 0,
               "width": 240,
-              "height": 900
+              "height": 900,
+              "descendants": {
+                "eCNaP/cNwQB/n59JT/mQ97c": {
+                  "theme": {
+                    "header-state": "default"
+                  }
+                }
+              }
+            },
+            {
+              "id": "g9TSG5",
+              "type": "ref",
+              "ref": "TFUWH",
+              "name": "Apps Launcher (Fixed)",
+              "x": 1401,
+              "y": 7,
+              "theme": {}
             }
           ]
         },
@@ -28194,7 +27865,7 @@
               "name": "Settings — General Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "fill": "$color-background-surface",
               "stroke": "#00000000",
@@ -28383,7 +28054,7 @@
               "name": "Settings — Permissions Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "fill": "$color-background-surface",
               "stroke": "#00000000",
@@ -28472,7 +28143,7 @@
               "name": "Settings — Agents Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "fill": "$color-background-surface",
               "stroke": "#00000000",
@@ -28561,7 +28232,7 @@
               "name": "Settings — Apps Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "fill": "$color-background-surface",
               "stroke": "#00000000",
@@ -28621,16 +28292,6 @@
                   "theme": {
                     "state": "selected"
                   }
-                },
-                "Ofs4g": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "Ofs4g/f9x1Ft": {
-                  "theme": {
-                    "state": "default"
-                  }
                 }
               }
             },
@@ -28680,7 +28341,7 @@
               "name": "Settings — Connectors Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "fill": "$color-background-surface",
               "stroke": "#00000000",
@@ -28789,7 +28450,7 @@
               "name": "Settings — Appearance Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "theme": {
                 "mode": "dark"
@@ -28911,7 +28572,7 @@
               "name": "Settings — Account Page",
               "x": 240,
               "y": 0,
-              "width": 1200,
+              "width": 780,
               "height": 900,
               "fill": "$color-background-surface",
               "stroke": "#00000000",
@@ -29382,10 +29043,76 @@
         },
         {
           "type": "frame",
-          "id": "M5FolZ",
+          "id": "F86LyT",
+          "x": 10416,
+          "y": 4180,
+          "name": "Screen — Settings — Spaces",
+          "clip": true,
+          "width": 1440,
+          "height": 900,
+          "fill": "$canvas",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "iaSP3",
+              "x": 240,
+              "y": 0,
+              "name": "Main Surface",
+              "fill": "$color-background-surface",
+              "width": 780,
+              "height": 900
+            },
+            {
+              "type": "rectangle",
+              "id": "c0FVn",
+              "x": 239,
+              "y": 0,
+              "name": "Rail Divider",
+              "fill": "$color-border",
+              "width": 1,
+              "height": 900
+            },
+            {
+              "id": "mgj7S",
+              "type": "ref",
+              "ref": "SpDHo",
+              "name": "Settings — Spaces Page",
+              "x": 240,
+              "y": 0,
+              "width": 780,
+              "height": 900,
+              "fill": "$color-background-surface",
+              "stroke": "#00000000",
+              "strokeWidth": 0
+            },
+            {
+              "id": "qmFWh",
+              "type": "ref",
+              "ref": "UPCCE",
+              "name": "Left Rail — Spaces",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 900
+            },
+            {
+              "id": "llEi5",
+              "type": "ref",
+              "ref": "TFUWH",
+              "name": "Apps Launcher (Fixed)",
+              "x": 1401,
+              "y": 7,
+              "theme": {}
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pZ9JP",
           "x": 1488,
           "y": 1580,
-          "name": "Screen — Main - Middle Panel — Empty Thread",
+          "name": "Screen — Main — Empty Thread",
           "metadata": {
             "type": "recovered-reference",
             "source": "workspace.png",
@@ -29398,7 +29125,7 @@
           "layout": "none",
           "children": [
             {
-              "id": "zEFQJ",
+              "id": "p3pY0",
               "type": "ref",
               "ref": "T0KEEB",
               "name": "Middle Panel — Empty Thread",
@@ -29412,12 +29139,31 @@
               "descendants": {
                 "zSwFv/mpj5n": {
                   "x": 0.003955198560110902,
-                  "y": 0.4827833683530116,
+                  "y": 0.48278336835301516,
                   "rotation": -0.006665181915932049
+                },
+                "ISa9R": {
+                  "theme": {
+                    "state": "default",
+                    "thread-stage": "draft"
+                  }
+                },
+                "ISa9R/Eewpn": {
+                  "theme": {
+                    "state": "open"
+                  }
+                },
+                "ISa9R/B1ZyM": {
+                  "theme": {
+                    "state": "default"
+                  }
+                },
+                "ISa9R/CnM59": {
+                  "content": "Do something"
                 },
                 "ISa9R/DxWas/eQt4v": {
                   "theme": {
-                    "state": "open",
+                    "state": "default",
                     "composer-context": "new",
                     "catalog": "compact"
                   }
@@ -29425,7 +29171,7 @@
               }
             },
             {
-              "id": "cAGSI",
+              "id": "prKwH",
               "type": "ref",
               "ref": "o4UviR",
               "name": "Tooltip Overlay Layer",
@@ -29450,7 +29196,7 @@
               }
             },
             {
-              "id": "nJkN5",
+              "id": "L5koHy",
               "type": "ref",
               "ref": "UPCCE",
               "name": "Left Rail — Spaces",
@@ -29463,58 +29209,87 @@
         },
         {
           "type": "frame",
-          "id": "F86LyT",
-          "x": 10416,
-          "y": 4180,
-          "name": "Screen — Settings — Spaces",
-          "clip": true,
-          "width": 1440,
-          "height": 900,
-          "fill": "$canvas",
-          "layout": "none",
+          "id": "DJLI5",
+          "x": 64,
+          "y": 700,
+          "name": "Menu / Local Runtime",
+          "reusable": true,
+          "width": 160,
+          "fill": "$color-background-elevated-primary-opaque",
+          "cornerRadius": 10,
+          "stroke": "#2A2C36",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000066",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 28
+          },
+          "layout": "vertical",
+          "gap": 2,
+          "padding": 8,
           "children": [
             {
-              "type": "rectangle",
-              "id": "iaSP3",
-              "x": 240,
-              "y": 0,
-              "name": "Main Surface",
-              "fill": "$color-background-surface",
-              "width": 1200,
-              "height": 900
-            },
-            {
-              "type": "rectangle",
-              "id": "c0FVn",
-              "x": 239,
-              "y": 0,
-              "name": "Rail Divider",
-              "fill": "$color-border",
-              "width": 1,
-              "height": 900
-            },
-            {
-              "id": "mgj7S",
-              "type": "ref",
-              "ref": "SpDHo",
-              "name": "Settings — Spaces Page",
-              "x": 240,
-              "y": 0,
-              "width": 1200,
-              "height": 900,
-              "fill": "$color-background-surface",
-              "stroke": "#00000000",
-              "strokeWidth": 0
-            },
-            {
-              "id": "qmFWh",
-              "type": "ref",
-              "ref": "UPCCE",
-              "name": "Left Rail — Spaces",
-              "x": 0,
-              "y": 0,
-              "width": 240,
-              "height": 900
+              "type": "frame",
+              "id": "b1DGX",
+              "name": "Local — This Mac",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                0,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "Y7QjZ",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "monitor",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "L4Bti",
+                  "fill": "$row-text",
+                  "content": "This Mac",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "pyuKC",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#00000000",
+                  "layout": "none"
+                },
+                {
+                  "type": "icon",
+                  "id": "q39D3J",
+                  "name": "Selected Check",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "check",
+                  "library": "lucide",
+                  "fill": "$accent"
+                }
+              ]
             }
           ]
         }
@@ -29530,13 +29305,14 @@
         "mode": "dark"
       },
       "width": 2200,
-      "height": 700,
+      "height": 1300,
       "fill": "$color-background-panel",
       "stroke": "$color-border",
       "strokeWidth": {
         "bottom": 1
       },
       "strokeAlignment": "inner",
+      "strokeLinejoin": "round",
       "layout": "none",
       "children": [
         {
@@ -29643,6 +29419,434 @@
               "fontWeight": "700"
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "EPWxU",
+          "x": 64,
+          "y": 650,
+          "name": "Desktop Surface Selection Standards",
+          "theme": {
+            "mode": "dark"
+          },
+          "width": 2000,
+          "height": 570,
+          "fill": "$color-background-surface",
+          "cornerRadius": 12,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "qCSv5",
+              "name": "Title",
+              "fill": "$text-primary",
+              "content": "Desktop surface selection standards",
+              "fontFamily": "$font-body",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "xqihi",
+              "name": "Description",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Pencil specifies the trigger, content, and outcome. Operating-system surfaces are documented behaviorally and are not recreated as Penkra components.",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "WVh0T",
+              "name": "Surface Standards",
+              "width": "fill_container",
+              "height": 420,
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "n1W5Z",
+                  "name": "Native alert",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color-background-panel",
+                  "cornerRadius": 10,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "zxmO8",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "message-square-warning",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WMa2C",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Native alert",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FXfQp",
+                      "name": "Purpose",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "One short decision or notice",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ryb2c",
+                      "name": "Examples",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Logout, archive empty Space, discard, retry",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Eo9Tc",
+                      "name": "Pencil Rule",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Do not draw in Pencil",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iDYJY",
+                  "name": "Native context menu",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color-background-panel",
+                  "cornerRadius": 10,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "VKLdW",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "mouse-pointer-click",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nJQES",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Native context menu",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LY1UR",
+                      "name": "Purpose",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Commands scoped to the clicked item",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RiZ0v",
+                      "name": "Examples",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "New Thread, Rename, Expand/Collapse, Archive",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KCZ8X",
+                      "name": "Pencil Rule",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Annotate the target row",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xdZ8r",
+                  "name": "Inline state",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color-background-panel",
+                  "cornerRadius": 10,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "xhAio",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "square-pen",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E7j2c",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Inline state",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vyOLS",
+                      "name": "Purpose",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Fast contextual creation or editing",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ItyBa",
+                      "name": "Examples",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Create Space and rename Space",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "clQZm",
+                      "name": "Pencil Rule",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Design all validation states",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ck6lG",
+                  "name": "Penkra page / panel",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color-background-panel",
+                  "cornerRadius": 10,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "SHSOF",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "panel-right",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "idaFu",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Penkra page / panel",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wb5gm",
+                      "name": "Purpose",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Fields, choices, validation, or multi-step work",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qQ8wP",
+                      "name": "Examples",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Settings, permissions, management",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GKfFj",
+                      "name": "Pencil Rule",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Compose shared components",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WP0Zv",
+                  "name": "Native picker",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color-background-panel",
+                  "cornerRadius": 10,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "jxYDE",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "folder-open",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X6BzB",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Native picker",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fmMP7",
+                      "name": "Purpose",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Operating-system resources",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ec61s",
+                      "name": "Examples",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Choose file or folder",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "i0zwN",
+                      "name": "Pencil Rule",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Do not draw in Pencil",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -29709,13 +29913,160 @@
           "layout": "none",
           "children": [
             {
+              "type": "frame",
+              "id": "fiR2o",
+              "x": 16,
+              "y": -40,
+              "name": "Draft Folder Bar",
+              "enabled": "$thread-setup-visible",
+              "width": 528,
+              "fill": "$card-fill",
+              "cornerRadius": [
+                18,
+                18,
+                0,
+                0
+              ],
+              "stroke": "$card-stroke",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "gap": 6,
+              "padding": [
+                7,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Eewpn",
+                  "name": "Choose Folder Trigger",
+                  "theme": {
+                    "state": "default"
+                  },
+                  "height": 26,
+                  "fill": "$row-bg",
+                  "cornerRadius": 999,
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    6
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Ay2TL",
+                      "name": "Folder Icon",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "folder",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "P17Kq",
+                      "name": "Folder Label",
+                      "fill": "$text-primary",
+                      "content": "Choose Folder",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "RtdR1",
+                      "name": "Chevron",
+                      "width": 12,
+                      "height": 12,
+                      "icon": "chevron-down",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "id": "NukmO",
+                      "type": "ref",
+                      "ref": "MFAws",
+                      "name": "Folder Picker",
+                      "x": 0,
+                      "y": -227,
+                      "width": 264,
+                      "layoutPosition": "absolute",
+                      "enabled": "$thread-folder-picker-visible"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "B1ZyM",
+                  "name": "Local Runtime",
+                  "theme": {
+                    "state": "default"
+                  },
+                  "height": 26,
+                  "fill": "$row-bg",
+                  "cornerRadius": 999,
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    6
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "QgrWx",
+                      "name": "Local Icon",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bC4C0",
+                      "name": "Local Label",
+                      "fill": "$text-primary",
+                      "content": "This Mac",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "KoaPZ",
+                      "name": "Chevron",
+                      "width": 12,
+                      "height": 12,
+                      "icon": "chevron-down",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "id": "f5K8O",
+                      "type": "ref",
+                      "ref": "DJLI5",
+                      "name": "Local Picker",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": -54,
+                      "width": 160,
+                      "enabled": "$thread-runtime-picker-visible"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "text",
               "id": "CnM59",
               "x": 11,
               "y": 15,
               "name": "Placeholder",
               "fill": "$text-tertiary",
-              "content": "Do anything",
+              "content": "Plan, Build, / for skills, @ for context",
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
@@ -33052,120 +33403,504 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "qnd58",
-      "x": 836,
-      "y": 420,
-      "name": "Menu / Model / Searchable",
-      "reusable": true,
-      "metadata": {
-        "type": "interaction-contract",
-        "searchThreshold": 15,
-        "behavior": "Search appears for any provider model catalog with 15 or more entries. Results remain grouped by upstream provider; groups disclose models and favorites remain available."
-      },
-      "clip": true,
-      "width": 220,
-      "height": 310,
-      "fill": "$color-background-elevated-primary-opaque",
-      "cornerRadius": 10,
-      "stroke": "$color-border",
-      "strokeWidth": 1,
-      "strokeAlignment": "inner",
-      "layout": "vertical",
-      "gap": 1,
-      "padding": 7,
-      "children": [
+        },
         {
           "type": "frame",
-          "id": "dAbSo",
-          "name": "Search Models or Provider",
-          "width": "fill_container",
-          "height": 32,
-          "fill": "$color-background-control-opaque",
-          "cornerRadius": 8,
+          "id": "qnd58",
+          "x": 64,
+          "y": 3360,
+          "name": "Menu / Model / Searchable",
+          "reusable": true,
+          "metadata": {
+            "type": "interaction-contract",
+            "searchThreshold": 15,
+            "behavior": "Search appears for any provider model catalog with 15 or more entries. Results remain grouped by upstream provider; groups disclose models and favorites remain available."
+          },
+          "clip": true,
+          "width": 220,
+          "height": 310,
+          "fill": "$color-background-elevated-primary-opaque",
+          "cornerRadius": 10,
           "stroke": "$color-border",
           "strokeWidth": 1,
           "strokeAlignment": "inner",
-          "padding": [
-            0,
-            10
-          ],
-          "alignItems": "center",
+          "layout": "vertical",
+          "gap": 1,
+          "padding": 7,
           "children": [
-            {
-              "type": "text",
-              "id": "k0GRA",
-              "name": "Placeholder",
-              "fill": "$color-text-foreground-tertiary",
-              "content": "Search models or provider",
-              "fontFamily": "$font-body",
-              "fontSize": 12,
-              "fontWeight": "normal"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "kCaio",
-          "name": "Provider Group / MiniMax (minimax.io)",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 7,
-          "padding": [
-            0,
-            7
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "icon",
-              "id": "FQHaN",
-              "name": "Disclosure",
-              "width": 11,
-              "height": 11,
-              "icon": "chevron-right",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            },
-            {
-              "type": "text",
-              "id": "wUC9Z",
-              "name": "Provider Label",
-              "fill": "$color-text-foreground-secondary",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "MiniMax (minimax.io)",
-              "fontFamily": "$font-body",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
             {
               "type": "frame",
-              "id": "Hiku6",
-              "name": "Model Count",
-              "height": 17,
-              "fill": "$color-background-button-secondary-hover",
-              "cornerRadius": 999,
+              "id": "dAbSo",
+              "name": "Search Models or Provider",
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$color-background-control-opaque",
+              "cornerRadius": 8,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
               "padding": [
-                2,
-                6
+                0,
+                10
               ],
-              "justifyContent": "center",
               "alignItems": "center",
               "children": [
                 {
                   "type": "text",
-                  "id": "H9sJe",
-                  "name": "Count",
+                  "id": "k0GRA",
+                  "name": "Placeholder",
                   "fill": "$color-text-foreground-tertiary",
-                  "content": "7",
+                  "content": "Search models or provider",
                   "fontFamily": "$font-body",
-                  "fontSize": 10,
+                  "fontSize": 12,
                   "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kCaio",
+              "name": "Provider Group / MiniMax (minimax.io)",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 7,
+              "padding": [
+                0,
+                7
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "FQHaN",
+                  "name": "Disclosure",
+                  "width": 11,
+                  "height": 11,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "wUC9Z",
+                  "name": "Provider Label",
+                  "fill": "$color-text-foreground-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "MiniMax (minimax.io)",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Hiku6",
+                  "name": "Model Count",
+                  "height": 17,
+                  "fill": "$color-background-button-secondary-hover",
+                  "cornerRadius": 999,
+                  "padding": [
+                    2,
+                    6
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H9sJe",
+                      "name": "Count",
+                      "fill": "$color-text-foreground-tertiary",
+                      "content": "7",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ydLEL",
+              "name": "Provider Group / OpenAI",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 7,
+              "padding": [
+                0,
+                7
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "m4Pvs",
+                  "name": "Disclosure",
+                  "width": 11,
+                  "height": 11,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "R5diy",
+                  "name": "Provider Label",
+                  "fill": "$color-text-foreground-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "OpenAI",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "IWIwz",
+                  "name": "Model Count",
+                  "height": 17,
+                  "fill": "$color-background-button-secondary-hover",
+                  "cornerRadius": 999,
+                  "padding": [
+                    2,
+                    6
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iaPWm",
+                      "name": "Count",
+                      "fill": "$color-text-foreground-tertiary",
+                      "content": "14",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "llptF",
+              "name": "Provider Group / OpenCode Go",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 7,
+              "padding": [
+                0,
+                7
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "Me2jK",
+                  "name": "Disclosure",
+                  "width": 11,
+                  "height": 11,
+                  "icon": "chevron-down",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "Uq5Wt",
+                  "name": "Provider Label",
+                  "fill": "$color-text-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "OpenCode Go",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "bYvo9",
+                  "name": "Model Count",
+                  "height": 17,
+                  "fill": "$color-background-button-secondary-hover",
+                  "cornerRadius": 999,
+                  "padding": [
+                    2,
+                    6
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UsgFE",
+                      "name": "Count",
+                      "fill": "$color-text-foreground-tertiary",
+                      "content": "17",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R4kLt",
+              "name": "Model / DeepSeek V4 Fast",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 8,
+              "padding": [
+                0,
+                7,
+                0,
+                27
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r6yAX2",
+                  "name": "Model Label",
+                  "fill": "$color-text-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "DeepSeek V4 Fast",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "brnwn",
+                  "name": "Favorite",
+                  "width": 13,
+                  "height": 13,
+                  "icon": "star",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F4VSEy",
+              "name": "Model / DeepSeek V4 Pro",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 8,
+              "padding": [
+                0,
+                7,
+                0,
+                27
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Q6tcs",
+                  "name": "Model Label",
+                  "fill": "$color-text-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "DeepSeek V4 Pro",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "SFS0c",
+                  "name": "Favorite",
+                  "width": 13,
+                  "height": 13,
+                  "icon": "star",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XFs9A",
+              "name": "Model / GLM-5.1",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 8,
+              "padding": [
+                0,
+                7,
+                0,
+                27
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J61MpH",
+                  "name": "Model Label",
+                  "fill": "$color-text-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "GLM-5.1",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "uF0V5",
+                  "name": "Favorite",
+                  "width": 13,
+                  "height": 13,
+                  "icon": "star",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eii7Y",
+              "name": "Model / GLM-5.2",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 8,
+              "padding": [
+                0,
+                7,
+                0,
+                27
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aJ1pF",
+                  "name": "Model Label",
+                  "fill": "$color-text-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "GLM-5.2",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "r06XE",
+                  "name": "Favorite",
+                  "width": 13,
+                  "height": 13,
+                  "icon": "star",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jXp2L",
+              "name": "Model / GPT-5.6 Luna",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 8,
+              "padding": [
+                0,
+                7,
+                0,
+                27
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z4dyNs",
+                  "name": "Model Label",
+                  "fill": "$color-text-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "GPT-5.6 Luna",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "VNWfj",
+                  "name": "Favorite",
+                  "width": 13,
+                  "height": 13,
+                  "icon": "star",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H1J2E",
+              "name": "Provider Group / OpenCode Zen",
+              "width": "fill_container",
+              "height": 27,
+              "gap": 7,
+              "padding": [
+                0,
+                7
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "itbGo",
+                  "name": "Disclosure",
+                  "width": 11,
+                  "height": 11,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "K9tAKT",
+                  "name": "Provider Label",
+                  "fill": "$color-text-foreground-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "OpenCode Zen",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "E4vJZ",
+                  "name": "Model Count",
+                  "height": 17,
+                  "fill": "$color-background-button-secondary-hover",
+                  "cornerRadius": 999,
+                  "padding": [
+                    2,
+                    6
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l6cmXT",
+                      "name": "Count",
+                      "fill": "$color-text-foreground-tertiary",
+                      "content": "60",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -33173,61 +33908,282 @@
         },
         {
           "type": "frame",
-          "id": "ydLEL",
-          "name": "Provider Group / OpenAI",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 7,
-          "padding": [
-            0,
-            7
-          ],
-          "alignItems": "center",
+          "id": "MFAws",
+          "x": 340,
+          "y": 3360,
+          "name": "Menu / Recent Folders",
+          "reusable": true,
+          "width": 264,
+          "fill": "$color-background-elevated-primary-opaque",
+          "cornerRadius": 10,
+          "stroke": "#2A2C36",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000066",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 28
+          },
+          "layout": "vertical",
+          "gap": 2,
+          "padding": 8,
           "children": [
             {
-              "type": "icon",
-              "id": "m4Pvs",
-              "name": "Disclosure",
-              "width": 11,
-              "height": 11,
-              "icon": "chevron-right",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            },
-            {
-              "type": "text",
-              "id": "R5diy",
-              "name": "Provider Label",
-              "fill": "$color-text-foreground-secondary",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "OpenAI",
-              "fontFamily": "$font-body",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
               "type": "frame",
-              "id": "IWIwz",
-              "name": "Model Count",
-              "height": 17,
-              "fill": "$color-background-button-secondary-hover",
-              "cornerRadius": 999,
+              "id": "KQgv9",
+              "name": "Recent Folder — Penkra",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
               "padding": [
-                2,
-                6
+                0,
+                8
               ],
-              "justifyContent": "center",
               "alignItems": "center",
               "children": [
                 {
+                  "type": "icon",
+                  "id": "tFiHE",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "folder",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
                   "type": "text",
-                  "id": "iaPWm",
-                  "name": "Count",
-                  "fill": "$color-text-foreground-tertiary",
-                  "content": "14",
+                  "id": "fwl0o",
+                  "fill": "$row-text",
+                  "content": "Penkra",
                   "fontFamily": "$font-body",
-                  "fontSize": 10,
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "re79T",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#00000000",
+                  "layout": "none"
+                },
+                {
+                  "type": "icon",
+                  "id": "NIhmM",
+                  "name": "Selected Check",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "check",
+                  "library": "lucide",
+                  "fill": "$accent"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SSZVn",
+              "name": "Recent Folder — Atferd",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                0,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "g36Gbs",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "folder",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "g8msLd",
+                  "fill": "$row-text",
+                  "content": "Atferd",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F0XV9",
+              "name": "Recent Folder — Website",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                0,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "qVEHZ",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "folder",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "s5lvZ",
+                  "fill": "$row-text",
+                  "content": "Website",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CTXDm",
+              "name": "Recent Folder — Personal",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                0,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "b46hE",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "folder",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "z5M53",
+                  "fill": "$row-text",
+                  "content": "Personal",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "t0MRk",
+              "name": "Divider",
+              "fill": "$border",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "UjJnj",
+              "name": "Choose from computer…",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                0,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "gREjg",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "RAsUs",
+                  "fill": "$row-text",
+                  "content": "Choose from computer…",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nKq5G",
+              "name": "No physical folder",
+              "theme": {
+                "state": "default"
+              },
+              "width": "fill_container",
+              "height": 32,
+              "fill": "$row-bg",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                0,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "s9y37r",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "x",
+                  "library": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "d0nsD",
+                  "fill": "$row-text",
+                  "content": "Don't work in a folder",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
                   "fontWeight": "normal"
                 }
               ]
@@ -33235,325 +34191,16 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "llptF",
-          "name": "Provider Group / OpenCode Go",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 7,
-          "padding": [
-            0,
-            7
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "icon",
-              "id": "Me2jK",
-              "name": "Disclosure",
-              "width": 11,
-              "height": 11,
-              "icon": "chevron-down",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            },
-            {
-              "type": "text",
-              "id": "Uq5Wt",
-              "name": "Provider Label",
-              "fill": "$color-text-foreground",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "OpenCode Go",
-              "fontFamily": "$font-body",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "bYvo9",
-              "name": "Model Count",
-              "height": 17,
-              "fill": "$color-background-button-secondary-hover",
-              "cornerRadius": 999,
-              "padding": [
-                2,
-                6
-              ],
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "UsgFE",
-                  "name": "Count",
-                  "fill": "$color-text-foreground-tertiary",
-                  "content": "17",
-                  "fontFamily": "$font-body",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "R4kLt",
-          "name": "Model / DeepSeek V4 Fast",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 8,
-          "padding": [
-            0,
-            7,
-            0,
-            27
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "r6yAX2",
-              "name": "Model Label",
-              "fill": "$color-text-foreground",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "DeepSeek V4 Fast",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "brnwn",
-              "name": "Favorite",
-              "width": 13,
-              "height": 13,
-              "icon": "star",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "F4VSEy",
-          "name": "Model / DeepSeek V4 Pro",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 8,
-          "padding": [
-            0,
-            7,
-            0,
-            27
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "Q6tcs",
-              "name": "Model Label",
-              "fill": "$color-text-foreground",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "DeepSeek V4 Pro",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "SFS0c",
-              "name": "Favorite",
-              "width": 13,
-              "height": 13,
-              "icon": "star",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "XFs9A",
-          "name": "Model / GLM-5.1",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 8,
-          "padding": [
-            0,
-            7,
-            0,
-            27
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "J61MpH",
-              "name": "Model Label",
-              "fill": "$color-text-foreground",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "GLM-5.1",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "uF0V5",
-              "name": "Favorite",
-              "width": 13,
-              "height": 13,
-              "icon": "star",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "eii7Y",
-          "name": "Model / GLM-5.2",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 8,
-          "padding": [
-            0,
-            7,
-            0,
-            27
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "aJ1pF",
-              "name": "Model Label",
-              "fill": "$color-text-foreground",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "GLM-5.2",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "r06XE",
-              "name": "Favorite",
-              "width": 13,
-              "height": 13,
-              "icon": "star",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "jXp2L",
-          "name": "Model / GPT-5.6 Luna",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 8,
-          "padding": [
-            0,
-            7,
-            0,
-            27
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "z4dyNs",
-              "name": "Model Label",
-              "fill": "$color-text-foreground",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "GPT-5.6 Luna",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "VNWfj",
-              "name": "Favorite",
-              "width": 13,
-              "height": 13,
-              "icon": "star",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "H1J2E",
-          "name": "Provider Group / OpenCode Zen",
-          "width": "fill_container",
-          "height": 27,
-          "gap": 7,
-          "padding": [
-            0,
-            7
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "icon",
-              "id": "itbGo",
-              "name": "Disclosure",
-              "width": 11,
-              "height": 11,
-              "icon": "chevron-right",
-              "library": "lucide",
-              "fill": "$color-text-foreground-tertiary"
-            },
-            {
-              "type": "text",
-              "id": "K9tAKT",
-              "name": "Provider Label",
-              "fill": "$color-text-foreground-secondary",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "OpenCode Zen",
-              "fontFamily": "$font-body",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "E4vJZ",
-              "name": "Model Count",
-              "height": 17,
-              "fill": "$color-background-button-secondary-hover",
-              "cornerRadius": 999,
-              "padding": [
-                2,
-                6
-              ],
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "l6cmXT",
-                  "name": "Count",
-                  "fill": "$color-text-foreground-tertiary",
-                  "content": "60",
-                  "fontFamily": "$font-body",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "type": "text",
+          "id": "KqHg6",
+          "x": 64,
+          "y": 3300,
+          "name": "Search and Folder Menus Label",
+          "fill": "$text-secondary",
+          "content": "Search and Folder Menus",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "600"
         }
       ]
     },
@@ -33625,6 +34272,584 @@
           "icon": "circle-alert",
           "library": "lucide",
           "fill": "$accent-orange"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "AYO2H",
+      "x": 31993,
+      "y": -522,
+      "name": "App Runtime State / Shared",
+      "reusable": true,
+      "width": 420,
+      "height": 822,
+      "fill": "$color-background-surface",
+      "layout": "vertical",
+      "padding": 36,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "m087no",
+          "name": "Content",
+          "width": 300,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "WjkMK",
+              "name": "Icon Container",
+              "width": 48,
+              "height": 48,
+              "fill": "$color-background-panel",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "kkyGm",
+                  "name": "Icon",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "loader-circle",
+                  "library": "lucide",
+                  "fill": "#000000"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OwYkX",
+              "name": "Copy",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Dtu7v",
+                  "name": "Title",
+                  "fill": "$color-text-foreground",
+                  "content": "Starting Figma",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "qhZk7",
+                  "name": "Message",
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Penkra is starting the isolated app runtime.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ckx6U",
+              "name": "Primary Action",
+              "height": 30,
+              "fill": "#000000",
+              "cornerRadius": 8,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "padding": [
+                0,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T1MdW",
+                  "name": "Label",
+                  "fill": "$color-text-foreground",
+                  "content": "Try again",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "TFUWH",
+      "x": 31993,
+      "y": 328,
+      "name": "Apps Launcher / Fixed",
+      "reusable": true,
+      "width": 32,
+      "height": 32,
+      "fill": "$row-bg",
+      "cornerRadius": 8,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon",
+          "id": "c662o",
+          "name": "Icon",
+          "width": 16,
+          "height": 16,
+          "icon": "grid-2x2",
+          "library": "lucide",
+          "fill": "$row-text"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nGiPL",
+      "x": 32413,
+      "y": -522,
+      "name": "Right Panel / Apps Runtime",
+      "reusable": true,
+      "width": 420,
+      "height": 900,
+      "fill": "$color-background-surface",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "w8KeA",
+          "name": "Panel Tabs",
+          "width": "fill_container",
+          "height": 46,
+          "gap": 4,
+          "padding": [
+            0,
+            8
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "Vc9G8",
+              "type": "ref",
+              "ref": "nyAGp",
+              "name": "Files",
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "L0dSu": {
+                  "icon": "file-text"
+                },
+                "mPxnw": {
+                  "content": "Files"
+                }
+              }
+            },
+            {
+              "id": "bg387",
+              "type": "ref",
+              "ref": "nyAGp",
+              "name": "Review",
+              "theme": {
+                "state": "default"
+              },
+              "descendants": {
+                "L0dSu": {
+                  "icon": "file-diff"
+                },
+                "mPxnw": {
+                  "content": "Review"
+                }
+              }
+            },
+            {
+              "id": "FuB29",
+              "type": "ref",
+              "ref": "nyAGp",
+              "name": "Apps",
+              "theme": {
+                "state": "selected"
+              },
+              "descendants": {
+                "L0dSu": {
+                  "icon": "grid-2x2"
+                },
+                "mPxnw": {
+                  "content": "Apps"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "sErcz",
+          "type": "ref",
+          "ref": "HQgpR",
+          "name": "App Bar",
+          "width": "fill_container",
+          "height": 32
+        },
+        {
+          "id": "xcAbR",
+          "type": "ref",
+          "ref": "AYO2H",
+          "name": "Runtime State",
+          "width": "fill_container",
+          "height": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prEvF",
+      "x": 32833,
+      "y": -522,
+      "name": "Right Panel / Apps Loading",
+      "clip": true,
+      "width": 420,
+      "height": 900,
+      "children": [
+        {
+          "id": "EHH0u",
+          "type": "ref",
+          "ref": "nGiPL",
+          "name": "Panel",
+          "width": 420,
+          "height": 900,
+          "descendants": {
+            "xcAbR/kkyGm": {
+              "icon": "loader-circle"
+            },
+            "xcAbR/Dtu7v": {
+              "content": "Starting Figma"
+            },
+            "xcAbR/qhZk7": {
+              "content": "Penkra is verifying and starting the isolated app runtime."
+            },
+            "xcAbR/ckx6U": {
+              "enabled": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DbNEo",
+      "x": 33253,
+      "y": -522,
+      "name": "Right Panel / App Disabled in Space",
+      "clip": true,
+      "width": 420,
+      "height": 900,
+      "children": [
+        {
+          "id": "fJzss",
+          "type": "ref",
+          "ref": "nGiPL",
+          "name": "Panel",
+          "width": 420,
+          "height": 900,
+          "descendants": {
+            "xcAbR/kkyGm": {
+              "icon": "toggle-left"
+            },
+            "xcAbR/Dtu7v": {
+              "content": "Figma is off in Work"
+            },
+            "xcAbR/qhZk7": {
+              "content": "This app is installed, but it is not enabled in the active Space."
+            },
+            "xcAbR/T1MdW": {
+              "content": "Enable in Work"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BPbPp",
+      "x": 33673,
+      "y": -522,
+      "name": "Right Panel / App Missing",
+      "clip": true,
+      "width": 420,
+      "height": 900,
+      "children": [
+        {
+          "id": "EtYE4",
+          "type": "ref",
+          "ref": "nGiPL",
+          "name": "Panel",
+          "width": 420,
+          "height": 900,
+          "descendants": {
+            "xcAbR/kkyGm": {
+              "icon": "package-x"
+            },
+            "xcAbR/Dtu7v": {
+              "content": "Figma is not installed"
+            },
+            "xcAbR/qhZk7": {
+              "content": "This tab references an app that is no longer installed on this device."
+            },
+            "xcAbR/T1MdW": {
+              "content": "View in Apps"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SN1Gl",
+      "x": 34093,
+      "y": -522,
+      "name": "Right Panel / App Crashed",
+      "clip": true,
+      "width": 420,
+      "height": 900,
+      "children": [
+        {
+          "id": "I298BP",
+          "type": "ref",
+          "ref": "nGiPL",
+          "name": "Panel",
+          "width": 420,
+          "height": 900,
+          "descendants": {
+            "xcAbR/kkyGm": {
+              "icon": "triangle-alert"
+            },
+            "xcAbR/Dtu7v": {
+              "content": "Figma stopped unexpectedly"
+            },
+            "xcAbR/qhZk7": {
+              "content": "The isolated app runtime exited. Your tab and local app data are still available."
+            },
+            "xcAbR/T1MdW": {
+              "content": "Restart app"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "A1Qqdn",
+      "x": 34513,
+      "y": -522,
+      "name": "Right Panel / App Revoked",
+      "clip": true,
+      "width": 420,
+      "height": 900,
+      "children": [
+        {
+          "id": "rI6C4",
+          "type": "ref",
+          "ref": "nGiPL",
+          "name": "Panel",
+          "width": 420,
+          "height": 900,
+          "descendants": {
+            "xcAbR/WjkMK": {
+              "stroke": "#D96B6B",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner"
+            },
+            "xcAbR/kkyGm": {
+              "icon": "shield-alert",
+              "fill": "#D96B6B"
+            },
+            "xcAbR/Dtu7v": {
+              "content": "Figma can no longer run"
+            },
+            "xcAbR/qhZk7": {
+              "content": "This installed version was revoked. Its permissions and operations are disabled."
+            },
+            "xcAbR/T1MdW": {
+              "content": "Open Apps"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tB0vq",
+      "x": 34933,
+      "y": -522,
+      "name": "Apps Launcher / Behavior",
+      "width": 740,
+      "height": 220,
+      "fill": "$color-background-surface",
+      "layout": "vertical",
+      "gap": 18,
+      "padding": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "G8BIx",
+          "name": "Heading",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "E1mPj",
+              "name": "Title",
+              "fill": "$color-text-foreground",
+              "content": "Fixed Apps launcher",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "U8zlbP",
+              "name": "Subtitle",
+              "fill": "#000000",
+              "content": "The control stays at the window's right edge while the panel moves beneath it.",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h52ZQ",
+          "name": "States",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "M740Aw",
+              "name": "Panel Closed",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$color-background-panel",
+              "cornerRadius": 10,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "vertical",
+              "padding": 12,
+              "alignItems": "end",
+              "children": [
+                {
+                  "id": "K9GXUZ",
+                  "type": "ref",
+                  "ref": "TFUWH",
+                  "name": "Apps Launcher"
+                },
+                {
+                  "type": "text",
+                  "id": "uBFUC",
+                  "name": "Label",
+                  "fill": "#000000",
+                  "content": "Panel closed",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P8bx2f",
+              "name": "Other Tab Open",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$color-background-panel",
+              "cornerRadius": 10,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "vertical",
+              "padding": 12,
+              "alignItems": "end",
+              "children": [
+                {
+                  "id": "C33yZ",
+                  "type": "ref",
+                  "ref": "TFUWH",
+                  "name": "Apps Launcher",
+                  "theme": {
+                    "state": "hover"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "cPesh",
+                  "name": "Label",
+                  "fill": "#000000",
+                  "content": "Another tab active",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EFA6f",
+              "name": "Apps Active",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$color-background-panel",
+              "cornerRadius": 10,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "vertical",
+              "padding": 12,
+              "alignItems": "end",
+              "children": [
+                {
+                  "id": "g5vknZ",
+                  "type": "ref",
+                  "ref": "TFUWH",
+                  "name": "Close Apps",
+                  "theme": {
+                    "state": "selected"
+                  },
+                  "descendants": {
+                    "c662o": {
+                      "icon": "x"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "FmzCB",
+                  "name": "Label",
+                  "fill": "#000000",
+                  "content": "Apps tab active",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -33717,6 +34942,18 @@
     "pin-state": [
       "unpinned",
       "pinned"
+    ],
+    "thread-stage": [
+      "started",
+      "draft"
+    ],
+    "folder-picker": [
+      "closed",
+      "open"
+    ],
+    "runtime-picker": [
+      "closed",
+      "open"
     ]
   },
   "variables": {
@@ -39984,6 +41221,141 @@
           "theme": {
             "state": "disabled",
             "work-status": "attention"
+          }
+        }
+      ]
+    },
+    "thread-setup-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": false,
+          "theme": {
+            "thread-stage": "started"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "thread-stage": "draft"
+          }
+        }
+      ]
+    },
+    "thread-folder-picker-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": false,
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "disabled"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "focus"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "error"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "loading"
+          }
+        }
+      ]
+    },
+    "thread-runtime-picker-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": false,
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "disabled"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "focus"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "error"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "loading"
           }
         }
       ]
