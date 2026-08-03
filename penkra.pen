@@ -4276,39 +4276,6 @@
                       }
                     },
                     {
-                      "id": "BwQPs",
-                      "type": "ref",
-                      "ref": "ptpcV",
-                      "name": "Account Control — account menu open",
-                      "x": 540,
-                      "y": 172,
-                      "width": 240,
-                      "height": 44,
-                      "theme": {},
-                      "descendants": {
-                        "aIHr8": {
-                          "theme": {
-                            "update": "none"
-                          }
-                        },
-                        "aIHr8/m95FNh": {
-                          "theme": {
-                            "state": "open"
-                          }
-                        },
-                        "aIHr8/cwT9q": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "aIHr8/AfY0d": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        }
-                      }
-                    },
-                    {
                       "id": "BJHIm",
                       "type": "ref",
                       "ref": "ptpcV",
@@ -21693,120 +21660,16 @@
                           "gap": 10,
                           "children": [
                             {
-                              "id": "O9wObV",
-                              "type": "ref",
-                              "ref": "n7RtBO",
-                              "name": "Calendar",
+                              "type": "text",
+                              "id": "v4qGB",
+                              "name": "No Connectors Available",
+                              "fill": "$text-tertiary",
+                              "textGrowth": "fixed-width",
                               "width": "fill_container",
-                              "descendants": {
-                                "Ae0Ja": {
-                                  "icon": "calendar"
-                                },
-                                "q3rYY": {
-                                  "content": "Calendar"
-                                },
-                                "FTjCb": {
-                                  "content": "Read and create calendar events."
-                                },
-                                "uCnvw": {
-                                  "id": "AGijA",
-                                  "type": "ref",
-                                  "ref": "X2HjPs",
-                                  "name": "Toggle",
-                                  "width": 36,
-                                  "height": 20,
-                                  "theme": {
-                                    "state": "selected"
-                                  }
-                                }
-                              }
-                            },
-                            {
-                              "id": "SYOin",
-                              "type": "ref",
-                              "ref": "n7RtBO",
-                              "name": "Reminders",
-                              "width": "fill_container",
-                              "descendants": {
-                                "Ae0Ja": {
-                                  "icon": "list-checks"
-                                },
-                                "q3rYY": {
-                                  "content": "Reminders"
-                                },
-                                "FTjCb": {
-                                  "content": "Create and complete reminders."
-                                },
-                                "uCnvw": {
-                                  "id": "sy6WB",
-                                  "type": "ref",
-                                  "ref": "X2HjPs",
-                                  "name": "Toggle",
-                                  "width": 36,
-                                  "height": 20,
-                                  "theme": {
-                                    "state": "selected"
-                                  }
-                                }
-                              }
-                            },
-                            {
-                              "id": "nDySE",
-                              "type": "ref",
-                              "ref": "n7RtBO",
-                              "name": "Mail",
-                              "width": "fill_container",
-                              "descendants": {
-                                "Ae0Ja": {
-                                  "icon": "mail"
-                                },
-                                "q3rYY": {
-                                  "content": "Mail"
-                                },
-                                "FTjCb": {
-                                  "content": "Read and send email on your behalf."
-                                },
-                                "uCnvw": {
-                                  "id": "ooNDX",
-                                  "type": "ref",
-                                  "ref": "X2HjPs",
-                                  "name": "Toggle",
-                                  "width": 36,
-                                  "height": 20,
-                                  "theme": {
-                                    "state": "default"
-                                  }
-                                }
-                              }
-                            },
-                            {
-                              "id": "DKa7b",
-                              "type": "ref",
-                              "ref": "n7RtBO",
-                              "name": "Notes",
-                              "width": "fill_container",
-                              "descendants": {
-                                "Ae0Ja": {
-                                  "icon": "sticky-note"
-                                },
-                                "q3rYY": {
-                                  "content": "Notes"
-                                },
-                                "FTjCb": {
-                                  "content": "Read and write notes."
-                                },
-                                "uCnvw": {
-                                  "id": "kV0FI",
-                                  "type": "ref",
-                                  "ref": "X2HjPs",
-                                  "name": "Toggle",
-                                  "width": 36,
-                                  "height": 20,
-                                  "theme": {
-                                    "state": "selected"
-                                  }
-                                }
-                              }
+                              "content": "No supported connectors are available in this build.",
+                              "fontFamily": "$font-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -30374,26 +30237,6 @@
                 "rKE5W": {
                   "x": 210,
                   "width": 560
-                },
-                "AGijA": {
-                  "theme": {
-                    "state": "selected"
-                  }
-                },
-                "sy6WB": {
-                  "theme": {
-                    "state": "selected"
-                  }
-                },
-                "ooNDX": {
-                  "theme": {
-                    "state": "default"
-                  }
-                },
-                "kV0FI": {
-                  "theme": {
-                    "state": "selected"
-                  }
                 }
               }
             },
