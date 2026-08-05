@@ -43886,7 +43886,7 @@
               "fill": "$text-tertiary",
               "content": "Do something",
               "fontFamily": "Inter",
-              "fontSize": 14,
+              "fontSize": 13,
               "fontWeight": "normal"
             },
             {
