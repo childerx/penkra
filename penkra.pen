@@ -6149,9 +6149,7 @@
           "x": 360,
           "y": 300,
           "name": "Show More Row",
-          "theme": {
-            "state": "default"
-          },
+          "theme": {},
           "reusable": true,
           "metadata": {
             "type": "recovery-confidence",
@@ -6160,7 +6158,7 @@
           },
           "width": 224,
           "height": 27,
-          "fill": "$row-bg",
+          "fill": "#00000000",
           "cornerRadius": 6,
           "layout": "vertical",
           "padding": [
@@ -6174,7 +6172,10 @@
               "type": "text",
               "id": "k16ybr",
               "name": "Label",
-              "fill": "$row-text",
+              "theme": {
+                "state": "default"
+              },
+              "fill": "$show-more-text",
               "content": "Show more",
               "fontFamily": "$font-body",
               "fontSize": 13,
@@ -8079,6 +8080,20 @@
               "icon": "circle-alert",
               "library": "lucide",
               "fill": "$accent-orange"
+            },
+            {
+              "type": "icon",
+              "id": "i3tPz",
+              "x": 0,
+              "y": 0,
+              "name": "Status — Recording",
+              "context": "Active microphone capture owned by this thread. Dedicated microphone indicator; do not rotate. This privacy-critical state outranks aggregate work statuses.",
+              "enabled": "$thread-status-recording-visible",
+              "width": 13,
+              "height": 13,
+              "icon": "mic",
+              "library": "lucide",
+              "fill": "$color-text-destructive"
             }
           ]
         },
@@ -8580,37 +8595,6 @@
               "height": 1,
               "fill": "#00000000",
               "layout": "none"
-            },
-            {
-              "type": "frame",
-              "id": "SDQ0c",
-              "x": 1242,
-              "y": 15,
-              "name": "Panel Icon",
-              "enabled": false,
-              "width": 16,
-              "height": 16,
-              "fill": "#00000000",
-              "layout": "none",
-              "children": [
-                {
-                  "type": "path",
-                  "id": "llPmt",
-                  "x": 0,
-                  "y": 0,
-                  "name": "path",
-                  "geometry": "M2.60449 1.20313q-0.50586 0.08545-0.87842 0.43749-0.36914 0.34863-0.50927 0.86475-0.02734 0.08545-0.02735 0.71436l-0.01367 3.78027 0.01367 3.78027q0 0.62891 0.02735 0.71436 0.14014 0.48877 0.46826 0.82031 0.33154 0.32813 0.82031 0.46826 0.08545 0.02734 0.71436 0.02735l3.78027 0.01367 3.78027-0.01367q0.62891 0 0.71436-0.02735 0.48877-0.14014 0.81689-0.46826 0.33154-0.33154 0.47168-0.82031 0.02734-0.08545 0.02735-0.71436l0.01367-3.78027-0.01367-3.78027q0-0.62891-0.02735-0.71436-0.12646-0.48877-0.458-0.81689-0.32813-0.33154-0.80323-0.47168l-0.14013-0.04102-4.32715 0q-4.3374 0-4.4502 0.02734z m5.57129 5.79687l0 4.67578-2.63183 0q-2.63184 0-2.73096-0.02734-0.29395-0.05811-0.43408-0.33496l-0.04102-0.09913 0-8.42871 0.04102-0.09912q0.07178-0.14014 0.18798-0.229 0.11963-0.09229 0.25977-0.11963 0.08545 0 2.71729-0.01367l2.63183 0 0 4.67578z m3.1377-4.62109q0.2085 0.09912 0.30761 0.30761l0.04102 0.09912 0 8.42871-0.04102 0.09913q-0.14014 0.27685-0.43408 0.33496-0.09912 0.02734-0.98096 0.02734l-0.88183 0 0-9.35156 1.89013 0.01367 0.09913 0.04102z",
-                  "viewBox": [
-                    0,
-                    0,
-                    13.99993896484375,
-                    14
-                  ],
-                  "fill": "$color-text-foreground-secondary",
-                  "width": 16,
-                  "height": 16
-                }
-              ]
             },
             {
               "id": "QeU5o",
@@ -10142,9 +10126,6 @@
                 "WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "SDQ0c": {
-                  "x": 750
                 }
               }
             },
@@ -10999,9 +10980,6 @@
                 "WicxU": {
                   "x": 102,
                   "width": 635
-                },
-                "SDQ0c": {
-                  "x": 750
                 }
               }
             },
@@ -13675,9 +13653,39 @@
           "alignItems": "center",
           "children": [
             {
+              "type": "frame",
+              "id": "t5EIcf",
+              "x": 0,
+              "y": 0,
+              "name": "Close Button",
+              "theme": {
+                "close-state": "default"
+              },
+              "enabled": "$tab-close-visible",
+              "width": 14,
+              "height": 14,
+              "fill": "$tab-close-bg",
+              "cornerRadius": 5,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "I1KOKm",
+                  "name": "Close Icon",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "x",
+                  "library": "lucide",
+                  "fill": "$row-text"
+                }
+              ]
+            },
+            {
               "type": "icon",
               "id": "L0dSu",
               "name": "Icon",
+              "enabled": "$tab-icon-visible",
               "width": 14,
               "height": 14,
               "icon": "file-text",
@@ -13711,32 +13719,6 @@
               "fill": "$color-text-foreground",
               "width": 14,
               "height": 14
-            },
-            {
-              "type": "frame",
-              "id": "t5EIcf",
-              "x": 0,
-              "y": 0,
-              "name": "Close Button",
-              "enabled": "$tab-close-visible",
-              "width": 18,
-              "height": 18,
-              "fill": "#00000000",
-              "cornerRadius": 5,
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "I1KOKm",
-                  "name": "Close Icon",
-                  "width": 12,
-                  "height": 12,
-                  "icon": "x",
-                  "library": "lucide",
-                  "fill": "$row-text"
-                }
-              ]
             }
           ]
         },
@@ -13784,14 +13766,14 @@
                 "state": "default"
               },
               "descendants": {
+                "t5EIcf": {
+                  "enabled": false
+                },
                 "L0dSu": {
                   "icon": "git-branch"
                 },
                 "mPxnw": {
                   "content": "Borge"
-                },
-                "t5EIcf": {
-                  "enabled": false
                 }
               }
             },
@@ -13806,14 +13788,14 @@
                 "state": "hover"
               },
               "descendants": {
+                "t5EIcf": {
+                  "enabled": true
+                },
                 "L0dSu": {
                   "icon": "file-diff"
                 },
                 "mPxnw": {
                   "content": "Review"
-                },
-                "t5EIcf": {
-                  "enabled": true
                 }
               }
             },
@@ -13828,14 +13810,14 @@
                 "state": "active"
               },
               "descendants": {
+                "t5EIcf": {
+                  "enabled": true
+                },
                 "L0dSu": {
                   "icon": "file-text"
                 },
                 "mPxnw": {
                   "content": "CLAUDE.md"
-                },
-                "t5EIcf": {
-                  "enabled": true
                 }
               }
             },
@@ -13850,14 +13832,14 @@
                 "state": "selected"
               },
               "descendants": {
+                "t5EIcf": {
+                  "enabled": true
+                },
                 "L0dSu": {
                   "icon": "file-text"
                 },
                 "mPxnw": {
                   "content": "Files"
-                },
-                "t5EIcf": {
-                  "enabled": true
                 }
               }
             },
@@ -13872,14 +13854,14 @@
                 "state": "open"
               },
               "descendants": {
+                "t5EIcf": {
+                  "enabled": false
+                },
                 "L0dSu": {
                   "icon": "globe"
                 },
                 "mPxnw": {
                   "content": "New tab"
-                },
-                "t5EIcf": {
-                  "enabled": false
                 }
               }
             },
@@ -13894,14 +13876,14 @@
                 "state": "disabled"
               },
               "descendants": {
+                "t5EIcf": {
+                  "enabled": false
+                },
                 "L0dSu": {
                   "icon": "file-diff"
                 },
                 "mPxnw": {
                   "content": "Review"
-                },
-                "t5EIcf": {
-                  "enabled": false
                 }
               }
             },
@@ -13916,18 +13898,18 @@
                 "state": "selected"
               },
               "descendants": {
-                "L0dSu": {
-                  "icon": "file-text"
-                },
-                "mPxnw": {
-                  "content": "Close hover"
-                },
                 "t5EIcf": {
                   "enabled": true,
                   "fill": "$color-background-button-secondary-hover"
                 },
                 "I1KOKm": {
                   "fill": "$color-text-foreground"
+                },
+                "L0dSu": {
+                  "icon": "file-text"
+                },
+                "mPxnw": {
+                  "content": "Close hover"
                 }
               }
             }
@@ -30000,12 +29982,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -30307,9 +30283,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -30675,7 +30648,28 @@
               "x": 0,
               "y": 0,
               "width": 240,
-              "height": 900
+              "height": 900,
+              "descendants": {
+                "GVIVx/aIHr8": {
+                  "theme": {
+                    "update": "none"
+                  }
+                },
+                "QPowY/n59JT/shIbm/P0Fhz": {
+                  "theme": {
+                    "state": "default",
+                    "harness": "cursor",
+                    "thread-level": "nested",
+                    "work-status": "recording",
+                    "pin-state": "unpinned"
+                  }
+                },
+                "QPowY/n59JT/shIbm/fPKBe/k16ybr": {
+                  "theme": {
+                    "state": "default"
+                  }
+                }
+              }
             }
           ]
         },
@@ -32948,7 +32942,19 @@
               "x": 1020,
               "y": 0,
               "width": 420,
-              "height": 900
+              "height": 900,
+              "descendants": {
+                "I298BP/FuB29": {
+                  "theme": {
+                    "state": "hover"
+                  }
+                },
+                "I298BP/FuB29/t5EIcf": {
+                  "theme": {
+                    "close-state": "hover"
+                  }
+                }
+              }
             },
             {
               "id": "rGVQo",
@@ -32982,6 +32988,11 @@
                   "icon": "arrow-left",
                   "library": "lucide",
                   "fill": "$color-text-foreground-secondary"
+                },
+                "QPowY/n59JT/shIbm/fPKBe/k16ybr": {
+                  "theme": {
+                    "state": "default"
+                  }
                 }
               }
             },
@@ -34537,11 +34548,32 @@
                 "QPowY/rAOdE/ezIAu/R474tu": {
                   "content": "Plan product launch"
                 },
+                "QPowY/n59JT/shIbm": {
+                  "theme": {
+                    "state": "default",
+                    "header-state": "default",
+                    "work-status": "recording"
+                  }
+                },
                 "QPowY/n59JT/shIbm/ratNe": {
                   "content": "Penkra"
                 },
+                "QPowY/n59JT/shIbm/L4ruG6": {
+                  "theme": {
+                    "work-status": "recording"
+                  }
+                },
                 "QPowY/n59JT/shIbm/sMBeu/R474tu": {
                   "content": "Ship Apps launcher"
+                },
+                "QPowY/n59JT/shIbm/P0Fhz": {
+                  "theme": {
+                    "state": "default",
+                    "harness": "cursor",
+                    "thread-level": "nested",
+                    "work-status": "recording",
+                    "pin-state": "unpinned"
+                  }
                 },
                 "QPowY/n59JT/shIbm/P0Fhz/R474tu": {
                   "content": "Fix thread ordering"
@@ -34670,9 +34702,6 @@
                 "WicxU": {
                   "x": 190.09,
                   "width": 1205.91
-                },
-                "SDQ0c": {
-                  "x": 1410
                 },
                 "QeU5o": {
                   "x": 38,
@@ -36399,7 +36428,7 @@
                 },
                 "zSwFv/mpj5n": {
                   "x": 0.003955198560110902,
-                  "y": 0.48278336835301516,
+                  "y": 0.4827833683530116,
                   "rotation": -0.006665181915932049
                 },
                 "ISa9R": {
@@ -36570,12 +36599,6 @@
                   "y": 15.5,
                   "width": 1021.91,
                   "height": 1
-                },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
                 },
                 "bX1vF": {
                   "x": 256,
@@ -36878,9 +36901,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -37291,12 +37311,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -37598,9 +37612,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -38105,12 +38116,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -38412,9 +38417,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -39912,12 +39914,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -40219,9 +40215,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -40645,12 +40638,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -40952,9 +40939,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -41718,12 +41702,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -42025,9 +42003,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -42515,12 +42490,6 @@
                   "width": 1021.91,
                   "height": 1
                 },
-                "ptosx/SDQ0c": {
-                  "x": 1242,
-                  "y": 8,
-                  "width": 16,
-                  "height": 16
-                },
                 "bX1vF": {
                   "x": 256,
                   "y": 32,
@@ -42822,9 +42791,6 @@
                 "xpS1E/WicxU": {
                   "x": 212.09,
                   "width": 525.91
-                },
-                "xpS1E/SDQ0c": {
-                  "x": 750
                 },
                 "v4gowy": {
                   "theme": {
@@ -47112,6 +47078,127 @@
                       }
                     }
                   }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Gkbyu",
+              "x": 0,
+              "y": 500,
+              "name": "Thread Recording Indicator Label",
+              "fill": "$text-secondary",
+              "content": "Origin thread — active recording",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "id": "ssycF",
+              "type": "ref",
+              "ref": "RR4w3",
+              "name": "Thread row — active recording",
+              "x": 0,
+              "y": 528,
+              "width": 224,
+              "height": 27,
+              "theme": {
+                "state": "default",
+                "harness": "cursor",
+                "thread-level": "nested",
+                "work-status": "recording",
+                "pin-state": "unpinned"
+              },
+              "descendants": {
+                "R474tu": {
+                  "content": "Voice architecture audit"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "TQzcP",
+              "x": 620,
+              "y": 500,
+              "name": "Other Thread Popup Label",
+              "fill": "$text-secondary",
+              "content": "Other thread — microphone attempt",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "OEyvv",
+              "x": 620,
+              "y": 528,
+              "name": "Compact info popup — recording owned elsewhere",
+              "width": 288,
+              "height": 32,
+              "fill": "$color-background-elevated-primary-opaque",
+              "cornerRadius": 12,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000001F",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 14
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "LSpql",
+                  "x": 12,
+                  "y": 9,
+                  "name": "Info",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "info",
+                  "library": "lucide",
+                  "fill": "$color-text-foreground-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "mDuVO",
+                  "x": 34,
+                  "y": 9,
+                  "name": "Message",
+                  "fill": "$color-text-foreground",
+                  "content": "Voice recording is active in another thread",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                },
+                {
+                  "type": "frame",
+                  "id": "EdZTt",
+                  "x": 262,
+                  "y": 6,
+                  "name": "Dismiss",
+                  "width": 20,
+                  "height": 20,
+                  "fill": "#00000000",
+                  "cornerRadius": 6,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "NmLBA",
+                      "x": 4,
+                      "y": 4,
+                      "name": "Close",
+                      "width": 12,
+                      "height": 12,
+                      "icon": "x",
+                      "library": "lucide",
+                      "fill": "$color-text-foreground-secondary"
+                    }
+                  ]
                 }
               ]
             }
@@ -53716,7 +53803,8 @@
       "idle",
       "running",
       "done",
-      "attention"
+      "attention",
+      "recording"
     ],
     "text-overflow": [
       "fit",
@@ -53749,6 +53837,10 @@
     "quick-settings-view": [
       "main",
       "connection"
+    ],
+    "close-state": [
+      "default",
+      "hover"
     ]
   },
   "variables": {
@@ -56809,13 +56901,13 @@
           }
         },
         {
-          "value": true,
+          "value": false,
           "theme": {
             "state": "active"
           }
         },
         {
-          "value": true,
+          "value": false,
           "theme": {
             "state": "selected"
           }
@@ -59024,6 +59116,12 @@
           "theme": {
             "work-status": "attention"
           }
+        },
+        {
+          "value": false,
+          "theme": {
+            "work-status": "recording"
+          }
         }
       ]
     },
@@ -59053,6 +59151,12 @@
           "theme": {
             "work-status": "attention"
           }
+        },
+        {
+          "value": false,
+          "theme": {
+            "work-status": "recording"
+          }
         }
       ]
     },
@@ -59081,6 +59185,12 @@
           "value": true,
           "theme": {
             "work-status": "attention"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "work-status": "recording"
           }
         }
       ]
@@ -59843,6 +59953,12 @@
           "value": true,
           "theme": {
             "work-status": "attention"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "work-status": "recording"
           }
         }
       ]
@@ -60831,6 +60947,140 @@
           "value": false,
           "theme": {
             "state": "loading"
+          }
+        }
+      ]
+    },
+    "tab-icon-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": true,
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "state": "disabled"
+          }
+        }
+      ]
+    },
+    "tab-close-bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00000000",
+          "theme": {
+            "close-state": "default"
+          }
+        },
+        {
+          "value": "$surface-hover",
+          "theme": {
+            "close-state": "hover"
+          }
+        }
+      ]
+    },
+    "show-more-text": {
+      "type": "color",
+      "value": [
+        {
+          "value": "$color-text-foreground-tertiary",
+          "theme": {
+            "state": "default"
+          }
+        },
+        {
+          "value": "$color-text-foreground",
+          "theme": {
+            "state": "hover"
+          }
+        },
+        {
+          "value": "$color-text-foreground",
+          "theme": {
+            "state": "active"
+          }
+        },
+        {
+          "value": "$color-text-foreground",
+          "theme": {
+            "state": "selected"
+          }
+        },
+        {
+          "value": "$color-text-foreground-tertiary",
+          "theme": {
+            "state": "open"
+          }
+        },
+        {
+          "value": "$color-text-foreground-tertiary",
+          "theme": {
+            "state": "disabled"
+          }
+        }
+      ]
+    },
+    "thread-status-recording-visible": {
+      "type": "boolean",
+      "value": [
+        {
+          "value": false,
+          "theme": {
+            "work-status": "idle"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "work-status": "running"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "work-status": "done"
+          }
+        },
+        {
+          "value": false,
+          "theme": {
+            "work-status": "attention"
+          }
+        },
+        {
+          "value": true,
+          "theme": {
+            "work-status": "recording"
           }
         }
       ]
