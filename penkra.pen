@@ -23779,7 +23779,8 @@
                   "content": "Sign in with your Claude account, or use an API key if you bill through the console. You can add more later and choose a default per Space.",
                   "lineHeight": 1.42,
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -23931,7 +23932,8 @@
                   "content": "Sign in with your Claude account, or use an API key if you bill through the console. You can add more later and choose a default per Space.",
                   "lineHeight": 1.42,
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -23985,6 +23987,594 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Hk0ZN",
+          "x": 64,
+          "y": 6316,
+          "name": "Usage Meter Row / Shared",
+          "theme": {
+            "usage-level": "normal"
+          },
+          "reusable": true,
+          "metadata": {
+            "type": "usage-contract",
+            "behavior": "One reported limit window. Bar length is server-reported utilization 0-100. Never estimated locally: when utilization is null the row is not rendered at all."
+          },
+          "width": 210,
+          "fill": "#00000000",
+          "layout": "vertical",
+          "gap": 5,
+          "children": [
+            {
+              "type": "frame",
+              "id": "iV05D",
+              "name": "Head",
+              "width": "fill_container",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g4cilK",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Session",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "A0EUQq",
+                  "name": "Reset",
+                  "fill": "$text-tertiary",
+                  "content": "· resets in 2h 14m",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "fXDrV",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#00000000",
+                  "layout": "none"
+                },
+                {
+                  "type": "text",
+                  "id": "W8ElrI",
+                  "name": "Value",
+                  "fill": "$usage-value-text",
+                  "content": "62%",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RDuLc",
+              "name": "Track",
+              "clip": true,
+              "width": "fill_container",
+              "height": 5,
+              "fill": "$usage-meter-track",
+              "cornerRadius": 2.5,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o5DVCX",
+                  "name": "Fill",
+                  "width": 130,
+                  "height": "fill_container",
+                  "fill": "$usage-meter-fill",
+                  "cornerRadius": 2.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "O8Ljh",
+          "x": 354,
+          "y": 6366,
+          "name": "Connection Usage / Metered",
+          "theme": {
+            "usage-level": "normal"
+          },
+          "reusable": true,
+          "metadata": {
+            "type": "usage-contract",
+            "behavior": "One row per window the provider actually reports. Row count is data-driven, not fixed per provider: Claude may report 5h, weekly, per-model and credit windows; Codex reports weekly only."
+          },
+          "width": 210,
+          "fill": "#00000000",
+          "layout": "vertical",
+          "gap": 9,
+          "children": [
+            {
+              "id": "xvytl",
+              "type": "ref",
+              "ref": "Hk0ZN",
+              "name": "Session",
+              "width": "fill_container"
+            },
+            {
+              "id": "dTbQd",
+              "type": "ref",
+              "ref": "Hk0ZN",
+              "name": "Weekly",
+              "width": "fill_container",
+              "descendants": {
+                "g4cilK": {
+                  "content": "Weekly"
+                },
+                "A0EUQq": {
+                  "content": "· resets Mon"
+                },
+                "W8ElrI": {
+                  "content": "31%"
+                },
+                "o5DVCX": {
+                  "width": 65
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FCs1T",
+          "x": 64,
+          "y": 6470,
+          "name": "Connection Usage / External",
+          "reusable": true,
+          "metadata": {
+            "type": "usage-contract",
+            "behavior": "For connections whose limits Penkra cannot read: API-key sessions (rate_limits_available is false) and OpenCode Go (no public usage API). Shows spend-to-date when known and links out to the provider console. Never renders an estimated bar."
+          },
+          "width": 210,
+          "fill": "#00000000",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "frame",
+              "id": "z2764X",
+              "name": "Spend",
+              "width": "fill_container",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YkA4k",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Spend this month",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "VUxhg",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#00000000",
+                  "layout": "none"
+                },
+                {
+                  "type": "text",
+                  "id": "ezVOz",
+                  "name": "Value",
+                  "fill": "$text-primary",
+                  "content": "$18.40",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "W0P26r",
+              "name": "Note",
+              "fill": "$text-tertiary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Limits aren't reported to Penkra.",
+              "fontFamily": "$font-body",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "t1DSlp",
+              "name": "View Usage Button",
+              "width": "fill_container",
+              "height": 28,
+              "fill": "$surface-hover",
+              "cornerRadius": 6,
+              "gap": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ee4eJ",
+                  "name": "Label",
+                  "fill": "$text-primary",
+                  "content": "View usage",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "EsFgW",
+                  "name": "Icon",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "external-link",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CPZWQ",
+          "x": 644,
+          "y": 6366,
+          "name": "Menu / Connection",
+          "reusable": true,
+          "metadata": {
+            "type": "native-menu-contract",
+            "items": [
+              "Active connection with usage",
+              "Other connections",
+              "Manage connections…"
+            ],
+            "behavior": "Shows the active connection and the usage windows the provider actually reports, and picks the connection for this thread only. Never changes the Space default, never switches on its own, and never shows a limit it cannot read."
+          },
+          "width": 244,
+          "fill": "$color-background-panel",
+          "cornerRadius": 10,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 1,
+          "padding": 7,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Swiuc",
+              "name": "Header",
+              "width": "fill_container",
+              "height": 26,
+              "padding": [
+                0,
+                10
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aI9A6",
+                  "name": "Label",
+                  "fill": "$text-tertiary",
+                  "content": "CLAUDE",
+                  "fontFamily": "$font-body",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yAlb5",
+              "name": "Active Connection",
+              "width": "fill_container",
+              "fill": "$surface-hover",
+              "cornerRadius": 6,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                9,
+                10
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NLL8P",
+                  "name": "Row",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "sQA1P",
+                      "name": "Check",
+                      "width": 13,
+                      "height": 13,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GViKG",
+                      "name": "Copy",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 1,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xXcpU",
+                          "name": "Name",
+                          "fill": "$text-primary",
+                          "content": "Work",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H2nSyK",
+                          "name": "Account",
+                          "fill": "$text-tertiary",
+                          "content": "Claude subscription",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c5huel",
+                  "type": "ref",
+                  "ref": "O8Ljh",
+                  "name": "Usage",
+                  "width": "fill_container",
+                  "enabled": true
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qDaf4",
+              "name": "Personal",
+              "width": "fill_container",
+              "height": 40,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "gap": 9,
+              "padding": [
+                0,
+                10
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z41YjW",
+                  "name": "Check Slot",
+                  "width": 13,
+                  "height": 13,
+                  "fill": "#00000000",
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "F5cxaL",
+                  "name": "Copy",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H7irM",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Personal",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fKEsk",
+                      "name": "Account",
+                      "fill": "$text-tertiary",
+                      "content": "Claude subscription",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kNFx2",
+              "name": "Production API",
+              "width": "fill_container",
+              "height": 40,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "gap": 9,
+              "padding": [
+                0,
+                10
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v4HweU",
+                  "name": "Check Slot",
+                  "width": 13,
+                  "height": 13,
+                  "fill": "#00000000",
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "M84lx",
+                  "name": "Copy",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "h9a11d",
+                      "name": "Name",
+                      "fill": "$text-primary",
+                      "content": "Production API",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T1XVy",
+                      "name": "Account",
+                      "fill": "$text-tertiary",
+                      "content": "API key",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "x51lvD",
+              "name": "Divider",
+              "fill": "$border",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "I8zXS",
+              "name": "Manage connections…",
+              "width": "fill_container",
+              "height": 29,
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "gap": 9,
+              "padding": [
+                0,
+                10
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "mNnJD",
+                  "name": "Icon",
+                  "width": 13,
+                  "height": 13,
+                  "icon": "settings",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "IRM6y",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Manage connections…",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FLIOZ",
+          "x": 644,
+          "y": 6716,
+          "name": "Connection Pill / Trigger",
+          "theme": {
+            "state": "default"
+          },
+          "reusable": true,
+          "metadata": {
+            "type": "interaction-contract",
+            "states": [
+              "default",
+              "hover",
+              "active",
+              "open",
+              "disabled"
+            ],
+            "behavior": "Displays the thread's active connection. Hover shows the tooltip; open reveals the connection menu with usage. Selecting a connection changes this thread only."
+          },
+          "height": 26,
+          "fill": "$row-bg",
+          "cornerRadius": 999,
+          "gap": 6,
+          "padding": [
+            0,
+            8
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "Ynmwb",
+              "type": "ref",
+              "ref": "UHPei",
+              "name": "Harness Glyph",
+              "width": 13,
+              "height": 13
+            },
+            {
+              "type": "text",
+              "id": "ubI8f",
+              "name": "Name",
+              "fill": "$text-primary",
+              "content": "Work",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "icon",
+              "id": "M6Nx7s",
+              "name": "Chevron",
+              "width": 11,
+              "height": 11,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "$text-tertiary"
             }
           ]
         }
@@ -28524,6 +29114,7 @@
                   "id": "S8SZ7",
                   "name": "Bottom / Connection Selected for Next Message",
                   "width": 760,
+                  "height": "fit_content(0)",
                   "fill": "#00000000",
                   "layout": "vertical",
                   "padding": [
@@ -28532,78 +29123,7 @@
                     24,
                     24
                   ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "h7xXQ",
-                      "type": "ref",
-                      "ref": "TKKOp",
-                      "name": "Composer",
-                      "width": 640,
-                      "height": 100,
-                      "theme": {
-                        "state": "default"
-                      },
-                      "descendants": {
-                        "DxWas": {
-                          "theme": {}
-                        },
-                        "DxWas/C2Yo8k": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/RPqic": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/eQt4v": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/iG4bz": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/iG4bz/dIpEV": {
-                          "theme": {}
-                        },
-                        "DxWas/iG4bz/cgpdu/y8N7S6": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/iG4bz/cgpdu/j9c4u": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/iG4bz/cgpdu/RQDpn": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/iG4bz/cgpdu/JvGL9": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/E7z8ym": {
-                          "theme": {
-                            "state": "default"
-                          }
-                        },
-                        "DxWas/o7XzT": {
-                          "theme": {
-                            "state": "disabled"
-                          }
-                        }
-                      }
-                    }
-                  ]
+                  "alignItems": "center"
                 },
                 "XpmuN": {
                   "theme": {
@@ -41597,7 +42117,7 @@
           "children": [
             {
               "type": "frame",
-              "id": "g2oPU",
+              "id": "B8mQTy",
               "name": "Header",
               "width": "fill_container",
               "height": 26,
@@ -41609,10 +42129,10 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "yPdKc",
+                  "id": "mFeQ5",
                   "name": "Label",
                   "fill": "$text-tertiary",
-                  "content": "CLAUDE CONNECTION",
+                  "content": "CLAUDE",
                   "fontFamily": "$font-body",
                   "fontSize": 10,
                   "fontWeight": "600",
@@ -41622,223 +42142,74 @@
             },
             {
               "type": "frame",
-              "id": "HgHOB",
-              "name": "Personal",
+              "id": "T9i9c",
+              "name": "Active Connection",
               "width": "fill_container",
-              "height": 40,
-              "fill": "#00000000",
+              "fill": "$surface-hover",
               "cornerRadius": 6,
-              "gap": 9,
+              "layout": "vertical",
+              "gap": 10,
               "padding": [
-                0,
+                9,
                 10
               ],
-              "alignItems": "center",
               "children": [
-                {
-                  "type": "icon",
-                  "id": "LUzxl",
-                  "x": 10,
-                  "y": 13.5,
-                  "name": "Check",
-                  "enabled": false,
-                  "width": 13,
-                  "height": 13,
-                  "icon": "check",
-                  "library": "lucide",
-                  "fill": "$text-primary"
-                },
                 {
                   "type": "frame",
-                  "id": "CrcqR",
-                  "name": "Copy",
+                  "id": "R2NIH2",
+                  "name": "Row",
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 1,
+                  "gap": 9,
+                  "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "BOG1l",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Personal",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
+                      "type": "icon",
+                      "id": "FoZ75",
+                      "name": "Check",
+                      "width": 13,
+                      "height": 13,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "$text-primary"
                     },
                     {
-                      "type": "text",
-                      "id": "w8r2r",
-                      "name": "Account",
-                      "fill": "$text-tertiary",
-                      "content": "Claude subscription",
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "c7heb",
+                      "name": "Copy",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 1,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xCXKl",
+                          "name": "Name",
+                          "fill": "$text-primary",
+                          "content": "Work",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dspiV",
+                          "name": "Account",
+                          "fill": "$text-tertiary",
+                          "content": "Claude subscription",
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "FdnKZ",
-              "name": "Work",
-              "width": "fill_container",
-              "height": 40,
-              "fill": "$color-background-button-secondary-hover",
-              "cornerRadius": 6,
-              "gap": 9,
-              "padding": [
-                0,
-                10
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "c1D3VS",
-                  "name": "Check",
-                  "width": 13,
-                  "height": 13,
-                  "icon": "check",
-                  "library": "lucide",
-                  "fill": "$text-primary"
                 },
                 {
-                  "type": "frame",
-                  "id": "nz04A",
-                  "name": "Copy",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 1,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "h31In",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Work",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "YXMJR",
-                      "name": "Account",
-                      "fill": "$text-tertiary",
-                      "content": "Claude subscription",
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "j0sTkG",
-              "name": "Production API",
-              "width": "fill_container",
-              "height": 40,
-              "fill": "#00000000",
-              "cornerRadius": 6,
-              "gap": 9,
-              "padding": [
-                0,
-                10
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "XBv03",
-                  "x": 10,
-                  "y": 13.5,
-                  "name": "Check",
-                  "enabled": false,
-                  "width": 13,
-                  "height": 13,
-                  "icon": "check",
-                  "library": "lucide",
-                  "fill": "$text-primary"
-                },
-                {
-                  "type": "frame",
-                  "id": "n35VQ",
-                  "name": "Copy",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 1,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "MSWhV",
-                      "name": "Name",
-                      "fill": "$text-primary",
-                      "content": "Production API",
-                      "fontFamily": "$font-body",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "x9LXTD",
-                      "name": "Account",
-                      "fill": "$text-tertiary",
-                      "content": "API key",
-                      "fontFamily": "$font-body",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "rectangle",
-              "id": "fZGR2",
-              "name": "Divider",
-              "fill": "$border",
-              "width": "fill_container",
-              "height": 1
-            },
-            {
-              "type": "frame",
-              "id": "TqUX5",
-              "name": "Manage connections…",
-              "width": "fill_container",
-              "height": 29,
-              "fill": "#00000000",
-              "cornerRadius": 6,
-              "gap": 9,
-              "padding": [
-                0,
-                10
-              ],
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "JoGot",
-                  "name": "Icon",
-                  "width": 13,
-                  "height": 13,
-                  "icon": "settings",
-                  "library": "lucide",
-                  "fill": "$text-secondary"
-                },
-                {
-                  "type": "text",
-                  "id": "V6N4C",
-                  "name": "Label",
-                  "fill": "$text-secondary",
-                  "content": "Manage connections…",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
+                  "id": "f9OIz3",
+                  "type": "ref",
+                  "ref": "O8Ljh",
+                  "name": "Usage",
+                  "width": "fill_container"
                 }
               ]
             }
@@ -48476,6 +48847,11 @@
     "close-state": [
       "default",
       "hover"
+    ],
+    "usage-level": [
+      "normal",
+      "warning",
+      "exhausted"
     ]
   },
   "variables": {
@@ -55716,6 +56092,56 @@
           "value": true,
           "theme": {
             "work-status": "recording"
+          }
+        }
+      ]
+    },
+    "usage-meter-track": {
+      "type": "color",
+      "value": "#23252C"
+    },
+    "usage-meter-fill": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#B9BEC9",
+          "theme": {
+            "usage-level": "normal"
+          }
+        },
+        {
+          "value": "$accent-orange",
+          "theme": {
+            "usage-level": "warning"
+          }
+        },
+        {
+          "value": "$color-text-destructive",
+          "theme": {
+            "usage-level": "exhausted"
+          }
+        }
+      ]
+    },
+    "usage-value-text": {
+      "type": "color",
+      "value": [
+        {
+          "value": "$text-primary",
+          "theme": {
+            "usage-level": "normal"
+          }
+        },
+        {
+          "value": "$accent-orange",
+          "theme": {
+            "usage-level": "warning"
+          }
+        },
+        {
+          "value": "$color-text-destructive",
+          "theme": {
+            "usage-level": "exhausted"
           }
         }
       ]
