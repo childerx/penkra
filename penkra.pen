@@ -48687,6 +48687,1211 @@
           "enabled": true
         }
       }
+    },
+    {
+      "type": "frame",
+      "id": "gRSIX",
+      "x": 0,
+      "y": 19340,
+      "name": "Connection Strategy — Accounts & Usage",
+      "metadata": {
+        "type": "feature-study",
+        "status": "design-review",
+        "scope": "Provider Connections in composer; no code approved",
+        "decisions": [
+          "Thread-scoped selection",
+          "Active connection usage only",
+          "No automatic fallback"
+        ]
+      },
+      "width": 1600,
+      "fill": "#F5F5F7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 34,
+      "padding": 48,
+      "children": [
+        {
+          "type": "frame",
+          "id": "dF9VM",
+          "name": "00 — Overview",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "bozhx",
+              "name": "Eyebrow",
+              "fill": "#1F6FEB",
+              "content": "COMPOSER · PROVIDER CONNECTIONS",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 0.8
+            },
+            {
+              "type": "text",
+              "id": "ZOlNq",
+              "name": "Title",
+              "fill": "#17181A",
+              "content": "Connection switching, account state & usage",
+              "fontFamily": "Inter",
+              "fontSize": 30,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "FtYZf",
+              "name": "Summary",
+              "fill": "#5D6066",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "A thread-scoped connection picker that stays explicit, preserves native identity, and only displays usage for the active connection.",
+              "lineHeight": 1.45,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "s6xYd",
+          "name": "Decision Summary",
+          "width": "fill_container",
+          "gap": 14,
+          "children": [
+            {
+              "type": "frame",
+              "id": "koB3T",
+              "name": "Decision / Scope",
+              "width": "fill_container",
+              "height": 98,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E2E2E7",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D5lINJ",
+                  "fill": "#777A81",
+                  "content": "SCOPE",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.7
+                },
+                {
+                  "type": "text",
+                  "id": "uiHXn",
+                  "fill": "#17181A",
+                  "content": "This thread only",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "mys5w",
+                  "fill": "#777A81",
+                  "content": "Commits on the next successful send.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VWYmP",
+              "name": "Decision / Usage",
+              "width": "fill_container",
+              "height": 98,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E2E2E7",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LpGte",
+                  "fill": "#777A81",
+                  "content": "USAGE",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.7
+                },
+                {
+                  "type": "text",
+                  "id": "bj28H",
+                  "fill": "#17181A",
+                  "content": "Active connection only",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "iKowI",
+                  "fill": "#777A81",
+                  "content": "Never poll or imply usage for other rows.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hVs5K",
+              "name": "Decision / Fallback",
+              "width": "fill_container",
+              "height": 98,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E2E2E7",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BDF7R",
+                  "fill": "#777A81",
+                  "content": "FALLBACK",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.7
+                },
+                {
+                  "type": "text",
+                  "id": "VkOMb",
+                  "fill": "#17181A",
+                  "content": "Always explicit",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "fVHmB",
+                  "fill": "#777A81",
+                  "content": "Unavailable connections never auto-switch.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BeRji",
+          "name": "01–03 — Primary Flow",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "kRfgo",
+              "fill": "#17181A",
+              "content": "Primary flow",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "WvjPZ",
+              "name": "Primary Flow Variants",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bRtxB",
+                  "name": "01 — Menu / Active",
+                  "width": "fill_container",
+                  "height": 360,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 14,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pET7F",
+                      "fill": "#1F6FEB",
+                      "content": "01 · ACTIVE",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "erz4T",
+                      "fill": "#17181A",
+                      "content": "Current connection",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QIGzO",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Identity and usage are visible before opening the switcher.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qgQan",
+                      "name": "Preview",
+                      "width": "fill_container",
+                      "height": 248,
+                      "fill": "#292A2E",
+                      "cornerRadius": 10,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "id": "K8eCC",
+                          "type": "ref",
+                          "ref": "CPZWQ",
+                          "x": 104,
+                          "y": 36,
+                          "width": 244,
+                          "descendants": {
+                            "L3IhcP": {
+                              "content": "Claude"
+                            },
+                            "WPGEa": {
+                              "enabled": false
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MFzEo",
+                  "name": "02 — Switcher / Multiple",
+                  "width": "fill_container",
+                  "height": 360,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 14,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rcsHf",
+                      "fill": "#1F6FEB",
+                      "content": "02 · MULTIPLE CONNECTIONS",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "X4tmsV",
+                      "fill": "#17181A",
+                      "content": "Explicit selection",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CqJHo",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Only connections for the selected provider appear here.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c6L2Z",
+                      "name": "Preview",
+                      "width": "fill_container",
+                      "height": 248,
+                      "fill": "#292A2E",
+                      "cornerRadius": 10,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "id": "m3uOz",
+                          "type": "ref",
+                          "ref": "N01fNV",
+                          "x": 10,
+                          "y": 43,
+                          "width": 210,
+                          "descendants": {
+                            "jzedw": {
+                              "content": "emmanuel@penkra.com"
+                            },
+                            "r3nQb8": {
+                              "content": "e.atta@gigborg.com"
+                            },
+                            "Q2lYj": {
+                              "content": "API key · …7Xq2"
+                            }
+                          }
+                        },
+                        {
+                          "id": "foUPP",
+                          "type": "ref",
+                          "ref": "CPZWQ",
+                          "x": 226,
+                          "y": 28,
+                          "width": 214,
+                          "descendants": {
+                            "L3IhcP": {
+                              "content": "Claude"
+                            },
+                            "Oe5KC": {
+                              "content": "emmanuel@penkra.com"
+                            },
+                            "WPGEa": {
+                              "enabled": false
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iGhTZ",
+                  "name": "03 — Thread / Disconnected Binding",
+                  "width": "fill_container",
+                  "height": 360,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 14,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QmVsb",
+                      "fill": "#C2413A",
+                      "content": "03 · EXCEPTION",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "SW3iF",
+                      "fill": "#17181A",
+                      "content": "Bound connection unavailable",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CErOt",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A contextual ghost row explains why this thread cannot send.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BW9gI",
+                      "name": "Preview",
+                      "width": "fill_container",
+                      "height": 248,
+                      "fill": "#292A2E",
+                      "cornerRadius": 10,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rxF2V",
+                          "x": 104,
+                          "y": 35,
+                          "name": "Menu / Disconnected Thread",
+                          "metadata": {
+                            "type": "connection-lifecycle-contract",
+                            "behavior": "Only shown when this thread remains bound to a terminated Connection. The row is explanatory and cannot be selected."
+                          },
+                          "width": 244,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 10,
+                          "stroke": "#DCDCE1",
+                          "strokeWidth": 1,
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#00000055",
+                            "offset": {
+                              "x": 0,
+                              "y": 8
+                            },
+                            "blur": 22
+                          },
+                          "layout": "vertical",
+                          "gap": 1,
+                          "padding": 7,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "a8olFV",
+                              "name": "Provider Header",
+                              "width": "fill_container",
+                              "height": 22,
+                              "padding": [
+                                0,
+                                8
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "C4qOU",
+                                  "fill": "#1A1C1F65",
+                                  "content": "Claude",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "EehyB",
+                              "name": "Disconnected Connection — Disabled",
+                              "width": "fill_container",
+                              "height": 46,
+                              "fill": "#1A1C1F05",
+                              "cornerRadius": 6,
+                              "layout": "vertical",
+                              "gap": 3,
+                              "padding": [
+                                7,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "r35EW",
+                                  "width": "fill_container",
+                                  "gap": 6,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "S5KXZ",
+                                      "fill": "#1A1C1F70",
+                                      "content": "emmanuel@penkra.com",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "mft0w",
+                                      "width": "fill_container",
+                                      "height": 1
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "Q9WQEF",
+                                      "width": 13,
+                                      "height": 13,
+                                      "icon": "circle-off",
+                                      "library": "lucide",
+                                      "fill": "#E06C75"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "VY7Ob",
+                                  "fill": "#C2413A",
+                                  "content": "Disconnected",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xqt0V",
+                              "name": "Explanation",
+                              "width": "fill_container",
+                              "padding": [
+                                8,
+                                8,
+                                6,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "O9lHj",
+                                  "fill": "#1A1C1F65",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Choose another connection to continue.",
+                                  "lineHeight": 1.35,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "x0KUKF",
+                              "name": "Choose Connection",
+                              "width": "fill_container",
+                              "height": 29,
+                              "fill": "#1F6FEB12",
+                              "cornerRadius": 6,
+                              "gap": 7,
+                              "padding": [
+                                0,
+                                8
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "rvPbh",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "replace",
+                                  "library": "lucide",
+                                  "fill": "#1F6FEB"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "t2M0t",
+                                  "fill": "#1F4F91",
+                                  "content": "Choose connection…",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BPvlR",
+          "name": "04 — Usage States",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "V5nolw",
+              "fill": "#17181A",
+              "content": "Active-connection usage states",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "NJyEM",
+              "name": "Usage State Variants",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BW8N3",
+                  "name": "04A — Usage / Fresh",
+                  "width": "fill_container",
+                  "height": 250,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X1mKp",
+                      "fill": "#2D7A4F",
+                      "content": "FRESH",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "eulPG",
+                      "fill": "#17181A",
+                      "content": "Provider reported",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pA8Oz",
+                      "width": "fill_container",
+                      "height": 166,
+                      "fill": "#292A2E",
+                      "cornerRadius": 9,
+                      "layout": "vertical",
+                      "padding": 18,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "id": "LPw5I",
+                          "type": "ref",
+                          "ref": "O8Ljh",
+                          "width": "fill_container"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "f4ZL2b",
+                  "name": "04B — Usage / Stale",
+                  "width": "fill_container",
+                  "height": 250,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lCyMp",
+                      "fill": "#9A6700",
+                      "content": "STALE",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "L7zJJl",
+                      "fill": "#17181A",
+                      "content": "Last known values",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lBWIH",
+                      "width": "fill_container",
+                      "height": 166,
+                      "fill": "#292A2E",
+                      "cornerRadius": 9,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 18,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "id": "OCtSV",
+                          "type": "ref",
+                          "ref": "O8Ljh",
+                          "width": "fill_container",
+                          "opacity": 0.65
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KLw1M",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "iS443",
+                              "width": 12,
+                              "height": 12,
+                              "icon": "clock-3",
+                              "library": "lucide",
+                              "fill": "#E3B341"
+                            },
+                            {
+                              "type": "text",
+                              "id": "N2P1Da",
+                              "fill": "#E3B341",
+                              "content": "Last updated 4m ago",
+                              "fontFamily": "Inter",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d9Suk",
+                  "name": "04C — Usage / Unavailable",
+                  "width": "fill_container",
+                  "height": 250,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ywAxD",
+                      "fill": "#777A81",
+                      "content": "UNAVAILABLE",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "p7BK0",
+                      "fill": "#17181A",
+                      "content": "Connection still usable",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vL1je",
+                      "width": "fill_container",
+                      "height": 166,
+                      "fill": "#292A2E",
+                      "cornerRadius": 9,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "S1584",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "activity",
+                          "library": "lucide",
+                          "fill": "#FFFFFF54"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Rky2T",
+                          "fill": "#FFFFFF",
+                          "content": "Usage unavailable",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "e6jNXz",
+                          "fill": "#FFFFFF54",
+                          "content": "This does not affect the connection.",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zySGN",
+                  "name": "04D — Usage / External",
+                  "width": "fill_container",
+                  "height": 250,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "C7Snm",
+                      "fill": "#777A81",
+                      "content": "NOT REPORTED",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZIk0F",
+                      "fill": "#17181A",
+                      "content": "Provider console",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h4h6cN",
+                      "width": "fill_container",
+                      "height": 166,
+                      "fill": "#292A2E",
+                      "cornerRadius": 9,
+                      "layout": "vertical",
+                      "padding": 18,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "id": "C3Og8",
+                          "type": "ref",
+                          "ref": "FCs1T",
+                          "width": "fill_container",
+                          "descendants": {
+                            "YkA4k": {
+                              "content": "Usage"
+                            },
+                            "ezVOz": {
+                              "content": ""
+                            },
+                            "W0P26r": {
+                              "content": "Limits aren't reported to Penkra."
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "daAXE",
+          "name": "05 — Lifecycle States",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "d4fUxn",
+              "name": "Section Title",
+              "fill": "#17181A",
+              "content": "Lifecycle and visibility rules",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "MhtUZ",
+              "name": "Lifecycle State Cards",
+              "width": "fill_container",
+              "height": 136,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hSyN7",
+                  "name": "05A — Active / Ready",
+                  "width": "fill_container",
+                  "height": 136,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J9dpXy",
+                      "fill": "#2D7A4F",
+                      "content": "●  ACTIVE",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "stWzS",
+                      "fill": "#17181A",
+                      "content": "Ready",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f7qzea",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Visible and selectable.\nAction: send or switch.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QJv3z",
+                  "name": "05B — Usage / Unavailable",
+                  "width": "fill_container",
+                  "height": 136,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ASGqu",
+                      "fill": "#2D7A4F",
+                      "content": "●  ACTIVE",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "HSB7I",
+                      "fill": "#17181A",
+                      "content": "Telemetry unavailable",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "V4beH",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Connection remains usable.\nAction: continue normally.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vQN7J",
+                  "name": "05C — Terminated / Bound",
+                  "width": "fill_container",
+                  "height": 136,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CK9R2",
+                      "fill": "#C2413A",
+                      "content": "●  TERMINATED",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "a6Q1R",
+                      "fill": "#17181A",
+                      "content": "Current thread exception",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dtejc",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Disabled explanation only.\nAction: choose another.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n7C40e",
+                  "name": "05D — Terminated / Unbound",
+                  "width": "fill_container",
+                  "height": 136,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E2E2E7",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Xt1iG",
+                      "fill": "#8B8E95",
+                      "content": "●  TERMINATED",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "wEGJf",
+                      "fill": "#17181A",
+                      "content": "Historical only",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mZTOe",
+                      "fill": "#777A81",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Hidden from composer.\nDurable history remains.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ymiZS",
+          "name": "Review Boundary",
+          "width": "fill_container",
+          "fill": "#EAF2FF",
+          "cornerRadius": 12,
+          "stroke": "#C9DCF8",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            14,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "xDNKd",
+              "fill": "#1F6FEB",
+              "content": "DESIGN REVIEW",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "600",
+              "letterSpacing": 0.7
+            },
+            {
+              "type": "text",
+              "id": "zN9qO",
+              "fill": "#244D7E",
+              "content": "Space defaults and Penkra account switching remain separate surfaces. No implementation until this behavior is approved.",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {
