@@ -24299,6 +24299,82 @@
             },
             {
               "type": "frame",
+              "id": "vRos3",
+              "x": 0,
+              "y": 0,
+              "name": "API Key Usage Notice",
+              "enabled": false,
+              "width": 230,
+              "fill": "#00000000",
+              "layout": "vertical",
+              "gap": 7,
+              "padding": [
+                7,
+                8,
+                10,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "abkRi",
+                  "name": "Message",
+                  "fill": "$text-tertiary",
+                  "content": "Usage isn’t available for API keys.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "c4Xrg",
+                  "name": "Provider Dashboard Link",
+                  "metadata": {
+                    "type": "external-link",
+                    "behavior": "Opens the selected provider's usage dashboard."
+                  },
+                  "width": "fill_container",
+                  "height": 24,
+                  "fill": "$row-bg",
+                  "cornerRadius": 6,
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NvzuB",
+                      "name": "Label",
+                      "fill": "$row-text",
+                      "content": "View usage in Anthropic",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ykYzQ",
+                      "name": "Spacer",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#00000000",
+                      "layout": "none"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "ubNpe",
+                      "name": "External Link",
+                      "width": 12,
+                      "height": 12,
+                      "icon": "external-link",
+                      "library": "lucide",
+                      "fill": "$text-tertiary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
               "id": "K2VArc",
               "name": "Divider Inset",
               "width": "fill_container",
@@ -24322,6 +24398,7 @@
               "type": "frame",
               "id": "C19vrA",
               "name": "Manage connections…",
+              "enabled": false,
               "theme": {
                 "state": "default"
               },
@@ -24364,7 +24441,7 @@
               "ref": "N01fNV",
               "name": "Connection Switcher",
               "layoutPosition": "absolute",
-              "x": -232,
+              "x": 248,
               "y": 23,
               "width": 228,
               "enabled": "$connection-switcher-visible"
@@ -24376,7 +24453,7 @@
           "id": "FLIOZ",
           "x": 644,
           "y": 6716,
-          "name": "Connection Trigger / Usage Ring",
+          "name": "Connection Trigger / Account",
           "theme": {
             "state": "default"
           },
@@ -24390,7 +24467,7 @@
               "open",
               "disabled"
             ],
-            "behavior": "Displays the thread's active connection. Hover shows the tooltip; open reveals the connection menu with usage. Selecting a connection changes this thread only."
+            "behavior": "Displays the thread's active connection as an account or key glyph. Hover shows the identity tooltip. Opening the menu loads usage on demand; usage is never prefetched or refreshed in the background. Selecting a connection changes this thread only."
           },
           "width": 26,
           "height": 26,
@@ -24401,35 +24478,38 @@
             {
               "type": "ellipse",
               "id": "iCgWe",
-              "x": 0,
-              "y": 0,
+              "x": 5,
+              "y": 5,
               "name": "Usage Track",
-              "innerRadius": 0.86,
+              "enabled": false,
+              "innerRadius": 0.78,
               "fill": "$usage-meter-track",
-              "width": 26,
-              "height": 26
+              "width": 16,
+              "height": 16
             },
             {
               "type": "ellipse",
               "id": "Xpbqq",
-              "x": 0,
-              "y": 0,
+              "x": 5,
+              "y": 5,
               "name": "Usage Arc",
-              "innerRadius": 0.86,
+              "enabled": false,
+              "innerRadius": 0.78,
               "startAngle": 90,
               "sweepAngle": -223,
               "fill": "$usage-meter-fill",
-              "width": 26,
-              "height": 26
+              "width": 16,
+              "height": 16
             },
             {
               "type": "icon",
               "id": "d3gsx",
-              "x": 7,
-              "y": 7,
+              "x": 5,
+              "y": 5,
               "name": "Account Glyph",
-              "width": 12,
-              "height": 12,
+              "enabled": true,
+              "width": 16,
+              "height": 16,
               "icon": "user",
               "library": "lucide",
               "fill": "$row-text"
@@ -26632,7 +26712,7 @@
               "descendants": {
                 "zSwFv/mpj5n": {
                   "x": 0.003955198560110902,
-                  "y": 0.4827833683530116,
+                  "y": 0.48278336835301516,
                   "rotation": -0.006665181915932049
                 },
                 "ISa9R": {
@@ -26790,7 +26870,7 @@
                 },
                 "zSwFv/mpj5n": {
                   "x": 0.003955198560110902,
-                  "y": 0.4827833683530116,
+                  "y": 0.48278336835301516,
                   "rotation": -0.006665181915932049
                 },
                 "yO3Fg": {
@@ -27570,7 +27650,7 @@
                 },
                 "zSwFv/mpj5n": {
                   "x": 0.003955198560110902,
-                  "y": 0.4827833683530116,
+                  "y": 0.48278336835301516,
                   "rotation": -0.006665181915932049
                 },
                 "ISa9R": {
@@ -31502,7 +31582,7 @@
               "descendants": {
                 "zSwFv/mpj5n": {
                   "x": 0.003955198560110902,
-                  "y": 0.4827833683530116,
+                  "y": 0.48278336835301516,
                   "rotation": -0.006665181915932049
                 },
                 "ISa9R": {
@@ -39667,7 +39747,7 @@
               "id": "iG4bz",
               "type": "ref",
               "ref": "Zj1XB",
-              "name": "Change Mode",
+              "name": "Connection",
               "x": 532,
               "y": 0,
               "width": 26,
@@ -42913,7 +42993,7 @@
               "id": "k7cyn",
               "type": "ref",
               "ref": "Zj1XB",
-              "name": "Change Mode",
+              "name": "Connection",
               "width": 26,
               "height": 26,
               "theme": {
@@ -43040,6 +43120,173 @@
             },
             "MjQAM": {
               "enabled": false
+            }
+          }
+        },
+        {
+          "id": "f94PH",
+          "type": "ref",
+          "ref": "JwTiI",
+          "x": 650,
+          "y": 1620,
+          "name": "Composer Actions — account switcher open",
+          "width": 538,
+          "height": 26,
+          "theme": {},
+          "descendants": {
+            "C2Yo8k": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "RPqic": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "eQt4v": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "iG4bz": {
+              "theme": {
+                "state": "open",
+                "quick-settings-view": "connection"
+              }
+            },
+            "iG4bz/iE5nU/L3IhcP": {
+              "content": "Connection"
+            },
+            "iG4bz/iE5nU/WPGEa": {
+              "enabled": true
+            },
+            "E7z8ym": {
+              "theme": {
+                "state": "default"
+              }
+            }
+          }
+        },
+        {
+          "id": "FUgzS",
+          "type": "ref",
+          "ref": "JwTiI",
+          "x": 1250,
+          "y": 1620,
+          "name": "Composer Actions — API key connection open",
+          "width": 538,
+          "height": 26,
+          "theme": {},
+          "descendants": {
+            "C2Yo8k": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "RPqic": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "eQt4v": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "iG4bz": {
+              "theme": {
+                "state": "open",
+                "quick-settings-view": "connection"
+              }
+            },
+            "iG4bz/T109sm/iCgWe": {
+              "enabled": false
+            },
+            "iG4bz/T109sm/Xpbqq": {
+              "enabled": false
+            },
+            "iG4bz/T109sm/d3gsx": {
+              "enabled": true,
+              "name": "API Key Glyph",
+              "icon": "key-round",
+              "fill": "$row-text"
+            },
+            "iG4bz/iE5nU/L3IhcP": {
+              "content": "Connection"
+            },
+            "iG4bz/iE5nU/Oe5KC": {
+              "content": "sk-ant-…7Xq2"
+            },
+            "iG4bz/iE5nU/Kfem3": {
+              "enabled": false,
+              "width": 230
+            },
+            "iG4bz/iE5nU/vRos3": {
+              "enabled": true,
+              "width": 230
+            },
+            "iG4bz/iE5nU/WPGEa": {
+              "enabled": false
+            },
+            "E7z8ym": {
+              "theme": {
+                "state": "default"
+              }
+            }
+          }
+        },
+        {
+          "id": "wc6Jg",
+          "type": "ref",
+          "ref": "JwTiI",
+          "x": 1660,
+          "y": 1620,
+          "name": "Composer Actions — API key connection",
+          "width": 538,
+          "height": 26,
+          "theme": {},
+          "descendants": {
+            "C2Yo8k": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "RPqic": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "eQt4v": {
+              "theme": {
+                "state": "default"
+              }
+            },
+            "iG4bz": {
+              "theme": {
+                "state": "default",
+                "quick-settings-view": "connection"
+              }
+            },
+            "iG4bz/T109sm/iCgWe": {
+              "enabled": false
+            },
+            "iG4bz/T109sm/Xpbqq": {
+              "enabled": false
+            },
+            "iG4bz/T109sm/d3gsx": {
+              "enabled": true,
+              "name": "API Key Glyph",
+              "icon": "key-round",
+              "fill": "$row-text"
+            },
+            "iG4bz/iE5nU/L3IhcP": {
+              "content": "Connection"
+            },
+            "E7z8ym": {
+              "theme": {
+                "state": "default"
+              }
             }
           }
         }
@@ -48317,12 +48564,25 @@
             {
               "type": "icon",
               "id": "xVzBc",
+              "x": 192,
+              "y": 7.5,
               "name": "Selected Check",
+              "enabled": false,
               "width": 14,
               "height": 14,
               "icon": "check",
               "library": "lucide",
               "fill": "$accent"
+            },
+            {
+              "type": "text",
+              "id": "ZQzOr",
+              "name": "Usage Percentage",
+              "fill": "$row-text",
+              "content": "62%",
+              "fontFamily": "$font-body",
+              "fontSize": 11,
+              "fontWeight": "medium"
             }
           ]
         },
@@ -48353,6 +48613,25 @@
               "fontFamily": "$font-body",
               "fontSize": 12,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "cZDtZ",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#00000000",
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "BJNGX",
+              "name": "Usage Percentage",
+              "fill": "$row-text",
+              "content": "18%",
+              "fontFamily": "$font-body",
+              "fontSize": 11,
+              "fontWeight": "medium"
             }
           ]
         },
@@ -48383,6 +48662,25 @@
               "fontFamily": "$font-body",
               "fontSize": 12,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "aKsio",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#00000000",
+              "layout": "none"
+            },
+            {
+              "type": "icon",
+              "id": "dhWkm",
+              "name": "API Key",
+              "width": 13,
+              "height": 13,
+              "icon": "key-round",
+              "library": "lucide",
+              "fill": "$row-text"
             }
           ]
         },
