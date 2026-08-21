@@ -24398,7 +24398,6 @@
               "type": "frame",
               "id": "C19vrA",
               "name": "Manage connections…",
-              "enabled": false,
               "theme": {
                 "state": "default"
               },
@@ -24441,7 +24440,7 @@
               "ref": "N01fNV",
               "name": "Connection Switcher",
               "layoutPosition": "absolute",
-              "x": 248,
+              "x": -232,
               "y": 23,
               "width": 228,
               "enabled": "$connection-switcher-visible"
@@ -24453,7 +24452,7 @@
           "id": "FLIOZ",
           "x": 644,
           "y": 6716,
-          "name": "Connection Trigger / Account",
+          "name": "Connection Trigger / Account Usage Ring",
           "theme": {
             "state": "default"
           },
@@ -24467,7 +24466,7 @@
               "open",
               "disabled"
             ],
-            "behavior": "Displays the thread's active connection as an account or key glyph. Hover shows the identity tooltip. Opening the menu loads usage on demand; usage is never prefetched or refreshed in the background. Selecting a connection changes this thread only."
+            "behavior": "Displays the thread's active connection. Hover shows the tooltip; open reveals the connection menu with usage. Selecting a connection changes this thread only."
           },
           "width": 26,
           "height": 26,
@@ -24481,7 +24480,6 @@
               "x": 5,
               "y": 5,
               "name": "Usage Track",
-              "enabled": false,
               "innerRadius": 0.78,
               "fill": "$usage-meter-track",
               "width": 16,
@@ -24493,7 +24491,6 @@
               "x": 5,
               "y": 5,
               "name": "Usage Arc",
-              "enabled": false,
               "innerRadius": 0.78,
               "startAngle": 90,
               "sweepAngle": -223,
@@ -24507,7 +24504,7 @@
               "x": 5,
               "y": 5,
               "name": "Account Glyph",
-              "enabled": true,
+              "enabled": false,
               "width": 16,
               "height": 16,
               "icon": "user",
@@ -39747,7 +39744,7 @@
               "id": "iG4bz",
               "type": "ref",
               "ref": "Zj1XB",
-              "name": "Connection",
+              "name": "Change Mode",
               "x": 532,
               "y": 0,
               "width": 26,
@@ -42993,7 +42990,7 @@
               "id": "k7cyn",
               "type": "ref",
               "ref": "Zj1XB",
-              "name": "Connection",
+              "name": "Change Mode",
               "width": 26,
               "height": 26,
               "theme": {
