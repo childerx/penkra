@@ -172,7 +172,13 @@ References:
 
 ---
 
-## Part 5 — App instructions, with Canvas as the first case — SHIPPED except `borge-studio`
+## Part 5 — App instructions, with Canvas as the first case — SUPERSEDED
+
+The export-first, caller-versioned Canvas contract below is retained only as historical diagnosis.
+It is superseded by the active clean-cut Canvas operation work in the workspace-root `TODO.md`:
+title-only creation, one Pencil-style execute surface, host-owned visual verification, no agent
+export operation, and manifest-validated examples rendered as complete tool calls. Do not implement
+or restore the draft guidance in this section.
 
 ### The contract
 
