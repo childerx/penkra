@@ -231,7 +231,7 @@ export class AppInstallationService {
     spaceId: string;
     permissions: Readonly<Record<string, AppPermissionGrant>>;
   }): Promise<AppInstallationState> {
-    return this.#enqueueWithBarrier(async () => {
+    return this.#enqueue(async () => {
       const previous = this.#store.snapshot();
       const appId = input.package.manifest.id;
       applyUpdate(previous, input);
@@ -292,21 +292,16 @@ export class AppInstallationService {
                 }),
                 cause,
               );
-        return {
-          settlement: { ok: false as const, error },
-          barrier:
-            wasEnabled && previousStateRestored && previousRuntimeRestarted
-              ? this.#restorationBarrier(appId, input.spaceId, tabs, "rolled-back update")
-              : Promise.resolve(),
-        };
+        if (wasEnabled && previousStateRestored && previousRuntimeRestarted) {
+          await this.#restorationBarrier(appId, input.spaceId, tabs, "rolled-back update");
+        }
+        throw error;
       }
       this.#publish(committedState);
-      return {
-        settlement: { ok: true as const, value: committedState },
-        barrier: wasEnabled
-          ? this.#restorationBarrier(appId, input.spaceId, tabs, "committed update")
-          : Promise.resolve(),
-      };
+      if (wasEnabled) {
+        await this.#restorationBarrier(appId, input.spaceId, tabs, "committed update");
+      }
+      return committedState;
     });
   }
 
@@ -655,23 +650,6 @@ export class AppInstallationService {
       () => undefined,
     );
     return result;
-  }
-
-  #enqueueWithBarrier<Result>(
-    operation: () => Promise<{
-      settlement: { ok: true; value: Result } | { ok: false; error: unknown };
-      barrier: Promise<void>;
-    }>,
-  ): Promise<Result> {
-    const started = this.#queue.then(operation);
-    this.#queue = started.then(
-      (outcome) => outcome.barrier,
-      () => undefined,
-    );
-    return started.then((outcome) => {
-      if (outcome.settlement.ok) return outcome.settlement.value;
-      throw outcome.settlement.error;
-    });
   }
 
   #restorationBarrier(

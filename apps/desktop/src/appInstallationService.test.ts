@@ -545,6 +545,10 @@ describe("AppInstallationService", () => {
       "app-updated",
     );
     expect(test.lifecycle.enable).toHaveBeenLastCalledWith("com.acme.figma", "personal");
+    expect(test.tabs.capture).toHaveBeenCalledWith("com.acme.figma", "personal");
+    expect(test.tabs.restore).toHaveBeenCalledWith("com.acme.figma", "personal", [
+      { threadId: "thread-1", route: "/document/7", state: { page: 3 } },
+    ]);
     expect(test.state().packagesByInstallationKey["personal\0com.acme.figma"]).toMatchObject({
       source: "sideload",
       version: "1.0.1-dev",
@@ -688,7 +692,7 @@ describe("AppInstallationService", () => {
     );
   });
 
-  it("settles the committed caller before reopening while keeping later updates behind reopening", async () => {
+  it("settles the committed caller and later updates only after tab reconstruction", async () => {
     const test = fixture();
     await test.service.install(verifiedPackage(), "personal");
     await test.service.setEnabled({ appId: "com.acme.figma", spaceId: "personal", enabled: true });
@@ -706,11 +710,12 @@ describe("AppInstallationService", () => {
       spaceId: "personal",
       permissions: {},
     });
-    await expect(firstResult).resolves.toMatchObject({
-      packagesByInstallationKey: {
-        "personal\0com.acme.figma": { version: "2.0.0" },
-      },
+    let firstSettled = false;
+    void firstResult.then(() => {
+      firstSettled = true;
     });
+    await vi.waitFor(() => expect(test.tabs.restore).toHaveBeenCalledOnce());
+    expect(firstSettled).toBe(false);
     const secondResult = test.service.updateForSpace({
       package: { ...second, source: "registry" },
       spaceId: "personal",
@@ -723,6 +728,11 @@ describe("AppInstallationService", () => {
     );
 
     releaseRestore();
+    await expect(firstResult).resolves.toMatchObject({
+      packagesByInstallationKey: {
+        "personal\0com.acme.figma": { version: "2.0.0" },
+      },
+    });
     await expect(secondResult).resolves.toMatchObject({
       packagesByInstallationKey: {
         "personal\0com.acme.figma": { version: "3.0.0" },

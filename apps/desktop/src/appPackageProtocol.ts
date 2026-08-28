@@ -7,6 +7,7 @@ import type { FileHandle } from "node:fs/promises";
 import * as Path from "node:path";
 
 import { APP_BLOB_URL_PREFIX, type AppBlobUrlRegistry } from "./appBlobUrlRegistry";
+import { appPackageEntityTag, requestAcceptsAppPackageEntityTag } from "./appPackageRevision";
 import { resolveAppSpacePackagePath } from "./appRuntimePolicy";
 
 export const APP_FRAME_RUNTIME_PATH = "/.penkra/runtime.js";
@@ -28,6 +29,7 @@ const APP_CONTENT_SECURITY_POLICY = [
 export interface AppPackageProtocolInput {
   origin: string;
   packageRoot: string;
+  packageSha256: string;
   entrypoint: string;
   runtimeScriptPath?: string;
   blobUrls?: Pick<AppBlobUrlRegistry, "resolve">;
@@ -40,6 +42,7 @@ export async function createAppPackageProtocolHandler(
   input: AppPackageProtocolInput,
 ): Promise<AppPackageProtocolHandler> {
   const canonicalRoot = await FS.promises.realpath(input.packageRoot);
+  const packageEntityTag = appPackageEntityTag(input.packageSha256);
   const entrypointPath = resolveAppSpacePackagePath(
     canonicalRoot,
     input.origin,
@@ -68,17 +71,35 @@ export async function createAppPackageProtocolHandler(
         if (!input.transferHandler) throw new Error("The App transfer service is unavailable.");
         return await input.transferHandler(request);
       }
+      if (request.method !== "GET" && request.method !== "HEAD") {
+        return new Response("Method not allowed", {
+          status: 405,
+          headers: {
+            ...responseHeaders("method-not-allowed.txt"),
+            "Cache-Control": "no-store",
+            Allow: "GET, HEAD",
+          },
+        });
+      }
       const requestedPath = resolveAppSpacePackagePath(canonicalRoot, input.origin, request.url);
       const path = await resolveRequestFile(canonicalRoot, requestedPath, entrypointPath);
+      if (
+        requestAcceptsAppPackageEntityTag(request.headers.get("if-none-match"), packageEntityTag)
+      ) {
+        return new Response(null, {
+          status: 304,
+          headers: packageResponseHeaders(path, packageEntityTag),
+        });
+      }
       const contents = await FS.promises.readFile(path);
       const body = Uint8Array.from(
         runtimeScript && Path.extname(path).toLowerCase() === ".html"
           ? injectFrameRuntime(contents)
           : contents,
       ).buffer;
-      return new Response(body, {
+      return new Response(request.method === "HEAD" ? null : body, {
         status: 200,
-        headers: packageResponseHeaders(path),
+        headers: packageResponseHeaders(path, packageEntityTag),
       });
     } catch {
       return new Response("Not found", {
@@ -285,8 +306,12 @@ function responseHeaders(path: string): HeadersInit {
   };
 }
 
-function packageResponseHeaders(path: string): HeadersInit {
-  return { ...responseHeaders(path), "Cache-Control": "no-store" };
+function packageResponseHeaders(path: string, entityTag: string): HeadersInit {
+  return {
+    ...responseHeaders(path),
+    "Cache-Control": "private, no-cache",
+    ETag: entityTag,
+  };
 }
 
 function contentType(path: string): string {

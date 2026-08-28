@@ -45,7 +45,9 @@ export interface AppTabLogicalOwner {
 }
 
 export interface AppTabAuthority {
+  /** Synchronously detaches authority belonging to one exact iframe execution generation. */
   retireGeneration(owner: AppTabGenerationOwner): void;
+  /** Retires resources owned by the stable logical tab after it is actually closed. */
   retireTab(owner: AppTabLogicalOwner): void;
 }
 
