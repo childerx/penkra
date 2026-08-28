@@ -1,5 +1,5 @@
 // FILE: appPackageProtocol.ts
-// Purpose: Serves immutable App package files with containment and restrictive response policy.
+// Purpose: Serves App package files with containment and a cache policy safe for mutable sideload URLs.
 // Layer: Trusted desktop App runtime
 
 import * as FS from "node:fs";
@@ -78,12 +78,12 @@ export async function createAppPackageProtocolHandler(
       ).buffer;
       return new Response(body, {
         status: 200,
-        headers: responseHeaders(path),
+        headers: packageResponseHeaders(path),
       });
     } catch {
       return new Response("Not found", {
         status: 404,
-        headers: responseHeaders("not-found.txt"),
+        headers: { ...responseHeaders("not-found.txt"), "Cache-Control": "no-store" },
       });
     }
   };
@@ -283,6 +283,10 @@ function responseHeaders(path: string): HeadersInit {
     "Referrer-Policy": "no-referrer",
     "X-Content-Type-Options": "nosniff",
   };
+}
+
+function packageResponseHeaders(path: string): HeadersInit {
+  return { ...responseHeaders(path), "Cache-Control": "no-store" };
 }
 
 function contentType(path: string): string {

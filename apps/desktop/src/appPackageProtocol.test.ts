@@ -51,6 +51,7 @@ describe("App package protocol", () => {
     expect(contentSecurityPolicy).not.toContain("connect-src http:");
     expect(contentSecurityPolicy).not.toContain("connect-src https:");
     expect(response.headers.get("x-content-type-options")).toBe("nosniff");
+    expect(response.headers.get("cache-control")).toBe("no-store");
   });
 
   it("injects and serves the trusted frame runtime before package scripts", async () => {
@@ -72,6 +73,7 @@ describe("App package protocol", () => {
     );
     const runtime = await handle(new Request(`${APP_ORIGIN}/.penkra/runtime.js`));
     expect(runtime.headers.get("content-type")).toBe("text/javascript; charset=utf-8");
+    expect(runtime.headers.get("cache-control")).toBeNull();
     await expect(runtime.text()).resolves.toBe("globalThis.runtimeReady = true;");
   });
 
@@ -102,6 +104,7 @@ describe("App package protocol", () => {
       {
         appId: "com.example.video",
         spaceId: "space-1",
+        threadId: "thread-1",
         tabId: "tab-1",
         rendererId: 4,
         origin: APP_ORIGIN,
@@ -120,11 +123,13 @@ describe("App package protocol", () => {
     expect(full.headers.get("accept-ranges")).toBe("bytes");
     expect(full.headers.get("content-length")).toBe("10");
     expect(full.headers.get("content-type")).toBe("video/mp4");
+    expect(full.headers.get("cache-control")).toBeNull();
     await expect(full.text()).resolves.toBe("0123456789");
 
     const bounded = await handle(new Request(url, { headers: { range: "bytes=2-5" } }));
     expect(bounded.status).toBe(206);
     expect(bounded.headers.get("content-range")).toBe("bytes 2-5/10");
+    expect(bounded.headers.get("cache-control")).toBeNull();
     await expect(bounded.text()).resolves.toBe("2345");
 
     const suffix = await handle(new Request(url, { headers: { range: "bytes=-3" } }));
@@ -145,6 +150,7 @@ describe("App package protocol", () => {
       {
         appId: "com.example.video",
         spaceId: "space-1",
+        threadId: "thread-1",
         tabId: "tab-1",
         rendererId: 4,
         origin: APP_ORIGIN,
@@ -172,6 +178,7 @@ describe("App package protocol", () => {
       {
         appId: "com.example.video",
         spaceId: "space-1",
+        threadId: "thread-1",
         tabId: "tab-1",
         rendererId: 4,
         origin: APP_ORIGIN,
@@ -204,6 +211,7 @@ describe("App package protocol", () => {
     await expect(route.text()).resolves.toBe("<main>Apps</main>");
     const missingAsset = await handle(new Request(`${APP_ORIGIN}/assets/missing.js`));
     expect(missingAsset.status).toBe(404);
+    expect(missingAsset.headers.get("cache-control")).toBe("no-store");
   });
 
   it("returns a generic 404 for another App origin and traversal attempts", async () => {
